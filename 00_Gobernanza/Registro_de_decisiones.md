@@ -178,6 +178,21 @@
 
 ---
 
+**Decisión:** D-017 — Taxonomía universal facetada y cierre limitado de B2
+**Fecha:** 2026-08-04
+**Problema analizado:** ¿Qué sistema de clasificación permite delimitar y comparar los establecimientos comprendidos por GOEI?
+**Alternativas consideradas:** clasificación estadística existente; jerarquía única propia; taxonomía operacional-analítica multieje; ausencia de taxonomía.
+**Evidencia utilizada:** expediente `GOEI_SCI_HANDOFF_D017_Cierre_B2.md`, revisión científica B2 y fuentes allí identificadas; auditoría técnica `GOEI-AUDIT-0005`.
+**Decisión adoptada:** Taxonomía universal operacional-analítica y facetada. Unidad ordinaria: Establecimiento. Categoría: tipo compuesto por valores de facetas. Facetas indispensables: FX-1 modalidad de servicio/entrega, FX-2 sistema de producción y FX-3 naturaleza económica.
+**Autoridad científica:** Comité Científico GOEI.
+**Ratificación directiva:** `GOEI-DIR-RES-0002`, bajo `GOEI-DIR-0004`.
+**Justificación:** Consta en D-017; la resolución directiva no amplía ni reinterpreta su fundamento científico.
+**Limitaciones:** No se aprueban valores, facetas opcionales, ejemplos, crosswalks, cardinalidades excepcionales ni tratamiento multiunidad/multi-marca. PRISMA completa, Delphi y validación empírica siguen pendientes.
+**Versión incorporada:** `GOEI-BSL-TAX-0001 v0.1.0`.
+**Pendiente de validación:** `GOEI-ISS-008`, `GOEI-ISS-054` y validaciones declaradas en D-017.
+
+---
+
 **Decisión:** D-014 — Autoridad y ciclo de vida GTRM
 **Fecha:** 2026-08-04
 **Problema analizado:** Separar autoridad científica y normativa y definir ciclo de vida.

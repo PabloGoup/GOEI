@@ -46,18 +46,18 @@
     {
       "id": "WP-05",
       "name": "Taxonomía",
-      "status": "in_progress",
+      "status": "complete",
       "dependencies": ["WP-04"],
-      "evidence": ["00_Gobernanza/coordinacion/cola_cientifica/GOEI_SCI_QUEUE_0002_B2_Taxonomia_Universal.md"],
-      "blockers": ["Scientific B2 dossier and decision pending"]
+      "evidence": ["00_Gobernanza/coordinacion/resoluciones/GOEI_DIR_RES_0002_D017_B2.md", "15_Mantenimiento/lineas_base/GOEI_TAX_v0.1.0/MANIFEST.md"],
+      "blockers": []
     },
     {
       "id": "WP-06",
       "name": "KPI y admisibilidad",
-      "status": "blocked",
+      "status": "in_progress",
       "dependencies": ["WP-05"],
-      "evidence": [],
-      "blockers": ["B2-B4 incomplete"]
+      "evidence": ["15_Mantenimiento/lineas_base/GOEI_TAX_v0.1.0/MANIFEST.md"],
+      "blockers": ["B3-B4 scientific decisions pending"]
     },
     {
       "id": "WP-07",

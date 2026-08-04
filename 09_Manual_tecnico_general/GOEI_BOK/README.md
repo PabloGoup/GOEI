@@ -20,8 +20,8 @@
 | Gestión de configuración y releases | GOEI-REL-POL-0001 | Infraestructura técnica disponible; sin release integral declarada |
 | Roadmap y coordinación | GOEI-RDM-0001 + estado procesable | Activo; ruta científica conserva sus bloqueos |
 | Procesos universales | D-008 + GOEI-DIR-RES-0001 | Baseline `GOEI-BSL-PROC-0001 v0.1.0`; B1 cerrada en pregunta nuclear; residuos/merma excluido y pendiente |
-| Taxonomía | Fase B2 | Habilitada; investigación científica pendiente |
-| KPI y admisibilidad | Fases B3–B4 | No iniciadas científicamente |
+| Taxonomía | D-017 + GOEI-DIR-RES-0002 | Baseline `GOEI-BSL-TAX-0001 v0.1.0`; B2 cerrada en pregunta nuclear; valores y multiunidad excluidos |
+| KPI y admisibilidad | Fases B3–B4 | B3 habilitada; no existen KPI aprobados |
 | Referencia, normalización y ponderación | B5–B7 | No iniciadas científicamente |
 | Marco GTRM | D-009–D-016 + GOEI-AUDIT-0004 | Marco científico incorporado; candidata ontológica y arquitectura B5/B6 disponibles; no existen instancias GTRM y GOEI-ISS-053 protege D-006 |
 | Modelo matemático | B8 | No iniciado científicamente |

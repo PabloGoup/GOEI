@@ -21,16 +21,16 @@
     {
       "id": "B2",
       "name": "Taxonomía Universal",
-      "status": "in_progress",
-      "evidence": ["GOEI-SCI-QUEUE-0002", "GOEI-BSL-PROC-0001 v0.1.0"],
-      "blockers": ["Scientific B2 dossier and decision pending"]
+      "status": "complete",
+      "evidence": ["D-017", "GOEI-AUDIT-0005", "GOEI-DIR-RES-0002", "GOEI-BSL-TAX-0001 v0.1.0"],
+      "blockers": []
     },
     {
       "id": "B3-B10",
       "name": "KPI through Technical Manual knowledge",
-      "status": "blocked",
-      "evidence": [],
-      "blockers": ["B2 and sequential predecessor phases incomplete"]
+      "status": "in_progress",
+      "evidence": ["GOEI-BSL-TAX-0001 v0.1.0"],
+      "blockers": ["B3-B10 scientific decisions pending sequentially", "GOEI-ISS-054 blocks concrete taxonomy values only"]
     },
     {
       "id": "C",

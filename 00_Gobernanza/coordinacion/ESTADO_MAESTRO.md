@@ -14,7 +14,7 @@
 | Fase | Responsable principal | Estado verificable | Compuerta pendiente |
 |---|---|---|---|
 | A Fundamentos científicos | Comité Científico | En cierre según Master Plan | cierre oficial y ausencia de bloqueos críticos |
-| B Construcción del conocimiento | Comité Científico | D-008 ratificada; B1 cerrada en pregunta nuclear; B2 habilitada | expediente y decisión científica B2, luego B3–B10 secuenciales |
+| B Construcción del conocimiento | Comité Científico | B1 y B2 cerradas en sus preguntas nucleares; B3 habilitada | expediente y decisión científica B3, luego B4–B10 secuenciales |
 | C Construcción del estándar | Oficina Técnica | Preparación arquitectónica anticipada; contenido bloqueado | cierre oficial de Fase B |
 | D Validación piloto | Director + Comité | No iniciada | Standard candidato y protocolo aprobado |
 | E Publicaciones | Autoridad/Comité/Oficina | Estructura editorial únicamente | resultados y aprobaciones previas |
@@ -45,14 +45,15 @@
 - `GOEI-DIR-RES-0001` ratifica D-008, cierra B1 en su pregunta nuclear, crea `GOEI-BSL-PROC-0001 v0.1.0` y habilita B2; PRISMA completa y Delphi quedan como validaciones posteriores.
 - D-009–D-016 incorporan el marco científico GTRM tras `GOEI-AUDIT-0004`; GOEI-ISS-045–052 quedan cerrados solo en su alcance de marco.
 - `GOEI-ONT-CAND-0001` y `GOEI-ARQ-GTRM-0001` preparan el cambio ontológico y los contratos B5/B6 sin modificar D-006 ni habilitar instancias, fórmulas, parámetros o tolerancias.
+- D-017 y `GOEI-DIR-RES-0002` cierran B2 en su pregunta nuclear y congelan `GOEI-BSL-TAX-0001 v0.1.0`; valores, multiunidad, facetas opcionales y crosswalks permanecen excluidos.
 
 ## Próxima dependencia científica crítica
 
-La dependencia crítica activa es B2 — Taxonomía Universal. En paralelo, GOEI-ISS-053 gobierna el eventual cambio ontológico GTRM y permanece bloqueado para promoción hasta análisis de impacto y aprobación competente. `GOEI-ISS-043` continúa bloqueando únicamente la clasificación normativa de residuos/merma.
+La dependencia crítica activa es B3 — Universo candidato de KPI. `GOEI-ISS-008` y `GOEI-ISS-054` bloquean solo clasificaciones concretas; GOEI-ISS-053 protege D-006 y `GOEI-ISS-043` bloquea únicamente residuos/merma.
 
 ## Política de avance
 
-La Oficina Técnica preservará `GOEI-BSL-PROC-0001 v0.1.0`, mantendrá la exclusión controlada de residuos/merma y coordinará B2 desde el paquete habilitado, sin crear contenido taxonómico ni adelantar fases posteriores.
+La Oficina Técnica preservará las baselines de ontología, procesos y taxonomía; coordinará B3 sin crear KPI y mantendrá fuera de uso los valores taxonómicos no aprobados.
 
 El ciclo técnico GOEI-CYCLE-0002 confirmó la reconstrucción determinista del inventario de Ontology Baseline v0.1 y dejó preparadas las compuertas G0–G5. Estas compuertas describen requisitos de promoción, pero ninguna herramienta puede otorgar aprobación científica o institucional.
 

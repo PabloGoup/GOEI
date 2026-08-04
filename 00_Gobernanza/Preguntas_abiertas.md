@@ -23,7 +23,7 @@ Este registro consolida decisiones faltantes. No propone respuestas.
 | GOEI-ISS-011 | ¿Se adopta AX-11 (anclaje cuádruple) como compuerta de admisibilidad del dato? | D-006-REV | admisibilidad de datos | comité científico | Abierta |
 | GOEI-ISS-012 | ¿El alcance incluye foodservice no comercial/institucional? (define P6: venta vs. requisición) | D-007 | taxonomía/alcance | comité e instancia promotora | **Cerrada 2026-08-04 por D-008/GOEI-DIR-RES-0001: incluido; P6 = transacción/cierre** |
 | GOEI-ISS-013 | ¿La matriz de procesos se estructura en dos niveles (núcleo de subsistema + realización por categoría)? | D-007 | matriz de procesos | comité científico | **Cerrada 2026-08-04 por D-008/GOEI-DIR-RES-0001: dos niveles ratificados** |
-| GOEI-ISS-014 | ¿El tipo de sistema de producción (convencional/cook-chill/commissary/assembly-serve) es eje de la taxonomía? | D-007 | taxonomía | comité científico | Abierta |
+| GOEI-ISS-014 | ¿El tipo de sistema de producción es eje de la taxonomía? | D-007 / D-017 | taxonomía | Comité Científico + Dirección | **Cerrada 2026-08-04 por D-017/GOEI-DIR-RES-0002: FX-2 es faceta indispensable; sus valores concretos quedan bajo GOEI-ISS-054** |
 | GOEI-ISS-015 | ¿La inocuidad se modela con doble rol: proceso transversal y regla crítica no compensable (AX-4)? | D-007 | procesos/reglas críticas | comité científico | Abierta |
 | GOEI-ISS-016 | ¿Se adopta Vía A (validación concurrente) o Vía B (validación predictiva-longitudinal, habilita "salud" pleno)? | D-003 | validación/constructo | comité científico | Abierta |
 | GOEI-ISS-017 | ¿El acrónimo GOEI conserva la "E" de Efficiency pese a que el núcleo no es eficiencia? | D-003 | denominación oficial | comité científico | Abierta |
@@ -40,6 +40,7 @@ Este registro consolida decisiones faltantes. No propone respuestas.
 | GOEI-ISS-051 | DS-GTRM-07 — ¿Qué estado y tratamiento corresponden ante ausencia, conflicto, suspensión o expiración de una referencia o función válida? | D-015 / GOEI-AUDIT-0004 | puntuabilidad y reglas críticas | Comité Científico | Cerrada en marco por D-015; estados operativos finales diferidos a B4/B7/B8 |
 | GOEI-ISS-052 | DS-GTRM-08 — ¿Cómo se fija la fuente normativa de verdad y se demuestra equivalencia papel–software y reproducibilidad histórica? | D-016 / GOEI-AUDIT-0004 | manuales, software y auditoría histórica | Comité Científico + Oficina Técnica | Cerrada en marco por D-016; tolerancias y casos por familia diferidos a B5/B6/B9 |
 | GOEI-ISS-053 | Preparar y evaluar el cambio de D-006 para separar observación, medición registrada y valor KPI e incorporar GTRM, benchmark, representaciones derivadas, incertidumbre, autoridad y sucesión. | D-009–D-016 / GOEI-ONT-CAND-0001 | Ontology Baseline v0.1 | Comité Científico + Oficina Técnica + autoridad normativa | Abierta; D-006 permanece intacta; candidata v0.2.0 sin vigencia |
+| GOEI-ISS-054 | Definir y validar el catálogo controlado de valores de FX-1, FX-2 y FX-3, sus identificadores, definiciones, cardinalidades, reglas para híbridos, casos canónicos y vigencia. | D-017 / GOEI-DIR-RES-0002 | Taxonomy Baseline y clasificadores manual/software | Comité Científico + validación Delphi/empírica + ratificación directiva | Abierta; bloquea valores y clasificaciones concretas, no B3 general |
 
 ## Criterio de cierre
 

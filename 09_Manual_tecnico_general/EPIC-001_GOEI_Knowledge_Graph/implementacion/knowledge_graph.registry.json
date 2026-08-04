@@ -44,6 +44,13 @@
       "type": "CONTAINS"
     },
     {
+      "id": "E-CONTAINS::GOEI-AUDIT-0005",
+      "source": "DOC::00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0005_D017_Cierre_B2.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-AUDIT-0005",
+      "type": "CONTAINS"
+    },
+    {
       "id": "E-CONTAINS::GOEI-BIB-0001",
       "source": "DOC::02_Bibliografia/catalogo_fuentes.json",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
@@ -76,6 +83,13 @@
       "source": "DOC::15_Mantenimiento/lineas_base/GOEI_PROC_v0.1.0/MANIFEST.md",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "GOEI-BSL-PROC-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-BSL-TAX-0001",
+      "source": "DOC::15_Mantenimiento/lineas_base/GOEI_TAX_v0.1.0/MANIFEST.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-BSL-TAX-0001",
       "type": "CONTAINS"
     },
     {
@@ -132,6 +146,13 @@
       "source": "DOC::00_Gobernanza/coordinacion/resoluciones/GOEI_DIR_RES_0001_D008_B1.md",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "GOEI-DIR-RES-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-DIR-RES-0002",
+      "source": "DOC::00_Gobernanza/coordinacion/resoluciones/GOEI_DIR_RES_0002_D017_B2.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-DIR-RES-0002",
       "type": "CONTAINS"
     },
     {
@@ -240,6 +261,13 @@
       "type": "CONTAINS"
     },
     {
+      "id": "E-CONTAINS::GOEI-HO-0002",
+      "source": "DOC::00_Gobernanza/coordinacion/handoffs/GOEI_HANDOFF_0002_B2_Taxonomia_Universal.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-HO-0002",
+      "type": "CONTAINS"
+    },
+    {
       "id": "E-CONTAINS::GOEI-KG-0001",
       "source": "DOC::09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/02_GOEI_Knowledge_Graph.md",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
@@ -314,6 +342,13 @@
       "source": "DOC::09_Manual_tecnico_general/Revision_tecnica_arquitectonica_D006.md",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "GOEI-REV-ONT-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-SCI-D017-0001",
+      "source": "DOC::00_Gobernanza/coordinacion/entradas_comite/GOEI_SCI_HANDOFF_D017_Cierre_B2.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-SCI-D017-0001",
       "type": "CONTAINS"
     },
     {
@@ -800,6 +835,13 @@
       "type": "REGISTERED_IN"
     },
     {
+      "id": "E-ISSUE::GOEI-ISS-054",
+      "source": "GOEI-ISS-054",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
       "id": "E-ORIGIN::D-000::GOEI-EXP-GTRM-0001",
       "source": "D-000",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
@@ -926,6 +968,34 @@
       "type": "ORIGINATES"
     },
     {
+      "id": "E-ORIGIN::D-017::GOEI-BSL-TAX-0001",
+      "source": "D-017",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "GOEI-BSL-TAX-0001",
+      "type": "ORIGINATES"
+    },
+    {
+      "id": "E-ORIGIN::D-017::GOEI-DIR-RES-0002",
+      "source": "D-017",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "GOEI-DIR-RES-0002",
+      "type": "ORIGINATES"
+    },
+    {
+      "id": "E-ORIGIN::D-017::GOEI-HO-0002",
+      "source": "D-017",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "GOEI-HO-0002",
+      "type": "ORIGINATES"
+    },
+    {
+      "id": "E-ORIGIN::D-017::GOEI-SCI-D017-0001",
+      "source": "D-017",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "GOEI-SCI-D017-0001",
+      "type": "ORIGINATES"
+    },
+    {
       "id": "E-TRACE::GOEI-ARCH-002",
       "source": "GOEI-ARCH-002",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
@@ -968,6 +1038,13 @@
       "type": "TRACED_IN"
     },
     {
+      "id": "E-TRACE::GOEI-AUDIT-0005",
+      "source": "GOEI-AUDIT-0005",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
       "id": "E-TRACE::GOEI-BIB-0001",
       "source": "GOEI-BIB-0001",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
@@ -998,6 +1075,13 @@
     {
       "id": "E-TRACE::GOEI-BSL-PROC-0001",
       "source": "GOEI-BSL-PROC-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-BSL-TAX-0001",
+      "source": "GOEI-BSL-TAX-0001",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
       "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
       "type": "TRACED_IN"
@@ -1054,6 +1138,13 @@
     {
       "id": "E-TRACE::GOEI-DIR-RES-0001",
       "source": "GOEI-DIR-RES-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-DIR-RES-0002",
+      "source": "GOEI-DIR-RES-0002",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
       "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
       "type": "TRACED_IN"
@@ -1164,6 +1255,13 @@
       "type": "TRACED_IN"
     },
     {
+      "id": "E-TRACE::GOEI-HO-0002",
+      "source": "GOEI-HO-0002",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
       "id": "E-TRACE::GOEI-KG-0001",
       "source": "GOEI-KG-0001",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
@@ -1236,6 +1334,13 @@
     {
       "id": "E-TRACE::GOEI-REV-ONT-0001",
       "source": "GOEI-REV-ONT-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-SCI-D017-0001",
+      "source": "GOEI-SCI-D017-0001",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
       "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
       "type": "TRACED_IN"
@@ -1388,6 +1493,13 @@
       "type": "INCORPORATED_IN"
     },
     {
+      "id": "E-VERSION::GOEI-AUDIT-0005::Gobernanza técnica v0.1",
+      "source": "GOEI-AUDIT-0005",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
       "id": "E-VERSION::GOEI-BIB-SCHEMA-0001::Gobernanza técnica v0.1",
       "source": "GOEI-BIB-SCHEMA-0001",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
@@ -1409,6 +1521,13 @@
       "type": "INCORPORATED_IN"
     },
     {
+      "id": "E-VERSION::GOEI-BSL-TAX-0001::Taxonomy Baseline v0.1.0",
+      "source": "GOEI-BSL-TAX-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Taxonomy Baseline v0.1.0",
+      "type": "INCORPORATED_IN"
+    },
+    {
       "id": "E-VERSION::GOEI-CI-0001::Gobernanza técnica v0.1",
       "source": "GOEI-CI-0001",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
@@ -1420,6 +1539,13 @@
       "source": "GOEI-DIR-RES-0001",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "VER::Process Baseline v0.1.0",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-DIR-RES-0002::Taxonomy Baseline v0.1.0",
+      "source": "GOEI-DIR-RES-0002",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Taxonomy Baseline v0.1.0",
       "type": "INCORPORATED_IN"
     },
     {
@@ -1507,6 +1633,13 @@
       "type": "INCORPORATED_IN"
     },
     {
+      "id": "E-VERSION::GOEI-HO-0002::Taxonomy Baseline v0.1.0",
+      "source": "GOEI-HO-0002",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Taxonomy Baseline v0.1.0",
+      "type": "INCORPORATED_IN"
+    },
+    {
       "id": "E-VERSION::GOEI-KG-REGISTRY-0001::Gobernanza técnica v0.1",
       "source": "GOEI-KG-REGISTRY-0001",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
@@ -1542,10 +1675,17 @@
       "type": "INCORPORATED_IN"
     },
     {
-      "id": "E-VERSION::GOEI-SCI-QUEUE-0002::Process Baseline v0.1.0",
+      "id": "E-VERSION::GOEI-SCI-D017-0001::Taxonomy Baseline v0.1.0",
+      "source": "GOEI-SCI-D017-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Taxonomy Baseline v0.1.0",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-SCI-QUEUE-0002::Taxonomy Baseline v0.1.0",
       "source": "GOEI-SCI-QUEUE-0002",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
-      "target": "VER::Process Baseline v0.1.0",
+      "target": "VER::Taxonomy Baseline v0.1.0",
       "type": "INCORPORATED_IN"
     },
     {
@@ -1807,6 +1947,14 @@
       "type": "Decision"
     },
     {
+      "id": "D-017",
+      "properties": {
+        "registryPath": "00_Gobernanza/Registro_de_decisiones.md",
+        "title": "Taxonomía universal facetada y cierre limitado de B2"
+      },
+      "type": "Decision"
+    },
+    {
       "id": "DOC::.github/workflows/validate.yml",
       "properties": {
         "path": ".github/workflows/validate.yml"
@@ -1905,6 +2053,13 @@
       "type": "Document"
     },
     {
+      "id": "DOC::00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0005_D017_Cierre_B2.md",
+      "properties": {
+        "path": "00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0005_D017_Cierre_B2.md"
+      },
+      "type": "Document"
+    },
+    {
       "id": "DOC::00_Gobernanza/coordinacion/auditorias/GTRM/GOEI_AUDIT_0004_DS_GTRM_01_08.md",
       "properties": {
         "path": "00_Gobernanza/coordinacion/auditorias/GTRM/GOEI_AUDIT_0004_DS_GTRM_01_08.md"
@@ -1961,6 +2116,13 @@
       "type": "Document"
     },
     {
+      "id": "DOC::00_Gobernanza/coordinacion/entradas_comite/GOEI_SCI_HANDOFF_D017_Cierre_B2.md",
+      "properties": {
+        "path": "00_Gobernanza/coordinacion/entradas_comite/GOEI_SCI_HANDOFF_D017_Cierre_B2.md"
+      },
+      "type": "Document"
+    },
+    {
       "id": "DOC::00_Gobernanza/coordinacion/expedientes/GTRM/GOEI_CC_DEC_GTRM_SLOT_PLANTILLA.md",
       "properties": {
         "path": "00_Gobernanza/coordinacion/expedientes/GTRM/GOEI_CC_DEC_GTRM_SLOT_PLANTILLA.md"
@@ -1985,6 +2147,13 @@
       "id": "DOC::00_Gobernanza/coordinacion/handoffs/GOEI_HANDOFF_0001_B1_Procesos_Universales.md",
       "properties": {
         "path": "00_Gobernanza/coordinacion/handoffs/GOEI_HANDOFF_0001_B1_Procesos_Universales.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::00_Gobernanza/coordinacion/handoffs/GOEI_HANDOFF_0002_B2_Taxonomia_Universal.md",
+      "properties": {
+        "path": "00_Gobernanza/coordinacion/handoffs/GOEI_HANDOFF_0002_B2_Taxonomia_Universal.md"
       },
       "type": "Document"
     },
@@ -2020,6 +2189,13 @@
       "id": "DOC::00_Gobernanza/coordinacion/resoluciones/GOEI_DIR_RES_0001_D008_B1.md",
       "properties": {
         "path": "00_Gobernanza/coordinacion/resoluciones/GOEI_DIR_RES_0001_D008_B1.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::00_Gobernanza/coordinacion/resoluciones/GOEI_DIR_RES_0002_D017_B2.md",
+      "properties": {
+        "path": "00_Gobernanza/coordinacion/resoluciones/GOEI_DIR_RES_0002_D017_B2.md"
       },
       "type": "Document"
     },
@@ -2188,6 +2364,13 @@
       "id": "DOC::15_Mantenimiento/lineas_base/GOEI_PROC_v0.1.0/MANIFEST.md",
       "properties": {
         "path": "15_Mantenimiento/lineas_base/GOEI_PROC_v0.1.0/MANIFEST.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::15_Mantenimiento/lineas_base/GOEI_TAX_v0.1.0/MANIFEST.md",
+      "properties": {
+        "path": "15_Mantenimiento/lineas_base/GOEI_TAX_v0.1.0/MANIFEST.md"
       },
       "type": "Document"
     },
@@ -2363,6 +2546,24 @@
       "type": "Component"
     },
     {
+      "id": "GOEI-AUDIT-0005",
+      "properties": {
+        "approver": "No aplica; control técnico",
+        "canonicalPath": "00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0005_D017_Cierre_B2.md",
+        "componentClass": "AUDIT",
+        "decisionOrigin": "GOEI-DIR-0004; contrato GOEI-SCI-QUEUE-0002",
+        "decisionStatus": "Verifica suficiencia formal; no juzga ciencia",
+        "dependents": "resolución y promoción selectiva",
+        "documentVersion": "1.0.0",
+        "evidence": "expediente D-017 y artefactos B2",
+        "goeiVersion": "Gobernanza técnica v0.1",
+        "name": "Auditoría técnica D-017 / B2",
+        "status": "Aceptable para decisión con promoción limitada",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
       "id": "GOEI-BIB-0001",
       "properties": {
         "approver": "Comité Científico para estados científicos",
@@ -2447,6 +2648,24 @@
         "evidence": "expediente D-008, revisión B1 y fuentes cotejadas",
         "goeiVersion": "Process Baseline v0.1.0",
         "name": "Process Baseline",
+        "status": "Congelada con reservas",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-BSL-TAX-0001",
+      "properties": {
+        "approver": "Comité Científico D-017 + GOEI-DIR-RES-0002",
+        "canonicalPath": "15_Mantenimiento/lineas_base/GOEI_TAX_v0.1.0/MANIFEST.md",
+        "componentClass": "BSL",
+        "decisionOrigin": "D-017; GOEI-DIR-RES-0002",
+        "decisionStatus": "Estructura facetada, unidad ordinaria y FX-1…FX-3; sin valores",
+        "dependents": "B3/B4, GTRM, manuales, software, tesis y publicaciones",
+        "documentVersion": "0.1.0",
+        "evidence": "expediente D-017, auditoría y resolución",
+        "goeiVersion": "Taxonomy Baseline v0.1.0",
+        "name": "Taxonomy Baseline",
         "status": "Congelada con reservas",
         "technicalOwner": "Oficina Técnica"
       },
@@ -2591,6 +2810,24 @@
         "evidence": "expediente científico D-008, GOEI-AUDIT-0002 y GOEI-AUDIT-0003",
         "goeiVersion": "Process Baseline v0.1.0",
         "name": "Resolución D-008 / cierre B1",
+        "status": "Aprobada y vigente",
+        "technicalOwner": "Dirección General delegada / Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-DIR-RES-0002",
+      "properties": {
+        "approver": "GOEI-DIR-0004",
+        "canonicalPath": "00_Gobernanza/coordinacion/resoluciones/GOEI_DIR_RES_0002_D017_B2.md",
+        "componentClass": "DIR-RES",
+        "decisionOrigin": "GOEI-DIR-0004; D-017",
+        "decisionStatus": "Ratifica estructura/facetas; excluye valores y multiunidad",
+        "dependents": "ISS-014/054, baseline, B3, BOK, KG y roadmap",
+        "documentVersion": "1.0.0",
+        "evidence": "GOEI-AUDIT-0005 y expediente científico",
+        "goeiVersion": "Taxonomy Baseline v0.1.0",
+        "name": "Resolución D-017 / cierre B2",
         "status": "Aprobada y vigente",
         "technicalOwner": "Dirección General delegada / Oficina Técnica"
       },
@@ -2867,6 +3104,24 @@
       "type": "Component"
     },
     {
+      "id": "GOEI-HO-0002",
+      "properties": {
+        "approver": "Comité Científico D-017 + GOEI-DIR-RES-0002",
+        "canonicalPath": "00_Gobernanza/coordinacion/handoffs/GOEI_HANDOFF_0002_B2_Taxonomia_Universal.md",
+        "componentClass": "HO",
+        "decisionOrigin": "D-017; GOEI-DIR-RES-0002",
+        "decisionStatus": "Abre B3 sin crear KPI ni completar valores",
+        "dependents": "B3, roadmap, BOK y estado",
+        "documentVersion": "1.0.0",
+        "evidence": "baseline taxonómica e Issues 008/054",
+        "goeiVersion": "Taxonomy Baseline v0.1.0",
+        "name": "Handoff B2 Taxonomía Universal",
+        "status": "Integrado; B3 habilitada",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
       "id": "GOEI-ISS-001",
       "properties": {
         "fields": [
@@ -3052,11 +3307,11 @@
       "id": "GOEI-ISS-014",
       "properties": {
         "fields": [
-          "¿El tipo de sistema de producción (convencional/cook-chill/commissary/assembly-serve) es eje de la taxonomía?",
-          "D-007",
+          "¿El tipo de sistema de producción es eje de la taxonomía?",
+          "D-007 / D-017",
           "taxonomía",
-          "comité científico",
-          "Abierta"
+          "Comité Científico + Dirección",
+          "**Cerrada 2026-08-04 por D-017/GOEI-DIR-RES-0002: FX-2 es faceta indispensable; sus valores concretos quedan bajo GOEI-ISS-054**"
         ],
         "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
       },
@@ -3587,6 +3842,20 @@
       "type": "Issue"
     },
     {
+      "id": "GOEI-ISS-054",
+      "properties": {
+        "fields": [
+          "Definir y validar el catálogo controlado de valores de FX-1, FX-2 y FX-3, sus identificadores, definiciones, cardinalidades, reglas para híbridos, casos canónicos y vigencia.",
+          "D-017 / GOEI-DIR-RES-0002",
+          "Taxonomy Baseline y clasificadores manual/software",
+          "Comité Científico + validación Delphi/empírica + ratificación directiva",
+          "Abierta; bloquea valores y clasificaciones concretas, no B3 general"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
       "id": "GOEI-KG-0001",
       "properties": {
         "approver": "PENDIENTE",
@@ -3785,19 +4054,37 @@
       "type": "Component"
     },
     {
+      "id": "GOEI-SCI-D017-0001",
+      "properties": {
+        "approver": "Dirección General bajo GOEI-DIR-0004",
+        "canonicalPath": "00_Gobernanza/coordinacion/entradas_comite/GOEI_SCI_HANDOFF_D017_Cierre_B2.md",
+        "componentClass": "SCI-DEC",
+        "decisionOrigin": "D-017; GOEI-DIR-RES-0001",
+        "decisionStatus": "Responde B2; no modifica D-006 ni procesos",
+        "dependents": "resolución, baseline, B3, BOK y KG",
+        "documentVersion": "0.1.0",
+        "evidence": "revisión B2, taxonomía candidata y fuentes declaradas",
+        "goeiVersion": "Taxonomy Baseline v0.1.0",
+        "name": "Expediente científico D-017 / B2",
+        "status": "Ratificado con alcance limitado",
+        "technicalOwner": "Comité Científico"
+      },
+      "type": "Component"
+    },
+    {
       "id": "GOEI-SCI-QUEUE-0002",
       "properties": {
         "approver": "GOEI-DIR-RES-0001 para activación; Comité Científico para contenido",
         "canonicalPath": "00_Gobernanza/coordinacion/cola_cientifica/GOEI_SCI_QUEUE_0002_B2_Taxonomia_Universal.md",
         "componentClass": "SCI-QUEUE",
         "decisionOrigin": "GOEI-PIPE-B2-B10-0001",
-        "decisionStatus": "Contrato vacío; no crea taxonomía",
+        "decisionStatus": "Contrato de investigación; no crea taxonomía",
         "dependents": "expediente, handoff y decisión B2",
         "documentVersion": "0.1.0",
-        "evidence": "B1 aprobada e integrada como condición futura",
-        "goeiVersion": "Process Baseline v0.1.0",
+        "evidence": "B1 aprobada e integrada",
+        "goeiVersion": "Taxonomy Baseline v0.1.0",
         "name": "Paquete científico B2 Taxonomía Universal",
-        "status": "Habilitado; investigación científica B2 pendiente",
+        "status": "Cerrado e integrado por GOEI-DIR-RES-0002",
         "technicalOwner": "Oficina Técnica"
       },
       "type": "Component"
@@ -4122,6 +4409,13 @@
       "id": "VER::Process Baseline v0.1.0",
       "properties": {
         "label": "Process Baseline v0.1.0"
+      },
+      "type": "Version"
+    },
+    {
+      "id": "VER::Taxonomy Baseline v0.1.0",
+      "properties": {
+        "label": "Taxonomy Baseline v0.1.0"
       },
       "type": "Version"
     }

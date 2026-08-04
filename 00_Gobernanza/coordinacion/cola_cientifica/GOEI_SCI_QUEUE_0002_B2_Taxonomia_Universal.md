@@ -5,7 +5,7 @@
 | Identificador | GOEI-SCI-QUEUE-0002 |
 | Fase | B2 — Taxonomía Universal |
 | Tipo | Contrato técnico vacío de investigación y handoff |
-| Estado | **Habilitado para investigación científica** |
+| Estado | **CERRADO E INTEGRADO mediante GOEI-DIR-RES-0002** |
 | Responsable del contenido científico | Comité Científico GOEI |
 | Responsable de control técnico | Oficina Técnica GOEI |
 | Autoridad de aprobación | Dirección General, conforme a la gobernanza vigente |
@@ -49,11 +49,11 @@ Al activarse, la Oficina Técnica deberá completar esta tabla únicamente con r
 
 No se aceptarán borradores, manuscritos, inferencias ni recomendaciones no aprobadas como sustitutos de una entrada requerida.
 
-## 4. Pregunta científica no respondida
+## 4. Pregunta científica del paquete — resuelta
 
 > ¿Qué sistema de clasificación permite delimitar y comparar las entidades comprendidas por el GOEI, con qué ejes, criterios de pertenencia, exclusiones y tratamiento de casos límite?
 
-Esta pregunta pertenece exclusivamente al Comité Científico. Permanece abierta y este paquete no anticipa su respuesta.
+Esta pregunta perteneció exclusivamente al Comité Científico. Fue respondida por D-017 y ratificada con alcance limitado por `GOEI-DIR-RES-0002`; el contrato técnico no anticipó ni originó la respuesta.
 
 ## 5. Alcance de la investigación a definir por el Comité
 
@@ -191,5 +191,5 @@ Solo entonces podrá habilitarse B3. La existencia de este paquete, del expedien
 | Decisión habilitante | `GOEI-DIR-RES-0001` bajo `GOEI-DIR-0004` |
 | Responsable del cambio de estado | Oficina Técnica GOEI por delegación directiva |
 | Entradas verificadas por | Oficina Técnica GOEI; controles de repositorio y roadmap conformes |
-| Estado resultante | Bloqueado |
-| Observaciones | Paquete preparado sin contenido científico |
+| Estado resultante | Cerrado; B2 integrada en alcance nuclear |
+| Observaciones | D-017 ratificada con promoción limitada; `GOEI-BSL-TAX-0001 v0.1.0`; ISS-008/054 mantienen bloqueos selectivos |

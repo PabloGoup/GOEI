@@ -4,6 +4,9 @@ Todos los cambios relevantes del GOEI se documentarán en este archivo siguiendo
 
 ## [Unreleased]
 
+- Ratificada D-017 con alcance limitado mediante `GOEI-DIR-RES-0002`; B2 queda cerrada en su pregunta nuclear y se congela `GOEI-BSL-TAX-0001 v0.1.0` sin catálogo de valores, facetas opcionales, crosswalks ni reglas multiunidad.
+- Emitida `GOEI-AUDIT-0005`, cerrado `GOEI-ISS-014`, abierto `GOEI-ISS-054` y habilitada B3 sin creación de KPI.
+
 - Ratificación directiva D-008 y cierre limitado de B1 mediante `GOEI-DIR-RES-0001`.
 - Creación de `GOEI-BSL-PROC-0001 v0.1.0`, con residuos/merma excluido de clasificación normativa mientras `GOEI-ISS-043` permanezca abierto.
 - Activación del paquete científico B2; PRISMA completa y Delphi se conservan como validaciones posteriores.
