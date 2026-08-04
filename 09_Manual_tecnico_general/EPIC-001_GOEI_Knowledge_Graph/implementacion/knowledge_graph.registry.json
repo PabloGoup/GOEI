@@ -9,6 +9,13 @@
       "type": "CONTAINS"
     },
     {
+      "id": "E-CONTAINS::GOEI-ARQ-GTRM-0001",
+      "source": "DOC::06_Normalizacion/arquitectura/GOEI_ARQ_B5_B6_GTRM_candidate.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-ARQ-GTRM-0001",
+      "type": "CONTAINS"
+    },
+    {
       "id": "E-CONTAINS::GOEI-AUDIT-0001",
       "source": "DOC::00_Gobernanza/coordinacion/reportes/GOEI_AUDIT_0001_Manuscritos_prematuros.md",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
@@ -27,6 +34,13 @@
       "source": "DOC::00_Gobernanza/coordinacion/reportes/GOEI_AUDIT_0003_D008_B1_Readiness.md",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "GOEI-AUDIT-0003",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-AUDIT-0004",
+      "source": "DOC::00_Gobernanza/coordinacion/auditorias/GTRM/GOEI_AUDIT_0004_DS_GTRM_01_08.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-AUDIT-0004",
       "type": "CONTAINS"
     },
     {
@@ -55,6 +69,13 @@
       "source": "DOC::15_Mantenimiento/lineas_base/GOEI_ONT_v0.1/MANIFEST.md",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "GOEI-BSL-ONT-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-BSL-PROC-0001",
+      "source": "DOC::15_Mantenimiento/lineas_base/GOEI_PROC_v0.1.0/MANIFEST.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-BSL-PROC-0001",
       "type": "CONTAINS"
     },
     {
@@ -107,10 +128,24 @@
       "type": "CONTAINS"
     },
     {
+      "id": "E-CONTAINS::GOEI-DIR-RES-0001",
+      "source": "DOC::00_Gobernanza/coordinacion/resoluciones/GOEI_DIR_RES_0001_D008_B1.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-DIR-RES-0001",
+      "type": "CONTAINS"
+    },
+    {
       "id": "E-CONTAINS::GOEI-DIR-RES-GTRM-0001",
-      "source": "DOC::00_Gobernanza/coordinacion/expedientes/GTRM/GOEI_DIR_RES_ISS_044_GTRM_BORRADOR.md",
+      "source": "DOC::00_Gobernanza/coordinacion/expedientes/GTRM/GOEI_DIR_RES_ISS_044_GTRM.md",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "GOEI-DIR-RES-GTRM-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-DS-GTRM-0001",
+      "source": "DOC::00_Gobernanza/coordinacion/decisiones_cientificas/GTRM/GOEI_CC_DICTAMEN_GTRM_INTEGRACION.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-DS-GTRM-0001",
       "type": "CONTAINS"
     },
     {
@@ -139,6 +174,13 @@
       "source": "DOC::00_Gobernanza/coordinacion/README.md",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "GOEI-GOV-COORD-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-GOV-EXEC-0001",
+      "source": "DOC::00_Gobernanza/Registro_de_directivas.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-GOV-EXEC-0001",
       "type": "CONTAINS"
     },
     {
@@ -216,6 +258,13 @@
       "source": "DOC::09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/01_GOEI_MetaModel.md",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "GOEI-MM-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-ONT-CAND-0001",
+      "source": "DOC::09_Manual_tecnico_general/candidatos/GOEI_ONT_v0.2.0_candidate_GTRM.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-ONT-CAND-0001",
       "type": "CONTAINS"
     },
     {
@@ -688,6 +737,69 @@
       "type": "REGISTERED_IN"
     },
     {
+      "id": "E-ISSUE::GOEI-ISS-045",
+      "source": "GOEI-ISS-045",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-046",
+      "source": "GOEI-ISS-046",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-047",
+      "source": "GOEI-ISS-047",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-048",
+      "source": "GOEI-ISS-048",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-049",
+      "source": "GOEI-ISS-049",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-050",
+      "source": "GOEI-ISS-050",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-051",
+      "source": "GOEI-ISS-051",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-052",
+      "source": "GOEI-ISS-052",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-053",
+      "source": "GOEI-ISS-053",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
       "id": "E-ORIGIN::D-000::GOEI-EXP-GTRM-0001",
       "source": "D-000",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
@@ -744,8 +856,85 @@
       "type": "ORIGINATES"
     },
     {
+      "id": "E-ORIGIN::D-008::GOEI-BSL-PROC-0001",
+      "source": "D-008",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "GOEI-BSL-PROC-0001",
+      "type": "ORIGINATES"
+    },
+    {
+      "id": "E-ORIGIN::D-008::GOEI-DIR-RES-0001",
+      "source": "D-008",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "GOEI-DIR-RES-0001",
+      "type": "ORIGINATES"
+    },
+    {
+      "id": "E-ORIGIN::D-009::GOEI-ARQ-GTRM-0001",
+      "source": "D-009",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "GOEI-ARQ-GTRM-0001",
+      "type": "ORIGINATES"
+    },
+    {
+      "id": "E-ORIGIN::D-009::GOEI-AUDIT-0004",
+      "source": "D-009",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "GOEI-AUDIT-0004",
+      "type": "ORIGINATES"
+    },
+    {
+      "id": "E-ORIGIN::D-009::GOEI-DS-GTRM-0001",
+      "source": "D-009",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "GOEI-DS-GTRM-0001",
+      "type": "ORIGINATES"
+    },
+    {
+      "id": "E-ORIGIN::D-009::GOEI-ONT-CAND-0001",
+      "source": "D-009",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "GOEI-ONT-CAND-0001",
+      "type": "ORIGINATES"
+    },
+    {
+      "id": "E-ORIGIN::D-016::GOEI-ARQ-GTRM-0001",
+      "source": "D-016",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "GOEI-ARQ-GTRM-0001",
+      "type": "ORIGINATES"
+    },
+    {
+      "id": "E-ORIGIN::D-016::GOEI-AUDIT-0004",
+      "source": "D-016",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "GOEI-AUDIT-0004",
+      "type": "ORIGINATES"
+    },
+    {
+      "id": "E-ORIGIN::D-016::GOEI-DS-GTRM-0001",
+      "source": "D-016",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "GOEI-DS-GTRM-0001",
+      "type": "ORIGINATES"
+    },
+    {
+      "id": "E-ORIGIN::D-016::GOEI-ONT-CAND-0001",
+      "source": "D-016",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "GOEI-ONT-CAND-0001",
+      "type": "ORIGINATES"
+    },
+    {
       "id": "E-TRACE::GOEI-ARCH-002",
       "source": "GOEI-ARCH-002",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-ARQ-GTRM-0001",
+      "source": "GOEI-ARQ-GTRM-0001",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
       "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
       "type": "TRACED_IN"
@@ -767,6 +956,13 @@
     {
       "id": "E-TRACE::GOEI-AUDIT-0003",
       "source": "GOEI-AUDIT-0003",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-AUDIT-0004",
+      "source": "GOEI-AUDIT-0004",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
       "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
       "type": "TRACED_IN"
@@ -795,6 +991,13 @@
     {
       "id": "E-TRACE::GOEI-BSL-ONT-0001",
       "source": "GOEI-BSL-ONT-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-BSL-PROC-0001",
+      "source": "GOEI-BSL-PROC-0001",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
       "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
       "type": "TRACED_IN"
@@ -849,8 +1052,22 @@
       "type": "TRACED_IN"
     },
     {
+      "id": "E-TRACE::GOEI-DIR-RES-0001",
+      "source": "GOEI-DIR-RES-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
       "id": "E-TRACE::GOEI-DIR-RES-GTRM-0001",
       "source": "GOEI-DIR-RES-GTRM-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-DS-GTRM-0001",
+      "source": "GOEI-DS-GTRM-0001",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
       "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
       "type": "TRACED_IN"
@@ -879,6 +1096,13 @@
     {
       "id": "E-TRACE::GOEI-GOV-COORD-0001",
       "source": "GOEI-GOV-COORD-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-GOV-EXEC-0001",
+      "source": "GOEI-GOV-EXEC-0001",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
       "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
       "type": "TRACED_IN"
@@ -956,6 +1180,13 @@
     {
       "id": "E-TRACE::GOEI-MM-0001",
       "source": "GOEI-MM-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-ONT-CAND-0001",
+      "source": "GOEI-ONT-CAND-0001",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
       "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
       "type": "TRACED_IN"
@@ -1150,6 +1381,13 @@
       "type": "INCORPORATED_IN"
     },
     {
+      "id": "E-VERSION::GOEI-AUDIT-0004::Gobernanza técnica v0.1",
+      "source": "GOEI-AUDIT-0004",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
       "id": "E-VERSION::GOEI-BIB-SCHEMA-0001::Gobernanza técnica v0.1",
       "source": "GOEI-BIB-SCHEMA-0001",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
@@ -1164,8 +1402,43 @@
       "type": "INCORPORATED_IN"
     },
     {
+      "id": "E-VERSION::GOEI-BSL-PROC-0001::Process Baseline v0.1.0",
+      "source": "GOEI-BSL-PROC-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Process Baseline v0.1.0",
+      "type": "INCORPORATED_IN"
+    },
+    {
       "id": "E-VERSION::GOEI-CI-0001::Gobernanza técnica v0.1",
       "source": "GOEI-CI-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-DIR-RES-0001::Process Baseline v0.1.0",
+      "source": "GOEI-DIR-RES-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Process Baseline v0.1.0",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-DIR-RES-GTRM-0001::Gobernanza técnica v0.1",
+      "source": "GOEI-DIR-RES-GTRM-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-DS-GTRM-0001::Marco científico GTRM v0.1",
+      "source": "GOEI-DS-GTRM-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Marco científico GTRM v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-EXP-GTRM-0001::Gobernanza técnica v0.1",
+      "source": "GOEI-EXP-GTRM-0001",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "VER::Gobernanza técnica v0.1",
       "type": "INCORPORATED_IN"
@@ -1187,6 +1460,13 @@
     {
       "id": "E-VERSION::GOEI-GOV-COORD-0001::Gobernanza técnica v0.1",
       "source": "GOEI-GOV-COORD-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-GOV-EXEC-0001::Gobernanza técnica v0.1",
+      "source": "GOEI-GOV-EXEC-0001",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "VER::Gobernanza técnica v0.1",
       "type": "INCORPORATED_IN"
@@ -1217,6 +1497,13 @@
       "source": "GOEI-GTRM-AUD-CTRL-0001",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-HO-0001::Process Baseline v0.1.0",
+      "source": "GOEI-HO-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Process Baseline v0.1.0",
       "type": "INCORPORATED_IN"
     },
     {
@@ -1252,6 +1539,13 @@
       "source": "GOEI-REL-SCHEMA-0001",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-SCI-QUEUE-0002::Process Baseline v0.1.0",
+      "source": "GOEI-SCI-QUEUE-0002",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Process Baseline v0.1.0",
       "type": "INCORPORATED_IN"
     },
     {
@@ -1441,6 +1735,78 @@
       "type": "Decision"
     },
     {
+      "id": "D-008",
+      "properties": {
+        "registryPath": "00_Gobernanza/Registro_de_decisiones.md",
+        "title": "Cierre limitado de B1 y núcleo universal de procesos"
+      },
+      "type": "Decision"
+    },
+    {
+      "id": "D-009",
+      "properties": {
+        "registryPath": "00_Gobernanza/Registro_de_decisiones.md",
+        "title": "Naturaleza y entrada de la GTRM"
+      },
+      "type": "Decision"
+    },
+    {
+      "id": "D-010",
+      "properties": {
+        "registryPath": "00_Gobernanza/Registro_de_decisiones.md",
+        "title": "Resultado GTRM y normalización única"
+      },
+      "type": "Decision"
+    },
+    {
+      "id": "D-011",
+      "properties": {
+        "registryPath": "00_Gobernanza/Registro_de_decisiones.md",
+        "title": "Distinción condición de referencia y benchmark"
+      },
+      "type": "Decision"
+    },
+    {
+      "id": "D-012",
+      "properties": {
+        "registryPath": "00_Gobernanza/Registro_de_decisiones.md",
+        "title": "Dominios, aplicabilidad y precedencia de referencias"
+      },
+      "type": "Decision"
+    },
+    {
+      "id": "D-013",
+      "properties": {
+        "registryPath": "00_Gobernanza/Registro_de_decisiones.md",
+        "title": "Representación de incertidumbre GTRM"
+      },
+      "type": "Decision"
+    },
+    {
+      "id": "D-014",
+      "properties": {
+        "registryPath": "00_Gobernanza/Registro_de_decisiones.md",
+        "title": "Autoridad y ciclo de vida GTRM"
+      },
+      "type": "Decision"
+    },
+    {
+      "id": "D-015",
+      "properties": {
+        "registryPath": "00_Gobernanza/Registro_de_decisiones.md",
+        "title": "Ausencia, conflicto y puntuabilidad"
+      },
+      "type": "Decision"
+    },
+    {
+      "id": "D-016",
+      "properties": {
+        "registryPath": "00_Gobernanza/Registro_de_decisiones.md",
+        "title": "Equivalencia papel–software y reproducibilidad"
+      },
+      "type": "Decision"
+    },
+    {
       "id": "DOC::.github/workflows/validate.yml",
       "properties": {
         "path": ".github/workflows/validate.yml"
@@ -1539,6 +1905,13 @@
       "type": "Document"
     },
     {
+      "id": "DOC::00_Gobernanza/coordinacion/auditorias/GTRM/GOEI_AUDIT_0004_DS_GTRM_01_08.md",
+      "properties": {
+        "path": "00_Gobernanza/coordinacion/auditorias/GTRM/GOEI_AUDIT_0004_DS_GTRM_01_08.md"
+      },
+      "type": "Document"
+    },
+    {
       "id": "DOC::00_Gobernanza/coordinacion/auditorias/GTRM/GOEI_GTRM_AUDITORIA_ARQUITECTONICA.md",
       "properties": {
         "path": "00_Gobernanza/coordinacion/auditorias/GTRM/GOEI_GTRM_AUDITORIA_ARQUITECTONICA.md"
@@ -1581,6 +1954,13 @@
       "type": "Document"
     },
     {
+      "id": "DOC::00_Gobernanza/coordinacion/decisiones_cientificas/GTRM/GOEI_CC_DICTAMEN_GTRM_INTEGRACION.md",
+      "properties": {
+        "path": "00_Gobernanza/coordinacion/decisiones_cientificas/GTRM/GOEI_CC_DICTAMEN_GTRM_INTEGRACION.md"
+      },
+      "type": "Document"
+    },
+    {
       "id": "DOC::00_Gobernanza/coordinacion/expedientes/GTRM/GOEI_CC_DEC_GTRM_SLOT_PLANTILLA.md",
       "properties": {
         "path": "00_Gobernanza/coordinacion/expedientes/GTRM/GOEI_CC_DEC_GTRM_SLOT_PLANTILLA.md"
@@ -1588,9 +1968,9 @@
       "type": "Document"
     },
     {
-      "id": "DOC::00_Gobernanza/coordinacion/expedientes/GTRM/GOEI_DIR_RES_ISS_044_GTRM_BORRADOR.md",
+      "id": "DOC::00_Gobernanza/coordinacion/expedientes/GTRM/GOEI_DIR_RES_ISS_044_GTRM.md",
       "properties": {
-        "path": "00_Gobernanza/coordinacion/expedientes/GTRM/GOEI_DIR_RES_ISS_044_GTRM_BORRADOR.md"
+        "path": "00_Gobernanza/coordinacion/expedientes/GTRM/GOEI_DIR_RES_ISS_044_GTRM.md"
       },
       "type": "Document"
     },
@@ -1637,6 +2017,13 @@
       "type": "Document"
     },
     {
+      "id": "DOC::00_Gobernanza/coordinacion/resoluciones/GOEI_DIR_RES_0001_D008_B1.md",
+      "properties": {
+        "path": "00_Gobernanza/coordinacion/resoluciones/GOEI_DIR_RES_0001_D008_B1.md"
+      },
+      "type": "Document"
+    },
+    {
       "id": "DOC::02_Bibliografia/ESQUEMA_REGISTRO_BIBLIOGRAFICO.md",
       "properties": {
         "path": "02_Bibliografia/ESQUEMA_REGISTRO_BIBLIOGRAFICO.md"
@@ -1661,6 +2048,13 @@
       "id": "DOC::04_Procesos_gastronomicos/EPIC-002_MetaModelo_Universal/08_Registro_de_issues.md",
       "properties": {
         "path": "04_Procesos_gastronomicos/EPIC-002_MetaModelo_Universal/08_Registro_de_issues.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::06_Normalizacion/arquitectura/GOEI_ARQ_B5_B6_GTRM_candidate.md",
+      "properties": {
+        "path": "06_Normalizacion/arquitectura/GOEI_ARQ_B5_B6_GTRM_candidate.md"
       },
       "type": "Document"
     },
@@ -1728,6 +2122,13 @@
       "type": "Document"
     },
     {
+      "id": "DOC::09_Manual_tecnico_general/candidatos/GOEI_ONT_v0.2.0_candidate_GTRM.md",
+      "properties": {
+        "path": "09_Manual_tecnico_general/candidatos/GOEI_ONT_v0.2.0_candidate_GTRM.md"
+      },
+      "type": "Document"
+    },
+    {
       "id": "DOC::12_Tesis/PLAN_MAESTRO_DIRECTORAL_GOEI.md",
       "properties": {
         "path": "12_Tesis/PLAN_MAESTRO_DIRECTORAL_GOEI.md"
@@ -1780,6 +2181,13 @@
       "id": "DOC::15_Mantenimiento/lineas_base/GOEI_ONT_v0.1/MANIFEST.md",
       "properties": {
         "path": "15_Mantenimiento/lineas_base/GOEI_ONT_v0.1/MANIFEST.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::15_Mantenimiento/lineas_base/GOEI_PROC_v0.1.0/MANIFEST.md",
+      "properties": {
+        "path": "15_Mantenimiento/lineas_base/GOEI_PROC_v0.1.0/MANIFEST.md"
       },
       "type": "Document"
     },
@@ -1865,6 +2273,24 @@
       "type": "Component"
     },
     {
+      "id": "GOEI-ARQ-GTRM-0001",
+      "properties": {
+        "approver": "Comité Científico para contenido B5/B6",
+        "canonicalPath": "06_Normalizacion/arquitectura/GOEI_ARQ_B5_B6_GTRM_candidate.md",
+        "componentClass": "ARCH",
+        "decisionOrigin": "D-009–D-016",
+        "decisionStatus": "Contratos de pipeline; sin fórmulas, parámetros o tolerancias",
+        "dependents": "B5, B6, manuales, software y validación",
+        "documentVersion": "0.1.0-candidate",
+        "evidence": "paquete científico y auditoría técnica",
+        "goeiVersion": "No asignada",
+        "name": "Arquitectura candidata B5–B6 GTRM",
+        "status": "Candidata técnica; contratos solamente",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
       "id": "GOEI-AUDIT-0001",
       "properties": {
         "approver": "No aplica",
@@ -1914,6 +2340,24 @@
         "goeiVersion": "Gobernanza técnica v0.1",
         "name": "Auditoría de preparación D-008/B1",
         "status": "Emitida; expediente listo y rama normativa bloqueada",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-AUDIT-0004",
+      "properties": {
+        "approver": "No aplica; control técnico",
+        "canonicalPath": "00_Gobernanza/coordinacion/auditorias/GTRM/GOEI_AUDIT_0004_DS_GTRM_01_08.md",
+        "componentClass": "AUDIT",
+        "decisionOrigin": "GOEI-DIR-0004; D-009–D-016",
+        "decisionStatus": "Verifica consistencia y limita DS-GTRM-04 sin crear ciencia",
+        "dependents": "cierre ISS-045–052, candidata ontológica y arquitectura B5/B6",
+        "documentVersion": "1.0.0",
+        "evidence": "nueve documentos del Comité y expediente rector",
+        "goeiVersion": "Gobernanza técnica v0.1",
+        "name": "Auditoría técnica DS-GTRM-01…08",
+        "status": "Conforme con reserva interpretativa DS-GTRM-04",
         "technicalOwner": "Oficina Técnica"
       },
       "type": "Component"
@@ -1987,6 +2431,24 @@
         "name": "Ontology Baseline",
         "status": "Congelada provisionalmente",
         "technicalOwner": "Arquitectura e Ingeniería de Conocimiento"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-BSL-PROC-0001",
+      "properties": {
+        "approver": "Comité Científico D-008 + GOEI-DIR-RES-0001",
+        "canonicalPath": "15_Mantenimiento/lineas_base/GOEI_PROC_v0.1.0/MANIFEST.md",
+        "componentClass": "BSL",
+        "decisionOrigin": "D-008; GOEI-DIR-RES-0001",
+        "decisionStatus": "Tipos P1–P9 a nivel de subsistema; excluye residuos/merma definitivo",
+        "dependents": "taxonomía B2, BOK, KG, tesis y futuros manuales",
+        "documentVersion": "0.1.0",
+        "evidence": "expediente D-008, revisión B1 y fuentes cotejadas",
+        "goeiVersion": "Process Baseline v0.1.0",
+        "name": "Process Baseline",
+        "status": "Congelada con reservas",
+        "technicalOwner": "Oficina Técnica"
       },
       "type": "Component"
     },
@@ -2117,20 +2579,56 @@
       "type": "Component"
     },
     {
+      "id": "GOEI-DIR-RES-0001",
+      "properties": {
+        "approver": "GOEI-DIR-0004",
+        "canonicalPath": "00_Gobernanza/coordinacion/resoluciones/GOEI_DIR_RES_0001_D008_B1.md",
+        "componentClass": "DIR-RES",
+        "decisionOrigin": "GOEI-DIR-0004; D-008",
+        "decisionStatus": "Ratifica solo pregunta nuclear B1; no crea taxonomía, KPI ni clasifica residuos/merma",
+        "dependents": "GOEI-BSL-PROC-0001, Issues 012/013/030/043, BOK, B2 y roadmap",
+        "documentVersion": "1.0.0",
+        "evidence": "expediente científico D-008, GOEI-AUDIT-0002 y GOEI-AUDIT-0003",
+        "goeiVersion": "Process Baseline v0.1.0",
+        "name": "Resolución D-008 / cierre B1",
+        "status": "Aprobada y vigente",
+        "technicalOwner": "Dirección General delegada / Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
       "id": "GOEI-DIR-RES-GTRM-0001",
       "properties": {
         "approver": "Dirección General",
-        "canonicalPath": "00_Gobernanza/coordinacion/expedientes/GTRM/GOEI_DIR_RES_ISS_044_GTRM_BORRADOR.md",
+        "canonicalPath": "00_Gobernanza/coordinacion/expedientes/GTRM/GOEI_DIR_RES_ISS_044_GTRM.md",
         "componentClass": "DIR-RES",
-        "decisionOrigin": "GOEI-EXP-GTRM-0001",
-        "decisionStatus": "Presenta A/B/C; no ratifica, devuelve ni rechaza por sí mismo",
-        "dependents": "destino del dictamen y activación condicionada de slots",
+        "decisionOrigin": "GOEI-DIR-0004; GOEI-EXP-GTRM-0001",
+        "decisionStatus": "Ratifica dictamen B solo como base de trabajo; no aprueba soluciones científicas ni cambia D-006/B5/B6",
+        "dependents": "cierra destino ISS-044; activa GOEI-ISS-045–052 / DS-GTRM-01–08",
+        "documentVersion": "1.0.0",
+        "evidence": "GOEI-ISS-044, auditoría consolidada y expediente formal",
+        "goeiVersion": "Gobernanza técnica v0.1",
+        "name": "Resolución directiva GTRM",
+        "status": "Vigente; Opción A resuelta",
+        "technicalOwner": "Dirección General por delegación ejecutiva a Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-DS-GTRM-0001",
+      "properties": {
+        "approver": "Dirección General bajo GOEI-DIR-0004",
+        "canonicalPath": "00_Gobernanza/coordinacion/decisiones_cientificas/GTRM/GOEI_CC_DICTAMEN_GTRM_INTEGRACION.md",
+        "componentClass": "SCI-DEC",
+        "decisionOrigin": "D-009–D-016",
+        "decisionStatus": "Marco científico incorporado; no habilita instancias",
+        "dependents": "B4, B5, B6, GOEI-ISS-053, BOK y KG",
         "documentVersion": "0.1.0",
-        "evidence": "GOEI-ISS-044 y dictamen consultivo B",
-        "goeiVersion": "No asignada",
-        "name": "Borrador de resolución directiva GTRM",
-        "status": "Borrador sin selección ni firma",
-        "technicalOwner": "Oficina Técnica"
+        "evidence": "expedientes DS-GTRM-01…08, dictamen del Comité y GOEI-AUDIT-0004",
+        "goeiVersion": "Marco científico GTRM v0.1",
+        "name": "Paquete científico DS-GTRM-01…08",
+        "status": "Incorporado como D-009–D-016; marco sin instancias",
+        "technicalOwner": "Comité Científico"
       },
       "type": "Component"
     },
@@ -2141,13 +2639,13 @@
         "canonicalPath": "00_Gobernanza/coordinacion/expedientes/GTRM/GOEI_EXP_ISS_044_RESOLUCION_GTRM.md",
         "componentClass": "EXP",
         "decisionOrigin": "GOEI-GTRM-AUD-0001; GOEI-ISS-044",
-        "decisionStatus": "Separa compuerta directiva y ocho materias científicas; no selecciona alternativas",
-        "dependents": "resolución directiva, decisiones DS-GTRM-01–08 y eventual Issue ontológico",
-        "documentVersion": "0.1.0",
-        "evidence": "auditoría consolidada, dictámenes y D-006 congelada",
-        "goeiVersion": "No asignada",
+        "decisionStatus": "Separa compuerta directiva y ocho materias científicas; no contiene respuestas científicas",
+        "dependents": "GOEI-DIR-RES-GTRM-0001, GOEI-ISS-045–052 y eventual Issue ontológico",
+        "documentVersion": "1.0.0",
+        "evidence": "auditoría consolidada, dictámenes, D-006 congelada y resolución Opción A",
+        "goeiVersion": "Gobernanza técnica v0.1",
         "name": "Expediente de resolución GOEI-ISS-044",
-        "status": "Preparado; sin efectos normativos",
+        "status": "Resuelto por Opción A; slots científicos abiertos",
         "technicalOwner": "Oficina Técnica"
       },
       "type": "Component"
@@ -2203,6 +2701,24 @@
         "name": "Coordinación automática científico-técnica",
         "status": "Activa",
         "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-GOV-EXEC-0001",
+      "properties": {
+        "approver": "Dirección General",
+        "canonicalPath": "00_Gobernanza/Registro_de_directivas.md",
+        "componentClass": "GOV",
+        "decisionOrigin": "GOEI-DIR-0004",
+        "decisionStatus": "Permite resolver compuertas directivas; no transfiere autoridad científica ni permite alterar baselines sin procedimiento",
+        "dependents": "expedientes, Issues, fases, baselines y releases",
+        "documentVersion": "1.0.0",
+        "evidence": "instrucción expresa de Dirección General",
+        "goeiVersion": "Gobernanza técnica v0.1",
+        "name": "Delegación ejecutiva de resolución",
+        "status": "Vigente como mandato ejecutivo",
+        "technicalOwner": "Dirección General / Oficina Técnica"
       },
       "type": "Component"
     },
@@ -2335,17 +2851,17 @@
     {
       "id": "GOEI-HO-0001",
       "properties": {
-        "approver": "Dirección pendiente para D-008",
+        "approver": "Comité Científico + GOEI-DIR-RES-0001",
         "canonicalPath": "00_Gobernanza/coordinacion/handoffs/GOEI_HANDOFF_0001_B1_Procesos_Universales.md",
         "componentClass": "HO",
         "decisionOrigin": "Expediente científico B1",
         "decisionStatus": "Auditoría formal; no aprueba D-008",
         "dependents": "D-008, catálogo de procesos, B2",
-        "documentVersion": "0.1.0",
+        "documentVersion": "1.0.0",
         "evidence": "D-007, revisión B1, respondibilidad",
-        "goeiVersion": "No asignada",
+        "goeiVersion": "Process Baseline v0.1.0",
         "name": "Handoff B1 Procesos Universales",
-        "status": "Recibido; no integrable normativamente",
+        "status": "Integrado; B1 cerrada en pregunta nuclear",
         "technicalOwner": "Oficina Técnica"
       },
       "type": "Component"
@@ -2512,7 +3028,7 @@
           "D-007",
           "taxonomía/alcance",
           "comité e instancia promotora",
-          "Respondida favorablemente por Comité en expediente D-008; ratificación pendiente"
+          "**Cerrada 2026-08-04 por D-008/GOEI-DIR-RES-0001: incluido; P6 = transacción/cierre**"
         ],
         "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
       },
@@ -2526,7 +3042,7 @@
           "D-007",
           "matriz de procesos",
           "comité científico",
-          "Respondida favorablemente por Comité en expediente D-008; ratificación pendiente"
+          "**Cerrada 2026-08-04 por D-008/GOEI-DIR-RES-0001: dos niveles ratificados**"
         ],
         "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
       },
@@ -2742,7 +3258,7 @@
           "expediente D-008 recibido y auditado",
           "catálogo de procesos, inicio B2 y descendientes",
           "Dirección General",
-          "Dictamen científico favorable; ratificación directiva pendiente"
+          "**Cerrada 2026-08-04 por GOEI-DIR-RES-0001; D-008 ratificada, B1 cerrada en pregunta nuclear y B2 habilitada**"
         ],
         "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
       },
@@ -2922,9 +3438,9 @@
         "fields": [
           "Determinar si gestión de residuos/merma es macroproceso, proceso transversal o subproceso, y qué evidencia/consenso exige su clasificación.",
           "expediente D-008 §8",
-          "cierre preciso del catálogo B1 y dependencias de sostenibilidad",
+          "clasificación normativa de residuos/merma y dependencias de sostenibilidad",
           "Comité Científico + ratificación directiva",
-          "Abierta; no completar por inferencia técnica"
+          "Abierta; excluida de GOEI-BSL-PROC-0001 v0.1.0 hasta resolución científica; no bloquea B2 general"
         ],
         "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
       },
@@ -2936,9 +3452,135 @@
         "fields": [
           "Ratificar, devolver o rechazar el dictamen consultivo B sobre GTRM y, si se ratifica, ordenar las decisiones separadas sobre ontología, normalización, referencias, incertidumbre, autoridad y equivalencia papel–software.",
           "GOEI-GTRM-AUD-0001",
-          "cualquier incorporación GTRM, cambio D-006/B5/B6, baseline o implementación",
-          "Dirección General + Comité Científico según materia",
-          "Dictamen B emitido; decisión formal pendiente"
+          "destino del dictamen",
+          "Dirección General",
+          "Cerrada por GOEI-DIR-RES-GTRM-0001: Opción A, ratificación exclusiva como base de trabajo; 2026-08-04"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-045",
+      "properties": {
+        "fields": [
+          "DS-GTRM-01 — ¿La transformación recibe observaciones, mediciones registradas o valores KPI, y bajo qué requisitos de admisibilidad?",
+          "D-009 / GOEI-AUDIT-0004",
+          "definición de entrada GTRM",
+          "Comité Científico",
+          "Cerrada en alcance de marco por D-009; admisibilidad concreta diferida a B4/B5"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-046",
+      "properties": {
+        "fields": [
+          "DS-GTRM-02 — ¿Cuál es la naturaleza y salida de la GTRM y cómo se relaciona con una única normalización sin doble transformación?",
+          "D-010 / GOEI-AUDIT-0004",
+          "arquitectura científica B6",
+          "Comité Científico",
+          "Cerrada en alcance de marco por D-010; funciones y parámetros diferidos a B6"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-047",
+      "properties": {
+        "fields": [
+          "DS-GTRM-03 — ¿Cómo se distinguen formalmente condición de referencia y benchmark y qué papel cumple cada entidad?",
+          "D-011 / GOEI-AUDIT-0004",
+          "modelo de referencias",
+          "Comité Científico",
+          "Cerrada en alcance de marco por D-011; protocolo concreto diferido a B5"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-048",
+      "properties": {
+        "fields": [
+          "DS-GTRM-04 — ¿Qué dominios de referencia pueden coexistir y qué reglas científicas gobiernan aplicabilidad y precedencia?",
+          "D-012 / GOEI-AUDIT-0004",
+          "selección de referencia",
+          "Comité Científico",
+          "Cerrada en alcance de marco por D-012; precedencia operativa no regulatoria diferida a B2/B4"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-049",
+      "properties": {
+        "fields": [
+          "DS-GTRM-05 — ¿Qué fuentes de incertidumbre se representarán y mediante qué método científicamente aprobado?",
+          "D-013 / GOEI-AUDIT-0004",
+          "medición, puntuación y validación",
+          "Comité Científico",
+          "Cerrada en fuentes y requisito por D-013; método y suficiencia diferidos a B5"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-050",
+      "properties": {
+        "fields": [
+          "DS-GTRM-06 — ¿Dónde reside la autoridad científica y normativa y cuál es el ciclo de vida de una GTRM?",
+          "D-014 / GOEI-AUDIT-0004",
+          "gobernanza GTRM",
+          "Comité Científico + Dirección General",
+          "Cerrada en marco por D-014; asignación institucional depende de GOEI-ISS-003"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-051",
+      "properties": {
+        "fields": [
+          "DS-GTRM-07 — ¿Qué estado y tratamiento corresponden ante ausencia, conflicto, suspensión o expiración de una referencia o función válida?",
+          "D-015 / GOEI-AUDIT-0004",
+          "puntuabilidad y reglas críticas",
+          "Comité Científico",
+          "Cerrada en marco por D-015; estados operativos finales diferidos a B4/B7/B8"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-052",
+      "properties": {
+        "fields": [
+          "DS-GTRM-08 — ¿Cómo se fija la fuente normativa de verdad y se demuestra equivalencia papel–software y reproducibilidad histórica?",
+          "D-016 / GOEI-AUDIT-0004",
+          "manuales, software y auditoría histórica",
+          "Comité Científico + Oficina Técnica",
+          "Cerrada en marco por D-016; tolerancias y casos por familia diferidos a B5/B6/B9"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-053",
+      "properties": {
+        "fields": [
+          "Preparar y evaluar el cambio de D-006 para separar observación, medición registrada y valor KPI e incorporar GTRM, benchmark, representaciones derivadas, incertidumbre, autoridad y sucesión.",
+          "D-009–D-016 / GOEI-ONT-CAND-0001",
+          "Ontology Baseline v0.1",
+          "Comité Científico + Oficina Técnica + autoridad normativa",
+          "Abierta; D-006 permanece intacta; candidata v0.2.0 sin vigencia"
         ],
         "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
       },
@@ -2995,6 +3637,24 @@
         "name": "GOEI MetaModel",
         "status": "Propuesta arquitectónica",
         "technicalOwner": "Arquitectura e Ingeniería de Conocimiento"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-ONT-CAND-0001",
+      "properties": {
+        "approver": "Comité Científico y autoridad normativa pendientes",
+        "canonicalPath": "09_Manual_tecnico_general/candidatos/GOEI_ONT_v0.2.0_candidate_GTRM.md",
+        "componentClass": "ONT-CAND",
+        "decisionOrigin": "D-009–D-016; GOEI-ISS-053",
+        "decisionStatus": "Delta técnico sin modificar D-006",
+        "dependents": "eventual análisis de impacto y nueva baseline",
+        "documentVersion": "0.2.0-candidate",
+        "evidence": "GOEI-AUDIT-0004 y Ontology Baseline v0.1",
+        "goeiVersion": "No asignada",
+        "name": "Especificación candidata de cambio ontológico GTRM",
+        "status": "Candidata no normativa",
+        "technicalOwner": "Oficina Técnica"
       },
       "type": "Component"
     },
@@ -3127,17 +3787,17 @@
     {
       "id": "GOEI-SCI-QUEUE-0002",
       "properties": {
-        "approver": "Dirección General para activación; Comité Científico para contenido",
+        "approver": "GOEI-DIR-RES-0001 para activación; Comité Científico para contenido",
         "canonicalPath": "00_Gobernanza/coordinacion/cola_cientifica/GOEI_SCI_QUEUE_0002_B2_Taxonomia_Universal.md",
         "componentClass": "SCI-QUEUE",
         "decisionOrigin": "GOEI-PIPE-B2-B10-0001",
         "decisionStatus": "Contrato vacío; no crea taxonomía",
         "dependents": "expediente, handoff y decisión B2",
-        "documentVersion": "0.1.0-draft",
+        "documentVersion": "0.1.0",
         "evidence": "B1 aprobada e integrada como condición futura",
-        "goeiVersion": "No asignada",
+        "goeiVersion": "Process Baseline v0.1.0",
         "name": "Paquete científico B2 Taxonomía Universal",
-        "status": "Preparado; bloqueado por B1",
+        "status": "Habilitado; investigación científica B2 pendiente",
         "technicalOwner": "Oficina Técnica"
       },
       "type": "Component"
@@ -3445,9 +4105,23 @@
       "type": "Version"
     },
     {
+      "id": "VER::Marco científico GTRM v0.1",
+      "properties": {
+        "label": "Marco científico GTRM v0.1"
+      },
+      "type": "Version"
+    },
+    {
       "id": "VER::Ontología v0.1",
       "properties": {
         "label": "Ontología v0.1"
+      },
+      "type": "Version"
+    },
+    {
+      "id": "VER::Process Baseline v0.1.0",
+      "properties": {
+        "label": "Process Baseline v0.1.0"
       },
       "type": "Version"
     }

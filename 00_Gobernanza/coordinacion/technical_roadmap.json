@@ -38,18 +38,18 @@
     {
       "id": "WP-04",
       "name": "Integración de procesos científicos",
-      "status": "awaiting_approval",
-      "dependencies": ["WP-03"],
-      "evidence": ["00_Gobernanza/coordinacion/handoffs/GOEI_HANDOFF_0001_B1_Procesos_Universales.md"],
-      "blockers": ["GOEI-ISS-030", "D-008 awaiting Director General ratification"]
+      "status": "complete",
+      "dependencies": [],
+      "evidence": ["00_Gobernanza/coordinacion/handoffs/GOEI_HANDOFF_0001_B1_Procesos_Universales.md", "00_Gobernanza/coordinacion/resoluciones/GOEI_DIR_RES_0001_D008_B1.md", "15_Mantenimiento/lineas_base/GOEI_PROC_v0.1.0/MANIFEST.md"],
+      "blockers": []
     },
     {
       "id": "WP-05",
       "name": "Taxonomía",
-      "status": "blocked",
+      "status": "in_progress",
       "dependencies": ["WP-04"],
-      "evidence": [],
-      "blockers": ["B1 not officially closed"]
+      "evidence": ["00_Gobernanza/coordinacion/cola_cientifica/GOEI_SCI_QUEUE_0002_B2_Taxonomia_Universal.md"],
+      "blockers": ["Scientific B2 dossier and decision pending"]
     },
     {
       "id": "WP-06",

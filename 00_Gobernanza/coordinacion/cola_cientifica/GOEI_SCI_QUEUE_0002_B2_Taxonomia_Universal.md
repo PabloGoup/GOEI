@@ -5,11 +5,11 @@
 | Identificador | GOEI-SCI-QUEUE-0002 |
 | Fase | B2 — Taxonomía Universal |
 | Tipo | Contrato técnico vacío de investigación y handoff |
-| Estado | Bloqueado; preparado para activación condicionada |
+| Estado | **Habilitado para investigación científica** |
 | Responsable del contenido científico | Comité Científico GOEI |
 | Responsable de control técnico | Oficina Técnica GOEI |
 | Autoridad de aprobación | Dirección General, conforme a la gobernanza vigente |
-| Versión del paquete | 0.1.0-draft |
+| Versión del paquete | 0.1.0 |
 | Contenido normativo | Ninguno |
 
 ## 1. Propósito
@@ -20,7 +20,7 @@ Este paquete no investiga, enumera ni propone categorías, clases, criterios tax
 
 ## 2. Condición estricta de activación
 
-El estado solo podrá cambiar de `bloqueado` a `habilitado` cuando exista evidencia verificable de todos los elementos siguientes:
+El estado cambió de `bloqueado` a `habilitado` mediante `GOEI-DIR-RES-0001`, tras comprobarse los elementos siguientes:
 
 1. decisión D-008, o la decisión que la sustituya, aprobada y registrada por la autoridad competente;
 2. declaración directiva inequívoca de cierre de B1;
@@ -39,13 +39,13 @@ Al activarse, la Oficina Técnica deberá completar esta tabla únicamente con r
 
 | Entrada | Identificador o ruta | Versión | Estado requerido | Estado actual |
 |---|---|---|---|---|
-| Decisión de cierre B1 | Pendiente | Pendiente | Aprobada | No disponible para activación |
-| Catálogo de procesos B1 | Pendiente | Pendiente | Integrado y versionado | No disponible para activación |
-| Alcance GOEI vigente | Pendiente de vinculación | Pendiente | Vigente | Pendiente de vinculación |
-| Unidad de análisis | Pendiente de vinculación | Pendiente | Aprobada | Pendiente de vinculación |
+| Decisión de cierre B1 | `GOEI-DIR-RES-0001` | 1.0.0 | Aprobada | Disponible |
+| Catálogo de procesos B1 | `GOEI-BSL-PROC-0001` | 0.1.0 | Integrado y versionado | Disponible con reservas |
+| Alcance GOEI vigente | D-008 / `GOEI-DIR-RES-0001` | Process Baseline v0.1.0 | Vigente | Disponible: foodservice comercial y no comercial/institucional |
+| Unidad de análisis | D-006 / `GOEI-BSL-ONT-0001` | Ontology Baseline v0.1 | Aprobada con reserva | Disponible: Establecimiento como ancla; configuraciones multiunidad siguen bajo `GOEI-ISS-008` y bloquean solo esa rama |
 | Ontología conceptual | D-006 | Baseline v0.1 | Congelada | Disponible; modificación solo mediante Issue |
 | MetaModelo de procesos | GOEI-PMM-0001 | 0.1.0-draft o versión vigente | Referencia técnica | Disponible como estructura, no como contenido científico |
-| Issues heredados | Pendiente de inventario al cierre B1 | N/A | Dispuestos formalmente | Pendiente |
+| Issues heredados | `GOEI-ISS-014`, `015`, `043` | N/A | Dispuestos formalmente | Disponibles; bloqueo selectivo, no general |
 
 No se aceptarán borradores, manuscritos, inferencias ni recomendaciones no aprobadas como sustitutos de una entrada requerida.
 
@@ -139,9 +139,9 @@ La aceptación técnica no equivale a validación científica ni aprobación dir
 
 | Bloqueador | Rama afectada | Impacto | Condición de desbloqueo |
 |---|---|---|---|
-| D-008 sin ratificación normativa | Activación completa de B2 | Impide usar el resultado de B1 como entrada oficial | Decisión aprobada y registrada |
-| B1 sin cierre directivo | Activación completa de B2 | Mantiene incierto el conjunto oficial de procesos | Declaración explícita de cierre B1 |
-| Integración técnica B1 pendiente | Mapeo proceso–clasificación | No existen entradas versionadas consumibles | Integración, trazabilidad y controles conformes |
+| D-008 sin ratificación normativa | Resuelto | Entrada oficial disponible | `GOEI-DIR-RES-0001` |
+| B1 sin cierre directivo | Resuelto | Pregunta nuclear cerrada | `GOEI-DIR-RES-0001` |
+| Integración técnica B1 pendiente | Resuelto | Entradas versionadas consumibles | `GOEI-BSL-PROC-0001 v0.1.0` |
 | Issues críticos B1 sin disposición | Solo ramas dependientes | Puede dejar alcance o conceptos sin base aprobada | Cierre, aceptación de riesgo o disposición formal |
 | Entradas de alcance/unidad de análisis no vinculadas | Delimitación del expediente | Impide auditar cobertura y pertenencia | Referencias oficiales registradas |
 
@@ -187,9 +187,9 @@ Solo entonces podrá habilitarse B3. La existencia de este paquete, del expedien
 
 | Campo | Valor |
 |---|---|
-| Fecha de habilitación | Pendiente |
-| Decisión habilitante | Pendiente |
-| Responsable del cambio de estado | Pendiente |
-| Entradas verificadas por | Pendiente |
+| Fecha de habilitación | 2026-08-04 |
+| Decisión habilitante | `GOEI-DIR-RES-0001` bajo `GOEI-DIR-0004` |
+| Responsable del cambio de estado | Oficina Técnica GOEI por delegación directiva |
+| Entradas verificadas por | Oficina Técnica GOEI; controles de repositorio y roadmap conformes |
 | Estado resultante | Bloqueado |
 | Observaciones | Paquete preparado sin contenido científico |

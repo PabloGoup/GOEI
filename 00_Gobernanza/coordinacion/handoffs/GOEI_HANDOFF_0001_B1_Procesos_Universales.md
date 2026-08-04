@@ -2,11 +2,11 @@
 
 | Campo | Valor |
 |---|---|
-| Estado | Recibido; no integrable como normativo |
+| Estado | **Integrado y cerrado en pregunta nuclear** |
 | Fecha de auditoría | 2026-08-04 |
 | Responsable científico | Comité Científico |
 | Responsable auditoría formal | Oficina Técnica |
-| Decisiones relacionadas | D-007 provisional; D-008 aprobada por el Comité, pendiente de ratificación y registro oficial |
+| Decisiones relacionadas | D-007 antecedente; D-008 ratificada por `GOEI-DIR-RES-0001` |
 | Rama | B1 Procesos Universales |
 
 ## Artefactos recibidos
@@ -30,19 +30,20 @@
 | Síntesis y limitaciones | Presente | §§3–5 |
 | Recomendación del Comité | Presente | §5 |
 | Decisión científica aprobada | Conforme a nivel de Comité | D-008 declarada aprobada científicamente; todavía sin ratificación normativa de Dirección |
-| Aprobación de cierre por Director | Ausente | tres preguntas elevadas a Dirección |
-| Versión objetivo | Preparada condicionalmente | `GOEI-BSL-PROC-0001 v0.1.0`, solo si Dirección ratifica |
+| Aprobación de cierre por Director | Conforme | `GOEI-DIR-RES-0001` bajo `GOEI-DIR-0004` |
+| Versión objetivo | Incorporada | `GOEI-BSL-PROC-0001 v0.1.0` |
 | Resolución de residuos/merma | Pendiente | candidato explícito |
 
 ## Resultado
 
-El expediente es **formalmente suficiente para someter D-008 y el cierre de B1 a la Dirección**, pero no autoriza todavía crear el catálogo normativo de macroprocesos ni marcar B1 como cerrada.
+El expediente fue ratificado por la Dirección y se integró en `GOEI-BSL-PROC-0001 v0.1.0`. B1 queda cerrada exclusivamente en su pregunta nuclear y B2 queda habilitada.
 
 ## Bloqueo selectivo
 
-- Bloqueado: promoción del núcleo a componente normativo, cierre B1, inicio formal B2 según secuencia del Master Plan.
-- No bloqueado: trazabilidad del expediente, registro como conocimiento candidato, validadores, BOK estructural, herramientas y preparación editorial.
+- Cerrado: promoción limitada del núcleo, cierre nuclear B1 y activación de B2.
+- Bloqueado selectivamente: clasificación normativa de residuos/merma bajo `GOEI-ISS-043`.
+- Diferido: PRISMA completa y Delphi como validaciones posteriores.
 
 ## Condición de reanudación
 
-Resolución directiva verificable que ratifique, devuelva o rechace D-008; disponga `GOEI-ISS-012`, `013`, `030` y `043`; determine el tratamiento de PRISMA/Delphi; declare el estado de B1 y confirme o descarte la versión objetivo.
+Cumplida por `GOEI-DIR-RES-0001`. El siguiente handoff científico corresponde a B2 y deberá usar como entrada exacta `GOEI-BSL-PROC-0001 v0.1.0`.

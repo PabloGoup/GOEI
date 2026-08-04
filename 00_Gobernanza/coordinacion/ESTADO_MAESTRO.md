@@ -14,7 +14,7 @@
 | Fase | Responsable principal | Estado verificable | Compuerta pendiente |
 |---|---|---|---|
 | A Fundamentos científicos | Comité Científico | En cierre según Master Plan | cierre oficial y ausencia de bloqueos críticos |
-| B Construcción del conocimiento | Comité Científico | D-008 recomendada por el Comité; cierre directivo pendiente | ratificación D-008/cierre B1 y luego B2–B10 secuenciales |
+| B Construcción del conocimiento | Comité Científico | D-008 ratificada; B1 cerrada en pregunta nuclear; B2 habilitada | expediente y decisión científica B2, luego B3–B10 secuenciales |
 | C Construcción del estándar | Oficina Técnica | Preparación arquitectónica anticipada; contenido bloqueado | cierre oficial de Fase B |
 | D Validación piloto | Director + Comité | No iniciada | Standard candidato y protocolo aprobado |
 | E Publicaciones | Autoridad/Comité/Oficina | Estructura editorial únicamente | resultados y aprobaciones previas |
@@ -42,14 +42,17 @@
 - auditoría científica y arquitectónica GTRM emitida con dictamen consultivo B; ninguna modificación del estándar autorizada y GOEI-ISS-044 abierto.
 - expediente formal GOEI-ISS-044 preparado con resolución directiva A/B/C y ocho slots científicos separados; ninguna opción seleccionada.
 - auditoría GOEI-AUDIT-0003 confirma que D-008/B1 está lista para resolución directiva y que GOEI-ISS-043 bloquea solo la clasificación normativa de residuos/merma.
+- `GOEI-DIR-RES-0001` ratifica D-008, cierra B1 en su pregunta nuclear, crea `GOEI-BSL-PROC-0001 v0.1.0` y habilita B2; PRISMA completa y Delphi quedan como validaciones posteriores.
+- D-009–D-016 incorporan el marco científico GTRM tras `GOEI-AUDIT-0004`; GOEI-ISS-045–052 quedan cerrados solo en su alcance de marco.
+- `GOEI-ONT-CAND-0001` y `GOEI-ARQ-GTRM-0001` preparan el cambio ontológico y los contratos B5/B6 sin modificar D-006 ni habilitar instancias, fórmulas, parámetros o tolerancias.
 
 ## Próxima dependencia científica crítica
 
-El Comité emitió dictamen favorable a D-008 y propuso cerrar B1. GOEI-AUDIT-0002 y GOEI-AUDIT-0003 concluyeron que el expediente puede elevarse a resolución directiva; el cotejo bibliográfico fue subsanado, mientras permanecen las validaciones metodológicas diferidas y la dependencia selectiva sobre residuos/merma. No es integrable normativamente hasta que la Dirección ratifique, rechace o devuelva D-008 y declare el estado oficial de B1.
+La dependencia crítica activa es B2 — Taxonomía Universal. En paralelo, GOEI-ISS-053 gobierna el eventual cambio ontológico GTRM y permanece bloqueado para promoción hasta análisis de impacto y aprobación competente. `GOEI-ISS-043` continúa bloqueando únicamente la clasificación normativa de residuos/merma.
 
 ## Política de avance
 
-Mientras el cierre directivo de B1 esté pendiente, la Oficina Técnica continuará validadores, gestión de configuración, BOK estructural, estructura de tesis, plantillas de publicación, control de calidad y preparación de repositorio, sin poblar el catálogo normativo de procesos ni iniciar B2 como fase científica.
+La Oficina Técnica preservará `GOEI-BSL-PROC-0001 v0.1.0`, mantendrá la exclusión controlada de residuos/merma y coordinará B2 desde el paquete habilitado, sin crear contenido taxonómico ni adelantar fases posteriores.
 
 El ciclo técnico GOEI-CYCLE-0002 confirmó la reconstrucción determinista del inventario de Ontology Baseline v0.1 y dejó preparadas las compuertas G0–G5. Estas compuertas describen requisitos de promoción, pero ninguna herramienta puede otorgar aprobación científica o institucional.
 

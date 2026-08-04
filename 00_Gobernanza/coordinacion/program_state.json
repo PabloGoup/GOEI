@@ -14,16 +14,16 @@
     {
       "id": "B1",
       "name": "Procesos Universales",
-      "status": "awaiting_approval",
-      "evidence": ["D-007", "GOEI-HO-0001", "GOEI-AUDIT-0002", "D-008 committee recommendation"],
-      "blockers": ["GOEI-ISS-030", "D-008 awaiting Director General ratification"]
+      "status": "complete",
+      "evidence": ["D-007", "D-008", "GOEI-DIR-RES-0001", "GOEI-BSL-PROC-0001 v0.1.0", "GOEI-HO-0001", "GOEI-AUDIT-0002", "GOEI-AUDIT-0003"],
+      "blockers": []
     },
     {
       "id": "B2",
       "name": "Taxonomía Universal",
-      "status": "blocked",
-      "evidence": [],
-      "blockers": ["B1 not officially closed"]
+      "status": "in_progress",
+      "evidence": ["GOEI-SCI-QUEUE-0002", "GOEI-BSL-PROC-0001 v0.1.0"],
+      "blockers": ["Scientific B2 dossier and decision pending"]
     },
     {
       "id": "B3-B10",

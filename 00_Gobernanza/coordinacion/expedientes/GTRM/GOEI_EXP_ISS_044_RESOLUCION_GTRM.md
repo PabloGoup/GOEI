@@ -3,16 +3,16 @@
 | Campo | Valor |
 |---|---|
 | Identificador | GOEI-EXP-ISS-044-0001 |
-| Versión documental | 0.1.0 |
+| Versión documental | 1.0.0 |
 | Fecha de preparación | 2026-08-04 |
-| Estado | Preparado para resolución; sin efectos normativos |
+| Estado | Resuelto por GOEI-DIR-RES-GTRM-0001; Opción A |
 | Issue de origen | GOEI-ISS-044 |
 | Dictamen sometido | GOEI-GTRM-AUD-0001 — B: aceptar con modificaciones |
 | Autoridad científica del dictamen | Comité Científico GOEI |
 | Preparó | Oficina Técnica GOEI |
 | Autoridad de resolución inicial | Dirección General GOEI |
 | Baseline protegida | D-006 Ontology Baseline v0.1 |
-| Efecto actual sobre el estándar | Ninguno |
+| Efecto actual sobre el estándar | Ninguno; habilita únicamente DS-GTRM-01–08 |
 
 > Este expediente organiza decisiones pendientes. No selecciona alternativas, no aprueba la GTRM, no modifica D-006, no cambia B5/B6 y no autoriza instancias, fórmulas, parámetros, umbrales ni tolerancias.
 
@@ -214,4 +214,4 @@ Si se elige A, el cierre de `GOEI-ISS-044` solo cierra la decisión sobre el **d
 
 ---
 
-**Estado de control:** preparado por la Oficina Técnica. Ninguna casilla de decisión está seleccionada y ninguna alternativa ha sido adoptada.
+**Estado de control:** resuelto por `GOEI-DIR-RES-GTRM-0001` mediante Opción A. `GOEI-ISS-044` queda cerrado respecto del destino del dictamen y permanecen abiertos `GOEI-ISS-045` a `GOEI-ISS-052`. No se ha incorporado contenido GTRM al estándar.

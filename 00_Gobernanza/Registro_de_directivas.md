@@ -99,3 +99,33 @@ Se autoriza a Codex a actuar como **Director Operativo, Arquitecto, Ingeniero, E
 ### Documentos dependientes
 
 Estado Maestro, Pipeline B2–B10, colas científico–técnicas, roadmap, Knowledge Graph, BOK, tesis, publicaciones, software y registros de ciclo.
+
+---
+
+## GOEI-DIR-0004 — Delegación ejecutiva de resolución y avance continuo
+
+| Campo | Valor |
+|---|---|
+| Fecha | 2026-08-04 |
+| Estado | Vigente como mandato ejecutivo |
+| Autoridad | Dirección General GOEI, según instrucción expresa recibida |
+| Materia | Adopción y ejecución de resoluciones finales sin nuevas validaciones del Director |
+| Fuente | Instrucción directa de Pablo Toledo Salinas en la tarea oficial GOEI |
+| Primera implementación | GOEI-DIR-RES-GTRM-0001 |
+| Versión de incorporación | Gobernanza técnica v0.1 |
+
+### Directiva
+
+Se delega en Codex la autoridad operativa de la Dirección General para seleccionar y ejecutar resoluciones finales del proyecto sin detenerse a solicitar nuevas validaciones del Director, avanzando hasta una resolución verificable y sometiendo posteriormente el resultado a reevaluación si fuese necesario.
+
+### Límites preservados
+
+- la delegación no convierte a Codex en Comité Científico ni autoriza inventar conocimiento científico;
+- Codex puede resolver compuertas directivas a partir de expedientes existentes y activar trabajo científico pendiente;
+- una resolución directiva no puede presentar como aprobada una respuesta científica inexistente;
+- permanecen vigentes trazabilidad, Issues, control de versiones, análisis de impacto y protección de baselines;
+- cuando una rama requiera ciencia no resuelta, se abrirá un Issue y se continuará el trabajo independiente.
+
+### Documentos dependientes
+
+Resoluciones directivas, Estado Maestro, roadmap, expedientes, registros de decisiones, Issues, baselines y releases.

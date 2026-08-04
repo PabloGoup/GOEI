@@ -19,11 +19,11 @@
 | Arquitectura de procesos | EPIC-002 | Candidato técnico disponible |
 | Gestión de configuración y releases | GOEI-REL-POL-0001 | Infraestructura técnica disponible; sin release integral declarada |
 | Roadmap y coordinación | GOEI-RDM-0001 + estado procesable | Activo; ruta científica conserva sus bloqueos |
-| Procesos universales | D-007 + expediente B1 | Expediente recibido; D-008/cierre pendiente |
-| Taxonomía | Fase B2 | No iniciada científicamente |
+| Procesos universales | D-008 + GOEI-DIR-RES-0001 | Baseline `GOEI-BSL-PROC-0001 v0.1.0`; B1 cerrada en pregunta nuclear; residuos/merma excluido y pendiente |
+| Taxonomía | Fase B2 | Habilitada; investigación científica pendiente |
 | KPI y admisibilidad | Fases B3–B4 | No iniciadas científicamente |
 | Referencia, normalización y ponderación | B5–B7 | No iniciadas científicamente |
-| Propuesta GTRM | GOEI-GTRM-AUD-0001 | Dictamen consultivo B — aceptar con modificaciones; bloqueada por GOEI-ISS-044 y fases B2/B4/B5 |
+| Marco GTRM | D-009–D-016 + GOEI-AUDIT-0004 | Marco científico incorporado; candidata ontológica y arquitectura B5/B6 disponibles; no existen instancias GTRM y GOEI-ISS-053 protege D-006 |
 | Modelo matemático | B8 | No iniciado científicamente |
 | Validación | B9 y Fase D | No iniciada |
 | Manual técnico | B10/C | Estructura solamente |

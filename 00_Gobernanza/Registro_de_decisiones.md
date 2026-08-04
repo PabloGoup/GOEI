@@ -107,3 +107,106 @@
 **Pendiente de validación:** Alcance comercial vs. no comercial; matriz de procesos en dos niveles (universal+específico); tipo de sistema de producción como eje de taxonomía (N2); inocuidad con doble rol (proceso transversal + regla crítica AX-4); revisión sistemática PRISMA antes de fijar el núcleo como normativo.
 
 ---
+
+**Decisión:** D-008 — Cierre limitado de B1 y núcleo universal de procesos
+**Fecha:** 2026-08-04
+**Problema analizado:** ¿Existe y con qué estructura un conjunto de procesos común a todo establecimiento gastronómico que permita cerrar la pregunta nuclear de B1?
+**Alternativas consideradas:** (a) no existe núcleo universal; (b) existe a nivel de actividades concretas; (c) existe a nivel de subsistema funcional, con realizaciones específicas por categoría o sistema.
+**Evidencia utilizada:** Expediente científico `GOEI_SCI_HANDOFF_D008_Cierre_B1.md`, revisión rápida estructurada B1, modelo de sistemas de foodservice y convergencia documental allí registrada; cotejo bibliográfico del Comité; auditorías técnicas `GOEI-AUDIT-0002` y `GOEI-AUDIT-0003`.
+**Decisión adoptada:** Alternativa (c). Se ratifica un núcleo a nivel de subsistema funcional, estructurado en cadena primaria P1–P6 y planos transversales P7–P9, con realizaciones específicas futuras. El alcance incluye foodservice comercial y no comercial; P6 se generaliza como transacción/cierre.
+**Autoridad científica:** Comité Científico GOEI.
+**Ratificación directiva:** `GOEI-DIR-RES-0001`, bajo `GOEI-DIR-0004`.
+**Justificación:** La evidencia convergente respalda la existencia y la estructura nuclear al nivel de abstracción declarado; la variación corresponde a la realización y no niega el tipo universal.
+**Limitaciones:** Revisión PRISMA completa y Delphi quedan como validaciones posteriores. Residuos/merma no adquiere clasificación normativa y permanece bajo `GOEI-ISS-043`. No se decide taxonomía, actividades concretas, KPI, fórmulas ni ponderaciones.
+**Versión incorporada:** `GOEI-BSL-PROC-0001 v0.1.0`.
+**Pendiente de validación:** PRISMA completa; Delphi; `GOEI-ISS-014`, `GOEI-ISS-015` y `GOEI-ISS-043`; realizaciones específicas en B2 y fases posteriores.
+
+---
+
+**Decisión:** D-009 — Naturaleza y entrada de la GTRM
+**Fecha:** 2026-08-04
+**Problema analizado:** Determinar si la transformación recibe observaciones, mediciones registradas o valores KPI.
+**Evidencia utilizada:** OECD/JRC (2008); Keeney y Raiffa (1976); D-006/D-006-REV. Expediente `DS_GTRM_01_Entrada.md`.
+**Decisión adoptada:** La GTRM actúa sobre el valor de KPI derivado mediante una definición y regla de cálculo versionadas; no sobre la observación cruda ni una medición aislada.
+**Justificación:** Preserva la cadena captura→registro→derivación→puntuación y separa datos de la evaluación normativa.
+**Limitaciones:** No define KPI, reglas de cálculo ni requisitos concretos de admisibilidad; dependen de B4/B5.
+**Versión incorporada:** Marco científico GTRM v0.1; sin baseline normativa.
+
+---
+
+**Decisión:** D-010 — Resultado GTRM y normalización única
+**Fecha:** 2026-08-04
+**Problema analizado:** Definir la naturaleza, salida y relación de GTRM con normalización.
+**Evidencia utilizada:** OECD/JRC (2008); von Winterfeldt y Edwards (1986); Keeney y Raiffa (1976). Expediente `DS_GTRM_02_Normalizacion.md`.
+**Decisión adoptada:** GTRM es la especificación de una función de valor normativa parametrizada; su aplicación única produce la puntuación normalizada del KPI. Tabla y software son representaciones derivadas. Se prohíbe la doble normalización.
+**Justificación:** Una única transformación versionada evita arbitrariedad y distorsión.
+**Limitaciones:** B6 debe determinar formas, parámetros y escala con evidencia; no se fijan aquí.
+**Versión incorporada:** Marco científico GTRM v0.1; sin baseline normativa.
+
+---
+
+**Decisión:** D-011 — Distinción condición de referencia y benchmark
+**Fecha:** 2026-08-04
+**Problema analizado:** Determinar si referencia y benchmark son entidades diferentes.
+**Evidencia utilizada:** Karr (1981); OECD/JRC (2008); Linstone y Turoff (1975). Expediente `DS_GTRM_03_Referencia_Benchmark.md`.
+**Decisión adoptada:** La condición de referencia es prescriptiva y el benchmark descriptivo. Un benchmark puede informar una referencia mediante una decisión explícita, pero no la sustituye automáticamente.
+**Justificación:** Evita convertir una distribución empírica en norma sin un acto científico trazable.
+**Limitaciones:** El protocolo benchmark→referencia depende de B5.
+**Versión incorporada:** Marco científico GTRM v0.1; cambio ontológico sujeto a GOEI-ISS-053.
+
+---
+
+**Decisión:** D-012 — Dominios, aplicabilidad y precedencia de referencias
+**Fecha:** 2026-08-04
+**Problema analizado:** Establecer qué dominios pueden coexistir y cómo se gobierna su selección.
+**Evidencia utilizada:** Codex CXC 1-1969; ISO/IEC 17065:2012; D-006-REV/AX-4. Expediente `DS_GTRM_04_Aplicabilidad_Precedencia.md` y reserva de `GOEI-AUDIT-0004`.
+**Decisión adoptada:** Pueden coexistir referencias universales, regulatorias, jurisdiccionales, sectoriales y categoriales. La selección es científico-normativa, explícita y trazable, nunca inferida por taxonomía o software. Los requisitos legales aplicables operan como obligaciones y, en inocuidad/legalidad, como compuertas no compensables.
+**Justificación:** Separa autoridad legal, comparación y puntuación y evita automatizar juicios normativos.
+**Limitaciones:** No establece una jerarquía total entre referencias no regulatorias ni una precedencia operativa concreta; dependen de B2/B4.
+**Versión incorporada:** Marco científico GTRM v0.1; sin referencias concretas.
+
+---
+
+**Decisión:** D-013 — Representación de incertidumbre GTRM
+**Fecha:** 2026-08-04
+**Problema analizado:** Determinar qué incertidumbres deben representarse.
+**Evidencia utilizada:** JCGM 100:2008; JCGM 106:2012; Thokala et al. (2016). Expediente `DS_GTRM_05_Incertidumbre.md`.
+**Decisión adoptada:** Se representan separadamente incertidumbres de medición, muestreo, benchmark, parámetros y puntuación propagada, con estado obligatorio de suficiencia. Una GTRM sin declaración de incertidumbre es inadmisible.
+**Justificación:** Evita falsa precisión y permite comunicar comparabilidad limitada.
+**Limitaciones:** Métodos, intervalos, clases y tolerancias se difieren a B5 y a cada familia.
+**Versión incorporada:** Marco científico GTRM v0.1.
+
+---
+
+**Decisión:** D-014 — Autoridad y ciclo de vida GTRM
+**Fecha:** 2026-08-04
+**Problema analizado:** Separar autoridad científica y normativa y definir ciclo de vida.
+**Evidencia utilizada:** ISO/IEC 17065; CMMI v2.0; D-005. Expediente `DS_GTRM_06_Autoridad_Ciclo_Vida.md`.
+**Decisión adoptada:** Toda GTRM distingue autoridad científica y normativa y sigue ciclo versionado e inmutable: borrador, revisión, recomendación, aprobación y vigencia, con devolución/rechazo, suspensión, sustitución y retiro controlados.
+**Justificación:** Separa fundamento científico de exigibilidad normativa y preserva reproducibilidad.
+**Limitaciones:** La asignación institucional definitiva depende de GOEI-ISS-003.
+**Versión incorporada:** Marco científico GTRM v0.1.
+
+---
+
+**Decisión:** D-015 — Ausencia, conflicto y puntuabilidad
+**Fecha:** 2026-08-04
+**Problema analizado:** Definir el tratamiento sin referencia válida, ante conflictos o sin función aprobada.
+**Evidencia utilizada:** JCGM 100:2008; OECD/JRC (2008); expediente rector GTRM. Expediente `DS_GTRM_07_Ausencia_Conflicto.md`.
+**Decisión adoptada:** La ausencia o conflicto no resoluble produce estado no calculable, bloqueo selectivo e Issue, sin fallback ni promedios silenciosos. Un KPI puede existir definido, pero no es puntuable o agregable sin transformación vigente.
+**Justificación:** Preserva integridad sin bloquear ramas independientes.
+**Limitaciones:** Los estados definitivos y el tratamiento de resultados parciales dependen de B4/B7/B8.
+**Versión incorporada:** Marco científico GTRM v0.1.
+
+---
+
+**Decisión:** D-016 — Equivalencia papel–software y reproducibilidad
+**Fecha:** 2026-08-04
+**Problema analizado:** Definir fuente de verdad y condiciones de equivalencia histórica y tecnológica.
+**Evidencia utilizada:** JCGM 100:2008; OECD/JRC (2008); D-006-REV/AX-9. Expediente `DS_GTRM_08_Equivalencia_Reproducibilidad.md`.
+**Decisión adoptada:** La especificación de la función es la fuente normativa única; tabla y software son derivados y deben superar casos canónicos. Cada evaluación conserva la versión aplicada; simulaciones con otra versión son contrafactuales.
+**Justificación:** Garantiza independencia tecnológica, auditabilidad y reproducción histórica.
+**Limitaciones:** Tolerancias y casos finales requieren aprobación científica por familia en B5/B6/B9.
+**Versión incorporada:** Marco científico GTRM v0.1.
+
+---
