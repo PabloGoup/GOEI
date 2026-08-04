@@ -26,7 +26,7 @@ El expediente responde los puntos de decisión de B1, separa la pregunta nuclear
 | Sistema de producción | Conforme como dependencia | Se difiere expresamente a B2 |
 | Inocuidad | Conforme como dependencia | Rol posterior permanece abierto |
 | Límites de revisión | Conforme | Declara revisión rápida, no PRISMA completa |
-| Bibliografía verificable y APA 7 completa | No conforme | Tres entradas conservan autoría/año pendientes de cotejo |
+| Bibliografía verificable y APA 7 completa | Conforme tras subsanación | Tres entradas cotejadas por el Comité el 2026-08-04; metadatos, DOI y fuentes primarias registrados |
 | Autoridad final | Pendiente | Requiere resolución expresa de Dirección General |
 | Versión objetivo | Propuesta | Baseline de procesos no puede crearse antes de aprobación final |
 
@@ -34,8 +34,7 @@ El expediente responde los puntos de decisión de B1, separa la pregunta nuclear
 
 1. ratificación o rechazo directivo de D-008 y del cierre B1;
 2. disposición directiva del candidato residuos/merma para el alcance de B1;
-3. cotejo bibliográfico completo de las tres referencias incompletas por el Comité Científico;
-4. precisión de si PRISMA completa y Delphi son condiciones de validación posterior o prerrequisitos de incorporación normativa.
+3. precisión de si PRISMA completa y Delphi son condiciones de validación posterior o prerrequisitos de incorporación normativa.
 
 ## Impacto y bloqueo selectivo
 
@@ -47,4 +46,8 @@ El expediente responde los puntos de decisión de B1, separa la pregunta nuclear
 
 ## Condición de reanudación
 
-Resolución directiva explícita que apruebe, rechace o devuelva D-008; declare B1 cerrada o no cerrada; disponga GOEI-ISS-012, 013, 030 y 043; y asigne la versión objetivo. Si se aprueba con referencias pendientes, estas deberán conservar estado provisional y no utilizarse como soporte final de publicación hasta su cotejo científico.
+Resolución directiva explícita que apruebe, rechace o devuelva D-008; declare B1 cerrada o no cerrada; disponga GOEI-ISS-012, 013, 030 y 043; y asigne la versión objetivo.
+
+## Addendum de subsanación — 2026-08-04
+
+El Comité completó y registró el cotejo de Nurdin et al. (2022), Kim et al. (2010) y Carino et al. (2020). La Oficina Técnica verificó la completitud formal y eliminó la reserva bibliográfica del dictamen. Este addendum no ratifica D-008 ni cierra B1.

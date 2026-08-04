@@ -18,8 +18,8 @@
 
 1. El Comité Científico emitió el expediente D-008 y recomendó adoptar un núcleo común a nivel de subsistema funcional, estructurado en dos niveles, con realizaciones específicas por categoría.
 2. El Comité declaró científicamente aprobada D-008 y recomendó cerrar B1 en su pregunta nuclear, sujeto a ratificación de la Dirección General.
-3. La auditoría `GOEI-AUDIT-0002` determinó que el expediente es aceptable para resolución directiva con reservas, pero no es integrable normativamente sin decisión expresa de la Dirección General.
-4. La Oficina Técnica no está autorizada para completar las referencias pendientes, decidir la clasificación de residuos/merma ni sustituir el juicio científico o directivo.
+3. La auditoría `GOEI-AUDIT-0002` determinó que el expediente es aceptable para resolución directiva, pero no es integrable normativamente sin decisión expresa de la Dirección General.
+4. El Comité subsanó el cotejo de las tres referencias el 2026-08-04. La Oficina Técnica no está autorizada para decidir la clasificación de residuos/merma ni sustituir el juicio científico o directivo.
 
 ## 2. Objeto de la resolución
 
@@ -66,7 +66,7 @@ La Dirección General:
 2. declara **B1 ABIERTA / NO CERRADA** hasta recibir y auditar un expediente subsanado;
 3. mantiene B2 bloqueada;
 4. requiere que el Comité subsane expresamente los puntos seleccionados a continuación:
-   - [ ] cotejo completo de autoría, año, título y metadatos de las tres referencias pendientes;
+   - [x] cotejo completo de autoría, año, título y metadatos — subsanado por el Comité el 2026-08-04;
    - [ ] definición de si PRISMA completa es validación posterior o prerrequisito de incorporación;
    - [ ] definición de si Delphi es validación posterior o prerrequisito de incorporación;
    - [ ] resolución científica del estatus de residuos/merma;
@@ -102,15 +102,15 @@ La Dirección General:
 | `GOEI-ISS-030` | Cerrar respecto de la decisión de rechazar D-008 y abrir un Issue sucesor para el nuevo expediente B1. |
 | `GOEI-ISS-043` | Mantener abierto o reasignar al nuevo expediente B1, sin adoptar clasificación alguna. |
 
-## 4. Reservas bibliográficas obligatorias
+## 4. Control bibliográfico subsanado
 
-Con independencia de la opción seleccionada, la resolución reconoce que tres referencias del expediente D-008 conservan autoría y año pendientes de cotejo científico. La Oficina Técnica deberá aplicar estas reglas:
+Las tres referencias antes incompletas fueron cotejadas por el Comité y registradas con autoría, año, datos editoriales, DOI y fuente primaria. La Oficina Técnica deberá aplicar estas reglas:
 
-1. marcarlas como **provisionales / pendientes de cotejo** en bibliografía, Knowledge Graph, BOK, tesis y publicaciones;
-2. impedir que sean presentadas como referencias APA 7 completas o evidencia final de publicación mientras el Comité no entregue sus metadatos verificados;
-3. mantener trazabilidad entre cada referencia, D-008 y el Issue correspondiente;
-4. no inferir ni completar autoría, año, DOI o datos editoriales;
-5. si se ratifica D-008, distinguir la vigencia de la decisión de la madurez editorial de sus referencias.
+1. preservar el Registro de cotejo como evidencia de procedencia;
+2. incorporar las fuentes al registro bibliográfico procesable mediante su flujo científico independiente;
+3. mantener trazabilidad entre cada referencia y D-008;
+4. no interpretar la completitud de metadatos como ratificación directiva;
+5. someter cualquier corrección futura a control de cambios.
 
 ## 5. Validaciones diferidas
 
