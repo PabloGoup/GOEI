@@ -310,25 +310,3 @@ El próximo hito real es D-019. Después vendrán medición, puntuación, agrega
 13. Claude alcanza un límite de créditos durante el primer intento amplio de B4.
 14. Se adopta el protocolo de paquetes compactos y conversación nueva.
 15. La dirección automática queda pausada hasta nueva instrucción.
-
-## Anexo B. Documentos esenciales para comprobar esta narración
-
-1. 00_Gobernanza/Constitucion_GOEI.md
-2. 00_Gobernanza/Registro_de_decisiones.md
-3. 00_Gobernanza/Registro_de_directivas.md
-4. 00_Gobernanza/Preguntas_abiertas.md
-5. 00_Gobernanza/Matriz_de_trazabilidad.md
-6. 00_Gobernanza/coordinacion/ESTADO_MAESTRO.md
-7. 00_Gobernanza/coordinacion/PIPELINE_B2_B10.md
-8. 00_Gobernanza/coordinacion/resoluciones/GOEI_DIR_RES_0001_D008_B1.md
-9. 00_Gobernanza/coordinacion/resoluciones/GOEI_DIR_RES_0002_D017_B2.md
-10. 00_Gobernanza/coordinacion/resoluciones/GOEI_DIR_RES_0003_D018_B3.md
-11. 00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0007_B4_Readiness.md
-12. 09_Manual_tecnico_general/Fase4_D006_Ontologia_del_GOEI.md
-13. 04_Procesos_gastronomicos/EPIC-002_GOEI_Universal_Process_MetaModel.md
-14. 03_Taxonomia_negocios/FaseB_B2_Taxonomia_universal_candidata.md
-15. 05_Catalogo_KPI/GOEI_Catalogo_KPI_Candidatos_B3.md
-16. 00_Gobernanza/coordinacion/decisiones_cientificas/GTRM/GOEI_CC_DICTAMEN_GTRM_INTEGRACION.md
-17. 09_Manual_tecnico_general/GOEI_BOK/README.md
-18. 12_Tesis/PLAN_MAESTRO_TESIS_GOEI.md
-19. 12_Tesis/GOEI_Matriz_Requisitos_Tesis.csv

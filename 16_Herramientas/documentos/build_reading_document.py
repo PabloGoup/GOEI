@@ -17,20 +17,21 @@ from build_integral_dossier import BLUE, DARK, MUTED, ROOT, configure_document
 
 SOURCE = ROOT / "12_Tesis" / "GOEI_Relato_Integral_Proyecto_2026-08-04.md"
 OUTPUT = ROOT / "12_Tesis" / "GOEI_Documento_de_Lectura_Proyecto_2026-08-04.docx"
-FIGURES = ROOT / "12_Tesis" / "figuras" / "documento_lectura"
+FIGURES = ROOT / "12_Tesis" / "figuras" / "metodologia"
 
 VISUALS = {
-    "Nota de lectura": [("01_mapa_mental_goei.png", "Mapa mental general del proyecto GOEI")],
-    "3. La organización del proyecto": [("02_mapa_autoridad.png", "Autoridad y separación de responsabilidades")],
-    "5. El Knowledge Graph y el MetaModel": [("03_flujo_trazabilidad.png", "Cadena de trazabilidad del conocimiento")],
-    "8. B1 y D-008: el núcleo universal de procesos": [("04_mapa_operacional_p1_p9.png", "Mapa operacional universal P1–P9")],
-    "11. La ampliación GTRM": [("06_mapa_gtrm.png", "Transformación conceptual GTRM")],
-    "12. B4: el punto exacto donde está detenido el trabajo científico": [
-        ("05_linea_tiempo.png", "Línea temporal hasta D-019"),
-        ("07_pipeline_b1_b10.png", "Pipeline operativo B1–B10"),
+    "Nota de lectura": [
+        ("01_mapa_mental_metodologia_goei.png", "Mapa mental de la metodología sustantiva del GOEI")
     ],
-    "16. Qué está realmente terminado": [("08_mapa_estado.png", "Estado del proyecto: terminado, en curso y pendiente")],
-    "19. La ruta recomendada desde aquí": [("09_ruta_tesis_publicacion.png", "Ruta desde el estándar hasta la tesis y la publicación")],
+    "8. B1 y D-008: el núcleo universal de procesos": [
+        ("02_operaciones_goei_p1_p9.png", "Arquitectura operacional universal y lenguaje de modelado")
+    ],
+    "11. La ampliación GTRM": [
+        ("03_observacion_interpretacion_goei.png", "Cadena metodológica desde la observación hasta la interpretación")
+    ],
+    "12. B4: el punto exacto donde está detenido el trabajo científico": [
+        ("04_construccion_metodologica_b1_b10.png", "Construcción metodológica del estándar GOEI")
+    ],
 }
 
 
