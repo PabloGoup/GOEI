@@ -6,7 +6,7 @@
 | Fecha de auditoría | 2026-08-04 |
 | Responsable científico | Comité Científico |
 | Responsable auditoría formal | Oficina Técnica |
-| Decisiones relacionadas | D-007 provisional; D-008 propuesta, no registrada |
+| Decisiones relacionadas | D-007 provisional; D-008 aprobada por el Comité, pendiente de ratificación y registro oficial |
 | Rama | B1 Procesos Universales |
 
 ## Artefactos recibidos
@@ -14,9 +14,10 @@
 | Artefacto | Clasificación | Estado declarado |
 |---|---|---|
 | `01_Estado_del_arte/FaseB_B1_Revision_sistematica_procesos_universales.md` | Investigación/revisión rápida estructurada | Comité recomienda cierre de B1 |
+| `00_Gobernanza/coordinacion/entradas_comite/GOEI_SCI_HANDOFF_D008_Cierre_B1.md` | Expediente científico y cotejo posterior | D-008 aprobada por el Comité; ratificación directiva pendiente |
 | `04_Procesos_gastronomicos/Fase4_Nucleo_universal_de_macroprocesos.md` | Síntesis científica previa | Hipótesis fundamentada |
 | D-007 en `Registro_de_decisiones.md` | Decision Record | Provisional/hipótesis |
-| D-008 dentro del informe B1 | Texto propuesto | No incorporado al registro oficial |
+| D-008 dentro del informe B1 | Antecedente de la decisión | Sustituido como fuente de estado por el expediente formal del Comité; no incorporado al registro oficial |
 | `Estado_de_respondibilidad_7_preguntas.md` | Auditoría científica | Pregunta 1 parcial según corte D-007 |
 
 ## Auditoría de completitud
@@ -28,9 +29,9 @@
 | Evidencia y fuentes | Presente | §2 y Fuentes |
 | Síntesis y limitaciones | Presente | §§3–5 |
 | Recomendación del Comité | Presente | §5 |
-| Decisión científica aprobada | No conforme | D-008 es propuesta; D-007 sigue provisional |
+| Decisión científica aprobada | Conforme a nivel de Comité | D-008 declarada aprobada científicamente; todavía sin ratificación normativa de Dirección |
 | Aprobación de cierre por Director | Ausente | tres preguntas elevadas a Dirección |
-| Versión objetivo | Ausente | no declarada |
+| Versión objetivo | Preparada condicionalmente | `GOEI-BSL-PROC-0001 v0.1.0`, solo si Dirección ratifica |
 | Resolución de residuos/merma | Pendiente | candidato explícito |
 
 ## Resultado
@@ -44,4 +45,4 @@ El expediente es **formalmente suficiente para someter D-008 y el cierre de B1 a
 
 ## Condición de reanudación
 
-Resolución directiva que apruebe/rechace D-008, responda las tres preguntas elevadas, declare el estado de B1 y asigne versión objetivo.
+Resolución directiva verificable que ratifique, devuelva o rechace D-008; disponga `GOEI-ISS-012`, `013`, `030` y `043`; determine el tratamiento de PRISMA/Delphi; declare el estado de B1 y confirme o descarte la versión objetivo.

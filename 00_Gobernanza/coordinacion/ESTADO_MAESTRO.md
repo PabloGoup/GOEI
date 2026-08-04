@@ -36,14 +36,16 @@
 - evaluador procesable de 64 requisitos mínimos de tesis con vocabulario de estados normalizado.
 - roadmap técnico maestro procesable con 15 paquetes, dependencias y targets finales.
 - repositorio Git local, política de contribución, CHANGELOG y CI preparados; protecciones remotas pendientes bajo GOEI-ISS-042.
-- esquema y catálogo bibliográfico procesable disponibles; cero fuentes migradas o científicamente evaluadas.
+- esquema y catálogo bibliográfico procesable disponibles; tres fuentes de D-008 migradas con metadatos verificados y estado científico `under_review`.
 - Knowledge Graph registral implementado como proyección JSON regenerable; persistencia oficial sigue bajo GOEI-ISS-037.
 - consultas de nodo, vecindad, caminos e impacto directo disponibles sobre la proyección registral sin inferencia.
 - auditoría científica y arquitectónica GTRM emitida con dictamen consultivo B; ninguna modificación del estándar autorizada y GOEI-ISS-044 abierto.
+- expediente formal GOEI-ISS-044 preparado con resolución directiva A/B/C y ocho slots científicos separados; ninguna opción seleccionada.
+- auditoría GOEI-AUDIT-0003 confirma que D-008/B1 está lista para resolución directiva y que GOEI-ISS-043 bloquea solo la clasificación normativa de residuos/merma.
 
 ## Próxima dependencia científica crítica
 
-El Comité emitió dictamen favorable a D-008 y propuso cerrar B1. GOEI-AUDIT-0002 concluyó que el expediente puede elevarse a resolución directiva con reservas bibliográficas y una dependencia abierta sobre residuos/merma. No es integrable normativamente hasta que la Dirección ratifique, rechace o devuelva D-008 y declare el estado oficial de B1.
+El Comité emitió dictamen favorable a D-008 y propuso cerrar B1. GOEI-AUDIT-0002 y GOEI-AUDIT-0003 concluyeron que el expediente puede elevarse a resolución directiva; el cotejo bibliográfico fue subsanado, mientras permanecen las validaciones metodológicas diferidas y la dependencia selectiva sobre residuos/merma. No es integrable normativamente hasta que la Dirección ratifique, rechace o devuelva D-008 y declare el estado oficial de B1.
 
 ## Política de avance
 

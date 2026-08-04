@@ -19,6 +19,8 @@ Todos los cambios relevantes del GOEI se documentarán en este archivo siguiendo
 - Pipeline científico–técnico B2–B10, matriz capítulo–evidencia y especificación editorial APA 7 orientada a UDLA.
 - Borrador controlado de resolución D-008/B1 y paquete vacío de activación científica B2, ambos sin efectos normativos.
 - Expediente consultivo GTRM con fuente preservada, dictamen científico B, auditoría arquitectónica, matriz de controles e Issue de adopción, sin modificar D-006 ni el pipeline oficial.
+- Auditoría de preparación D-008/B1 y migración de tres fuentes ya cotejadas por el Comité al catálogo bibliográfico, conservadas como `under_review` hasta decisión científica y directiva.
+- Expediente formal GOEI-ISS-044 con resolución directiva A/B/C, ocho slots científicos y plantilla reutilizable, sin seleccionar decisiones ni modificar D-006.
 
 ### Changed
 

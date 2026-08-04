@@ -23,6 +23,13 @@
       "type": "CONTAINS"
     },
     {
+      "id": "E-CONTAINS::GOEI-AUDIT-0003",
+      "source": "DOC::00_Gobernanza/coordinacion/reportes/GOEI_AUDIT_0003_D008_B1_Readiness.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-AUDIT-0003",
+      "type": "CONTAINS"
+    },
+    {
       "id": "E-CONTAINS::GOEI-BIB-0001",
       "source": "DOC::02_Bibliografia/catalogo_fuentes.json",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
@@ -97,6 +104,20 @@
       "source": "DOC::00_Gobernanza/Constitucion_GOEI.md",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "GOEI-CON-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-DIR-RES-GTRM-0001",
+      "source": "DOC::00_Gobernanza/coordinacion/expedientes/GTRM/GOEI_DIR_RES_ISS_044_GTRM_BORRADOR.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-DIR-RES-GTRM-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-EXP-GTRM-0001",
+      "source": "DOC::00_Gobernanza/coordinacion/expedientes/GTRM/GOEI_EXP_ISS_044_RESOLUCION_GTRM.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-EXP-GTRM-0001",
       "type": "CONTAINS"
     },
     {
@@ -349,6 +370,13 @@
       "source": "DOC::16_Herramientas/validadores/assess_thesis_coverage.py",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "GOEI-TOOL-THS-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-TPL-GTRM-0001",
+      "source": "DOC::00_Gobernanza/coordinacion/expedientes/GTRM/GOEI_CC_DEC_GTRM_SLOT_PLANTILLA.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-TPL-GTRM-0001",
       "type": "CONTAINS"
     },
     {
@@ -660,6 +688,13 @@
       "type": "REGISTERED_IN"
     },
     {
+      "id": "E-ORIGIN::D-000::GOEI-EXP-GTRM-0001",
+      "source": "D-000",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "GOEI-EXP-GTRM-0001",
+      "type": "ORIGINATES"
+    },
+    {
       "id": "E-ORIGIN::D-003::GOEI-CMP-005",
       "source": "D-003",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
@@ -725,6 +760,13 @@
     {
       "id": "E-TRACE::GOEI-AUDIT-0002",
       "source": "GOEI-AUDIT-0002",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-AUDIT-0003",
+      "source": "GOEI-AUDIT-0003",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
       "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
       "type": "TRACED_IN"
@@ -802,6 +844,20 @@
     {
       "id": "E-TRACE::GOEI-CON-0001",
       "source": "GOEI-CON-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-DIR-RES-GTRM-0001",
+      "source": "GOEI-DIR-RES-GTRM-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-EXP-GTRM-0001",
+      "source": "GOEI-EXP-GTRM-0001",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
       "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
       "type": "TRACED_IN"
@@ -1059,6 +1115,13 @@
       "type": "TRACED_IN"
     },
     {
+      "id": "E-TRACE::GOEI-TPL-GTRM-0001",
+      "source": "GOEI-TPL-GTRM-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
       "id": "E-TRACE::GOEI-VAL-TECH-0001",
       "source": "GOEI-VAL-TECH-0001",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
@@ -1075,6 +1138,13 @@
     {
       "id": "E-VERSION::GOEI-AUDIT-0002::Gobernanza técnica v0.1",
       "source": "GOEI-AUDIT-0002",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-AUDIT-0003::Gobernanza técnica v0.1",
+      "source": "GOEI-AUDIT-0003",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "VER::Gobernanza técnica v0.1",
       "type": "INCORPORATED_IN"
@@ -1283,6 +1353,13 @@
       "type": "INCORPORATED_IN"
     },
     {
+      "id": "E-VERSION::GOEI-TPL-GTRM-0001::Gobernanza técnica v0.1",
+      "source": "GOEI-TPL-GTRM-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
       "id": "E-VERSION::GOEI-VAL-TECH-0001::Gobernanza técnica v0.1",
       "source": "GOEI-VAL-TECH-0001",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
@@ -1292,6 +1369,13 @@
   ],
   "graphId": "GOEI-KG-REGISTRY-0001",
   "nodes": [
+    {
+      "id": "D-000",
+      "properties": {
+        "registryPath": "00_Gobernanza/Registro_de_decisiones.md"
+      },
+      "type": "Decision"
+    },
     {
       "id": "D-001",
       "properties": {
@@ -1497,6 +1581,27 @@
       "type": "Document"
     },
     {
+      "id": "DOC::00_Gobernanza/coordinacion/expedientes/GTRM/GOEI_CC_DEC_GTRM_SLOT_PLANTILLA.md",
+      "properties": {
+        "path": "00_Gobernanza/coordinacion/expedientes/GTRM/GOEI_CC_DEC_GTRM_SLOT_PLANTILLA.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::00_Gobernanza/coordinacion/expedientes/GTRM/GOEI_DIR_RES_ISS_044_GTRM_BORRADOR.md",
+      "properties": {
+        "path": "00_Gobernanza/coordinacion/expedientes/GTRM/GOEI_DIR_RES_ISS_044_GTRM_BORRADOR.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::00_Gobernanza/coordinacion/expedientes/GTRM/GOEI_EXP_ISS_044_RESOLUCION_GTRM.md",
+      "properties": {
+        "path": "00_Gobernanza/coordinacion/expedientes/GTRM/GOEI_EXP_ISS_044_RESOLUCION_GTRM.md"
+      },
+      "type": "Document"
+    },
+    {
       "id": "DOC::00_Gobernanza/coordinacion/handoffs/GOEI_HANDOFF_0001_B1_Procesos_Universales.md",
       "properties": {
         "path": "00_Gobernanza/coordinacion/handoffs/GOEI_HANDOFF_0001_B1_Procesos_Universales.md"
@@ -1521,6 +1626,13 @@
       "id": "DOC::00_Gobernanza/coordinacion/reportes/GOEI_AUDIT_0002_D008_Cierre_B1.md",
       "properties": {
         "path": "00_Gobernanza/coordinacion/reportes/GOEI_AUDIT_0002_D008_Cierre_B1.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::00_Gobernanza/coordinacion/reportes/GOEI_AUDIT_0003_D008_B1_Readiness.md",
+      "properties": {
+        "path": "00_Gobernanza/coordinacion/reportes/GOEI_AUDIT_0003_D008_B1_Readiness.md"
       },
       "type": "Document"
     },
@@ -1789,6 +1901,24 @@
       "type": "Component"
     },
     {
+      "id": "GOEI-AUDIT-0003",
+      "properties": {
+        "approver": "Dirección General para resolución; no otorga aprobación",
+        "canonicalPath": "00_Gobernanza/coordinacion/reportes/GOEI_AUDIT_0003_D008_B1_Readiness.md",
+        "componentClass": "AUDIT",
+        "decisionOrigin": "GOEI-DIR-0001; GOEI-DIR-0003",
+        "decisionStatus": "Determina readiness técnico; no ratifica D-008 ni cierra B1",
+        "dependents": "resolución directiva, baseline de procesos, B2 y registros maestros",
+        "documentVersion": "1.0.0",
+        "evidence": "expediente D-008, GOEI-AUDIT-0002, resolución borrador e Issues 030/043",
+        "goeiVersion": "Gobernanza técnica v0.1",
+        "name": "Auditoría de preparación D-008/B1",
+        "status": "Emitida; expediente listo y rama normativa bloqueada",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
       "id": "GOEI-BIB-0001",
       "properties": {
         "approver": "Comité Científico para estados científicos",
@@ -1801,7 +1931,7 @@
         "evidence": "futuras fichas y expedientes científicos",
         "goeiVersion": "No asignada",
         "name": "Catálogo bibliográfico procesable",
-        "status": "Activo; 0 fuentes migradas",
+        "status": "Activo; 3 fuentes con metadatos verificados y revisión científica pendiente",
         "technicalOwner": "Oficina Técnica"
       },
       "type": "Component"
@@ -1819,7 +1949,7 @@
         "evidence": "Plan Maestro, Knowledge Graph y plantilla de fuente",
         "goeiVersion": "Gobernanza técnica v0.1",
         "name": "Esquema del registro bibliográfico",
-        "status": "Activo; catálogo vacío",
+        "status": "Activo",
         "technicalOwner": "Oficina Técnica"
       },
       "type": "Component"
@@ -1983,6 +2113,42 @@
         "name": "Constitución GOEI",
         "status": "Esqueleto estructural",
         "technicalOwner": "Arquitectura e Ingeniería de Conocimiento"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-DIR-RES-GTRM-0001",
+      "properties": {
+        "approver": "Dirección General",
+        "canonicalPath": "00_Gobernanza/coordinacion/expedientes/GTRM/GOEI_DIR_RES_ISS_044_GTRM_BORRADOR.md",
+        "componentClass": "DIR-RES",
+        "decisionOrigin": "GOEI-EXP-GTRM-0001",
+        "decisionStatus": "Presenta A/B/C; no ratifica, devuelve ni rechaza por sí mismo",
+        "dependents": "destino del dictamen y activación condicionada de slots",
+        "documentVersion": "0.1.0",
+        "evidence": "GOEI-ISS-044 y dictamen consultivo B",
+        "goeiVersion": "No asignada",
+        "name": "Borrador de resolución directiva GTRM",
+        "status": "Borrador sin selección ni firma",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-EXP-GTRM-0001",
+      "properties": {
+        "approver": "Dirección General para destino del dictamen; Comité para materias científicas",
+        "canonicalPath": "00_Gobernanza/coordinacion/expedientes/GTRM/GOEI_EXP_ISS_044_RESOLUCION_GTRM.md",
+        "componentClass": "EXP",
+        "decisionOrigin": "GOEI-GTRM-AUD-0001; GOEI-ISS-044",
+        "decisionStatus": "Separa compuerta directiva y ocho materias científicas; no selecciona alternativas",
+        "dependents": "resolución directiva, decisiones DS-GTRM-01–08 y eventual Issue ontológico",
+        "documentVersion": "0.1.0",
+        "evidence": "auditoría consolidada, dictámenes y D-006 congelada",
+        "goeiVersion": "No asignada",
+        "name": "Expediente de resolución GOEI-ISS-044",
+        "status": "Preparado; sin efectos normativos",
+        "technicalOwner": "Oficina Técnica"
       },
       "type": "Component"
     },
@@ -3224,6 +3390,24 @@
         "goeiVersion": "Arquitectura de tesis v1.0",
         "name": "Evaluador de cobertura de tesis",
         "status": "Activo",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-TPL-GTRM-0001",
+      "properties": {
+        "approver": "Comité Científico para cada decisión",
+        "canonicalPath": "00_Gobernanza/coordinacion/expedientes/GTRM/GOEI_CC_DEC_GTRM_SLOT_PLANTILLA.md",
+        "componentClass": "TEMPLATE",
+        "decisionOrigin": "GOEI-EXP-GTRM-0001",
+        "decisionStatus": "Estructura decisiones por materia; no contiene respuesta científica",
+        "dependents": "Comité, auditoría técnica, KG, B5/B6 y eventual D-006",
+        "documentVersion": "0.1.0",
+        "evidence": "requisitos de suficiencia DS-GTRM-01–08",
+        "goeiVersion": "Gobernanza técnica v0.1",
+        "name": "Plantilla de decisión científica GTRM",
+        "status": "Plantilla activa; sin contenido científico",
         "technicalOwner": "Oficina Técnica"
       },
       "type": "Component"

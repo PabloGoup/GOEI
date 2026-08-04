@@ -2,5 +2,103 @@
   "schemaVersion": "1.0",
   "catalogId": "GOEI-BIB-0001",
   "updatedAt": "2026-08-04",
-  "sources": []
+  "sources": [
+    {
+      "id": "GOEI-SRC-0001",
+      "sourceType": "article",
+      "title": "Business process modeling at steak restaurant using business process model and notation",
+      "creators": ["Nurdin, A. A.", "Pristanti, A. N.", "Samantha, N."],
+      "year": 2022,
+      "identifiers": [
+        {"type": "doi", "value": "10.52465/joscex.v3i2.84"},
+        {"type": "url", "value": "https://shmpublisher.com/index.php/joscex/article/view/84"}
+      ],
+      "language": "en",
+      "verificationStatus": "metadata_verified",
+      "scientificReviewStatus": "under_review",
+      "custody": {"accessStatus": "metadata_only", "localPath": null, "sha256": null},
+      "citedByDecisions": [],
+      "claims": [
+        {
+          "id": "GOEI-SRC-0001-CLM-01",
+          "goeiClaim": "Referencia citada por el expediente científico D-008 para documentar modelado BPMN de procesos de restaurante; su función probatoria definitiva depende de ratificación y revisión científica.",
+          "location": "GOEI_SCI_HANDOFF_D008_Cierre_B1.md, secciones 5 y Registro de cotejo",
+          "supportClass": "evidencia bibliográfica declarada por Comité",
+          "status": "under_review"
+        }
+      ],
+      "annotations": [
+        {
+          "author": "Comité Científico / Oficina Técnica",
+          "date": "2026-08-04",
+          "text": "Metadatos cotejados con la página del editor; la migración no equivale a admisión científica ni a ratificación de D-008."
+        }
+      ]
+    },
+    {
+      "id": "GOEI-SRC-0002",
+      "sourceType": "article",
+      "title": "Assessment of foodservice quality and identification of improvement strategies using hospital foodservice quality model",
+      "creators": ["Kim, K.", "Kim, M.", "Lee, K.-E."],
+      "year": 2010,
+      "identifiers": [
+        {"type": "doi", "value": "10.4162/nrp.2010.4.2.163"},
+        {"type": "pmid", "value": "20461206"},
+        {"type": "url", "value": "https://pubmed.ncbi.nlm.nih.gov/20461206/"}
+      ],
+      "language": "en",
+      "verificationStatus": "metadata_verified",
+      "scientificReviewStatus": "under_review",
+      "custody": {"accessStatus": "metadata_only", "localPath": null, "sha256": null},
+      "citedByDecisions": [],
+      "claims": [
+        {
+          "id": "GOEI-SRC-0002-CLM-01",
+          "goeiClaim": "Referencia citada por el expediente científico D-008 respecto de foodservice hospitalario; su función probatoria definitiva depende de ratificación y revisión científica.",
+          "location": "GOEI_SCI_HANDOFF_D008_Cierre_B1.md, secciones 5 y Registro de cotejo",
+          "supportClass": "evidencia bibliográfica declarada por Comité",
+          "status": "under_review"
+        }
+      ],
+      "annotations": [
+        {
+          "author": "Comité Científico / Oficina Técnica",
+          "date": "2026-08-04",
+          "text": "Metadatos cotejados con PubMed; la migración no equivale a admisión científica ni a ratificación de D-008."
+        }
+      ]
+    },
+    {
+      "id": "GOEI-SRC-0003",
+      "sourceType": "article",
+      "title": "Environmental sustainability of hospital foodservices across the food supply chain: A systematic review",
+      "creators": ["Carino, S.", "Porter, J.", "Malekpour, S.", "Collins, J."],
+      "year": 2020,
+      "identifiers": [
+        {"type": "doi", "value": "10.1016/j.jand.2020.01.001"},
+        {"type": "url", "value": "https://www.jandonline.org/article/S2212-2672(20)30001-0/abstract"}
+      ],
+      "language": "en",
+      "verificationStatus": "metadata_verified",
+      "scientificReviewStatus": "under_review",
+      "custody": {"accessStatus": "metadata_only", "localPath": null, "sha256": null},
+      "citedByDecisions": [],
+      "claims": [
+        {
+          "id": "GOEI-SRC-0003-CLM-01",
+          "goeiClaim": "Referencia citada por el expediente científico D-008 respecto de sostenibilidad y gestión de residuos en foodservice hospitalario; la clasificación GOEI continúa abierta en GOEI-ISS-043.",
+          "location": "GOEI_SCI_HANDOFF_D008_Cierre_B1.md, secciones 5, 8 y Registro de cotejo",
+          "supportClass": "evidencia bibliográfica declarada por Comité",
+          "status": "under_review"
+        }
+      ],
+      "annotations": [
+        {
+          "author": "Comité Científico / Oficina Técnica",
+          "date": "2026-08-04",
+          "text": "Metadatos cotejados con la revista; la migración no resuelve GOEI-ISS-043 ni equivale a ratificación de D-008."
+        }
+      ]
+    }
+  ]
 }

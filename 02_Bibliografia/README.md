@@ -7,4 +7,4 @@ Catálogo de fuentes y copias legalmente disponibles. Incorporar una fuente aqu�
 - Ficha narrativa: `/_Plantillas/Plantilla_ficha_fuente.md`.
 - Validador: `/16_Herramientas/validadores/validate_bibliography.py`.
 
-El catálogo se encuentra vacío: todavía no se han migrado ni verificado fuentes individuales. Las referencias textuales existentes en decisiones e investigaciones no equivalen a registros bibliográficos controlados.
+El catálogo contiene las fuentes individuales cuyos metadatos ya fueron cotejados formalmente. El estado `metadata_verified` no equivale a admisión científica: cada registro conserva por separado `scientificReviewStatus`, procedencia y vínculos con afirmaciones o decisiones.
