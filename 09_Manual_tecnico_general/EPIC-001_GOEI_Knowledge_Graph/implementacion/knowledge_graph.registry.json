@@ -1,0 +1,2707 @@
+{
+  "authorityNotice": "No scientific inference; every edge is sourced from a registry.",
+  "edges": [
+    {
+      "id": "E-CONTAINS::GOEI-ARCH-002",
+      "source": "DOC::00_Gobernanza/Arquitectura_del_repositorio_oficial_GOEI.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-ARCH-002",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-AUDIT-0001",
+      "source": "DOC::00_Gobernanza/coordinacion/reportes/GOEI_AUDIT_0001_Manuscritos_prematuros.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-AUDIT-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-BIB-0001",
+      "source": "DOC::02_Bibliografia/catalogo_fuentes.json",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-BIB-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-BIB-SCHEMA-0001",
+      "source": "DOC::02_Bibliografia/ESQUEMA_REGISTRO_BIBLIOGRAFICO.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-BIB-SCHEMA-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-BOK-0001",
+      "source": "DOC::09_Manual_tecnico_general/GOEI_BOK/README.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-BOK-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-BSL-ONT-0001",
+      "source": "DOC::15_Mantenimiento/lineas_base/GOEI_ONT_v0.1/MANIFEST.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-BSL-ONT-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-CI-0001",
+      "source": "DOC::.github/workflows/validate.yml",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-CI-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-CMP-001",
+      "source": "DOC::00_Gobernanza/Arquitectura_documental_GOEI.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-CMP-001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-CMP-002",
+      "source": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-CMP-002",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-CMP-003",
+      "source": "DOC::09_Manual_tecnico_general/Fase4_D006_Ontologia_del_GOEI.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-CMP-003",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-CMP-004",
+      "source": "DOC::00_Gobernanza/Politica_de_versionado.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-CMP-004",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-CMP-005",
+      "source": "DOC::00_Gobernanza/Convenciones_documentales.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-CMP-005",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-CON-0001",
+      "source": "DOC::00_Gobernanza/Constitucion_GOEI.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-CON-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-GIT-0001",
+      "source": "DOC::00_Gobernanza/Politica_Git_y_contribucion.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-GIT-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-GIT-HOOK-0001",
+      "source": "DOC::16_Herramientas/git/README.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-GIT-HOOK-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-GOV-COORD-0001",
+      "source": "DOC::00_Gobernanza/coordinacion/README.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-GOV-COORD-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-GOV-TO-0001",
+      "source": "DOC::00_Gobernanza/Oficina_Tecnica_GOEI.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-GOV-TO-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-HO-0001",
+      "source": "DOC::00_Gobernanza/coordinacion/handoffs/GOEI_HANDOFF_0001_B1_Procesos_Universales.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-HO-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-KG-0001",
+      "source": "DOC::09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/02_GOEI_Knowledge_Graph.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-KG-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-KG-REGISTRY-0001",
+      "source": "DOC::09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/implementacion/knowledge_graph.registry.json",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-KG-REGISTRY-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-MM-0001",
+      "source": "DOC::09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/01_GOEI_MetaModel.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-MM-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-PMM-0001",
+      "source": "DOC::04_Procesos_gastronomicos/EPIC-002_MetaModelo_Universal/01_MetaModelo_Universal_de_Procesos.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-PMM-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-PUB-ARCH-0001",
+      "source": "DOC::13_Publicaciones/manuscritos/Arquitectura_manuscrito_candidato.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-PUB-ARCH-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-RDM-0001",
+      "source": "DOC::00_Gobernanza/Roadmap_tecnico_GOEI.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-RDM-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-REL-POL-0001",
+      "source": "DOC::15_Mantenimiento/Politica_de_releases_y_lineas_base.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-REL-POL-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-REL-SCHEMA-0001",
+      "source": "DOC::15_Mantenimiento/releases/RELEASE_DOSSIER_SCHEMA.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-REL-SCHEMA-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-REV-ONT-0001",
+      "source": "DOC::09_Manual_tecnico_general/Revision_tecnica_arquitectonica_D006.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-REV-ONT-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-STATUS-0001",
+      "source": "DOC::00_Gobernanza/coordinacion/program_state.json",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-STATUS-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-THS-ARCH-0001",
+      "source": "DOC::12_Tesis/estructura/Arquitectura_de_la_tesis_derivada.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-THS-ARCH-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-THS-COV-0001",
+      "source": "DOC::12_Tesis/ensamblaje/Matriz_de_cumplimiento_plan_maestro.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-THS-COV-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-THS-REQ-0001",
+      "source": "DOC::12_Tesis/PLAN_MAESTRO_DIRECTORAL_GOEI.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-THS-REQ-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-TOOL-BIB-0001",
+      "source": "DOC::16_Herramientas/validadores/validate_bibliography.py",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-TOOL-BIB-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-TOOL-DIFF-0001",
+      "source": "DOC::16_Herramientas/validadores/compare_manifests.py",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-TOOL-DIFF-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-TOOL-GATE-0001",
+      "source": "DOC::16_Herramientas/validadores/evaluate_release_gates.py",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-TOOL-GATE-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-TOOL-KG-0001",
+      "source": "DOC::09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/implementacion/build_registry_knowledge_graph.py",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-TOOL-KG-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-TOOL-MAN-0001",
+      "source": "DOC::16_Herramientas/validadores/build_manifest.py",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-TOOL-MAN-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-TOOL-RDM-0001",
+      "source": "DOC::16_Herramientas/validadores/validate_technical_roadmap.py",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-TOOL-RDM-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-TOOL-THS-0001",
+      "source": "DOC::16_Herramientas/validadores/assess_thesis_coverage.py",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-TOOL-THS-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-VAL-TECH-0001",
+      "source": "DOC::16_Herramientas/validadores/validate_repository.py",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-VAL-TECH-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-001",
+      "source": "GOEI-ISS-001",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-002",
+      "source": "GOEI-ISS-002",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-003",
+      "source": "GOEI-ISS-003",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-004",
+      "source": "GOEI-ISS-004",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-005",
+      "source": "GOEI-ISS-005",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-006",
+      "source": "GOEI-ISS-006",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-007",
+      "source": "GOEI-ISS-007",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-008",
+      "source": "GOEI-ISS-008",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-009",
+      "source": "GOEI-ISS-009",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-010",
+      "source": "GOEI-ISS-010",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-011",
+      "source": "GOEI-ISS-011",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-012",
+      "source": "GOEI-ISS-012",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-013",
+      "source": "GOEI-ISS-013",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-014",
+      "source": "GOEI-ISS-014",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-015",
+      "source": "GOEI-ISS-015",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-016",
+      "source": "GOEI-ISS-016",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-017",
+      "source": "GOEI-ISS-017",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-019",
+      "source": "GOEI-ISS-019",
+      "sourceDocument": "04_Procesos_gastronomicos/EPIC-002_MetaModelo_Universal/08_Registro_de_issues.md",
+      "target": "DOC::04_Procesos_gastronomicos/EPIC-002_MetaModelo_Universal/08_Registro_de_issues.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-020",
+      "source": "GOEI-ISS-020",
+      "sourceDocument": "04_Procesos_gastronomicos/EPIC-002_MetaModelo_Universal/08_Registro_de_issues.md",
+      "target": "DOC::04_Procesos_gastronomicos/EPIC-002_MetaModelo_Universal/08_Registro_de_issues.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-021",
+      "source": "GOEI-ISS-021",
+      "sourceDocument": "04_Procesos_gastronomicos/EPIC-002_MetaModelo_Universal/08_Registro_de_issues.md",
+      "target": "DOC::04_Procesos_gastronomicos/EPIC-002_MetaModelo_Universal/08_Registro_de_issues.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-022",
+      "source": "GOEI-ISS-022",
+      "sourceDocument": "04_Procesos_gastronomicos/EPIC-002_MetaModelo_Universal/08_Registro_de_issues.md",
+      "target": "DOC::04_Procesos_gastronomicos/EPIC-002_MetaModelo_Universal/08_Registro_de_issues.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-023",
+      "source": "GOEI-ISS-023",
+      "sourceDocument": "04_Procesos_gastronomicos/EPIC-002_MetaModelo_Universal/08_Registro_de_issues.md",
+      "target": "DOC::04_Procesos_gastronomicos/EPIC-002_MetaModelo_Universal/08_Registro_de_issues.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-024",
+      "source": "GOEI-ISS-024",
+      "sourceDocument": "04_Procesos_gastronomicos/EPIC-002_MetaModelo_Universal/08_Registro_de_issues.md",
+      "target": "DOC::04_Procesos_gastronomicos/EPIC-002_MetaModelo_Universal/08_Registro_de_issues.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-025",
+      "source": "GOEI-ISS-025",
+      "sourceDocument": "04_Procesos_gastronomicos/EPIC-002_MetaModelo_Universal/08_Registro_de_issues.md",
+      "target": "DOC::04_Procesos_gastronomicos/EPIC-002_MetaModelo_Universal/08_Registro_de_issues.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-026",
+      "source": "GOEI-ISS-026",
+      "sourceDocument": "04_Procesos_gastronomicos/EPIC-002_MetaModelo_Universal/08_Registro_de_issues.md",
+      "target": "DOC::04_Procesos_gastronomicos/EPIC-002_MetaModelo_Universal/08_Registro_de_issues.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-027",
+      "source": "GOEI-ISS-027",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-028",
+      "source": "GOEI-ISS-028",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-029",
+      "source": "GOEI-ISS-029",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-030",
+      "source": "GOEI-ISS-030",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-031",
+      "source": "GOEI-ISS-031",
+      "sourceDocument": "09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/11_Registro_de_issues.md",
+      "target": "DOC::09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/11_Registro_de_issues.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-032",
+      "source": "GOEI-ISS-032",
+      "sourceDocument": "09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/11_Registro_de_issues.md",
+      "target": "DOC::09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/11_Registro_de_issues.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-033",
+      "source": "GOEI-ISS-033",
+      "sourceDocument": "09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/11_Registro_de_issues.md",
+      "target": "DOC::09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/11_Registro_de_issues.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-034",
+      "source": "GOEI-ISS-034",
+      "sourceDocument": "09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/11_Registro_de_issues.md",
+      "target": "DOC::09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/11_Registro_de_issues.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-035",
+      "source": "GOEI-ISS-035",
+      "sourceDocument": "09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/11_Registro_de_issues.md",
+      "target": "DOC::09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/11_Registro_de_issues.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-036",
+      "source": "GOEI-ISS-036",
+      "sourceDocument": "09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/11_Registro_de_issues.md",
+      "target": "DOC::09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/11_Registro_de_issues.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-037",
+      "source": "GOEI-ISS-037",
+      "sourceDocument": "09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/11_Registro_de_issues.md",
+      "target": "DOC::09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/11_Registro_de_issues.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-038",
+      "source": "GOEI-ISS-038",
+      "sourceDocument": "09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/11_Registro_de_issues.md",
+      "target": "DOC::09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/11_Registro_de_issues.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-039",
+      "source": "GOEI-ISS-039",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-040",
+      "source": "GOEI-ISS-040",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-041",
+      "source": "GOEI-ISS-041",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-042",
+      "source": "GOEI-ISS-042",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ORIGIN::D-003::GOEI-CMP-005",
+      "source": "D-003",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "GOEI-CMP-005",
+      "type": "ORIGINATES"
+    },
+    {
+      "id": "E-ORIGIN::D-004::GOEI-CMP-005",
+      "source": "D-004",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "GOEI-CMP-005",
+      "type": "ORIGINATES"
+    },
+    {
+      "id": "E-ORIGIN::D-005::GOEI-CMP-001",
+      "source": "D-005",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "GOEI-CMP-001",
+      "type": "ORIGINATES"
+    },
+    {
+      "id": "E-ORIGIN::D-005::GOEI-CMP-002",
+      "source": "D-005",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "GOEI-CMP-002",
+      "type": "ORIGINATES"
+    },
+    {
+      "id": "E-ORIGIN::D-005::GOEI-CMP-004",
+      "source": "D-005",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "GOEI-CMP-004",
+      "type": "ORIGINATES"
+    },
+    {
+      "id": "E-ORIGIN::D-006::GOEI-CMP-003",
+      "source": "D-006",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "GOEI-CMP-003",
+      "type": "ORIGINATES"
+    },
+    {
+      "id": "E-ORIGIN::D-006::GOEI-REV-ONT-0001",
+      "source": "D-006",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "GOEI-REV-ONT-0001",
+      "type": "ORIGINATES"
+    },
+    {
+      "id": "E-TRACE::GOEI-ARCH-002",
+      "source": "GOEI-ARCH-002",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-AUDIT-0001",
+      "source": "GOEI-AUDIT-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-BIB-0001",
+      "source": "GOEI-BIB-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-BIB-SCHEMA-0001",
+      "source": "GOEI-BIB-SCHEMA-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-BOK-0001",
+      "source": "GOEI-BOK-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-BSL-ONT-0001",
+      "source": "GOEI-BSL-ONT-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-CI-0001",
+      "source": "GOEI-CI-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-CMP-001",
+      "source": "GOEI-CMP-001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-CMP-002",
+      "source": "GOEI-CMP-002",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-CMP-003",
+      "source": "GOEI-CMP-003",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-CMP-004",
+      "source": "GOEI-CMP-004",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-CMP-005",
+      "source": "GOEI-CMP-005",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-CON-0001",
+      "source": "GOEI-CON-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-GIT-0001",
+      "source": "GOEI-GIT-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-GIT-HOOK-0001",
+      "source": "GOEI-GIT-HOOK-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-GOV-COORD-0001",
+      "source": "GOEI-GOV-COORD-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-GOV-TO-0001",
+      "source": "GOEI-GOV-TO-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-HO-0001",
+      "source": "GOEI-HO-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-KG-0001",
+      "source": "GOEI-KG-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-KG-REGISTRY-0001",
+      "source": "GOEI-KG-REGISTRY-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-MM-0001",
+      "source": "GOEI-MM-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-PMM-0001",
+      "source": "GOEI-PMM-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-PUB-ARCH-0001",
+      "source": "GOEI-PUB-ARCH-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-RDM-0001",
+      "source": "GOEI-RDM-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-REL-POL-0001",
+      "source": "GOEI-REL-POL-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-REL-SCHEMA-0001",
+      "source": "GOEI-REL-SCHEMA-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-REV-ONT-0001",
+      "source": "GOEI-REV-ONT-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-STATUS-0001",
+      "source": "GOEI-STATUS-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-THS-ARCH-0001",
+      "source": "GOEI-THS-ARCH-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-THS-COV-0001",
+      "source": "GOEI-THS-COV-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-THS-REQ-0001",
+      "source": "GOEI-THS-REQ-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-TOOL-BIB-0001",
+      "source": "GOEI-TOOL-BIB-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-TOOL-DIFF-0001",
+      "source": "GOEI-TOOL-DIFF-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-TOOL-GATE-0001",
+      "source": "GOEI-TOOL-GATE-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-TOOL-KG-0001",
+      "source": "GOEI-TOOL-KG-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-TOOL-MAN-0001",
+      "source": "GOEI-TOOL-MAN-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-TOOL-RDM-0001",
+      "source": "GOEI-TOOL-RDM-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-TOOL-THS-0001",
+      "source": "GOEI-TOOL-THS-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-VAL-TECH-0001",
+      "source": "GOEI-VAL-TECH-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-AUDIT-0001::Gobernanza técnica v0.1",
+      "source": "GOEI-AUDIT-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-BIB-SCHEMA-0001::Gobernanza técnica v0.1",
+      "source": "GOEI-BIB-SCHEMA-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-BSL-ONT-0001::Ontología v0.1",
+      "source": "GOEI-BSL-ONT-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Ontología v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-CI-0001::Gobernanza técnica v0.1",
+      "source": "GOEI-CI-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-GIT-0001::Gobernanza técnica v0.1",
+      "source": "GOEI-GIT-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-GIT-HOOK-0001::Gobernanza técnica v0.1",
+      "source": "GOEI-GIT-HOOK-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-GOV-COORD-0001::Gobernanza técnica v0.1",
+      "source": "GOEI-GOV-COORD-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-GOV-TO-0001::Gobernanza técnica v0.1",
+      "source": "GOEI-GOV-TO-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-KG-REGISTRY-0001::Gobernanza técnica v0.1",
+      "source": "GOEI-KG-REGISTRY-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-RDM-0001::Gobernanza técnica v0.1",
+      "source": "GOEI-RDM-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-REL-POL-0001::Gobernanza técnica v0.1",
+      "source": "GOEI-REL-POL-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-REL-SCHEMA-0001::Gobernanza técnica v0.1",
+      "source": "GOEI-REL-SCHEMA-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-STATUS-0001::Gobernanza técnica v0.1",
+      "source": "GOEI-STATUS-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-THS-ARCH-0001::Arquitectura de tesis v1.0",
+      "source": "GOEI-THS-ARCH-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Arquitectura de tesis v1.0",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-THS-COV-0001::Arquitectura de tesis v1.0",
+      "source": "GOEI-THS-COV-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Arquitectura de tesis v1.0",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-THS-REQ-0001::Arquitectura de tesis v1.0",
+      "source": "GOEI-THS-REQ-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Arquitectura de tesis v1.0",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-TOOL-BIB-0001::Gobernanza técnica v0.1",
+      "source": "GOEI-TOOL-BIB-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-TOOL-DIFF-0001::Gobernanza técnica v0.1",
+      "source": "GOEI-TOOL-DIFF-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-TOOL-GATE-0001::Gobernanza técnica v0.1",
+      "source": "GOEI-TOOL-GATE-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-TOOL-KG-0001::Gobernanza técnica v0.1",
+      "source": "GOEI-TOOL-KG-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-TOOL-MAN-0001::Gobernanza técnica v0.1",
+      "source": "GOEI-TOOL-MAN-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-TOOL-RDM-0001::Gobernanza técnica v0.1",
+      "source": "GOEI-TOOL-RDM-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-TOOL-THS-0001::Arquitectura de tesis v1.0",
+      "source": "GOEI-TOOL-THS-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Arquitectura de tesis v1.0",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-VAL-TECH-0001::Gobernanza técnica v0.1",
+      "source": "GOEI-VAL-TECH-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    }
+  ],
+  "graphId": "GOEI-KG-REGISTRY-0001",
+  "nodes": [
+    {
+      "id": "D-001",
+      "properties": {
+        "registryPath": "00_Gobernanza/Registro_de_decisiones.md",
+        "title": "Evaluación crítica de justificación del GOEI (dictamen del comité)"
+      },
+      "type": "Decision"
+    },
+    {
+      "id": "D-002",
+      "properties": {
+        "registryPath": "00_Gobernanza/Registro_de_decisiones.md",
+        "title": "Cierre de investigación H1 (revisión de constructos equivalentes, 19 disciplinas)"
+      },
+      "type": "Decision"
+    },
+    {
+      "id": "D-003",
+      "properties": {
+        "registryPath": "00_Gobernanza/Registro_de_decisiones.md",
+        "title": "Determinación del fenómeno y del núcleo conceptual (¿salud, desempeño o eficiencia?)"
+      },
+      "type": "Decision"
+    },
+    {
+      "id": "D-004",
+      "properties": {
+        "registryPath": "00_Gobernanza/Registro_de_decisiones.md",
+        "title": "Rectificación de D-003: ¿\"salud\" obliga a modelo reflectivo?"
+      },
+      "type": "Decision"
+    },
+    {
+      "id": "D-005",
+      "properties": {
+        "registryPath": "00_Gobernanza/Registro_de_decisiones.md",
+        "title": "Arquitectura del GOEI Standard"
+      },
+      "type": "Decision"
+    },
+    {
+      "id": "D-006",
+      "properties": {
+        "registryPath": "00_Gobernanza/Registro_de_decisiones.md",
+        "title": "Ontología conceptual del GOEI"
+      },
+      "type": "Decision"
+    },
+    {
+      "id": "D-006-REV",
+      "properties": {
+        "registryPath": "00_Gobernanza/Registro_de_decisiones.md",
+        "title": "Revisión y cierre de la ontología (5 refinamientos del comité)"
+      },
+      "type": "Decision"
+    },
+    {
+      "id": "D-007",
+      "properties": {
+        "registryPath": "00_Gobernanza/Registro_de_decisiones.md",
+        "title": "Núcleo universal de macroprocesos gastronómicos"
+      },
+      "type": "Decision"
+    },
+    {
+      "id": "DOC::.github/workflows/validate.yml",
+      "properties": {
+        "path": ".github/workflows/validate.yml"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::00_Gobernanza/Arquitectura_del_repositorio_oficial_GOEI.md",
+      "properties": {
+        "path": "00_Gobernanza/Arquitectura_del_repositorio_oficial_GOEI.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::00_Gobernanza/Arquitectura_documental_GOEI.md",
+      "properties": {
+        "path": "00_Gobernanza/Arquitectura_documental_GOEI.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::00_Gobernanza/Constitucion_GOEI.md",
+      "properties": {
+        "path": "00_Gobernanza/Constitucion_GOEI.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::00_Gobernanza/Convenciones_documentales.md",
+      "properties": {
+        "path": "00_Gobernanza/Convenciones_documentales.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "properties": {
+        "path": "00_Gobernanza/Matriz_de_trazabilidad.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::00_Gobernanza/Oficina_Tecnica_GOEI.md",
+      "properties": {
+        "path": "00_Gobernanza/Oficina_Tecnica_GOEI.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::00_Gobernanza/Politica_Git_y_contribucion.md",
+      "properties": {
+        "path": "00_Gobernanza/Politica_Git_y_contribucion.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::00_Gobernanza/Politica_de_versionado.md",
+      "properties": {
+        "path": "00_Gobernanza/Politica_de_versionado.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "properties": {
+        "path": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::00_Gobernanza/Roadmap_tecnico_GOEI.md",
+      "properties": {
+        "path": "00_Gobernanza/Roadmap_tecnico_GOEI.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::00_Gobernanza/coordinacion/README.md",
+      "properties": {
+        "path": "00_Gobernanza/coordinacion/README.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::00_Gobernanza/coordinacion/handoffs/GOEI_HANDOFF_0001_B1_Procesos_Universales.md",
+      "properties": {
+        "path": "00_Gobernanza/coordinacion/handoffs/GOEI_HANDOFF_0001_B1_Procesos_Universales.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::00_Gobernanza/coordinacion/program_state.json",
+      "properties": {
+        "path": "00_Gobernanza/coordinacion/program_state.json"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::00_Gobernanza/coordinacion/reportes/GOEI_AUDIT_0001_Manuscritos_prematuros.md",
+      "properties": {
+        "path": "00_Gobernanza/coordinacion/reportes/GOEI_AUDIT_0001_Manuscritos_prematuros.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::02_Bibliografia/ESQUEMA_REGISTRO_BIBLIOGRAFICO.md",
+      "properties": {
+        "path": "02_Bibliografia/ESQUEMA_REGISTRO_BIBLIOGRAFICO.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::02_Bibliografia/catalogo_fuentes.json",
+      "properties": {
+        "path": "02_Bibliografia/catalogo_fuentes.json"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::04_Procesos_gastronomicos/EPIC-002_MetaModelo_Universal/01_MetaModelo_Universal_de_Procesos.md",
+      "properties": {
+        "path": "04_Procesos_gastronomicos/EPIC-002_MetaModelo_Universal/01_MetaModelo_Universal_de_Procesos.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::04_Procesos_gastronomicos/EPIC-002_MetaModelo_Universal/08_Registro_de_issues.md",
+      "properties": {
+        "path": "04_Procesos_gastronomicos/EPIC-002_MetaModelo_Universal/08_Registro_de_issues.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/01_GOEI_MetaModel.md",
+      "properties": {
+        "path": "09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/01_GOEI_MetaModel.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/02_GOEI_Knowledge_Graph.md",
+      "properties": {
+        "path": "09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/02_GOEI_Knowledge_Graph.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/11_Registro_de_issues.md",
+      "properties": {
+        "path": "09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/11_Registro_de_issues.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/implementacion/build_registry_knowledge_graph.py",
+      "properties": {
+        "path": "09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/implementacion/build_registry_knowledge_graph.py"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/implementacion/knowledge_graph.registry.json",
+      "properties": {
+        "path": "09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/implementacion/knowledge_graph.registry.json"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::09_Manual_tecnico_general/Fase4_D006_Ontologia_del_GOEI.md",
+      "properties": {
+        "path": "09_Manual_tecnico_general/Fase4_D006_Ontologia_del_GOEI.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::09_Manual_tecnico_general/GOEI_BOK/README.md",
+      "properties": {
+        "path": "09_Manual_tecnico_general/GOEI_BOK/README.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::09_Manual_tecnico_general/Revision_tecnica_arquitectonica_D006.md",
+      "properties": {
+        "path": "09_Manual_tecnico_general/Revision_tecnica_arquitectonica_D006.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::12_Tesis/PLAN_MAESTRO_DIRECTORAL_GOEI.md",
+      "properties": {
+        "path": "12_Tesis/PLAN_MAESTRO_DIRECTORAL_GOEI.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::12_Tesis/ensamblaje/Matriz_de_cumplimiento_plan_maestro.md",
+      "properties": {
+        "path": "12_Tesis/ensamblaje/Matriz_de_cumplimiento_plan_maestro.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::12_Tesis/estructura/Arquitectura_de_la_tesis_derivada.md",
+      "properties": {
+        "path": "12_Tesis/estructura/Arquitectura_de_la_tesis_derivada.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::13_Publicaciones/manuscritos/Arquitectura_manuscrito_candidato.md",
+      "properties": {
+        "path": "13_Publicaciones/manuscritos/Arquitectura_manuscrito_candidato.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::15_Mantenimiento/Politica_de_releases_y_lineas_base.md",
+      "properties": {
+        "path": "15_Mantenimiento/Politica_de_releases_y_lineas_base.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::15_Mantenimiento/lineas_base/GOEI_ONT_v0.1/MANIFEST.md",
+      "properties": {
+        "path": "15_Mantenimiento/lineas_base/GOEI_ONT_v0.1/MANIFEST.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::15_Mantenimiento/releases/RELEASE_DOSSIER_SCHEMA.md",
+      "properties": {
+        "path": "15_Mantenimiento/releases/RELEASE_DOSSIER_SCHEMA.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::16_Herramientas/git/README.md",
+      "properties": {
+        "path": "16_Herramientas/git/README.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::16_Herramientas/validadores/assess_thesis_coverage.py",
+      "properties": {
+        "path": "16_Herramientas/validadores/assess_thesis_coverage.py"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::16_Herramientas/validadores/build_manifest.py",
+      "properties": {
+        "path": "16_Herramientas/validadores/build_manifest.py"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::16_Herramientas/validadores/compare_manifests.py",
+      "properties": {
+        "path": "16_Herramientas/validadores/compare_manifests.py"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::16_Herramientas/validadores/evaluate_release_gates.py",
+      "properties": {
+        "path": "16_Herramientas/validadores/evaluate_release_gates.py"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::16_Herramientas/validadores/validate_bibliography.py",
+      "properties": {
+        "path": "16_Herramientas/validadores/validate_bibliography.py"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::16_Herramientas/validadores/validate_repository.py",
+      "properties": {
+        "path": "16_Herramientas/validadores/validate_repository.py"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::16_Herramientas/validadores/validate_technical_roadmap.py",
+      "properties": {
+        "path": "16_Herramientas/validadores/validate_technical_roadmap.py"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "GOEI-ARCH-002",
+      "properties": {
+        "approver": "PENDIENTE",
+        "canonicalPath": "00_Gobernanza/Arquitectura_del_repositorio_oficial_GOEI.md",
+        "componentClass": "ARCH",
+        "decisionOrigin": "Mandato técnico del proyecto",
+        "decisionStatus": "No requiere decisión científica; adopción institucional pendiente",
+        "dependents": "futura migración y reglas del repositorio",
+        "documentVersion": "0.1.0-draft",
+        "evidence": "Requisitos expresos del proyecto y arquitectura previa",
+        "goeiVersion": "No asignada",
+        "name": "Arquitectura del repositorio oficial",
+        "status": "Propuesta para adopción",
+        "technicalOwner": "Arquitectura e Ingeniería de Conocimiento"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-AUDIT-0001",
+      "properties": {
+        "approver": "No aplica",
+        "canonicalPath": "00_Gobernanza/coordinacion/reportes/GOEI_AUDIT_0001_Manuscritos_prematuros.md",
+        "componentClass": "AUDIT",
+        "decisionOrigin": "Mandato de control de consistencia",
+        "decisionStatus": "No modifica los manuscritos",
+        "dependents": "reconstrucción futura de tesis/publicación",
+        "documentVersion": "1.0.0",
+        "evidence": "tesis y artículo prematuros; decisiones/Issues vigentes",
+        "goeiVersion": "Gobernanza técnica v0.1",
+        "name": "Auditoría de manuscritos prematuros",
+        "status": "Emitida",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-BIB-0001",
+      "properties": {
+        "approver": "Comité Científico para estados científicos",
+        "canonicalPath": "02_Bibliografia/catalogo_fuentes.json",
+        "componentClass": "BIB",
+        "decisionOrigin": "GOEI-BIB-SCHEMA-0001",
+        "decisionStatus": "Registra fuentes; no admite afirmaciones por sí mismo",
+        "dependents": "decisiones, BOK, tesis y publicaciones",
+        "documentVersion": "1.0.0",
+        "evidence": "futuras fichas y expedientes científicos",
+        "goeiVersion": "No asignada",
+        "name": "Catálogo bibliográfico procesable",
+        "status": "Activo; 0 fuentes migradas",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-BIB-SCHEMA-0001",
+      "properties": {
+        "approver": "Comité Científico para admisión de evidencia",
+        "canonicalPath": "02_Bibliografia/ESQUEMA_REGISTRO_BIBLIOGRAFICO.md",
+        "componentClass": "SCHEMA",
+        "decisionOrigin": "GOEI-DIR-0002; requisitos de trazabilidad",
+        "decisionStatus": "Separa metadatos, custodia y juicio científico",
+        "dependents": "catálogo, tesis y publicaciones",
+        "documentVersion": "1.0.0",
+        "evidence": "Plan Maestro, Knowledge Graph y plantilla de fuente",
+        "goeiVersion": "Gobernanza técnica v0.1",
+        "name": "Esquema del registro bibliográfico",
+        "status": "Activo; catálogo vacío",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-BOK-0001",
+      "properties": {
+        "approver": "PENDIENTE",
+        "canonicalPath": "09_Manual_tecnico_general/GOEI_BOK/README.md",
+        "componentClass": "BOK",
+        "decisionOrigin": "Master Plan v1.0 + mandato Oficina Técnica",
+        "decisionStatus": "Vista explicativa, no normativa",
+        "dependents": "manuales, tesis, publicaciones",
+        "documentVersion": "0.1.0-draft",
+        "evidence": "decisiones, baselines y componentes",
+        "goeiVersion": "No asignada",
+        "name": "GOEI Body of Knowledge",
+        "status": "Estructura navegable",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-BSL-ONT-0001",
+      "properties": {
+        "approver": "Instrucción expresa del proyecto",
+        "canonicalPath": "15_Mantenimiento/lineas_base/GOEI_ONT_v0.1/MANIFEST.md",
+        "componentClass": "BSL",
+        "decisionOrigin": "Instrucción expresa del proyecto",
+        "decisionStatus": "Congela, no modifica, D-006 y D-006-REV",
+        "dependents": "EPIC-001, EPIC-002 y futuras serializaciones",
+        "documentVersion": "0.1",
+        "evidence": "D-006; D-006-REV; checksums SHA-256",
+        "goeiVersion": "Ontología v0.1",
+        "name": "Ontology Baseline",
+        "status": "Congelada provisionalmente",
+        "technicalOwner": "Arquitectura e Ingeniería de Conocimiento"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-CI-0001",
+      "properties": {
+        "approver": "No aplica; control técnico",
+        "canonicalPath": ".github/workflows/validate.yml",
+        "componentClass": "CI",
+        "decisionOrigin": "GOEI-GIT-0001",
+        "decisionStatus": "Automatiza controles técnicos; no evalúa ciencia",
+        "dependents": "pull requests y main",
+        "documentVersion": "1.0.0",
+        "evidence": "validadores y pruebas del repositorio",
+        "goeiVersion": "Gobernanza técnica v0.1",
+        "name": "Validación continua del repositorio",
+        "status": "Activa y verificada",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-CMP-001",
+      "properties": {
+        "approver": "PENDIENTE",
+        "canonicalPath": "00_Gobernanza/Arquitectura_documental_GOEI.md",
+        "componentClass": "ARCH",
+        "decisionOrigin": "D-005; mandato técnico del proyecto",
+        "decisionStatus": "D-005 provisional",
+        "dependents": "todo el repositorio",
+        "documentVersion": "0.1.0-draft",
+        "evidence": "Expediente D-005 y fuentes allí citadas",
+        "goeiVersion": "No asignada",
+        "name": "Arquitectura documental",
+        "status": "Borrador bloqueado",
+        "technicalOwner": "Arquitectura e Ingeniería de Conocimiento"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-CMP-002",
+      "properties": {
+        "approver": "PENDIENTE",
+        "canonicalPath": "00_Gobernanza/Matriz_de_trazabilidad.md",
+        "componentClass": "CMP",
+        "decisionOrigin": "Principio obligatorio del proyecto; D-005/T1/T4",
+        "decisionStatus": "D-005 provisional",
+        "dependents": "todos los componentes controlados",
+        "documentVersion": "0.1.0-draft",
+        "evidence": "AGENTS.md`; expediente D-005",
+        "goeiVersion": "No asignada",
+        "name": "Matriz maestra de trazabilidad",
+        "status": "Borrador operativo",
+        "technicalOwner": "Arquitectura e Ingeniería de Conocimiento"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-CMP-003",
+      "properties": {
+        "approver": "Comité científico",
+        "canonicalPath": "09_Manual_tecnico_general/Fase4_D006_Ontologia_del_GOEI.md",
+        "componentClass": "CMP",
+        "decisionOrigin": "D-006",
+        "decisionStatus": "Adoptada, con ratificaciones específicas pendientes",
+        "dependents": "taxonomía, KPI, evaluación, datos",
+        "documentVersion": "Sin metadato",
+        "evidence": "Expediente D-006 y fuentes allí citadas",
+        "goeiVersion": "No asignada",
+        "name": "Ontología conceptual",
+        "status": "Adoptada; no vigente",
+        "technicalOwner": "No consta"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-CMP-004",
+      "properties": {
+        "approver": "PENDIENTE",
+        "canonicalPath": "00_Gobernanza/Politica_de_versionado.md",
+        "componentClass": "CMP",
+        "decisionOrigin": "D-005",
+        "decisionStatus": "Provisional",
+        "dependents": "todas las vistas documentales",
+        "documentVersion": "0.1.0-draft",
+        "evidence": "Expediente D-005 y fuentes allí citadas",
+        "goeiVersion": "No asignada",
+        "name": "Política de versionado",
+        "status": "Borrador",
+        "technicalOwner": "Arquitectura e Ingeniería de Conocimiento"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-CMP-005",
+      "properties": {
+        "approver": "PENDIENTE",
+        "canonicalPath": "00_Gobernanza/Convenciones_documentales.md",
+        "componentClass": "CMP",
+        "decisionOrigin": "D-003 rectificada por D-004",
+        "decisionStatus": "Nombre y consecuencias aún pendientes",
+        "dependents": "modelo conceptual y glosario",
+        "documentVersion": "0.1.0-draft",
+        "evidence": "Expedientes D-003 y D-004",
+        "goeiVersion": "No asignada",
+        "name": "Convenciones documentales",
+        "status": "Borrador operativo",
+        "technicalOwner": "Arquitectura e Ingeniería de Conocimiento"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-CON-0001",
+      "properties": {
+        "approver": "PENDIENTE",
+        "canonicalPath": "00_Gobernanza/Constitucion_GOEI.md",
+        "componentClass": "CON",
+        "decisionOrigin": "Mandato técnico del proyecto",
+        "decisionStatus": "Solo estructura; contenido y aprobación pendientes",
+        "dependents": "futura gobernanza y jerarquía documental",
+        "documentVersion": "0.1.0-draft",
+        "evidence": "Requisitos expresos del proyecto",
+        "goeiVersion": "No asignada",
+        "name": "Constitución GOEI",
+        "status": "Esqueleto estructural",
+        "technicalOwner": "Arquitectura e Ingeniería de Conocimiento"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-GIT-0001",
+      "properties": {
+        "approver": "Dirección General para administración remota",
+        "canonicalPath": "00_Gobernanza/Politica_Git_y_contribucion.md",
+        "componentClass": "POLICY",
+        "decisionOrigin": "GOEI-DIR-0001; arquitectura del repositorio",
+        "decisionStatus": "Control de configuración; un merge no aprueba ciencia",
+        "dependents": "historial, colaboración y releases",
+        "documentVersion": "1.0.0",
+        "evidence": "mandato técnico y repositorio remoto designado",
+        "goeiVersion": "Gobernanza técnica v0.1",
+        "name": "Política Git y contribución",
+        "status": "Control técnico activo",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-GIT-HOOK-0001",
+      "properties": {
+        "approver": "No aplica; control compensatorio local",
+        "canonicalPath": "16_Herramientas/git/README.md",
+        "componentClass": "TOOL",
+        "decisionOrigin": "GOEI-GIT-0001; GOEI-ISS-042",
+        "decisionStatus": "Control compensatorio local; no reemplaza protección remota",
+        "dependents": "commits y pushes locales",
+        "documentVersion": "1.0.0",
+        "evidence": "validadores, pruebas y política Git",
+        "goeiVersion": "Gobernanza técnica v0.1",
+        "name": "Hooks Git versionados",
+        "status": "Activo",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-GOV-COORD-0001",
+      "properties": {
+        "approver": "Dirección General",
+        "canonicalPath": "00_Gobernanza/coordinacion/README.md",
+        "componentClass": "GOV",
+        "decisionOrigin": "Mandato de avance continuo de Dirección General",
+        "decisionStatus": "No sustituye Comité ni aprobaciones",
+        "dependents": "todas las fases y productos finales",
+        "documentVersion": "0.1.0",
+        "evidence": "Oficina Técnica + ciclo oficial del conocimiento",
+        "goeiVersion": "Gobernanza técnica v0.1",
+        "name": "Coordinación automática científico-técnica",
+        "status": "Activa",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-GOV-TO-0001",
+      "properties": {
+        "approver": "Dirección General",
+        "canonicalPath": "00_Gobernanza/Oficina_Tecnica_GOEI.md",
+        "componentClass": "GOV",
+        "decisionOrigin": "GOEI-DIR-0001",
+        "decisionStatus": "Mandato técnico; no científico",
+        "dependents": "registros, repositorio, baselines, releases, BOK, tesis",
+        "documentVersion": "0.1.0",
+        "evidence": "Master Plan v1.0 + instrucción complementaria",
+        "goeiVersion": "Gobernanza técnica v0.1",
+        "name": "GOEI Technical Office",
+        "status": "Vigente como mandato técnico",
+        "technicalOwner": "Dirección General / Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-HO-0001",
+      "properties": {
+        "approver": "Dirección pendiente para D-008",
+        "canonicalPath": "00_Gobernanza/coordinacion/handoffs/GOEI_HANDOFF_0001_B1_Procesos_Universales.md",
+        "componentClass": "HO",
+        "decisionOrigin": "Expediente científico B1",
+        "decisionStatus": "Auditoría formal; no aprueba D-008",
+        "dependents": "D-008, catálogo de procesos, B2",
+        "documentVersion": "0.1.0",
+        "evidence": "D-007, revisión B1, respondibilidad",
+        "goeiVersion": "No asignada",
+        "name": "Handoff B1 Procesos Universales",
+        "status": "Recibido; no integrable normativamente",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-ISS-001",
+      "properties": {
+        "fields": [
+          "¿Se ratifica la arquitectura por eje N0–N9, planos T1–T4 y esquema K1–K4?",
+          "D-005",
+          "arquitectura oficial",
+          "comité científico",
+          "Abierta"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-002",
+      "properties": {
+        "fields": [
+          "¿T3 será compuerta obligatoria y cuáles serán sus criterios verificables de salida?",
+          "D-005",
+          "publicación/validación",
+          "comité científico",
+          "Abierta"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-003",
+      "properties": {
+        "fields": [
+          "¿Quién es propietario del estándar y qué órganos pueden aprobar, publicar, sustituir o retirar contenido?",
+          "D-005",
+          "gobernanza/versiones",
+          "instancia promotora y comité",
+          "Abierta"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-004",
+      "properties": {
+        "fields": [
+          "¿El alcance será autoevaluación, evaluación por terceros o certificación?",
+          "D-005",
+          "conformidad",
+          "comité e instancia promotora",
+          "Abierta"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-005",
+      "properties": {
+        "fields": [
+          "¿Qué familias serán normativas y cuáles informativas?",
+          "D-005",
+          "redacción normativa",
+          "comité científico",
+          "Abierta"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-006",
+      "properties": {
+        "fields": [
+          "¿Se ratifican CO-1 y los demás compromisos ontológicos aplicables?",
+          "D-006",
+          "ontología/modelos",
+          "comité científico",
+          "Abierta"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-007",
+      "properties": {
+        "fields": [
+          "¿Cuál es el nombre oficial del constructo?",
+          "D-003/D-004/D-006",
+          "glosario/modelo",
+          "comité científico",
+          "Abierta"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-008",
+      "properties": {
+        "fields": [
+          "¿Cuál es la unidad de análisis y cómo se modelan configuraciones multiunidad?",
+          "D-006",
+          "taxonomía/evaluación",
+          "comité científico",
+          "Abierta"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-009",
+      "properties": {
+        "fields": [
+          "¿El periodo es fijo, variable o definido por tipo de medición?",
+          "D-006",
+          "datos/comparabilidad",
+          "comité científico",
+          "Abierta"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-010",
+      "properties": {
+        "fields": [
+          "¿Condiciones de referencia y ponderaciones son globales o específicas por categoría?",
+          "D-006",
+          "normalización/cálculo",
+          "comité científico",
+          "Abierta"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-011",
+      "properties": {
+        "fields": [
+          "¿Se adopta AX-11 (anclaje cuádruple) como compuerta de admisibilidad del dato?",
+          "D-006-REV",
+          "admisibilidad de datos",
+          "comité científico",
+          "Abierta"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-012",
+      "properties": {
+        "fields": [
+          "¿El alcance incluye foodservice no comercial/institucional? (define P6: venta vs. requisición)",
+          "D-007",
+          "taxonomía/alcance",
+          "comité e instancia promotora",
+          "Abierta"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-013",
+      "properties": {
+        "fields": [
+          "¿La matriz de procesos se estructura en dos niveles (núcleo de subsistema + realización por categoría)?",
+          "D-007",
+          "matriz de procesos",
+          "comité científico",
+          "Abierta"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-014",
+      "properties": {
+        "fields": [
+          "¿El tipo de sistema de producción (convencional/cook-chill/commissary/assembly-serve) es eje de la taxonomía?",
+          "D-007",
+          "taxonomía",
+          "comité científico",
+          "Abierta"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-015",
+      "properties": {
+        "fields": [
+          "¿La inocuidad se modela con doble rol: proceso transversal y regla crítica no compensable (AX-4)?",
+          "D-007",
+          "procesos/reglas críticas",
+          "comité científico",
+          "Abierta"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-016",
+      "properties": {
+        "fields": [
+          "¿Se adopta Vía A (validación concurrente) o Vía B (validación predictiva-longitudinal, habilita \"salud\" pleno)?",
+          "D-003",
+          "validación/constructo",
+          "comité científico",
+          "Abierta"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-017",
+      "properties": {
+        "fields": [
+          "¿El acrónimo GOEI conserva la \"E\" de Efficiency pese a que el núcleo no es eficiencia?",
+          "D-003",
+          "denominación oficial",
+          "comité científico",
+          "Abierta"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-019",
+      "properties": {
+        "fields": [
+          "Ratificación formal del MetaModelo Universal de Procesos.",
+          "promoción de candidato a oficial",
+          "revisión técnica y aprobación de autoridad definida",
+          "Abierto"
+        ],
+        "registryPath": "04_Procesos_gastronomicos/EPIC-002_MetaModelo_Universal/08_Registro_de_issues.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-020",
+      "properties": {
+        "fields": [
+          "Determinar relación formal entre `Indicador` abstracto y `KPI-def` de D-006.",
+          "especialización `Indicador → KPI",
+          "decisión que apruebe equivalencia, subclase o separación",
+          "Abierto"
+        ],
+        "registryPath": "04_Procesos_gastronomicos/EPIC-002_MetaModelo_Universal/08_Registro_de_issues.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-021",
+      "properties": {
+        "fields": [
+          "Definir si un Subproceso reutilizado puede tener múltiples padres normativos o solo múltiples contextos de composición.",
+          "regla exacta de identidad/reutilización",
+          "decisión arquitectónica aprobada con casos de prueba",
+          "Abierto"
+        ],
+        "registryPath": "04_Procesos_gastronomicos/EPIC-002_MetaModelo_Universal/08_Registro_de_issues.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-022",
+      "properties": {
+        "fields": [
+          "Elegir edición y perfil oficial BPMN.",
+          "intercambio BPMN oficial",
+          "ADR aprobada tras pruebas de pérdida",
+          "Abierto"
+        ],
+        "registryPath": "04_Procesos_gastronomicos/EPIC-002_MetaModelo_Universal/08_Registro_de_issues.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-023",
+      "properties": {
+        "fields": [
+          "Elegir edición y perfil oficial ArchiMate.",
+          "intercambio ArchiMate oficial",
+          "ADR aprobada tras pruebas de mapeo",
+          "Abierto"
+        ],
+        "registryPath": "04_Procesos_gastronomicos/EPIC-002_MetaModelo_Universal/08_Registro_de_issues.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-024",
+      "properties": {
+        "fields": [
+          "Elegir esquema ejecutable y namespace persistente.",
+          "serialización oficial y API",
+          "ADR y gobernanza de namespace aprobadas",
+          "Abierto"
+        ],
+        "registryPath": "04_Procesos_gastronomicos/EPIC-002_MetaModelo_Universal/08_Registro_de_issues.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-025",
+      "properties": {
+        "fields": [
+          "Definir taxonomías de tipos de evento, restricción, riesgo y control.",
+          "vocabularios especializados",
+          "decisiones científicas/técnicas competentes",
+          "Abierto"
+        ],
+        "registryPath": "04_Procesos_gastronomicos/EPIC-002_MetaModelo_Universal/08_Registro_de_issues.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-026",
+      "properties": {
+        "fields": [
+          "Definir política de retención, acceso e integridad de registros/evidencias.",
+          "ciclo operacional completo",
+          "política de datos aprobada",
+          "Abierto"
+        ],
+        "registryPath": "04_Procesos_gastronomicos/EPIC-002_MetaModelo_Universal/08_Registro_de_issues.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-027",
+      "properties": {
+        "fields": [
+          "¿Cuál es la composición, mandato y autoridad exacta del Comité Directivo introducido en el organigrama?",
+          "GOEI-DIR-0001",
+          "RACI completa y jerarquía institucional",
+          "Dirección General",
+          "Abierta"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-028",
+      "properties": {
+        "fields": [
+          "¿La Dirección Metodológica de ChatGPT permanece vigente y dónde se ubica respecto del Comité Directivo?",
+          "Master Plan v1.0 vs. organigrama complementario",
+          "coordinación institucional completa",
+          "Dirección General",
+          "Abierta"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-029",
+      "properties": {
+        "fields": [
+          "¿Dónde se custodiará la copia canónica íntegra del Research Master Plan v1.0?",
+          "manifiesto GOEI-GOV-SRC-0001",
+          "preservación institucional de la fuente",
+          "Dirección General/Oficina Técnica",
+          "Abierta"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-030",
+      "properties": {
+        "fields": [
+          "Aprobar o rechazar D-008 y declarar el cierre de B1 — Procesos Universales, resolviendo alcance de P6 y tratamiento del candidato residuos/merma.",
+          "expediente B1 recibido",
+          "catálogo de procesos, inicio B2 y descendientes",
+          "Dirección General",
+          "Pendiente de resolución directiva"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-031",
+      "properties": {
+        "fields": [
+          "Definir propietario y órganos con autoridad sobre el GOEI.",
+          "Constitución → Organización → aprobación/vigencia",
+          "instancia promotora/constituyente",
+          "acto aprobado que define órganos, roles y mandatos",
+          "Abierto"
+        ],
+        "registryPath": "09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/11_Registro_de_issues.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-032",
+      "properties": {
+        "fields": [
+          "Definir jerarquía oficial normativa/informativa.",
+          "Constitución → prevalece_sobre → Standard/Documentos",
+          "gobernanza + Comité según alcance",
+          "jerarquía aprobada y conflictos resueltos",
+          "Abierto"
+        ],
+        "registryPath": "09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/11_Registro_de_issues.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-033",
+      "properties": {
+        "fields": [
+          "Definir esquema oficial de versiones y línea base GOEI.",
+          "releases integradas del Standard; no el baseline ontológico v0.1 ya ordenado",
+          "gobernanza técnica",
+          "política de versionado aprobada",
+          "Abierto"
+        ],
+        "registryPath": "09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/11_Registro_de_issues.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-034",
+      "properties": {
+        "fields": [
+          "Definir autoridad lingüística y estatus de traducciones.",
+          "traducciones oficiales",
+          "gobernanza",
+          "política multilingüe aprobada",
+          "Abierto"
+        ],
+        "registryPath": "09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/11_Registro_de_issues.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-035",
+      "properties": {
+        "fields": [
+          "Definir si y cómo se medirá confianza de aserciones.",
+          "atributo `confianza` del grafo",
+          "Comité/metodología",
+          "método aprobado o decisión de omitir",
+          "Abierto"
+        ],
+        "registryPath": "09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/11_Registro_de_issues.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-036",
+      "properties": {
+        "fields": [
+          "Resolver alcance de evaluación de conformidad.",
+          "Certificación/auditoría detallada fuera de EPIC-001",
+          "gobernanza y Comité",
+          "decisión sobre autoevaluación/terceros",
+          "Abierto"
+        ],
+        "registryPath": "09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/11_Registro_de_issues.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-037",
+      "properties": {
+        "fields": [
+          "Elegir tecnología y namespace persistente.",
+          "serialización e implementación, no modelo lógico",
+          "arquitectura técnica + gobernanza",
+          "ADR aprobado con plan de persistencia",
+          "Abierto"
+        ],
+        "registryPath": "09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/11_Registro_de_issues.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-038",
+      "properties": {
+        "fields": [
+          "Formalizar metamodelo de roles, conflicto de interés y aprobación.",
+          "validación automática de autoridad",
+          "gobernanza",
+          "política y matriz RACI aprobadas",
+          "Abierto"
+        ],
+        "registryPath": "09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/11_Registro_de_issues.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-039",
+      "properties": {
+        "fields": [
+          "Reconstruir la tesis exclusivamente desde decisiones aprobadas, baselines y validación ejecutada.",
+          "GOEI-AUDIT-0001",
+          "tesis terminada",
+          "Oficina Técnica + autoridades científica/académica",
+          "Bloqueada por B1–B10, C y D"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-040",
+      "properties": {
+        "fields": [
+          "Reconstruir el manuscrito científico desde resultados validados y referencias verificadas.",
+          "GOEI-AUDIT-0001",
+          "publicación candidata",
+          "Comité/Oficina + Dirección",
+          "Bloqueada por validación y alcance editorial"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-041",
+      "properties": {
+        "fields": [
+          "¿Qué evidencias y técnicas de validez/confiabilidad son aplicables al constructo formativo GOEI, y cómo deben tratarse los requisitos directorales de validez convergente, discriminante y confiabilidad cuando una técnica clásica sea incompatible?",
+          "GOEI-DIR-0002 + D-003/D-004",
+          "capítulo 13 y protocolo de validación",
+          "Comité Científico",
+          "Abierta"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-042",
+      "properties": {
+        "fields": [
+          "Aplicar y verificar en GitHub la protección de `main`, revisión CODEOWNERS, comprobación `integrity` obligatoria y protección de etiquetas de release. GitHub respondió: “Upgrade to GitHub Pro or make this repository public to enable this feature”.",
+          "GOEI-GIT-0001",
+          "control remoto del repositorio",
+          "Dirección General para plan/visibilidad + administrador GitHub",
+          "Bloqueada por plan del repositorio privado; hooks y CI son controles compensatorios"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-KG-0001",
+      "properties": {
+        "approver": "PENDIENTE",
+        "canonicalPath": "09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/02_GOEI_Knowledge_Graph.md",
+        "componentClass": "KG",
+        "decisionOrigin": "EPIC-001",
+        "decisionStatus": "Diseño lógico, no fuente científica",
+        "dependents": "navegación, impacto, líneas base",
+        "documentVersion": "0.1.0-draft",
+        "evidence": "GOEI-MM-0001 y diccionarios EPIC-001",
+        "goeiVersion": "No asignada",
+        "name": "GOEI Knowledge Graph",
+        "status": "Diseño lógico",
+        "technicalOwner": "Arquitectura e Ingeniería de Conocimiento"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-KG-REGISTRY-0001",
+      "properties": {
+        "approver": "No aplica; proyección sin inferencia",
+        "canonicalPath": "09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/implementacion/knowledge_graph.registry.json",
+        "componentClass": "KG-DATA",
+        "decisionOrigin": "EPIC-001; GOEI-MM-0001; GOEI-KG-0001",
+        "decisionStatus": "Exporta solo relaciones registradas; no resuelve GOEI-ISS-037",
+        "dependents": "navegación, auditoría y software futuro",
+        "documentVersion": "0.1.0",
+        "evidence": "registros de componentes, decisiones, Issues y trazabilidad",
+        "goeiVersion": "Gobernanza técnica v0.1",
+        "name": "Proyección registral del Knowledge Graph",
+        "status": "Activa; no normativa",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-MM-0001",
+      "properties": {
+        "approver": "PENDIENTE",
+        "canonicalPath": "09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/01_GOEI_MetaModel.md",
+        "componentClass": "MM",
+        "decisionOrigin": "EPIC-001",
+        "decisionStatus": "Arquitectura de conocimiento, sin contenido científico",
+        "dependents": "Knowledge Graph, BOK y software futuro",
+        "documentVersion": "0.1.0-draft",
+        "evidence": "D-006/D-006-REV; arquitectura documental; inventario existente",
+        "goeiVersion": "No asignada",
+        "name": "GOEI MetaModel",
+        "status": "Propuesta arquitectónica",
+        "technicalOwner": "Arquitectura e Ingeniería de Conocimiento"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-PMM-0001",
+      "properties": {
+        "approver": "PENDIENTE",
+        "canonicalPath": "04_Procesos_gastronomicos/EPIC-002_MetaModelo_Universal/01_MetaModelo_Universal_de_Procesos.md",
+        "componentClass": "PMM",
+        "decisionOrigin": "EPIC-002",
+        "decisionStatus": "Lenguaje de procesos, sin procesos concretos",
+        "dependents": "futuros catálogos de procesos y software",
+        "documentVersion": "0.1.0-draft",
+        "evidence": "GOEI-BSL-ONT-0001; GOEI-MM-0001",
+        "goeiVersion": "No asignada",
+        "name": "Universal Process MetaModel",
+        "status": "Candidato técnico",
+        "technicalOwner": "Arquitectura e Ingeniería de Conocimiento"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-PUB-ARCH-0001",
+      "properties": {
+        "approver": "PENDIENTE",
+        "canonicalPath": "13_Publicaciones/manuscritos/Arquitectura_manuscrito_candidato.md",
+        "componentClass": "PUB",
+        "decisionOrigin": "Master Plan v1.0",
+        "decisionStatus": "Estructura editorial sin afirmaciones/resultados",
+        "dependents": "publicación candidata",
+        "documentVersion": "0.1.0-draft",
+        "evidence": "validación, tesis y versión GOEI futuras",
+        "goeiVersion": "No asignada",
+        "name": "Arquitectura de manuscrito candidato",
+        "status": "Estructura editorial",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-RDM-0001",
+      "properties": {
+        "approver": "Dirección General para prioridades estratégicas; ciencia fuera de alcance",
+        "canonicalPath": "00_Gobernanza/Roadmap_tecnico_GOEI.md",
+        "componentClass": "RDM",
+        "decisionOrigin": "GOEI-DIR-0001; GOEI-DIR-0002; Master Plan",
+        "decisionStatus": "Ordena integración; no habilita fases científicas",
+        "dependents": "todos los paquetes y objetivos finales",
+        "documentVersion": "1.0.0",
+        "evidence": "estado procesable, Issues y matrices de ensamblaje",
+        "goeiVersion": "Gobernanza técnica v0.1",
+        "name": "Roadmap técnico maestro",
+        "status": "Activo",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-REL-POL-0001",
+      "properties": {
+        "approver": "No aplica a su operación técnica; aprobación institucional pendiente",
+        "canonicalPath": "15_Mantenimiento/Politica_de_releases_y_lineas_base.md",
+        "componentClass": "POLICY",
+        "decisionOrigin": "Mandato de gestión de configuración de la Oficina Técnica",
+        "decisionStatus": "No crea ni aprueba contenido científico",
+        "dependents": "futuras RC, baselines y releases",
+        "documentVersion": "0.1.0",
+        "evidence": "carta de mandato; registros y línea base existentes",
+        "goeiVersion": "Gobernanza técnica v0.1",
+        "name": "Política de releases y líneas base",
+        "status": "Control técnico activo",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-REL-SCHEMA-0001",
+      "properties": {
+        "approver": "No aplica; control técnico",
+        "canonicalPath": "15_Mantenimiento/releases/RELEASE_DOSSIER_SCHEMA.md",
+        "componentClass": "SCHEMA",
+        "decisionOrigin": "GOEI-REL-POL-0001",
+        "decisionStatus": "Esquema técnico; no interpreta ni aprueba ciencia",
+        "dependents": "evaluador G0–G5 y futuras releases",
+        "documentVersion": "1.0.0",
+        "evidence": "política de releases y registros maestros",
+        "goeiVersion": "Gobernanza técnica v0.1",
+        "name": "Contrato procesable de expediente de release",
+        "status": "Activo",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-REV-ONT-0001",
+      "properties": {
+        "approver": "No aplica; informe consultivo",
+        "canonicalPath": "09_Manual_tecnico_general/Revision_tecnica_arquitectonica_D006.md",
+        "componentClass": "REV",
+        "decisionOrigin": "D-006 validada según autoridad del proyecto",
+        "decisionStatus": "No modifica la decisión",
+        "dependents": "futuras decisiones de arquitectura ontológica",
+        "documentVersion": "0.1.0",
+        "evidence": "09_Manual_tecnico_general/Fase4_D006_Ontologia_del_GOEI.md",
+        "goeiVersion": "No asignada",
+        "name": "Revisión técnica de la ontología D-006",
+        "status": "Emitido para decisión",
+        "technicalOwner": "Arquitectura e Ingeniería de Conocimiento"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-STATUS-0001",
+      "properties": {
+        "approver": "No aplica",
+        "canonicalPath": "00_Gobernanza/coordinacion/program_state.json",
+        "componentClass": "STATUS",
+        "decisionOrigin": "Sistema de coordinación automática",
+        "decisionStatus": "Representación técnica del estado, no decisión científica",
+        "dependents": "automatización y entregables finales",
+        "documentVersion": "1.0.0",
+        "evidence": "fases, evidencias, blockers e Issues",
+        "goeiVersion": "Gobernanza técnica v0.1",
+        "name": "Estado procesable del programa",
+        "status": "Activo",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-THS-ARCH-0001",
+      "properties": {
+        "approver": "Dirección General para alcance; aprobación académica pendiente",
+        "canonicalPath": "12_Tesis/estructura/Arquitectura_de_la_tesis_derivada.md",
+        "componentClass": "THS",
+        "decisionOrigin": "GOEI-DIR-0002; Master Plan v1.0",
+        "decisionStatus": "Estructura editorial sin contenido científico",
+        "dependents": "cobertura, ensamblaje y tesis final",
+        "documentVersion": "1.0.0",
+        "evidence": "GOEI-THS-REQ-0001 y componentes/baselines futuras",
+        "goeiVersion": "Arquitectura de tesis v1.0",
+        "name": "Arquitectura de tesis derivada",
+        "status": "Arquitectura directoral vigente",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-THS-COV-0001",
+      "properties": {
+        "approver": "No aplica; control de cobertura",
+        "canonicalPath": "12_Tesis/ensamblaje/Matriz_de_cumplimiento_plan_maestro.md",
+        "componentClass": "THS-COV",
+        "decisionOrigin": "GOEI-DIR-0002; GOEI-THS-REQ-0001",
+        "decisionStatus": "Controla cobertura sin crear contenidos",
+        "dependents": "aceptación de tesis y cartera editorial",
+        "documentVersion": "1.0.0",
+        "evidence": "plan canónico, decisiones, fases y componentes",
+        "goeiVersion": "Arquitectura de tesis v1.0",
+        "name": "Matriz de cumplimiento del Plan Maestro",
+        "status": "Activa",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-THS-REQ-0001",
+      "properties": {
+        "approver": "Dirección General",
+        "canonicalPath": "12_Tesis/PLAN_MAESTRO_DIRECTORAL_GOEI.md",
+        "componentClass": "THS-REQ",
+        "decisionOrigin": "GOEI-DIR-0002",
+        "decisionStatus": "Requisito de alcance; no decisión científica",
+        "dependents": "arquitectura, cobertura, ensamblaje, publicaciones y readiness",
+        "documentVersion": "1.0.0",
+        "evidence": "fuente directoral con SHA-256 registrado",
+        "goeiVersion": "Arquitectura de tesis v1.0",
+        "name": "Plan Maestro Directoral de la Tesis",
+        "status": "Requisito mínimo vigente",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-TOOL-BIB-0001",
+      "properties": {
+        "approver": "No aplica; no evalúa evidencia",
+        "canonicalPath": "16_Herramientas/validadores/validate_bibliography.py",
+        "componentClass": "TOOL",
+        "decisionOrigin": "GOEI-BIB-SCHEMA-0001",
+        "decisionStatus": "Controla integridad; no interpreta literatura",
+        "dependents": "CI, tesis y publicación",
+        "documentVersion": "1.0.0",
+        "evidence": "catálogo y registro de decisiones",
+        "goeiVersion": "Gobernanza técnica v0.1",
+        "name": "Validador bibliográfico",
+        "status": "Activo",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-TOOL-DIFF-0001",
+      "properties": {
+        "approver": "No aplica; control técnico",
+        "canonicalPath": "16_Herramientas/validadores/compare_manifests.py",
+        "componentClass": "TOOL",
+        "decisionOrigin": "GOEI-REL-POL-0001",
+        "decisionStatus": "Herramienta descriptiva; sin autoridad científica",
+        "dependents": "análisis de impacto y compatibilidad",
+        "documentVersion": "1.0.0",
+        "evidence": "política de releases",
+        "goeiVersion": "Gobernanza técnica v0.1",
+        "name": "Comparador de manifiestos",
+        "status": "Activo",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-TOOL-GATE-0001",
+      "properties": {
+        "approver": "No aplica; no otorga aprobaciones",
+        "canonicalPath": "16_Herramientas/validadores/evaluate_release_gates.py",
+        "componentClass": "TOOL",
+        "decisionOrigin": "GOEI-REL-POL-0001; GOEI-REL-SCHEMA-0001",
+        "decisionStatus": "Verifica evidencia declarada; no confiere autoridad",
+        "dependents": "promoción controlada de configuraciones",
+        "documentVersion": "1.0.0",
+        "evidence": "expediente, manifiesto, registros y actos aprobatorios",
+        "goeiVersion": "Gobernanza técnica v0.1",
+        "name": "Evaluador de compuertas G0–G5",
+        "status": "Activo",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-TOOL-KG-0001",
+      "properties": {
+        "approver": "No aplica; transformación determinista",
+        "canonicalPath": "09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/implementacion/build_registry_knowledge_graph.py",
+        "componentClass": "TOOL",
+        "decisionOrigin": "GOEI-KG-REGISTRY-0001",
+        "decisionStatus": "Transformación determinista sin inferencia",
+        "dependents": "CI y proyección JSON",
+        "documentVersion": "1.0.0",
+        "evidence": "registros maestros",
+        "goeiVersion": "Gobernanza técnica v0.1",
+        "name": "Generador de la proyección registral",
+        "status": "Activo",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-TOOL-MAN-0001",
+      "properties": {
+        "approver": "No aplica; control técnico",
+        "canonicalPath": "16_Herramientas/validadores/build_manifest.py",
+        "componentClass": "TOOL",
+        "decisionOrigin": "GOEI-REL-POL-0001",
+        "decisionStatus": "Herramienta descriptiva; sin autoridad científica",
+        "dependents": "expedientes reproducibles",
+        "documentVersion": "1.0.0",
+        "evidence": "política de releases",
+        "goeiVersion": "Gobernanza técnica v0.1",
+        "name": "Generador reproducible de manifiestos",
+        "status": "Activo",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-TOOL-RDM-0001",
+      "properties": {
+        "approver": "No aplica; control técnico",
+        "canonicalPath": "16_Herramientas/validadores/validate_technical_roadmap.py",
+        "componentClass": "TOOL",
+        "decisionOrigin": "GOEI-RDM-0001",
+        "decisionStatus": "Comprueba estructura y evidencia; no aprueba cierres",
+        "dependents": "coordinación automática",
+        "documentVersion": "1.0.0",
+        "evidence": "roadmap procesable y rutas canónicas",
+        "goeiVersion": "Gobernanza técnica v0.1",
+        "name": "Validador del roadmap técnico",
+        "status": "Activo",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-TOOL-THS-0001",
+      "properties": {
+        "approver": "No aplica; no valida ciencia ni calidad académica",
+        "canonicalPath": "16_Herramientas/validadores/assess_thesis_coverage.py",
+        "componentClass": "TOOL",
+        "decisionOrigin": "GOEI-DIR-0002; GOEI-THS-COV-0001",
+        "decisionStatus": "Cuenta estados documentales; no evalúa ciencia",
+        "dependents": "readiness de tesis",
+        "documentVersion": "1.0.0",
+        "evidence": "matriz de cumplimiento y vocabulario controlado",
+        "goeiVersion": "Arquitectura de tesis v1.0",
+        "name": "Evaluador de cobertura de tesis",
+        "status": "Activo",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-VAL-TECH-0001",
+      "properties": {
+        "approver": "No aplica; control técnico",
+        "canonicalPath": "16_Herramientas/validadores/validate_repository.py",
+        "componentClass": "TOOL",
+        "decisionOrigin": "Mandato de control de consistencia",
+        "decisionStatus": "No evalúa ciencia",
+        "dependents": "baselines y releases",
+        "documentVersion": "1.0.0",
+        "evidence": "manifiesto de control y registros maestros",
+        "goeiVersion": "Gobernanza técnica v0.1",
+        "name": "Validador del repositorio",
+        "status": "Activo",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "VER::Arquitectura de tesis v1.0",
+      "properties": {
+        "label": "Arquitectura de tesis v1.0"
+      },
+      "type": "Version"
+    },
+    {
+      "id": "VER::Gobernanza técnica v0.1",
+      "properties": {
+        "label": "Gobernanza técnica v0.1"
+      },
+      "type": "Version"
+    },
+    {
+      "id": "VER::Ontología v0.1",
+      "properties": {
+        "label": "Ontología v0.1"
+      },
+      "type": "Version"
+    }
+  ],
+  "projection": "registry-only",
+  "schemaVersion": "1.0"
+}

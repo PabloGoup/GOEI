@@ -39,6 +39,8 @@
 | GOEI-BIB-SCHEMA-0001 | Esquema del registro bibliográfico | SCHEMA | Oficina Técnica | Comité Científico para admisión de evidencia | Activo; catálogo vacío | 1.0.0 | Gobernanza técnica v0.1 | `02_Bibliografia/ESQUEMA_REGISTRO_BIBLIOGRAFICO.md` |
 | GOEI-BIB-0001 | Catálogo bibliográfico procesable | BIB | Oficina Técnica | Comité Científico para estados científicos | Activo; 0 fuentes migradas | 1.0.0 | No asignada | `02_Bibliografia/catalogo_fuentes.json` |
 | GOEI-TOOL-BIB-0001 | Validador bibliográfico | TOOL | Oficina Técnica | No aplica; no evalúa evidencia | Activo | 1.0.0 | Gobernanza técnica v0.1 | `16_Herramientas/validadores/validate_bibliography.py` |
+| GOEI-KG-REGISTRY-0001 | Proyección registral del Knowledge Graph | KG-DATA | Oficina Técnica | No aplica; proyección sin inferencia | Activa; no normativa | 0.1.0 | Gobernanza técnica v0.1 | `09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/implementacion/knowledge_graph.registry.json` |
+| GOEI-TOOL-KG-0001 | Generador de la proyección registral | TOOL | Oficina Técnica | No aplica; transformación determinista | Activo | 1.0.0 | Gobernanza técnica v0.1 | `09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/implementacion/build_registry_knowledge_graph.py` |
 
 ## Regla
 

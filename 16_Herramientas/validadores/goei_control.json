@@ -32,7 +32,10 @@
     "16_Herramientas/git/install_hooks.sh",
     "02_Bibliografia/ESQUEMA_REGISTRO_BIBLIOGRAFICO.md",
     "02_Bibliografia/catalogo_fuentes.json",
-    "16_Herramientas/validadores/validate_bibliography.py"
+    "16_Herramientas/validadores/validate_bibliography.py",
+    "09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/implementacion/README.md",
+    "09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/implementacion/build_registry_knowledge_graph.py",
+    "09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/implementacion/knowledge_graph.registry.json"
   ],
   "thesisRequirements": {
     "document": "12_Tesis/PLAN_MAESTRO_DIRECTORAL_GOEI.md",

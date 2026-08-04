@@ -15,7 +15,7 @@
 | Fundamentos científicos | D-001–D-004 e investigaciones asociadas | Parcial; decisiones provisionales pendientes |
 | Arquitectura del estándar | D-005 | Bloqueada para oficialización; decisión provisional |
 | Ontología | Ontology Baseline v0.1 | Disponible como baseline congelada |
-| Knowledge Graph y MetaModel | EPIC-001 | Candidato técnico disponible |
+| Knowledge Graph y MetaModel | EPIC-001 | Candidato técnico y proyección registral JSON disponibles; persistencia oficial pendiente |
 | Arquitectura de procesos | EPIC-002 | Candidato técnico disponible |
 | Gestión de configuración y releases | GOEI-REL-POL-0001 | Infraestructura técnica disponible; sin release integral declarada |
 | Roadmap y coordinación | GOEI-RDM-0001 + estado procesable | Activo; ruta científica conserva sus bloqueos |

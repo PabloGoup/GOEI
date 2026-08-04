@@ -23,6 +23,7 @@
 9. [Matriz Entidad–Relación](09_Matriz_Entidad_Relacion.md)
 10. [Recomendaciones para software](10_Recomendaciones_software.md)
 11. [Issues y ramas bloqueadas](11_Registro_de_issues.md)
+12. [Proyección procesable de registros](implementacion/README.md)
 
 ## Regla de autoridad
 

@@ -25,6 +25,8 @@ jobs:
         run: python3 16_Herramientas/validadores/validate_technical_roadmap.py
       - name: Bibliographic registry
         run: python3 16_Herramientas/validadores/validate_bibliography.py
+      - name: Knowledge Graph registry projection
+        run: python3 09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/implementacion/build_registry_knowledge_graph.py --check
       - name: Program readiness is explicit
         shell: bash
         run: |

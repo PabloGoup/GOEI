@@ -41,6 +41,8 @@
 | GOEI-BIB-SCHEMA-0001 Esquema bibliográfico | GOEI-DIR-0002; requisitos de trazabilidad | Separa metadatos, custodia y juicio científico | Plan Maestro, Knowledge Graph y plantilla de fuente | Gobernanza técnica v0.1 | esquema humano | catálogo, tesis y publicaciones | Activo |
 | GOEI-BIB-0001 Catálogo bibliográfico | GOEI-BIB-SCHEMA-0001 | Registra fuentes; no admite afirmaciones por sí mismo | futuras fichas y expedientes científicos | PENDIENTE | JSON canónico | decisiones, BOK, tesis y publicaciones | Activo; vacío |
 | GOEI-TOOL-BIB-0001 Validador bibliográfico | GOEI-BIB-SCHEMA-0001 | Controla integridad; no interpreta literatura | catálogo y registro de decisiones | Gobernanza técnica v0.1 | script y pruebas | CI, tesis y publicación | Activo |
+| GOEI-KG-REGISTRY-0001 Proyección registral del Knowledge Graph | EPIC-001; GOEI-MM-0001; GOEI-KG-0001 | Exporta solo relaciones registradas; no resuelve GOEI-ISS-037 | registros de componentes, decisiones, Issues y trazabilidad | Gobernanza técnica v0.1 | JSON regenerable | navegación, auditoría y software futuro | Activa; no normativa |
+| GOEI-TOOL-KG-0001 Generador registral | GOEI-KG-REGISTRY-0001 | Transformación determinista sin inferencia | registros maestros | Gobernanza técnica v0.1 | script y modo check | CI y proyección JSON | Activo |
 
 ## Regla de mantenimiento
 

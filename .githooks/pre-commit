@@ -7,4 +7,5 @@ cd "$root"
 python3 16_Herramientas/validadores/validate_repository.py
 python3 16_Herramientas/validadores/validate_technical_roadmap.py
 python3 16_Herramientas/validadores/validate_bibliography.py
+python3 09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/implementacion/build_registry_knowledge_graph.py --check
 git diff --cached --check

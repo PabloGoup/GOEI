@@ -7,6 +7,7 @@ cd "$root/16_Herramientas/validadores"
 python3 -m unittest discover -s tests -v
 python3 validate_technical_roadmap.py
 python3 validate_bibliography.py
+python3 ../../09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/implementacion/build_registry_knowledge_graph.py --check
 python3 ../../16_Herramientas/validadores/validate_repository.py
 
 set +e
