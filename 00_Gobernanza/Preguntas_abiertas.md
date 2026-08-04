@@ -28,7 +28,7 @@ Este registro consolida decisiones faltantes. No propone respuestas.
 | GOEI-ISS-016 | ¿Se adopta Vía A (validación concurrente) o Vía B (validación predictiva-longitudinal, habilita "salud" pleno)? | D-003 | validación/constructo | comité científico | Abierta |
 | GOEI-ISS-017 | ¿El acrónimo GOEI conserva la "E" de Efficiency pese a que el núcleo no es eficiencia? | D-003 | denominación oficial | comité científico | Abierta |
 | GOEI-ISS-041 | ¿Qué evidencias y técnicas de validez/confiabilidad son aplicables al constructo formativo GOEI, y cómo deben tratarse los requisitos directorales de validez convergente, discriminante y confiabilidad cuando una técnica clásica sea incompatible? | GOEI-DIR-0002 + D-003/D-004 | capítulo 13 y protocolo de validación | Comité Científico | Abierta |
-| GOEI-ISS-042 | Aplicar y verificar en GitHub la protección de `main`, revisión CODEOWNERS, comprobación `integrity` obligatoria y protección de etiquetas de release. | GOEI-GIT-0001 | control remoto del repositorio | Administrador de `PabloGoup/GOEI` | Pendiente de configuración externa |
+| GOEI-ISS-042 | Aplicar y verificar en GitHub la protección de `main`, revisión CODEOWNERS, comprobación `integrity` obligatoria y protección de etiquetas de release. GitHub respondió: “Upgrade to GitHub Pro or make this repository public to enable this feature”. | GOEI-GIT-0001 | control remoto del repositorio | Dirección General para plan/visibilidad + administrador GitHub | Bloqueada por plan del repositorio privado; hooks y CI son controles compensatorios |
 
 ## Criterio de cierre
 

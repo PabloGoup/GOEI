@@ -36,7 +36,8 @@
 | GOEI-RDM-0001 Roadmap técnico maestro | GOEI-DIR-0001; GOEI-DIR-0002; Master Plan | Ordena integración; no habilita fases científicas | estado procesable, Issues y matrices de ensamblaje | Gobernanza técnica v0.1 | roadmap humano y JSON canónico | todos los paquetes y objetivos finales | Activo |
 | GOEI-TOOL-RDM-0001 Validador del roadmap | GOEI-RDM-0001 | Comprueba estructura y evidencia; no aprueba cierres | roadmap procesable y rutas canónicas | Gobernanza técnica v0.1 | script y pruebas unitarias | coordinación automática | Activo |
 | GOEI-GIT-0001 Política Git y contribución | GOEI-DIR-0001; arquitectura del repositorio | Control de configuración; un merge no aprueba ciencia | mandato técnico y repositorio remoto designado | Gobernanza técnica v0.1 | política, CONTRIBUTING, CHANGELOG y plantillas | historial, colaboración y releases | Activo localmente |
-| GOEI-CI-0001 Validación continua | GOEI-GIT-0001 | Automatiza controles técnicos; no evalúa ciencia | validadores y pruebas del repositorio | Gobernanza técnica v0.1 | workflow GitHub Actions | pull requests y main | Configurada; ejecución remota pendiente |
+| GOEI-CI-0001 Validación continua | GOEI-GIT-0001 | Automatiza controles técnicos; no evalúa ciencia | validadores y pruebas del repositorio | Gobernanza técnica v0.1 | workflow GitHub Actions | pull requests y main | Activa; ejecuciones remotas conformes |
+| GOEI-GIT-HOOK-0001 Hooks Git versionados | GOEI-GIT-0001; GOEI-ISS-042 | Control compensatorio local; no reemplaza protección remota | validadores, pruebas y política Git | Gobernanza técnica v0.1 | hooks e instalador | commits y pushes locales | Activo |
 
 ## Regla de mantenimiento
 

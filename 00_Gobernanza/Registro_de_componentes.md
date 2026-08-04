@@ -34,7 +34,8 @@
 | GOEI-RDM-0001 | Roadmap técnico maestro | RDM | Oficina Técnica | Dirección General para prioridades estratégicas; ciencia fuera de alcance | Activo | 1.0.0 | Gobernanza técnica v0.1 | `00_Gobernanza/Roadmap_tecnico_GOEI.md` |
 | GOEI-TOOL-RDM-0001 | Validador del roadmap técnico | TOOL | Oficina Técnica | No aplica; control técnico | Activo | 1.0.0 | Gobernanza técnica v0.1 | `16_Herramientas/validadores/validate_technical_roadmap.py` |
 | GOEI-GIT-0001 | Política Git y contribución | POLICY | Oficina Técnica | Dirección General para administración remota | Control técnico activo | 1.0.0 | Gobernanza técnica v0.1 | `00_Gobernanza/Politica_Git_y_contribucion.md` |
-| GOEI-CI-0001 | Validación continua del repositorio | CI | Oficina Técnica | No aplica; control técnico | Configurada | 1.0.0 | Gobernanza técnica v0.1 | `.github/workflows/validate.yml` |
+| GOEI-CI-0001 | Validación continua del repositorio | CI | Oficina Técnica | No aplica; control técnico | Activa y verificada | 1.0.0 | Gobernanza técnica v0.1 | `.github/workflows/validate.yml` |
+| GOEI-GIT-HOOK-0001 | Hooks Git versionados | TOOL | Oficina Técnica | No aplica; control compensatorio local | Activo | 1.0.0 | Gobernanza técnica v0.1 | `16_Herramientas/git/README.md` |
 
 ## Regla
 

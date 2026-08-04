@@ -1,0 +1,9 @@
+#!/bin/sh
+set -eu
+
+root=$(git rev-parse --show-toplevel)
+cd "$root"
+
+python3 16_Herramientas/validadores/validate_repository.py
+python3 16_Herramientas/validadores/validate_technical_roadmap.py
+git diff --cached --check

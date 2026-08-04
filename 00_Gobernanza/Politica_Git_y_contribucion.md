@@ -24,6 +24,12 @@ Se utiliza desarrollo basado en `main` con ramas cortas y pull requests. `main` 
 
 La aplicación remota de estas reglas requiere permisos administrativos y deberá verificarse separadamente.
 
+### Restricción remota vigente
+
+GitHub informó que la protección de ramas no está disponible para este repositorio privado bajo el plan actual. GOEI-ISS-042 permanece bloqueado hasta contratar GitHub Pro o convertir el repositorio en público mediante decisión de la Dirección. Esta restricción no se resuelve reduciendo controles.
+
+Como defensa compensatoria se usan hooks versionados y validación continua. Los hooks se activan con `sh 16_Herramientas/git/install_hooks.sh`; la revisión mediante pull request permanece obligatoria por procedimiento.
+
 ## Estrategia de merge
 
 Se prefiere squash para cambios autocontenidos y merge preservado para ramas de release cuando la historia de integración resulte material. El mensaje final conserva el ID del Issue, cambio o decisión.

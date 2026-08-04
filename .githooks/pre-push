@@ -1,0 +1,23 @@
+#!/bin/sh
+set -eu
+
+root=$(git rev-parse --show-toplevel)
+cd "$root/16_Herramientas/validadores"
+
+python3 -m unittest discover -s tests -v
+python3 validate_technical_roadmap.py
+python3 ../../16_Herramientas/validadores/validate_repository.py
+
+set +e
+python3 assess_readiness.py
+readiness_status=$?
+python3 assess_thesis_coverage.py
+thesis_status=$?
+set -e
+
+if [ "$readiness_status" -ne 0 ] && [ "$readiness_status" -ne 2 ]; then
+  exit "$readiness_status"
+fi
+if [ "$thesis_status" -ne 0 ] && [ "$thesis_status" -ne 2 ]; then
+  exit "$thesis_status"
+fi
