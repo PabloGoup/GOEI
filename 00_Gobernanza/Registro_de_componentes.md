@@ -42,6 +42,11 @@
 | GOEI-KG-REGISTRY-0001 | Proyección registral del Knowledge Graph | KG-DATA | Oficina Técnica | No aplica; proyección sin inferencia | Activa; no normativa | 0.1.0 | Gobernanza técnica v0.1 | `09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/implementacion/knowledge_graph.registry.json` |
 | GOEI-TOOL-KG-0001 | Generador de la proyección registral | TOOL | Oficina Técnica | No aplica; transformación determinista | Activo | 1.0.0 | Gobernanza técnica v0.1 | `09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/implementacion/build_registry_knowledge_graph.py` |
 | GOEI-TOOL-KG-0002 | Consulta e impacto del Knowledge Graph | TOOL | Oficina Técnica | No aplica; navegación sin inferencia | Activo | 1.0.0 | Gobernanza técnica v0.1 | `09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/implementacion/query_registry_knowledge_graph.py` |
+| GOEI-GOV-OPS-0001 | Dirección operativa ampliada | GOV | Dirección General / Oficina Técnica | Dirección General | Vigente como mandato operativo | 0.1.0 | Gobernanza técnica v0.1 | `00_Gobernanza/Registro_de_directivas.md` |
+| GOEI-PIPE-B2-B10-0001 | Pipeline operativo B2–B10 | PIPE | Oficina Técnica | Dirección General para compuertas; Comité Científico para contenido | Preparado; condicionado a cierre B1 | 0.1.0 | Gobernanza técnica v0.1 | `00_Gobernanza/coordinacion/PIPELINE_B2_B10.md` |
+| GOEI-THS-MAP-0001 | Matriz capítulo–evidencia aprobada | THS-MAP | Oficina Técnica | No aplica; control de ensamblaje | Activa | 1.0.0 | Arquitectura de tesis v1.0 | `12_Tesis/ensamblaje/Matriz_capitulo_evidencia_aprobada.md` |
+| GOEI-THS-ED-0001 | Especificación editorial UDLA–APA 7 | THS-ED | Oficina Técnica | Aprobación académica e institucional pendiente | Especificación de proyecto; cotejo UDLA pendiente | 0.1.0 | Arquitectura de tesis v1.0 | `12_Tesis/estructura/Especificacion_editorial_UDLA_APA7.md` |
+| GOEI-AUDIT-0002 | Auditoría técnica D-008 / cierre B1 | AUDIT | Oficina Técnica | No aplica; no aprueba ciencia | Emitida para resolución directiva | 1.0.0 | Gobernanza técnica v0.1 | `00_Gobernanza/coordinacion/reportes/GOEI_AUDIT_0002_D008_Cierre_B1.md` |
 
 ## Regla
 

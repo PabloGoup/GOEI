@@ -15,8 +15,8 @@
       "id": "B1",
       "name": "Procesos Universales",
       "status": "awaiting_approval",
-      "evidence": ["D-007", "GOEI-HO-0001"],
-      "blockers": ["GOEI-ISS-030", "D-008 proposed but not approved"]
+      "evidence": ["D-007", "GOEI-HO-0001", "GOEI-AUDIT-0002", "D-008 committee recommendation"],
+      "blockers": ["GOEI-ISS-030", "D-008 awaiting Director General ratification"]
     },
     {
       "id": "B2",

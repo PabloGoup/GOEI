@@ -14,7 +14,7 @@
 | Fase | Responsable principal | Estado verificable | Compuerta pendiente |
 |---|---|---|---|
 | A Fundamentos científicos | Comité Científico | En cierre según Master Plan | cierre oficial y ausencia de bloqueos críticos |
-| B Construcción del conocimiento | Comité Científico | B1 investigada; cierre directivo pendiente | D-008/cierre B1 y luego B2–B10 secuenciales |
+| B Construcción del conocimiento | Comité Científico | D-008 recomendada por el Comité; cierre directivo pendiente | ratificación D-008/cierre B1 y luego B2–B10 secuenciales |
 | C Construcción del estándar | Oficina Técnica | Preparación arquitectónica anticipada; contenido bloqueado | cierre oficial de Fase B |
 | D Validación piloto | Director + Comité | No iniciada | Standard candidato y protocolo aprobado |
 | E Publicaciones | Autoridad/Comité/Oficina | Estructura editorial únicamente | resultados y aprobaciones previas |
@@ -42,7 +42,7 @@
 
 ## Próxima dependencia científica crítica
 
-El Comité entregó el expediente B1 y propuso D-008. La auditoría formal concluyó que el paquete puede elevarse a Dirección, pero no es integrable normativamente hasta que la Dirección apruebe o rechace D-008, responda las preguntas elevadas y declare el cierre de B1.
+El Comité emitió dictamen favorable a D-008 y propuso cerrar B1. GOEI-AUDIT-0002 concluyó que el expediente puede elevarse a resolución directiva con reservas bibliográficas y una dependencia abierta sobre residuos/merma. No es integrable normativamente hasta que la Dirección ratifique, rechace o devuelva D-008 y declare el estado oficial de B1.
 
 ## Política de avance
 

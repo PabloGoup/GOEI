@@ -41,7 +41,7 @@
       "status": "awaiting_approval",
       "dependencies": ["WP-03"],
       "evidence": ["00_Gobernanza/coordinacion/handoffs/GOEI_HANDOFF_0001_B1_Procesos_Universales.md"],
-      "blockers": ["GOEI-ISS-030", "D-008 proposed but not approved"]
+      "blockers": ["GOEI-ISS-030", "D-008 awaiting Director General ratification"]
     },
     {
       "id": "WP-05",

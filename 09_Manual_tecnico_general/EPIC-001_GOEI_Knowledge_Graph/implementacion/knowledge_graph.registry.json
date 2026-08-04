@@ -16,6 +16,13 @@
       "type": "CONTAINS"
     },
     {
+      "id": "E-CONTAINS::GOEI-AUDIT-0002",
+      "source": "DOC::00_Gobernanza/coordinacion/reportes/GOEI_AUDIT_0002_D008_Cierre_B1.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-AUDIT-0002",
+      "type": "CONTAINS"
+    },
+    {
       "id": "E-CONTAINS::GOEI-BIB-0001",
       "source": "DOC::02_Bibliografia/catalogo_fuentes.json",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
@@ -114,6 +121,13 @@
       "type": "CONTAINS"
     },
     {
+      "id": "E-CONTAINS::GOEI-GOV-OPS-0001",
+      "source": "DOC::00_Gobernanza/Registro_de_directivas.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-GOV-OPS-0001",
+      "type": "CONTAINS"
+    },
+    {
       "id": "E-CONTAINS::GOEI-GOV-TO-0001",
       "source": "DOC::00_Gobernanza/Oficina_Tecnica_GOEI.md",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
@@ -146,6 +160,13 @@
       "source": "DOC::09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/01_GOEI_MetaModel.md",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "GOEI-MM-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-PIPE-B2-B10-0001",
+      "source": "DOC::00_Gobernanza/coordinacion/PIPELINE_B2_B10.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-PIPE-B2-B10-0001",
       "type": "CONTAINS"
     },
     {
@@ -209,6 +230,20 @@
       "source": "DOC::12_Tesis/ensamblaje/Matriz_de_cumplimiento_plan_maestro.md",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "GOEI-THS-COV-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-THS-ED-0001",
+      "source": "DOC::12_Tesis/estructura/Especificacion_editorial_UDLA_APA7.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-THS-ED-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-THS-MAP-0001",
+      "source": "DOC::12_Tesis/ensamblaje/Matriz_capitulo_evidencia_aprobada.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-THS-MAP-0001",
       "type": "CONTAINS"
     },
     {
@@ -569,6 +604,13 @@
       "type": "REGISTERED_IN"
     },
     {
+      "id": "E-ISSUE::GOEI-ISS-043",
+      "source": "GOEI-ISS-043",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
       "id": "E-ORIGIN::D-003::GOEI-CMP-005",
       "source": "D-003",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
@@ -627,6 +669,13 @@
     {
       "id": "E-TRACE::GOEI-AUDIT-0001",
       "source": "GOEI-AUDIT-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-AUDIT-0002",
+      "source": "GOEI-AUDIT-0002",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
       "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
       "type": "TRACED_IN"
@@ -730,6 +779,13 @@
       "type": "TRACED_IN"
     },
     {
+      "id": "E-TRACE::GOEI-GOV-OPS-0001",
+      "source": "GOEI-GOV-OPS-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
       "id": "E-TRACE::GOEI-GOV-TO-0001",
       "source": "GOEI-GOV-TO-0001",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
@@ -760,6 +816,13 @@
     {
       "id": "E-TRACE::GOEI-MM-0001",
       "source": "GOEI-MM-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-PIPE-B2-B10-0001",
+      "source": "GOEI-PIPE-B2-B10-0001",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
       "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
       "type": "TRACED_IN"
@@ -823,6 +886,20 @@
     {
       "id": "E-TRACE::GOEI-THS-COV-0001",
       "source": "GOEI-THS-COV-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-THS-ED-0001",
+      "source": "GOEI-THS-ED-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-THS-MAP-0001",
+      "source": "GOEI-THS-MAP-0001",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
       "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
       "type": "TRACED_IN"
@@ -905,6 +982,13 @@
       "type": "INCORPORATED_IN"
     },
     {
+      "id": "E-VERSION::GOEI-AUDIT-0002::Gobernanza técnica v0.1",
+      "source": "GOEI-AUDIT-0002",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
       "id": "E-VERSION::GOEI-BIB-SCHEMA-0001::Gobernanza técnica v0.1",
       "source": "GOEI-BIB-SCHEMA-0001",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
@@ -947,6 +1031,13 @@
       "type": "INCORPORATED_IN"
     },
     {
+      "id": "E-VERSION::GOEI-GOV-OPS-0001::Gobernanza técnica v0.1",
+      "source": "GOEI-GOV-OPS-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
       "id": "E-VERSION::GOEI-GOV-TO-0001::Gobernanza técnica v0.1",
       "source": "GOEI-GOV-TO-0001",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
@@ -956,6 +1047,13 @@
     {
       "id": "E-VERSION::GOEI-KG-REGISTRY-0001::Gobernanza técnica v0.1",
       "source": "GOEI-KG-REGISTRY-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-PIPE-B2-B10-0001::Gobernanza técnica v0.1",
+      "source": "GOEI-PIPE-B2-B10-0001",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "VER::Gobernanza técnica v0.1",
       "type": "INCORPORATED_IN"
@@ -998,6 +1096,20 @@
     {
       "id": "E-VERSION::GOEI-THS-COV-0001::Arquitectura de tesis v1.0",
       "source": "GOEI-THS-COV-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Arquitectura de tesis v1.0",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-THS-ED-0001::Arquitectura de tesis v1.0",
+      "source": "GOEI-THS-ED-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Arquitectura de tesis v1.0",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-THS-MAP-0001::Arquitectura de tesis v1.0",
+      "source": "GOEI-THS-MAP-0001",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "VER::Arquitectura de tesis v1.0",
       "type": "INCORPORATED_IN"
@@ -1210,9 +1322,23 @@
       "type": "Document"
     },
     {
+      "id": "DOC::00_Gobernanza/Registro_de_directivas.md",
+      "properties": {
+        "path": "00_Gobernanza/Registro_de_directivas.md"
+      },
+      "type": "Document"
+    },
+    {
       "id": "DOC::00_Gobernanza/Roadmap_tecnico_GOEI.md",
       "properties": {
         "path": "00_Gobernanza/Roadmap_tecnico_GOEI.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::00_Gobernanza/coordinacion/PIPELINE_B2_B10.md",
+      "properties": {
+        "path": "00_Gobernanza/coordinacion/PIPELINE_B2_B10.md"
       },
       "type": "Document"
     },
@@ -1241,6 +1367,13 @@
       "id": "DOC::00_Gobernanza/coordinacion/reportes/GOEI_AUDIT_0001_Manuscritos_prematuros.md",
       "properties": {
         "path": "00_Gobernanza/coordinacion/reportes/GOEI_AUDIT_0001_Manuscritos_prematuros.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::00_Gobernanza/coordinacion/reportes/GOEI_AUDIT_0002_D008_Cierre_B1.md",
+      "properties": {
+        "path": "00_Gobernanza/coordinacion/reportes/GOEI_AUDIT_0002_D008_Cierre_B1.md"
       },
       "type": "Document"
     },
@@ -1343,6 +1476,13 @@
       "type": "Document"
     },
     {
+      "id": "DOC::12_Tesis/ensamblaje/Matriz_capitulo_evidencia_aprobada.md",
+      "properties": {
+        "path": "12_Tesis/ensamblaje/Matriz_capitulo_evidencia_aprobada.md"
+      },
+      "type": "Document"
+    },
+    {
       "id": "DOC::12_Tesis/ensamblaje/Matriz_de_cumplimiento_plan_maestro.md",
       "properties": {
         "path": "12_Tesis/ensamblaje/Matriz_de_cumplimiento_plan_maestro.md"
@@ -1353,6 +1493,13 @@
       "id": "DOC::12_Tesis/estructura/Arquitectura_de_la_tesis_derivada.md",
       "properties": {
         "path": "12_Tesis/estructura/Arquitectura_de_la_tesis_derivada.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::12_Tesis/estructura/Especificacion_editorial_UDLA_APA7.md",
+      "properties": {
+        "path": "12_Tesis/estructura/Especificacion_editorial_UDLA_APA7.md"
       },
       "type": "Document"
     },
@@ -1472,6 +1619,24 @@
         "goeiVersion": "Gobernanza técnica v0.1",
         "name": "Auditoría de manuscritos prematuros",
         "status": "Emitida",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-AUDIT-0002",
+      "properties": {
+        "approver": "No aplica; no aprueba ciencia",
+        "canonicalPath": "00_Gobernanza/coordinacion/reportes/GOEI_AUDIT_0002_D008_Cierre_B1.md",
+        "componentClass": "AUDIT",
+        "decisionOrigin": "GOEI-DIR-0001; GOEI-DIR-0003",
+        "decisionStatus": "Auditoría formal; no ratifica ciencia",
+        "dependents": "GOEI-ISS-012–015, 030, 043; B2 y catálogo de procesos",
+        "documentVersion": "1.0.0",
+        "evidence": "expediente del Comité D-008",
+        "goeiVersion": "Gobernanza técnica v0.1",
+        "name": "Auditoría técnica D-008 / cierre B1",
+        "status": "Emitida para resolución directiva",
         "technicalOwner": "Oficina Técnica"
       },
       "type": "Component"
@@ -1729,6 +1894,24 @@
       "type": "Component"
     },
     {
+      "id": "GOEI-GOV-OPS-0001",
+      "properties": {
+        "approver": "Dirección General",
+        "canonicalPath": "00_Gobernanza/Registro_de_directivas.md",
+        "componentClass": "GOV",
+        "decisionOrigin": "GOEI-DIR-0003",
+        "decisionStatus": "Coordinación, arquitectura, ingeniería, redacción y desarrollo; no aprobación científica",
+        "dependents": "roadmap, Comité–Oficina Técnica, tesis, publicaciones y software",
+        "documentVersion": "0.1.0",
+        "evidence": "instrucción expresa de Dirección General",
+        "goeiVersion": "Gobernanza técnica v0.1",
+        "name": "Dirección operativa ampliada",
+        "status": "Vigente como mandato operativo",
+        "technicalOwner": "Dirección General / Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
       "id": "GOEI-GOV-TO-0001",
       "properties": {
         "approver": "Dirección General",
@@ -1926,7 +2109,7 @@
           "D-007",
           "taxonomía/alcance",
           "comité e instancia promotora",
-          "Abierta"
+          "Respondida favorablemente por Comité en expediente D-008; ratificación pendiente"
         ],
         "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
       },
@@ -1940,7 +2123,7 @@
           "D-007",
           "matriz de procesos",
           "comité científico",
-          "Abierta"
+          "Respondida favorablemente por Comité en expediente D-008; ratificación pendiente"
         ],
         "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
       },
@@ -2152,11 +2335,11 @@
       "id": "GOEI-ISS-030",
       "properties": {
         "fields": [
-          "Aprobar o rechazar D-008 y declarar el cierre de B1 — Procesos Universales, resolviendo alcance de P6 y tratamiento del candidato residuos/merma.",
-          "expediente B1 recibido",
+          "Ratificar, rechazar o devolver D-008 y declarar el cierre oficial de B1, considerando el dictamen favorable del Comité y las reservas de GOEI-AUDIT-0002.",
+          "expediente D-008 recibido y auditado",
           "catálogo de procesos, inicio B2 y descendientes",
           "Dirección General",
-          "Pendiente de resolución directiva"
+          "Dictamen científico favorable; ratificación directiva pendiente"
         ],
         "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
       },
@@ -2331,6 +2514,20 @@
       "type": "Issue"
     },
     {
+      "id": "GOEI-ISS-043",
+      "properties": {
+        "fields": [
+          "Determinar si gestión de residuos/merma es macroproceso, proceso transversal o subproceso, y qué evidencia/consenso exige su clasificación.",
+          "expediente D-008 §8",
+          "cierre preciso del catálogo B1 y dependencias de sostenibilidad",
+          "Comité Científico + ratificación directiva",
+          "Abierta; no completar por inferencia técnica"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
       "id": "GOEI-KG-0001",
       "properties": {
         "approver": "PENDIENTE",
@@ -2381,6 +2578,24 @@
         "name": "GOEI MetaModel",
         "status": "Propuesta arquitectónica",
         "technicalOwner": "Arquitectura e Ingeniería de Conocimiento"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-PIPE-B2-B10-0001",
+      "properties": {
+        "approver": "Dirección General para compuertas; Comité Científico para contenido",
+        "canonicalPath": "00_Gobernanza/coordinacion/PIPELINE_B2_B10.md",
+        "componentClass": "PIPE",
+        "decisionOrigin": "GOEI-DIR-0001; GOEI-DIR-0003",
+        "decisionStatus": "Define compuertas y handoffs; no responde ciencia",
+        "dependents": "expedientes científicos, integración, BOK, tesis y release",
+        "documentVersion": "0.1.0",
+        "evidence": "estado B1, RACI y ruta crítica",
+        "goeiVersion": "Gobernanza técnica v0.1",
+        "name": "Pipeline operativo B2–B10",
+        "status": "Preparado; condicionado a cierre B1",
+        "technicalOwner": "Oficina Técnica"
       },
       "type": "Component"
     },
@@ -2541,6 +2756,42 @@
         "evidence": "plan canónico, decisiones, fases y componentes",
         "goeiVersion": "Arquitectura de tesis v1.0",
         "name": "Matriz de cumplimiento del Plan Maestro",
+        "status": "Activa",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-THS-ED-0001",
+      "properties": {
+        "approver": "Aprobación académica e institucional pendiente",
+        "canonicalPath": "12_Tesis/estructura/Especificacion_editorial_UDLA_APA7.md",
+        "componentClass": "THS-ED",
+        "decisionOrigin": "GOEI-DIR-0002; GOEI-DIR-0003",
+        "decisionStatus": "Sistema editorial; requisitos UDLA sin verificar no se presumen oficiales",
+        "dependents": "plantilla, tesis y publicación",
+        "documentVersion": "0.1.0",
+        "evidence": "Plan Maestro, APA 7 como convención y datos autorales directorales",
+        "goeiVersion": "Arquitectura de tesis v1.0",
+        "name": "Especificación editorial UDLA–APA 7",
+        "status": "Especificación de proyecto; cotejo UDLA pendiente",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-THS-MAP-0001",
+      "properties": {
+        "approver": "No aplica; control de ensamblaje",
+        "canonicalPath": "12_Tesis/ensamblaje/Matriz_capitulo_evidencia_aprobada.md",
+        "componentClass": "THS-MAP",
+        "decisionOrigin": "GOEI-DIR-0002; GOEI-DIR-0003",
+        "decisionStatus": "Controla reutilización segura; no crea contenido",
+        "dependents": "ensamblaje, auditoría y aceptación de tesis",
+        "documentVersion": "1.0.0",
+        "evidence": "decisiones D-001–D-007, baselines, Plan Maestro y auditoría",
+        "goeiVersion": "Arquitectura de tesis v1.0",
+        "name": "Matriz capítulo–evidencia aprobada",
         "status": "Activa",
         "technicalOwner": "Oficina Técnica"
       },

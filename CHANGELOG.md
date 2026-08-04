@@ -15,6 +15,8 @@ Todos los cambios relevantes del GOEI se documentarán en este archivo siguiendo
 - Plan Maestro Directoral y control de 64 requisitos mínimos de tesis.
 - Roadmap técnico procesable de 15 paquetes.
 - Validadores y pruebas automáticas del repositorio.
+- Mandato de dirección operativa ampliada y coordinación paralela asistida, sin transferencia de autoridad científica.
+- Pipeline científico–técnico B2–B10, matriz capítulo–evidencia y especificación editorial APA 7 orientada a UDLA.
 
 ### Changed
 

@@ -60,3 +60,42 @@ La tesis GOEI deberá cubrir, como mínimo, los cuatro tomos, 17 capítulos, ane
 ### Documentos dependientes
 
 Arquitectura de tesis, matriz de ensamblaje, matriz de cumplimiento, roadmap, arquitectura de publicaciones y criterios de readiness.
+
+---
+
+## GOEI-DIR-0003 — Dirección operativa ampliada y coordinación asistida
+
+| Campo | Valor |
+|---|---|
+| Fecha | 2026-08-04 |
+| Estado | Vigente como mandato operativo |
+| Autoridad | Dirección General GOEI, según instrucción expresa recibida |
+| Materia | Dirección operativa, arquitectura, ingeniería, redacción, desarrollo y coordinación paralela |
+| Fuente | Instrucción directa de Pablo Toledo Salinas en la tarea oficial GOEI |
+| Implementa | Pipeline operativo, coordinación Comité Científico–Oficina Técnica y producción controlada de entregables |
+| Versión de incorporación | Gobernanza técnica v0.1 |
+
+### Directiva
+
+Se autoriza a Codex a actuar como **Director Operativo, Arquitecto, Ingeniero, Escritor y Desarrollador** del proyecto GOEI; a organizar trabajo técnico paralelo mediante agentes especializados; y a formular encargos de investigación a Claude en su función de Comité Científico.
+
+### Alcance operativo
+
+- dirigir el programa técnico y mantener su ruta crítica;
+- descomponer y coordinar trabajo paralelo que no vulnere dependencias;
+- solicitar al Comité Científico expedientes, revisiones y propuestas de decisión;
+- convertir conocimiento aprobado en modelos, documentos, software y entregables versionados;
+- redactar la tesis y publicaciones únicamente desde contenido aprobado o claramente identificado como pendiente;
+- detener selectivamente las ramas que carezcan de decisión científica y continuar el trabajo técnico independiente.
+
+### Límites de autoridad
+
+- la directiva no autoriza a Codex a crear conocimiento científico, KPI, fórmulas, ponderaciones, umbrales ni resultados;
+- una respuesta de Claude constituye expediente o recomendación científica hasta completar la aprobación exigida por la gobernanza;
+- Codex no sustituye la aprobación final de la Dirección General en decisiones científicas, baselines científicas, releases ni publicaciones;
+- la producción editorial o de software no puede promover contenido provisional a normativo;
+- continúan vigentes las reglas de Issues, trazabilidad, auditoría, versionado y bloqueo selectivo.
+
+### Documentos dependientes
+
+Estado Maestro, Pipeline B2–B10, colas científico–técnicas, roadmap, Knowledge Graph, BOK, tesis, publicaciones, software y registros de ciclo.
