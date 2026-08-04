@@ -14,7 +14,7 @@
 | Fase | Responsable principal | Estado verificable | Compuerta pendiente |
 |---|---|---|---|
 | A Fundamentos científicos | Comité Científico | En cierre según Master Plan | cierre oficial y ausencia de bloqueos críticos |
-| B Construcción del conocimiento | Comité Científico | B1 y B2 cerradas en sus preguntas nucleares; B3 habilitada | expediente y decisión científica B3, luego B4–B10 secuenciales |
+| B Construcción del conocimiento | Comité Científico | B1–B3 cerradas en sus preguntas nucleares; B4 habilitada | método, criterios y evaluación científica B4; luego B5–B10 secuenciales |
 | C Construcción del estándar | Oficina Técnica | Preparación arquitectónica anticipada; contenido bloqueado | cierre oficial de Fase B |
 | D Validación piloto | Director + Comité | No iniciada | Standard candidato y protocolo aprobado |
 | E Publicaciones | Autoridad/Comité/Oficina | Estructura editorial únicamente | resultados y aprobaciones previas |
@@ -46,14 +46,15 @@
 - D-009–D-016 incorporan el marco científico GTRM tras `GOEI-AUDIT-0004`; GOEI-ISS-045–052 quedan cerrados solo en su alcance de marco.
 - `GOEI-ONT-CAND-0001` y `GOEI-ARQ-GTRM-0001` preparan el cambio ontológico y los contratos B5/B6 sin modificar D-006 ni habilitar instancias, fórmulas, parámetros o tolerancias.
 - D-017 y `GOEI-DIR-RES-0002` cierran B2 en su pregunta nuclear y congelan `GOEI-BSL-TAX-0001 v0.1.0`; valores, multiunidad, facetas opcionales y crosswalks permanecen excluidos.
+- D-018 y `GOEI-DIR-RES-0003` cierran B3 en su pregunta nuclear y congelan `GOEI-BSL-KPI-C-0001 v0.1.0`: 31 indicadores candidatos pasan a la cola B4 y C-032 queda preservado solo como marco contextual; ningún KPI ha sido aprobado.
 
 ## Próxima dependencia científica crítica
 
-La dependencia crítica activa es B3 — Universo candidato de KPI. `GOEI-ISS-008` y `GOEI-ISS-054` bloquean solo clasificaciones concretas; GOEI-ISS-053 protege D-006 y `GOEI-ISS-043` bloquea únicamente residuos/merma.
+La dependencia crítica activa es B4 — Admisibilidad y selección de KPI. Antes de evaluar candidatos, el Comité debe decidir el método y los criterios. `GOEI-ISS-055`–`058` y las reservas heredadas bloquean únicamente las ramas declaradas; GOEI-ISS-053 protege D-006.
 
 ## Política de avance
 
-La Oficina Técnica preservará las baselines de ontología, procesos y taxonomía; coordinará B3 sin crear KPI y mantendrá fuera de uso los valores taxonómicos no aprobados.
+La Oficina Técnica preservará las baselines de ontología, procesos, taxonomía y catálogo candidato; coordinará B4 sin crear criterios científicos ni promover KPI por inferencia.
 
 El ciclo técnico GOEI-CYCLE-0002 confirmó la reconstrucción determinista del inventario de Ontology Baseline v0.1 y dejó preparadas las compuertas G0–G5. Estas compuertas describen requisitos de promoción, pero ninguna herramienta puede otorgar aprobación científica o institucional.
 

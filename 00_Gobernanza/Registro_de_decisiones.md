@@ -178,6 +178,21 @@
 
 ---
 
+**Decisión:** D-018 — Universo candidato de indicadores y cierre limitado de B3
+**Fecha:** 2026-08-04
+**Problema analizado:** ¿Qué indicadores documentados podrían representar P1–P9 y el alcance facetado aprobado como universo candidato no normativo del GOEI?
+**Alternativas consideradas:** pasar directo a KPI; adoptar un único conjunto; inventario multi-fuente trazable; esperar una revisión PRISMA completa.
+**Evidencia utilizada:** expediente `GOEI_SCI_HANDOFF_D018_Cierre_B3.md`, revisión B3, catálogo `GOEI-CAT-KPI-C-0001`, matriz `GOEI-MTZ-KPI-C-0001` y fuentes allí declaradas; auditoría técnica `GOEI-AUDIT-0006`.
+**Decisión adoptada:** Inventario multi-fuente trazable y no normativo. Se congelan 31 indicadores documentados con estado `CANDIDATO`; C-032 se conserva como marco contextual y no integra la cola de evaluación KPI de B4.
+**Autoridad científica:** Comité Científico GOEI.
+**Ratificación directiva:** `GOEI-DIR-RES-0003`, bajo `GOEI-DIR-0004`.
+**Justificación:** Consta en D-018; la resolución directiva no amplía ni reinterpreta su fundamento científico.
+**Limitaciones:** Búsqueda no exhaustiva, vacío P1, fuentes genéricas, heterogeneidad jurisdiccional, solapamientos y reservas registradas. No se aprueba ningún KPI, fórmula, unidad GOEI, referencia, peso, puntuación o umbral.
+**Versión incorporada:** `GOEI-BSL-KPI-C-0001 v0.1.0`, baseline registral candidata.
+**Pendiente de validación:** `GOEI-ISS-055`–`058` y reservas `008`, `015`, `043`, `054`; B4 debe decidir método, criterios y resultados de admisibilidad.
+
+---
+
 **Decisión:** D-017 — Taxonomía universal facetada y cierre limitado de B2
 **Fecha:** 2026-08-04
 **Problema analizado:** ¿Qué sistema de clasificación permite delimitar y comparar los establecimientos comprendidos por GOEI?

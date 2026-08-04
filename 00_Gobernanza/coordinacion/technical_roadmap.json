@@ -56,8 +56,8 @@
       "name": "KPI y admisibilidad",
       "status": "in_progress",
       "dependencies": ["WP-05"],
-      "evidence": ["15_Mantenimiento/lineas_base/GOEI_TAX_v0.1.0/MANIFEST.md"],
-      "blockers": ["B3-B4 scientific decisions pending"]
+      "evidence": ["15_Mantenimiento/lineas_base/GOEI_KPI_CAND_v0.1.0/MANIFEST.md", "00_Gobernanza/coordinacion/handoffs/GOEI_HANDOFF_0003_B3_Universo_KPI.md"],
+      "blockers": ["B4 method, criteria and candidate evaluations pending"]
     },
     {
       "id": "WP-07",

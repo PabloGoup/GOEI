@@ -26,11 +26,18 @@
       "blockers": []
     },
     {
-      "id": "B3-B10",
-      "name": "KPI through Technical Manual knowledge",
+      "id": "B3",
+      "name": "Universo y catálogo candidato de KPI",
+      "status": "complete",
+      "evidence": ["D-018", "GOEI-AUDIT-0006", "GOEI-DIR-RES-0003", "GOEI-BSL-KPI-C-0001 v0.1.0"],
+      "blockers": []
+    },
+    {
+      "id": "B4-B10",
+      "name": "Admisibilidad through Technical Manual knowledge",
       "status": "in_progress",
-      "evidence": ["GOEI-BSL-TAX-0001 v0.1.0"],
-      "blockers": ["B3-B10 scientific decisions pending sequentially", "GOEI-ISS-054 blocks concrete taxonomy values only"]
+      "evidence": ["GOEI-BSL-KPI-C-0001 v0.1.0", "GOEI-HO-0003"],
+      "blockers": ["B4-B10 scientific decisions pending sequentially", "GOEI-ISS-055 through GOEI-ISS-058 block declared branches only"]
     },
     {
       "id": "C",

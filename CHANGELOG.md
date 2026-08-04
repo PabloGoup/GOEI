@@ -4,6 +4,9 @@ Todos los cambios relevantes del GOEI se documentarán en este archivo siguiendo
 
 ## [Unreleased]
 
+- Ratificada D-018 mediante `GOEI-DIR-RES-0003`; B3 queda cerrada en su pregunta nuclear y se congela `GOEI-BSL-KPI-C-0001 v0.1.0` con 31 indicadores candidatos, sin aprobar ningún KPI.
+- C-032 se preserva como marco contextual BSC y se excluye expresamente de la cola de admisibilidad B4; abiertos `GOEI-ISS-055`–`058` y habilitada B4.
+
 - Ratificada D-017 con alcance limitado mediante `GOEI-DIR-RES-0002`; B2 queda cerrada en su pregunta nuclear y se congela `GOEI-BSL-TAX-0001 v0.1.0` sin catálogo de valores, facetas opcionales, crosswalks ni reglas multiunidad.
 - Emitida `GOEI-AUDIT-0005`, cerrado `GOEI-ISS-014`, abierto `GOEI-ISS-054` y habilitada B3 sin creación de KPI.
 

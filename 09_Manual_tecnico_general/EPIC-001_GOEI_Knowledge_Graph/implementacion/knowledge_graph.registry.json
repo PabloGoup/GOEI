@@ -51,6 +51,13 @@
       "type": "CONTAINS"
     },
     {
+      "id": "E-CONTAINS::GOEI-AUDIT-0006",
+      "source": "DOC::00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0006_D018_Cierre_B3.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-AUDIT-0006",
+      "type": "CONTAINS"
+    },
+    {
       "id": "E-CONTAINS::GOEI-BIB-0001",
       "source": "DOC::02_Bibliografia/catalogo_fuentes.json",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
@@ -72,6 +79,13 @@
       "type": "CONTAINS"
     },
     {
+      "id": "E-CONTAINS::GOEI-BSL-KPI-C-0001",
+      "source": "DOC::15_Mantenimiento/lineas_base/GOEI_KPI_CAND_v0.1.0/MANIFEST.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-BSL-KPI-C-0001",
+      "type": "CONTAINS"
+    },
+    {
       "id": "E-CONTAINS::GOEI-BSL-ONT-0001",
       "source": "DOC::15_Mantenimiento/lineas_base/GOEI_ONT_v0.1/MANIFEST.md",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
@@ -90,6 +104,13 @@
       "source": "DOC::15_Mantenimiento/lineas_base/GOEI_TAX_v0.1.0/MANIFEST.md",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "GOEI-BSL-TAX-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-CAT-KPI-C-0001",
+      "source": "DOC::05_Catalogo_KPI/GOEI_Catalogo_KPI_Candidatos_B3.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-CAT-KPI-C-0001",
       "type": "CONTAINS"
     },
     {
@@ -153,6 +174,13 @@
       "source": "DOC::00_Gobernanza/coordinacion/resoluciones/GOEI_DIR_RES_0002_D017_B2.md",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "GOEI-DIR-RES-0002",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-DIR-RES-0003",
+      "source": "DOC::00_Gobernanza/coordinacion/resoluciones/GOEI_DIR_RES_0003_D018_B3.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-DIR-RES-0003",
       "type": "CONTAINS"
     },
     {
@@ -268,6 +296,13 @@
       "type": "CONTAINS"
     },
     {
+      "id": "E-CONTAINS::GOEI-HO-0003",
+      "source": "DOC::00_Gobernanza/coordinacion/handoffs/GOEI_HANDOFF_0003_B3_Universo_KPI.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-HO-0003",
+      "type": "CONTAINS"
+    },
+    {
       "id": "E-CONTAINS::GOEI-KG-0001",
       "source": "DOC::09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/02_GOEI_Knowledge_Graph.md",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
@@ -282,10 +317,24 @@
       "type": "CONTAINS"
     },
     {
+      "id": "E-CONTAINS::GOEI-KPI-B3-REV-0001",
+      "source": "DOC::01_Estado_del_arte/FaseB_B3_Revision_universo_KPI.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-KPI-B3-REV-0001",
+      "type": "CONTAINS"
+    },
+    {
       "id": "E-CONTAINS::GOEI-MM-0001",
       "source": "DOC::09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/01_GOEI_MetaModel.md",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "GOEI-MM-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-MTZ-KPI-C-0001",
+      "source": "DOC::05_Catalogo_KPI/GOEI_Matriz_Cobertura_KPI_Candidatos_B3.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-MTZ-KPI-C-0001",
       "type": "CONTAINS"
     },
     {
@@ -349,6 +398,13 @@
       "source": "DOC::00_Gobernanza/coordinacion/entradas_comite/GOEI_SCI_HANDOFF_D017_Cierre_B2.md",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "GOEI-SCI-D017-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-SCI-D018-0001",
+      "source": "DOC::00_Gobernanza/coordinacion/entradas_comite/GOEI_SCI_HANDOFF_D018_Cierre_B3.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-SCI-D018-0001",
       "type": "CONTAINS"
     },
     {
@@ -842,6 +898,34 @@
       "type": "REGISTERED_IN"
     },
     {
+      "id": "E-ISSUE::GOEI-ISS-055",
+      "source": "GOEI-ISS-055",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-056",
+      "source": "GOEI-ISS-056",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-057",
+      "source": "GOEI-ISS-057",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-058",
+      "source": "GOEI-ISS-058",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
       "id": "E-ORIGIN::D-000::GOEI-EXP-GTRM-0001",
       "source": "D-000",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
@@ -996,6 +1080,55 @@
       "type": "ORIGINATES"
     },
     {
+      "id": "E-ORIGIN::D-018::GOEI-BSL-KPI-C-0001",
+      "source": "D-018",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "GOEI-BSL-KPI-C-0001",
+      "type": "ORIGINATES"
+    },
+    {
+      "id": "E-ORIGIN::D-018::GOEI-CAT-KPI-C-0001",
+      "source": "D-018",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "GOEI-CAT-KPI-C-0001",
+      "type": "ORIGINATES"
+    },
+    {
+      "id": "E-ORIGIN::D-018::GOEI-DIR-RES-0003",
+      "source": "D-018",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "GOEI-DIR-RES-0003",
+      "type": "ORIGINATES"
+    },
+    {
+      "id": "E-ORIGIN::D-018::GOEI-HO-0003",
+      "source": "D-018",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "GOEI-HO-0003",
+      "type": "ORIGINATES"
+    },
+    {
+      "id": "E-ORIGIN::D-018::GOEI-KPI-B3-REV-0001",
+      "source": "D-018",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "GOEI-KPI-B3-REV-0001",
+      "type": "ORIGINATES"
+    },
+    {
+      "id": "E-ORIGIN::D-018::GOEI-MTZ-KPI-C-0001",
+      "source": "D-018",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "GOEI-MTZ-KPI-C-0001",
+      "type": "ORIGINATES"
+    },
+    {
+      "id": "E-ORIGIN::D-018::GOEI-SCI-D018-0001",
+      "source": "D-018",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "GOEI-SCI-D018-0001",
+      "type": "ORIGINATES"
+    },
+    {
       "id": "E-TRACE::GOEI-ARCH-002",
       "source": "GOEI-ARCH-002",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
@@ -1045,6 +1178,13 @@
       "type": "TRACED_IN"
     },
     {
+      "id": "E-TRACE::GOEI-AUDIT-0006",
+      "source": "GOEI-AUDIT-0006",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
       "id": "E-TRACE::GOEI-BIB-0001",
       "source": "GOEI-BIB-0001",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
@@ -1066,6 +1206,13 @@
       "type": "TRACED_IN"
     },
     {
+      "id": "E-TRACE::GOEI-BSL-KPI-C-0001",
+      "source": "GOEI-BSL-KPI-C-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
       "id": "E-TRACE::GOEI-BSL-ONT-0001",
       "source": "GOEI-BSL-ONT-0001",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
@@ -1082,6 +1229,13 @@
     {
       "id": "E-TRACE::GOEI-BSL-TAX-0001",
       "source": "GOEI-BSL-TAX-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-CAT-KPI-C-0001",
+      "source": "GOEI-CAT-KPI-C-0001",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
       "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
       "type": "TRACED_IN"
@@ -1145,6 +1299,13 @@
     {
       "id": "E-TRACE::GOEI-DIR-RES-0002",
       "source": "GOEI-DIR-RES-0002",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-DIR-RES-0003",
+      "source": "GOEI-DIR-RES-0003",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
       "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
       "type": "TRACED_IN"
@@ -1262,6 +1423,13 @@
       "type": "TRACED_IN"
     },
     {
+      "id": "E-TRACE::GOEI-HO-0003",
+      "source": "GOEI-HO-0003",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
       "id": "E-TRACE::GOEI-KG-0001",
       "source": "GOEI-KG-0001",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
@@ -1276,8 +1444,22 @@
       "type": "TRACED_IN"
     },
     {
+      "id": "E-TRACE::GOEI-KPI-B3-REV-0001",
+      "source": "GOEI-KPI-B3-REV-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
       "id": "E-TRACE::GOEI-MM-0001",
       "source": "GOEI-MM-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-MTZ-KPI-C-0001",
+      "source": "GOEI-MTZ-KPI-C-0001",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
       "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
       "type": "TRACED_IN"
@@ -1341,6 +1523,13 @@
     {
       "id": "E-TRACE::GOEI-SCI-D017-0001",
       "source": "GOEI-SCI-D017-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-SCI-D018-0001",
+      "source": "GOEI-SCI-D018-0001",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
       "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
       "type": "TRACED_IN"
@@ -1500,10 +1689,24 @@
       "type": "INCORPORATED_IN"
     },
     {
+      "id": "E-VERSION::GOEI-AUDIT-0006::Gobernanza técnica v0.1",
+      "source": "GOEI-AUDIT-0006",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
       "id": "E-VERSION::GOEI-BIB-SCHEMA-0001::Gobernanza técnica v0.1",
       "source": "GOEI-BIB-SCHEMA-0001",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-BSL-KPI-C-0001::KPI Candidate Catalog Baseline v0.1.0",
+      "source": "GOEI-BSL-KPI-C-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::KPI Candidate Catalog Baseline v0.1.0",
       "type": "INCORPORATED_IN"
     },
     {
@@ -1528,6 +1731,13 @@
       "type": "INCORPORATED_IN"
     },
     {
+      "id": "E-VERSION::GOEI-CAT-KPI-C-0001::KPI Candidate Catalog Baseline v0.1.0",
+      "source": "GOEI-CAT-KPI-C-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::KPI Candidate Catalog Baseline v0.1.0",
+      "type": "INCORPORATED_IN"
+    },
+    {
       "id": "E-VERSION::GOEI-CI-0001::Gobernanza técnica v0.1",
       "source": "GOEI-CI-0001",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
@@ -1546,6 +1756,13 @@
       "source": "GOEI-DIR-RES-0002",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "VER::Taxonomy Baseline v0.1.0",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-DIR-RES-0003::KPI Candidate Catalog Baseline v0.1.0",
+      "source": "GOEI-DIR-RES-0003",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::KPI Candidate Catalog Baseline v0.1.0",
       "type": "INCORPORATED_IN"
     },
     {
@@ -1640,10 +1857,31 @@
       "type": "INCORPORATED_IN"
     },
     {
+      "id": "E-VERSION::GOEI-HO-0003::KPI Candidate Catalog Baseline v0.1.0",
+      "source": "GOEI-HO-0003",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::KPI Candidate Catalog Baseline v0.1.0",
+      "type": "INCORPORATED_IN"
+    },
+    {
       "id": "E-VERSION::GOEI-KG-REGISTRY-0001::Gobernanza técnica v0.1",
       "source": "GOEI-KG-REGISTRY-0001",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-KPI-B3-REV-0001::KPI Candidate Catalog Baseline v0.1.0",
+      "source": "GOEI-KPI-B3-REV-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::KPI Candidate Catalog Baseline v0.1.0",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-MTZ-KPI-C-0001::KPI Candidate Catalog Baseline v0.1.0",
+      "source": "GOEI-MTZ-KPI-C-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::KPI Candidate Catalog Baseline v0.1.0",
       "type": "INCORPORATED_IN"
     },
     {
@@ -1679,6 +1917,13 @@
       "source": "GOEI-SCI-D017-0001",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "VER::Taxonomy Baseline v0.1.0",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-SCI-D018-0001::KPI Candidate Catalog Baseline v0.1.0",
+      "source": "GOEI-SCI-D018-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::KPI Candidate Catalog Baseline v0.1.0",
       "type": "INCORPORATED_IN"
     },
     {
@@ -1955,6 +2200,14 @@
       "type": "Decision"
     },
     {
+      "id": "D-018",
+      "properties": {
+        "registryPath": "00_Gobernanza/Registro_de_decisiones.md",
+        "title": "Universo candidato de indicadores y cierre limitado de B3"
+      },
+      "type": "Decision"
+    },
+    {
       "id": "DOC::.github/workflows/validate.yml",
       "properties": {
         "path": ".github/workflows/validate.yml"
@@ -2060,6 +2313,13 @@
       "type": "Document"
     },
     {
+      "id": "DOC::00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0006_D018_Cierre_B3.md",
+      "properties": {
+        "path": "00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0006_D018_Cierre_B3.md"
+      },
+      "type": "Document"
+    },
+    {
       "id": "DOC::00_Gobernanza/coordinacion/auditorias/GTRM/GOEI_AUDIT_0004_DS_GTRM_01_08.md",
       "properties": {
         "path": "00_Gobernanza/coordinacion/auditorias/GTRM/GOEI_AUDIT_0004_DS_GTRM_01_08.md"
@@ -2123,6 +2383,13 @@
       "type": "Document"
     },
     {
+      "id": "DOC::00_Gobernanza/coordinacion/entradas_comite/GOEI_SCI_HANDOFF_D018_Cierre_B3.md",
+      "properties": {
+        "path": "00_Gobernanza/coordinacion/entradas_comite/GOEI_SCI_HANDOFF_D018_Cierre_B3.md"
+      },
+      "type": "Document"
+    },
+    {
       "id": "DOC::00_Gobernanza/coordinacion/expedientes/GTRM/GOEI_CC_DEC_GTRM_SLOT_PLANTILLA.md",
       "properties": {
         "path": "00_Gobernanza/coordinacion/expedientes/GTRM/GOEI_CC_DEC_GTRM_SLOT_PLANTILLA.md"
@@ -2154,6 +2421,13 @@
       "id": "DOC::00_Gobernanza/coordinacion/handoffs/GOEI_HANDOFF_0002_B2_Taxonomia_Universal.md",
       "properties": {
         "path": "00_Gobernanza/coordinacion/handoffs/GOEI_HANDOFF_0002_B2_Taxonomia_Universal.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::00_Gobernanza/coordinacion/handoffs/GOEI_HANDOFF_0003_B3_Universo_KPI.md",
+      "properties": {
+        "path": "00_Gobernanza/coordinacion/handoffs/GOEI_HANDOFF_0003_B3_Universo_KPI.md"
       },
       "type": "Document"
     },
@@ -2200,6 +2474,20 @@
       "type": "Document"
     },
     {
+      "id": "DOC::00_Gobernanza/coordinacion/resoluciones/GOEI_DIR_RES_0003_D018_B3.md",
+      "properties": {
+        "path": "00_Gobernanza/coordinacion/resoluciones/GOEI_DIR_RES_0003_D018_B3.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::01_Estado_del_arte/FaseB_B3_Revision_universo_KPI.md",
+      "properties": {
+        "path": "01_Estado_del_arte/FaseB_B3_Revision_universo_KPI.md"
+      },
+      "type": "Document"
+    },
+    {
       "id": "DOC::02_Bibliografia/ESQUEMA_REGISTRO_BIBLIOGRAFICO.md",
       "properties": {
         "path": "02_Bibliografia/ESQUEMA_REGISTRO_BIBLIOGRAFICO.md"
@@ -2224,6 +2512,20 @@
       "id": "DOC::04_Procesos_gastronomicos/EPIC-002_MetaModelo_Universal/08_Registro_de_issues.md",
       "properties": {
         "path": "04_Procesos_gastronomicos/EPIC-002_MetaModelo_Universal/08_Registro_de_issues.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::05_Catalogo_KPI/GOEI_Catalogo_KPI_Candidatos_B3.md",
+      "properties": {
+        "path": "05_Catalogo_KPI/GOEI_Catalogo_KPI_Candidatos_B3.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::05_Catalogo_KPI/GOEI_Matriz_Cobertura_KPI_Candidatos_B3.md",
+      "properties": {
+        "path": "05_Catalogo_KPI/GOEI_Matriz_Cobertura_KPI_Candidatos_B3.md"
       },
       "type": "Document"
     },
@@ -2350,6 +2652,13 @@
       "id": "DOC::15_Mantenimiento/Politica_de_releases_y_lineas_base.md",
       "properties": {
         "path": "15_Mantenimiento/Politica_de_releases_y_lineas_base.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::15_Mantenimiento/lineas_base/GOEI_KPI_CAND_v0.1.0/MANIFEST.md",
+      "properties": {
+        "path": "15_Mantenimiento/lineas_base/GOEI_KPI_CAND_v0.1.0/MANIFEST.md"
       },
       "type": "Document"
     },
@@ -2564,6 +2873,24 @@
       "type": "Component"
     },
     {
+      "id": "GOEI-AUDIT-0006",
+      "properties": {
+        "approver": "No aplica; control técnico",
+        "canonicalPath": "00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0006_D018_Cierre_B3.md",
+        "componentClass": "AUDIT",
+        "decisionOrigin": "GOEI-DIR-0004; contrato B3",
+        "decisionStatus": "Verifica suficiencia formal; no juzga ciencia",
+        "dependents": "resolución y promoción limitada",
+        "documentVersion": "1.0.0",
+        "evidence": "cuatro artefactos B3 y baselines previas",
+        "goeiVersion": "Gobernanza técnica v0.1",
+        "name": "Auditoría técnica D-018 / B3",
+        "status": "Aceptable para decisión con promoción limitada",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
       "id": "GOEI-BIB-0001",
       "properties": {
         "approver": "Comité Científico para estados científicos",
@@ -2613,6 +2940,24 @@
         "goeiVersion": "No asignada",
         "name": "GOEI Body of Knowledge",
         "status": "Estructura navegable",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-BSL-KPI-C-0001",
+      "properties": {
+        "approver": "Comité Científico D-018 + GOEI-DIR-RES-0003",
+        "canonicalPath": "15_Mantenimiento/lineas_base/GOEI_KPI_CAND_v0.1.0/MANIFEST.md",
+        "componentClass": "BSL",
+        "decisionOrigin": "D-018; GOEI-DIR-RES-0003",
+        "decisionStatus": "Congela 31 candidatos; no aprueba KPI",
+        "dependents": "B4, B5 futuro, BOK, KG, tesis y publicaciones",
+        "documentVersion": "0.1.0",
+        "evidence": "revisión, catálogo, matriz, handoff y checksums",
+        "goeiVersion": "KPI Candidate Catalog Baseline v0.1.0",
+        "name": "KPI Candidate Catalog Baseline",
+        "status": "Congelada; candidata y no normativa",
         "technicalOwner": "Oficina Técnica"
       },
       "type": "Component"
@@ -2668,6 +3013,24 @@
         "name": "Taxonomy Baseline",
         "status": "Congelada con reservas",
         "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-CAT-KPI-C-0001",
+      "properties": {
+        "approver": "D-018 + GOEI-DIR-RES-0003",
+        "canonicalPath": "05_Catalogo_KPI/GOEI_Catalogo_KPI_Candidatos_B3.md",
+        "componentClass": "CAT",
+        "decisionOrigin": "D-018; GOEI-DIR-RES-0003",
+        "decisionStatus": "31 indicadores candidatos y C-032 contextual; sin KPI aprobado",
+        "dependents": "matriz, B4, BOK, KG, tesis y publicaciones",
+        "documentVersion": "0.1.0",
+        "evidence": "fuentes por ficha, procesos, facetas y vacíos",
+        "goeiVersion": "KPI Candidate Catalog Baseline v0.1.0",
+        "name": "Catálogo controlado de indicadores candidatos B3",
+        "status": "Congelado; 31 indicadores candidatos + 1 marco contextual",
+        "technicalOwner": "Comité Científico / custodia Oficina Técnica"
       },
       "type": "Component"
     },
@@ -2828,6 +3191,24 @@
         "evidence": "GOEI-AUDIT-0005 y expediente científico",
         "goeiVersion": "Taxonomy Baseline v0.1.0",
         "name": "Resolución D-017 / cierre B2",
+        "status": "Aprobada y vigente",
+        "technicalOwner": "Dirección General delegada / Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-DIR-RES-0003",
+      "properties": {
+        "approver": "GOEI-DIR-0004",
+        "canonicalPath": "00_Gobernanza/coordinacion/resoluciones/GOEI_DIR_RES_0003_D018_B3.md",
+        "componentClass": "DIR-RES",
+        "decisionOrigin": "GOEI-DIR-0004; D-018",
+        "decisionStatus": "Ratifica universo registral; excluye C-032 de cola KPI",
+        "dependents": "ISS-055–058, baseline, B4, BOK, KG y roadmap",
+        "documentVersion": "1.0.0",
+        "evidence": "GOEI-AUDIT-0006 y expediente científico",
+        "goeiVersion": "KPI Candidate Catalog Baseline v0.1.0",
+        "name": "Resolución D-018 / cierre B3",
         "status": "Aprobada y vigente",
         "technicalOwner": "Dirección General delegada / Oficina Técnica"
       },
@@ -3117,6 +3498,24 @@
         "goeiVersion": "Taxonomy Baseline v0.1.0",
         "name": "Handoff B2 Taxonomía Universal",
         "status": "Integrado; B3 habilitada",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-HO-0003",
+      "properties": {
+        "approver": "Comité Científico D-018 + GOEI-DIR-RES-0003",
+        "canonicalPath": "00_Gobernanza/coordinacion/handoffs/GOEI_HANDOFF_0003_B3_Universo_KPI.md",
+        "componentClass": "HO",
+        "decisionOrigin": "D-018; GOEI-DIR-RES-0003",
+        "decisionStatus": "Abre B4 con 31 candidatos; excluye C-032 contextual",
+        "dependents": "B4, roadmap, BOK y estado",
+        "documentVersion": "1.0.0",
+        "evidence": "baseline candidata e Issues 008/015/043/054/055–058",
+        "goeiVersion": "KPI Candidate Catalog Baseline v0.1.0",
+        "name": "Handoff B3 Universo candidato KPI",
+        "status": "Integrado; B4 habilitada",
         "technicalOwner": "Oficina Técnica"
       },
       "type": "Component"
@@ -3856,6 +4255,62 @@
       "type": "Issue"
     },
     {
+      "id": "GOEI-ISS-055",
+      "properties": {
+        "fields": [
+          "Ejecutar y contrastar una revisión sistemática del universo de indicadores antes de declarar completitud o cerrar la selección B4.",
+          "D-018 / V-B3-02",
+          "completitud del universo y afirmaciones de exhaustividad",
+          "Comité Científico",
+          "Abierta; no invalida la baseline candidata B3, pero impide afirmar exhaustividad"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-056",
+      "properties": {
+        "fields": [
+          "Identificar evidencia citable de un indicador operacional cerrado de exactitud de pronóstico de demanda específico de foodservice o ratificar formalmente el vacío.",
+          "D-018 / V-B3-01",
+          "rama P1 y evaluación de C-003",
+          "Comité Científico",
+          "Abierta; bloqueo selectivo de C-003 cuando se evalúe exactitud de pronóstico"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-057",
+      "properties": {
+        "fields": [
+          "Resolver la adaptación al dominio gastronómico de indicadores genéricos procedentes de SCOR e ISO 30414.",
+          "D-018 / V-B3-03",
+          "evaluación B4/B5 de C-005, C-014, C-015 y C-030",
+          "Comité Científico",
+          "Abierta; bloqueo selectivo de promoción de candidatos afectados"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-058",
+      "properties": {
+        "fields": [
+          "Resolver la comparabilidad de puntajes de inspección sanitaria entre jurisdicciones antes de puntuarlos o compararlos.",
+          "D-018 / V-B3-04",
+          "C-021 y futura normalización jurisdiccional",
+          "Comité Científico",
+          "Abierta; bloqueo selectivo de comparabilidad/puntuación de C-021"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
       "id": "GOEI-KG-0001",
       "properties": {
         "approver": "PENDIENTE",
@@ -3892,6 +4347,24 @@
       "type": "Component"
     },
     {
+      "id": "GOEI-KPI-B3-REV-0001",
+      "properties": {
+        "approver": "D-018",
+        "canonicalPath": "01_Estado_del_arte/FaseB_B3_Revision_universo_KPI.md",
+        "componentClass": "SCI-REV",
+        "decisionOrigin": "D-018",
+        "decisionStatus": "Documenta método y universo; no afirma exhaustividad",
+        "dependents": "catálogo, matriz, Issues 055–058 y B4",
+        "documentVersion": "0.1.0",
+        "evidence": "fuentes declaradas y baselines P1–P9/FX",
+        "goeiVersion": "KPI Candidate Catalog Baseline v0.1.0",
+        "name": "Revisión científica del universo candidato B3",
+        "status": "Congelada como evidencia de B3",
+        "technicalOwner": "Comité Científico"
+      },
+      "type": "Component"
+    },
+    {
       "id": "GOEI-MM-0001",
       "properties": {
         "approver": "PENDIENTE",
@@ -3906,6 +4379,24 @@
         "name": "GOEI MetaModel",
         "status": "Propuesta arquitectónica",
         "technicalOwner": "Arquitectura e Ingeniería de Conocimiento"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-MTZ-KPI-C-0001",
+      "properties": {
+        "approver": "D-018 + GOEI-DIR-RES-0003",
+        "canonicalPath": "05_Catalogo_KPI/GOEI_Matriz_Cobertura_KPI_Candidatos_B3.md",
+        "componentClass": "MTZ",
+        "decisionOrigin": "D-018; GOEI-DIR-RES-0003",
+        "decisionStatus": "Cobertura no equivale a pertinencia o admisibilidad",
+        "dependents": "B4, Issues, BOK y KG",
+        "documentVersion": "0.1.0",
+        "evidence": "catálogo, P1–P9, FX-1…FX-3",
+        "goeiVersion": "KPI Candidate Catalog Baseline v0.1.0",
+        "name": "Matriz de cobertura de candidatos B3",
+        "status": "Congelada; no evalúa admisibilidad",
+        "technicalOwner": "Comité Científico / custodia Oficina Técnica"
       },
       "type": "Component"
     },
@@ -3937,10 +4428,10 @@
         "decisionStatus": "Define compuertas y handoffs; no responde ciencia",
         "dependents": "expedientes científicos, integración, BOK, tesis y release",
         "documentVersion": "0.1.0",
-        "evidence": "estado B1, RACI y ruta crítica",
+        "evidence": "estado, RACI y ruta crítica",
         "goeiVersion": "Gobernanza técnica v0.1",
         "name": "Pipeline operativo B2–B10",
-        "status": "Preparado; condicionado a cierre B1",
+        "status": "Activo; B4 habilitada",
         "technicalOwner": "Oficina Técnica"
       },
       "type": "Component"
@@ -4066,6 +4557,24 @@
         "evidence": "revisión B2, taxonomía candidata y fuentes declaradas",
         "goeiVersion": "Taxonomy Baseline v0.1.0",
         "name": "Expediente científico D-017 / B2",
+        "status": "Ratificado con alcance limitado",
+        "technicalOwner": "Comité Científico"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-SCI-D018-0001",
+      "properties": {
+        "approver": "Dirección General bajo GOEI-DIR-0004",
+        "canonicalPath": "00_Gobernanza/coordinacion/entradas_comite/GOEI_SCI_HANDOFF_D018_Cierre_B3.md",
+        "componentClass": "SCI-DEC",
+        "decisionOrigin": "D-018; GOEI-DIR-RES-0002",
+        "decisionStatus": "Responde B3; no aprueba KPI ni modifica baselines previas",
+        "dependents": "auditoría, resolución, baseline, B4, BOK y KG",
+        "documentVersion": "0.1.0",
+        "evidence": "revisión, catálogo, matriz y fuentes declaradas",
+        "goeiVersion": "KPI Candidate Catalog Baseline v0.1.0",
+        "name": "Expediente científico D-018 / B3",
         "status": "Ratificado con alcance limitado",
         "technicalOwner": "Comité Científico"
       },
@@ -4388,6 +4897,13 @@
       "id": "VER::Gobernanza técnica v0.1",
       "properties": {
         "label": "Gobernanza técnica v0.1"
+      },
+      "type": "Version"
+    },
+    {
+      "id": "VER::KPI Candidate Catalog Baseline v0.1.0",
+      "properties": {
+        "label": "KPI Candidate Catalog Baseline v0.1.0"
       },
       "type": "Version"
     },

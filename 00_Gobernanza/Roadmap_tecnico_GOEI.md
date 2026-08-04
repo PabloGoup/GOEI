@@ -38,7 +38,7 @@ flowchart LR
 | WP-03 | Arquitectura universal de procesos | En curso | Ontology Baseline v0.1 | MetaModelo Universal EPIC-002 | Issues 019–026 para futura oficialización |
 | WP-04 | Integración de procesos científicos | Completado | D-008 + GOEI-DIR-RES-0001 | GOEI-BSL-PROC-0001 v0.1.0 y trazabilidad | GOEI-ISS-043 solo para residuos/merma |
 | WP-05 | Taxonomía | Completado en núcleo | D-017 + GOEI-DIR-RES-0002 | GOEI-BSL-TAX-0001 v0.1.0 | ISS-008/054 solo para ramas concretas |
-| WP-06 | KPI y admisibilidad | Habilitado para B3 | GOEI-BSL-TAX-0001 v0.1.0 y decisiones B3–B4 | catálogo y manual de admisibilidad | B3/B4 pendientes; no existen KPI aprobados |
+| WP-06 | KPI y admisibilidad | B3 completada; B4 habilitada | GOEI-BSL-KPI-C-0001 v0.1.0 y decisión B4 | catálogo candidato congelado y futura selección admisible | método/criterios B4 pendientes; no existen KPI aprobados |
 | WP-07 | Normalización y modelo matemático | Bloqueado | B5–B8 aprobadas | especificación calculable y reproducible | ciencia no iniciada |
 | WP-08 | Ensamblaje del estándar | Bloqueado | Fase B cerrada | candidato GOEI Standard | Fase B incompleta |
 | WP-09 | Validación piloto | Bloqueado | candidato y protocolo aprobados | expedientes, datos y resultados validados | GOEI-ISS-041/Fase D |
@@ -54,7 +54,7 @@ flowchart LR
 2. Detectar decisiones y handoffs nuevos; integrar solo los aprobados.
 3. Mantener listas las plantillas y herramientas de promoción.
 4. Preservar `GOEI-BSL-PROC-0001 v0.1.0` y su exclusión controlada de residuos/merma.
-5. Ejecutar B3 desde su contrato científico, sin inventar KPI ni usar valores taxonómicos excluidos.
+5. Ejecutar B4 desde su contrato científico: decidir primero método y criterios, evaluar después los 31 candidatos congelados y excluir C-032 de la cola KPI.
 6. Mantener tesis y publicaciones como ensamblajes derivados, nunca como fuentes del estándar.
 
 ## 5. Criterios de cierre de paquete
@@ -70,6 +70,6 @@ Un paquete solo puede marcarse `complete` cuando:
 
 ## 6. Ruta crítica actual
 
-La ruta crítica científica es: **B3–B10 → candidato C → validación D → release validada → tesis/publicación**. B2 quedó resuelta en su pregunta nuclear por `GOEI-DIR-RES-0002`.
+La ruta crítica científica es: **B4–B10 → candidato C → validación D → release validada → tesis/publicación**. B3 quedó resuelta en su pregunta nuclear por `GOEI-DIR-RES-0003`.
 
 El trabajo técnico fuera de esa ruta continúa en configuración, Knowledge Graph, BOK, controles, plantillas, reproducibilidad y preparación editorial estructural.
