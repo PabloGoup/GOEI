@@ -135,6 +135,41 @@
       "type": "CONTAINS"
     },
     {
+      "id": "E-CONTAINS::GOEI-GTRM-AUD-0001",
+      "source": "DOC::00_Gobernanza/coordinacion/auditorias/GTRM/GOEI_GTRM_AUDITORIA_CONSOLIDADA.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-GTRM-AUD-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-GTRM-AUD-ARCH-0001",
+      "source": "DOC::00_Gobernanza/coordinacion/auditorias/GTRM/GOEI_GTRM_AUDITORIA_ARQUITECTONICA.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-GTRM-AUD-ARCH-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-GTRM-AUD-CTRL-0001",
+      "source": "DOC::00_Gobernanza/coordinacion/auditorias/GTRM/GOEI_GTRM_MATRIZ_DE_PREGUNTAS_Y_CONTROLES.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-GTRM-AUD-CTRL-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-GTRM-AUD-SCI-0001",
+      "source": "DOC::00_Gobernanza/coordinacion/auditorias/GTRM/GOEI_GTRM_DICTAMEN_CIENTIFICO.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-GTRM-AUD-SCI-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-GTRM-SRC-0001",
+      "source": "DOC::00_Gobernanza/coordinacion/auditorias/GTRM/GTRM_PROPUESTA_FUENTE_NO_NORMATIVA.txt",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-GTRM-SRC-0001",
+      "type": "CONTAINS"
+    },
+    {
       "id": "E-CONTAINS::GOEI-HO-0001",
       "source": "DOC::00_Gobernanza/coordinacion/handoffs/GOEI_HANDOFF_0001_B1_Procesos_Universales.md",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
@@ -618,6 +653,13 @@
       "type": "REGISTERED_IN"
     },
     {
+      "id": "E-ISSUE::GOEI-ISS-044",
+      "source": "GOEI-ISS-044",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
       "id": "E-ORIGIN::D-003::GOEI-CMP-005",
       "source": "D-003",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
@@ -795,6 +837,41 @@
     {
       "id": "E-TRACE::GOEI-GOV-TO-0001",
       "source": "GOEI-GOV-TO-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-GTRM-AUD-0001",
+      "source": "GOEI-GTRM-AUD-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-GTRM-AUD-ARCH-0001",
+      "source": "GOEI-GTRM-AUD-ARCH-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-GTRM-AUD-CTRL-0001",
+      "source": "GOEI-GTRM-AUD-CTRL-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-GTRM-AUD-SCI-0001",
+      "source": "GOEI-GTRM-AUD-SCI-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-GTRM-SRC-0001",
+      "source": "GOEI-GTRM-SRC-0001",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
       "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
       "type": "TRACED_IN"
@@ -1054,6 +1131,20 @@
     {
       "id": "E-VERSION::GOEI-GOV-TO-0001::Gobernanza técnica v0.1",
       "source": "GOEI-GOV-TO-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-GTRM-AUD-ARCH-0001::Gobernanza técnica v0.1",
+      "source": "GOEI-GTRM-AUD-ARCH-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-GTRM-AUD-CTRL-0001::Gobernanza técnica v0.1",
+      "source": "GOEI-GTRM-AUD-CTRL-0001",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "VER::Gobernanza técnica v0.1",
       "type": "INCORPORATED_IN"
@@ -1360,6 +1451,41 @@
       "id": "DOC::00_Gobernanza/coordinacion/README.md",
       "properties": {
         "path": "00_Gobernanza/coordinacion/README.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::00_Gobernanza/coordinacion/auditorias/GTRM/GOEI_GTRM_AUDITORIA_ARQUITECTONICA.md",
+      "properties": {
+        "path": "00_Gobernanza/coordinacion/auditorias/GTRM/GOEI_GTRM_AUDITORIA_ARQUITECTONICA.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::00_Gobernanza/coordinacion/auditorias/GTRM/GOEI_GTRM_AUDITORIA_CONSOLIDADA.md",
+      "properties": {
+        "path": "00_Gobernanza/coordinacion/auditorias/GTRM/GOEI_GTRM_AUDITORIA_CONSOLIDADA.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::00_Gobernanza/coordinacion/auditorias/GTRM/GOEI_GTRM_DICTAMEN_CIENTIFICO.md",
+      "properties": {
+        "path": "00_Gobernanza/coordinacion/auditorias/GTRM/GOEI_GTRM_DICTAMEN_CIENTIFICO.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::00_Gobernanza/coordinacion/auditorias/GTRM/GOEI_GTRM_MATRIZ_DE_PREGUNTAS_Y_CONTROLES.md",
+      "properties": {
+        "path": "00_Gobernanza/coordinacion/auditorias/GTRM/GOEI_GTRM_MATRIZ_DE_PREGUNTAS_Y_CONTROLES.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::00_Gobernanza/coordinacion/auditorias/GTRM/GTRM_PROPUESTA_FUENTE_NO_NORMATIVA.txt",
+      "properties": {
+        "path": "00_Gobernanza/coordinacion/auditorias/GTRM/GTRM_PROPUESTA_FUENTE_NO_NORMATIVA.txt"
       },
       "type": "Document"
     },
@@ -1947,6 +2073,96 @@
         "name": "GOEI Technical Office",
         "status": "Vigente como mandato técnico",
         "technicalOwner": "Dirección General / Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-GTRM-AUD-0001",
+      "properties": {
+        "approver": "Dirección General para eventual adopción",
+        "canonicalPath": "00_Gobernanza/coordinacion/auditorias/GTRM/GOEI_GTRM_AUDITORIA_CONSOLIDADA.md",
+        "componentClass": "AUDIT",
+        "decisionOrigin": "GOEI-DIR-0003; solicitud directiva GTRM",
+        "decisionStatus": "Dictamen consultivo B; no modifica estándar ni baseline",
+        "dependents": "GOEI-ISS-044; futuras decisiones D-006/B5/B6, BOK, tesis, software y GTRM",
+        "documentVersion": "1.0.0",
+        "evidence": "fuente GTRM SHA-256 `6462dbe1d827cef5abd91ad020a1f9ae7d791930aa66bbeb6a40eeee7562f6d2`, dictamen científico, auditoría arquitectónica y controles",
+        "goeiVersion": "No asignada",
+        "name": "Auditoría consolidada GTRM",
+        "status": "Dictamen B consultivo; sin efecto normativo",
+        "technicalOwner": "Comité Científico / Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-GTRM-AUD-ARCH-0001",
+      "properties": {
+        "approver": "No aplica; informe técnico",
+        "canonicalPath": "00_Gobernanza/coordinacion/auditorias/GTRM/GOEI_GTRM_AUDITORIA_ARQUITECTONICA.md",
+        "componentClass": "AUDIT-ARCH",
+        "decisionOrigin": "GOEI-DIR-0003; mandato de Oficina Técnica",
+        "decisionStatus": "Evalúa representación; no decide ciencia ni A/B/C",
+        "dependents": "consolidado, MetaModel, KG, formularios y software futuro",
+        "documentVersion": "1.0.0",
+        "evidence": "fuente GTRM, baselines y arquitectura vigente",
+        "goeiVersion": "Gobernanza técnica v0.1",
+        "name": "Auditoría arquitectónica GTRM",
+        "status": "Consultiva",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-GTRM-AUD-CTRL-0001",
+      "properties": {
+        "approver": "No aplica; control de cobertura",
+        "canonicalPath": "00_Gobernanza/coordinacion/auditorias/GTRM/GOEI_GTRM_MATRIZ_DE_PREGUNTAS_Y_CONTROLES.md",
+        "componentClass": "AUDIT-CTRL",
+        "decisionOrigin": "plan directoral de auditoría GTRM",
+        "decisionStatus": "Controla cobertura; no aprueba contenido",
+        "dependents": "gate de integridad del consolidado",
+        "documentVersion": "1.0.0",
+        "evidence": "10 conceptos, 25 preguntas y 15 entregables requeridos",
+        "goeiVersion": "Gobernanza técnica v0.1",
+        "name": "Matriz de preguntas y controles GTRM",
+        "status": "Completa para dictamen",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-GTRM-AUD-SCI-0001",
+      "properties": {
+        "approver": "Dirección General para eventual adopción",
+        "canonicalPath": "00_Gobernanza/coordinacion/auditorias/GTRM/GOEI_GTRM_DICTAMEN_CIENTIFICO.md",
+        "componentClass": "AUDIT-SCI",
+        "decisionOrigin": "encargo formal al Comité Científico",
+        "decisionStatus": "Dictamen B consultivo; no es decisión oficial",
+        "dependents": "consolidado, GOEI-ISS-044 y futuras decisiones B5/B6",
+        "documentVersion": "1.0.0",
+        "evidence": "fuente GTRM, D-003–D-006, pipeline y literatura metodológica citada",
+        "goeiVersion": "No asignada",
+        "name": "Dictamen científico GTRM",
+        "status": "Consultivo; dictamen B",
+        "technicalOwner": "Comité Científico"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-GTRM-SRC-0001",
+      "properties": {
+        "approver": "No aplica; fuente no normativa",
+        "canonicalPath": "00_Gobernanza/coordinacion/auditorias/GTRM/GTRM_PROPUESTA_FUENTE_NO_NORMATIVA.txt",
+        "componentClass": "SRC",
+        "decisionOrigin": "solicitud directiva GTRM",
+        "decisionStatus": "Fuente no normativa; no prueba aceptación",
+        "dependents": "GOEI-GTRM-AUD-0001",
+        "documentVersion": "1.0.0",
+        "evidence": "texto íntegro preservado y huella SHA-256",
+        "goeiVersion": "No asignada",
+        "name": "Propuesta fuente GTRM",
+        "status": "Preservada para auditoría",
+        "technicalOwner": "Dirección General / custodia Oficina Técnica"
       },
       "type": "Component"
     },
@@ -2543,6 +2759,20 @@
           "cierre preciso del catálogo B1 y dependencias de sostenibilidad",
           "Comité Científico + ratificación directiva",
           "Abierta; no completar por inferencia técnica"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-044",
+      "properties": {
+        "fields": [
+          "Ratificar, devolver o rechazar el dictamen consultivo B sobre GTRM y, si se ratifica, ordenar las decisiones separadas sobre ontología, normalización, referencias, incertidumbre, autoridad y equivalencia papel–software.",
+          "GOEI-GTRM-AUD-0001",
+          "cualquier incorporación GTRM, cambio D-006/B5/B6, baseline o implementación",
+          "Dirección General + Comité Científico según materia",
+          "Dictamen B emitido; decisión formal pendiente"
         ],
         "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
       },

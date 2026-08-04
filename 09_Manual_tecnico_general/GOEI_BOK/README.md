@@ -23,6 +23,7 @@
 | Taxonomía | Fase B2 | No iniciada científicamente |
 | KPI y admisibilidad | Fases B3–B4 | No iniciadas científicamente |
 | Referencia, normalización y ponderación | B5–B7 | No iniciadas científicamente |
+| Propuesta GTRM | GOEI-GTRM-AUD-0001 | Dictamen consultivo B — aceptar con modificaciones; bloqueada por GOEI-ISS-044 y fases B2/B4/B5 |
 | Modelo matemático | B8 | No iniciado científicamente |
 | Validación | B9 y Fase D | No iniciada |
 | Manual técnico | B10/C | Estructura solamente |

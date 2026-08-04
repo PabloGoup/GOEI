@@ -1,0 +1,512 @@
+Hemos identificado una posible ampliación estructural del GOEI que puede modificar parte de la arquitectura científica del estándar.
+
+NO quiero que desarrolles inmediatamente una solución.
+
+Quiero que actúes como un Comité Internacional de Revisión Metodológica y Arquitectura de Estándares.
+
+Tu misión es analizar críticamente la siguiente propuesta y determinar si representa una mejora científica real o simplemente un cambio de implementación.
+
+==========================================================
+CONTEXTO
+==========================================================
+
+Hasta ahora el GOEI sigue, de forma resumida, el siguiente flujo conceptual:
+
+Procesos
+↓
+
+Taxonomía
+
+↓
+
+Universo de KPI
+
+↓
+
+Admisibilidad
+
+↓
+
+Especificaciones de medición
+
+↓
+
+Normalización
+
+↓
+
+Ponderación y agregación
+
+↓
+
+Modelo matemático
+
+↓
+
+Interpretación
+
+↓
+
+Resultado GOEI
+
+Sin embargo, durante el desarrollo del proyecto apareció un problema metodológico importante.
+
+Hoy el estándar explica cómo normalizar un KPI.
+
+Pero todavía no responde de manera suficientemente robusta una pregunta fundamental:
+
+¿De dónde proviene el puntaje que posteriormente será normalizado?
+
+Actualmente sería posible caer en una asignación arbitraria de valores, por ejemplo:
+
+Tiempo de preparación
+
+≤5 minutos = 100 puntos
+
+≤8 minutos = 90 puntos
+
+≤10 minutos = 80 puntos
+
+etc.
+
+El problema es evidente.
+
+¿Quién decidió esos puntajes?
+
+¿Cuál es la evidencia?
+
+¿Cuál es el fundamento científico?
+
+¿Cómo se auditan?
+
+¿Cómo cambian entre categorías gastronómicas?
+
+¿Cómo se versionan?
+
+¿Cómo se justifican?
+
+El proyecto siempre tuvo un principio rector:
+
+"Ningún puntaje puede existir si no existe una justificación científica para dicho puntaje."
+
+Por esta razón surgió una idea distinta.
+
+No trabajar con tablas simples.
+
+Sino con un nuevo componente del estándar.
+
+==========================================================
+PROPUESTA
+==========================================================
+
+Crear un componente denominado:
+
+GOEI Technical Reference Matrix
+
+(GTRM)
+
+Cada GTRM sería un documento normativo independiente.
+
+Su función no sería calcular el GOEI.
+
+Su función sería transformar una observación objetiva en un puntaje técnicamente justificable.
+
+Ejemplo conceptual:
+
+Observación
+
+↓
+
+Tiempo de preparación observado
+
+↓
+
+Consulta GTRM
+
+↓
+
+Puntaje normalizado
+
+↓
+
+Sistema de Normalización
+
+↓
+
+Modelo Matemático GOEI
+
+Cada GTRM estaría asociada simultáneamente a:
+
+• categoría gastronómica
+
+• proceso
+
+• KPI
+
+• unidad de medida
+
+• método de captura
+
+• método estadístico
+
+• referencia científica
+
+• versión
+
+• evidencia utilizada
+
+• fecha de revisión
+
+• reglas de aplicación
+
+• restricciones
+
+• dominio de validez
+
+Es decir, el GOEI dejaría de asignar puntajes.
+
+Los puntajes serían responsabilidad exclusiva de las GTRM.
+
+==========================================================
+OTRA IDEA IMPORTANTE
+==========================================================
+
+Durante las primeras discusiones del proyecto también se concluyó que no es metodológicamente correcto comparar directamente establecimientos pertenecientes a categorías diferentes.
+
+Por ejemplo:
+
+Fast Food
+
+Fine Dining
+
+Casino de alimentación
+
+Dark Kitchen
+
+Hotel
+
+Food Truck
+
+Cafetería
+
+Panadería
+
+Todos poseen modelos operacionales distintos.
+
+Por tanto, las GTRM también serían específicas por categoría.
+
+Ejemplo:
+
+Tiempo de preparación
+
+↓
+
+Fast Food
+
+↓
+
+GTRM-FF-001
+
+----------------
+
+Tiempo de preparación
+
+↓
+
+Fine Dining
+
+↓
+
+GTRM-FD-001
+
+----------------
+
+Tiempo de preparación
+
+↓
+
+Dark Kitchen
+
+↓
+
+GTRM-DK-001
+
+Es decir, la taxonomía del establecimiento determinaría automáticamente qué matriz técnica debe utilizarse.
+
+==========================================================
+OTRA CONCLUSIÓN HISTÓRICA DEL PROYECTO
+==========================================================
+
+También se acordó que todo el GOEI debía poder ejecutarse completamente con lápiz y papel.
+
+Las GTRM permitirían precisamente eso.
+
+El evaluador únicamente necesitaría:
+
+medir
+
+↓
+
+consultar la matriz
+
+↓
+
+obtener el puntaje
+
+↓
+
+continuar el cálculo
+
+Sin depender de ningún software.
+
+==========================================================
+SOLICITUD
+==========================================================
+
+Realiza una auditoría metodológica completa de esta propuesta.
+
+Analiza críticamente:
+
+1.
+
+¿Las GTRM representan realmente un nuevo componente científico del estándar?
+
+¿O simplemente forman parte de la normalización?
+
+Justifica la respuesta.
+
+----------------------------------------------------------
+
+2.
+
+¿Las GTRM deberían convertirse en una nueva fase oficial del GOEI?
+
+Si la respuesta es sí,
+
+¿en qué posición exacta deberían ubicarse?
+
+----------------------------------------------------------
+
+3.
+
+Analiza el impacto de incorporar las GTRM sobre todos los componentes existentes.
+
+Revisa específicamente:
+
+• constructo
+
+• ontología
+
+• taxonomía
+
+• procesos
+
+• catálogo de KPI
+
+• admisibilidad
+
+• especificaciones de medición
+
+• normalización
+
+• ponderación
+
+• agregación
+
+• interpretación
+
+• validación
+
+• manual técnico
+
+• software futuro
+
+• formularios manuales
+
+• Knowledge Graph
+
+• MetaModel
+
+• Constitución
+
+• Body of Knowledge
+
+• arquitectura documental
+
+• tesis
+
+• publicaciones
+
+Indica qué cambia,
+
+qué permanece igual,
+
+qué debe ampliarse
+
+y qué debería reescribirse.
+
+----------------------------------------------------------
+
+4.
+
+Analiza si las GTRM deberían clasificarse.
+
+Por ejemplo:
+
+Matrices normativas
+
+Matrices estadísticas
+
+Matrices de benchmark
+
+Matrices Delphi
+
+Matrices híbridas
+
+Matrices regulatorias
+
+Matrices empíricas
+
+Propón una clasificación si corresponde.
+
+----------------------------------------------------------
+
+5.
+
+Determina si cada GTRM debería poseer identidad propia.
+
+Por ejemplo:
+
+Código
+
+Versión
+
+Autoridad
+
+Historial
+
+Dominio de aplicación
+
+Categoría
+
+Proceso
+
+KPI
+
+Unidad
+
+Método
+
+Bibliografía
+
+Restricciones
+
+Procedencia
+
+Fecha
+
+Revisión
+
+Estado
+
+Baseline
+
+Compatibilidad
+
+Analiza si deben tratarse como documentos normativos independientes.
+
+----------------------------------------------------------
+
+6.
+
+Analiza si las GTRM modifican el pipeline científico del GOEI.
+
+Si corresponde,
+
+propón un nuevo pipeline completo.
+
+----------------------------------------------------------
+
+7.
+
+Evalúa si esta incorporación fortalece o debilita:
+
+la trazabilidad,
+
+la auditabilidad,
+
+la reproducibilidad,
+
+la comparabilidad,
+
+la independencia tecnológica,
+
+la aplicación manual,
+
+la robustez metodológica,
+
+la gobernanza del estándar.
+
+----------------------------------------------------------
+
+8.
+
+Busca riesgos metodológicos.
+
+No quiero una validación complaciente.
+
+Quiero una crítica profunda.
+
+Busca problemas conceptuales, matemáticos, estadísticos, prácticos y normativos.
+
+----------------------------------------------------------
+
+9.
+
+Si concluyes que las GTRM constituyen realmente un nuevo componente del estándar,
+
+propón cómo deberían incorporarse oficialmente a la arquitectura del GOEI,
+
+indicando:
+
+• nivel arquitectónico
+
+• relaciones
+
+• dependencias
+
+• restricciones
+
+• autoridad
+
+• ciclo de vida
+
+• integración con el resto del estándar.
+
+----------------------------------------------------------
+
+10.
+
+Finalmente,
+
+emite un dictamen técnico-científico.
+
+Las únicas respuestas posibles son:
+
+A)
+
+Rechazar completamente la propuesta.
+
+B)
+
+Aceptar la propuesta con modificaciones.
+
+C)
+
+Aceptar la propuesta como nuevo componente oficial del GOEI.
+
+El dictamen deberá estar fundamentado exclusivamente en criterios metodológicos, científicos y de arquitectura de estándares.
+
+No busques confirmar la idea.
+
+Busca demostrar si merece o no formar parte del GOEI.

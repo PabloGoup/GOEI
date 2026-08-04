@@ -49,6 +49,11 @@
 | GOEI-AUDIT-0002 | Auditoría técnica D-008 / cierre B1 | AUDIT | Oficina Técnica | No aplica; no aprueba ciencia | Emitida para resolución directiva | 1.0.0 | Gobernanza técnica v0.1 | `00_Gobernanza/coordinacion/reportes/GOEI_AUDIT_0002_D008_Cierre_B1.md` |
 | GOEI-DIR-RES-D008-DRAFT | Borrador de resolución D-008 / B1 | GOV-DRAFT | Oficina Técnica | Dirección General | Borrador sin efectos normativos | 0.1.0-draft | No asignada | `00_Gobernanza/coordinacion/resoluciones/GOEI_DIR_RES_D008_B1_BORRADOR.md` |
 | GOEI-SCI-QUEUE-0002 | Paquete científico B2 Taxonomía Universal | SCI-QUEUE | Oficina Técnica | Dirección General para activación; Comité Científico para contenido | Preparado; bloqueado por B1 | 0.1.0-draft | No asignada | `00_Gobernanza/coordinacion/cola_cientifica/GOEI_SCI_QUEUE_0002_B2_Taxonomia_Universal.md` |
+| GOEI-GTRM-SRC-0001 | Propuesta fuente GTRM | SRC | Dirección General / custodia Oficina Técnica | No aplica; fuente no normativa | Preservada para auditoría | 1.0.0 | No asignada | `00_Gobernanza/coordinacion/auditorias/GTRM/GTRM_PROPUESTA_FUENTE_NO_NORMATIVA.txt` |
+| GOEI-GTRM-AUD-SCI-0001 | Dictamen científico GTRM | AUDIT-SCI | Comité Científico | Dirección General para eventual adopción | Consultivo; dictamen B | 1.0.0 | No asignada | `00_Gobernanza/coordinacion/auditorias/GTRM/GOEI_GTRM_DICTAMEN_CIENTIFICO.md` |
+| GOEI-GTRM-AUD-ARCH-0001 | Auditoría arquitectónica GTRM | AUDIT-ARCH | Oficina Técnica | No aplica; informe técnico | Consultiva | 1.0.0 | Gobernanza técnica v0.1 | `00_Gobernanza/coordinacion/auditorias/GTRM/GOEI_GTRM_AUDITORIA_ARQUITECTONICA.md` |
+| GOEI-GTRM-AUD-CTRL-0001 | Matriz de preguntas y controles GTRM | AUDIT-CTRL | Oficina Técnica | No aplica; control de cobertura | Completa para dictamen | 1.0.0 | Gobernanza técnica v0.1 | `00_Gobernanza/coordinacion/auditorias/GTRM/GOEI_GTRM_MATRIZ_DE_PREGUNTAS_Y_CONTROLES.md` |
+| GOEI-GTRM-AUD-0001 | Auditoría consolidada GTRM | AUDIT | Comité Científico / Oficina Técnica | Dirección General para eventual adopción | Dictamen B consultivo; sin efecto normativo | 1.0.0 | No asignada | `00_Gobernanza/coordinacion/auditorias/GTRM/GOEI_GTRM_AUDITORIA_CONSOLIDADA.md` |
 
 ## Regla
 

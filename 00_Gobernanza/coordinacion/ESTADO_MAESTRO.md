@@ -39,6 +39,7 @@
 - esquema y catálogo bibliográfico procesable disponibles; cero fuentes migradas o científicamente evaluadas.
 - Knowledge Graph registral implementado como proyección JSON regenerable; persistencia oficial sigue bajo GOEI-ISS-037.
 - consultas de nodo, vecindad, caminos e impacto directo disponibles sobre la proyección registral sin inferencia.
+- auditoría científica y arquitectónica GTRM emitida con dictamen consultivo B; ninguna modificación del estándar autorizada y GOEI-ISS-044 abierto.
 
 ## Próxima dependencia científica crítica
 
