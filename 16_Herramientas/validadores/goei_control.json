@@ -29,7 +29,10 @@
     ".github/CODEOWNERS",
     ".githooks/pre-commit",
     ".githooks/pre-push",
-    "16_Herramientas/git/install_hooks.sh"
+    "16_Herramientas/git/install_hooks.sh",
+    "02_Bibliografia/ESQUEMA_REGISTRO_BIBLIOGRAFICO.md",
+    "02_Bibliografia/catalogo_fuentes.json",
+    "16_Herramientas/validadores/validate_bibliography.py"
   ],
   "thesisRequirements": {
     "document": "12_Tesis/PLAN_MAESTRO_DIRECTORAL_GOEI.md",

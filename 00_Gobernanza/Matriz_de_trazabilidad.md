@@ -38,6 +38,9 @@
 | GOEI-GIT-0001 Política Git y contribución | GOEI-DIR-0001; arquitectura del repositorio | Control de configuración; un merge no aprueba ciencia | mandato técnico y repositorio remoto designado | Gobernanza técnica v0.1 | política, CONTRIBUTING, CHANGELOG y plantillas | historial, colaboración y releases | Activo localmente |
 | GOEI-CI-0001 Validación continua | GOEI-GIT-0001 | Automatiza controles técnicos; no evalúa ciencia | validadores y pruebas del repositorio | Gobernanza técnica v0.1 | workflow GitHub Actions | pull requests y main | Activa; ejecuciones remotas conformes |
 | GOEI-GIT-HOOK-0001 Hooks Git versionados | GOEI-GIT-0001; GOEI-ISS-042 | Control compensatorio local; no reemplaza protección remota | validadores, pruebas y política Git | Gobernanza técnica v0.1 | hooks e instalador | commits y pushes locales | Activo |
+| GOEI-BIB-SCHEMA-0001 Esquema bibliográfico | GOEI-DIR-0002; requisitos de trazabilidad | Separa metadatos, custodia y juicio científico | Plan Maestro, Knowledge Graph y plantilla de fuente | Gobernanza técnica v0.1 | esquema humano | catálogo, tesis y publicaciones | Activo |
+| GOEI-BIB-0001 Catálogo bibliográfico | GOEI-BIB-SCHEMA-0001 | Registra fuentes; no admite afirmaciones por sí mismo | futuras fichas y expedientes científicos | PENDIENTE | JSON canónico | decisiones, BOK, tesis y publicaciones | Activo; vacío |
+| GOEI-TOOL-BIB-0001 Validador bibliográfico | GOEI-BIB-SCHEMA-0001 | Controla integridad; no interpreta literatura | catálogo y registro de decisiones | Gobernanza técnica v0.1 | script y pruebas | CI, tesis y publicación | Activo |
 
 ## Regla de mantenimiento
 

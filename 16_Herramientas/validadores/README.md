@@ -60,3 +60,11 @@ python3 16_Herramientas/validadores/validate_technical_roadmap.py
 ```
 
 El control rechaza paquetes completos sin evidencia, dependencias desconocidas o cíclicas y ramas bloqueadas sin blocker explícito.
+
+Para validar el catálogo bibliográfico:
+
+```bash
+python3 16_Herramientas/validadores/validate_bibliography.py
+```
+
+El resultado conforme solo acredita integridad de metadatos y trazabilidad. No admite fuentes como evidencia ni evalúa su calidad científica.

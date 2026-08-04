@@ -36,6 +36,9 @@
 | GOEI-GIT-0001 | Política Git y contribución | POLICY | Oficina Técnica | Dirección General para administración remota | Control técnico activo | 1.0.0 | Gobernanza técnica v0.1 | `00_Gobernanza/Politica_Git_y_contribucion.md` |
 | GOEI-CI-0001 | Validación continua del repositorio | CI | Oficina Técnica | No aplica; control técnico | Activa y verificada | 1.0.0 | Gobernanza técnica v0.1 | `.github/workflows/validate.yml` |
 | GOEI-GIT-HOOK-0001 | Hooks Git versionados | TOOL | Oficina Técnica | No aplica; control compensatorio local | Activo | 1.0.0 | Gobernanza técnica v0.1 | `16_Herramientas/git/README.md` |
+| GOEI-BIB-SCHEMA-0001 | Esquema del registro bibliográfico | SCHEMA | Oficina Técnica | Comité Científico para admisión de evidencia | Activo; catálogo vacío | 1.0.0 | Gobernanza técnica v0.1 | `02_Bibliografia/ESQUEMA_REGISTRO_BIBLIOGRAFICO.md` |
+| GOEI-BIB-0001 | Catálogo bibliográfico procesable | BIB | Oficina Técnica | Comité Científico para estados científicos | Activo; 0 fuentes migradas | 1.0.0 | No asignada | `02_Bibliografia/catalogo_fuentes.json` |
+| GOEI-TOOL-BIB-0001 | Validador bibliográfico | TOOL | Oficina Técnica | No aplica; no evalúa evidencia | Activo | 1.0.0 | Gobernanza técnica v0.1 | `16_Herramientas/validadores/validate_bibliography.py` |
 
 ## Regla
 

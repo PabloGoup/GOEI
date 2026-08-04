@@ -6,4 +6,5 @@ cd "$root"
 
 python3 16_Herramientas/validadores/validate_repository.py
 python3 16_Herramientas/validadores/validate_technical_roadmap.py
+python3 16_Herramientas/validadores/validate_bibliography.py
 git diff --cached --check

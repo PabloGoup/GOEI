@@ -36,6 +36,7 @@
 - evaluador procesable de 64 requisitos mínimos de tesis con vocabulario de estados normalizado.
 - roadmap técnico maestro procesable con 15 paquetes, dependencias y targets finales.
 - repositorio Git local, política de contribución, CHANGELOG y CI preparados; protecciones remotas pendientes bajo GOEI-ISS-042.
+- esquema y catálogo bibliográfico procesable disponibles; cero fuentes migradas o científicamente evaluadas.
 
 ## Próxima dependencia científica crítica
 

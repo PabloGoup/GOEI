@@ -46,7 +46,7 @@
 | THS-ANX-11 | Registro de Issues | Parcial | registros canónicos | resolver Issues de release |
 | THS-ANX-12 | Registro de cambios | Parcial | GOEI-CHG-0001 | política/historial continuos |
 | THS-ANX-13 | Roadmap | Parcial técnico | GOEI-RDM-0001 y estado procesable | completar ruta científica y cerrar paquetes |
-| THS-ANX-14 | Bibliografía anotada | No iniciado | fuentes dispersas | catálogo verificable y anotaciones |
+| THS-ANX-14 | Bibliografía anotada | Parcial estructural | GOEI-BIB-SCHEMA-0001 y catálogo vacío | migrar, verificar y anotar fuentes aprobadas |
 | THS-ANX-15 | Matrices de trazabilidad | Parcial | matriz maestra | cobertura de todos los componentes finales |
 
 ## 3. Documentación visual
