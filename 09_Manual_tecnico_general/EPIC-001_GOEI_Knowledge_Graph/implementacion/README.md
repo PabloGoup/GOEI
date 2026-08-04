@@ -42,3 +42,14 @@ Verificación sin modificar:
 ```bash
 python3 09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/implementacion/build_registry_knowledge_graph.py --check
 ```
+
+## Consultas
+
+```bash
+python3 09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/implementacion/query_registry_knowledge_graph.py node D-006
+python3 09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/implementacion/query_registry_knowledge_graph.py neighbors D-006 --direction out
+python3 09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/implementacion/query_registry_knowledge_graph.py impact D-006
+python3 09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/implementacion/query_registry_knowledge_graph.py path D-006 GOEI-BSL-ONT-0001
+```
+
+El modo `impact` devuelve relaciones directas y conserva evidencia/dependientes como literales cuando no tienen identidad estructurada. No presenta esos textos como impacto transitivo probado.

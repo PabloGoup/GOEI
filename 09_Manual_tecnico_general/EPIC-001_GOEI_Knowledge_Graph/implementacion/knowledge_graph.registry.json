@@ -247,6 +247,13 @@
       "type": "CONTAINS"
     },
     {
+      "id": "E-CONTAINS::GOEI-TOOL-KG-0002",
+      "source": "DOC::09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/implementacion/query_registry_knowledge_graph.py",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-TOOL-KG-0002",
+      "type": "CONTAINS"
+    },
+    {
       "id": "E-CONTAINS::GOEI-TOOL-MAN-0001",
       "source": "DOC::16_Herramientas/validadores/build_manifest.py",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
@@ -856,6 +863,13 @@
       "type": "TRACED_IN"
     },
     {
+      "id": "E-TRACE::GOEI-TOOL-KG-0002",
+      "source": "GOEI-TOOL-KG-0002",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
       "id": "E-TRACE::GOEI-TOOL-MAN-0001",
       "source": "GOEI-TOOL-MAN-0001",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
@@ -1019,6 +1033,13 @@
     {
       "id": "E-VERSION::GOEI-TOOL-KG-0001::Gobernanza técnica v0.1",
       "source": "GOEI-TOOL-KG-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-TOOL-KG-0002::Gobernanza técnica v0.1",
+      "source": "GOEI-TOOL-KG-0002",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "VER::Gobernanza técnica v0.1",
       "type": "INCORPORATED_IN"
@@ -1283,6 +1304,13 @@
       "id": "DOC::09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/implementacion/knowledge_graph.registry.json",
       "properties": {
         "path": "09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/implementacion/knowledge_graph.registry.json"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/implementacion/query_registry_knowledge_graph.py",
+      "properties": {
+        "path": "09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/implementacion/query_registry_knowledge_graph.py"
       },
       "type": "Document"
     },
@@ -2603,6 +2631,24 @@
         "evidence": "registros maestros",
         "goeiVersion": "Gobernanza técnica v0.1",
         "name": "Generador de la proyección registral",
+        "status": "Activo",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-TOOL-KG-0002",
+      "properties": {
+        "approver": "No aplica; navegación sin inferencia",
+        "canonicalPath": "09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/implementacion/query_registry_knowledge_graph.py",
+        "componentClass": "TOOL",
+        "decisionOrigin": "GOEI-KG-REGISTRY-0001; reglas de navegación EPIC-001",
+        "decisionStatus": "Navega aristas explícitas y conserva literales sin inferir",
+        "dependents": "análisis de impacto, auditoría y software futuro",
+        "documentVersion": "1.0.0",
+        "evidence": "proyección JSON y sourceDocument de cada arista",
+        "goeiVersion": "Gobernanza técnica v0.1",
+        "name": "Consulta e impacto del Knowledge Graph",
         "status": "Activo",
         "technicalOwner": "Oficina Técnica"
       },

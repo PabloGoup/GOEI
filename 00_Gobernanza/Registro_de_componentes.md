@@ -41,6 +41,7 @@
 | GOEI-TOOL-BIB-0001 | Validador bibliográfico | TOOL | Oficina Técnica | No aplica; no evalúa evidencia | Activo | 1.0.0 | Gobernanza técnica v0.1 | `16_Herramientas/validadores/validate_bibliography.py` |
 | GOEI-KG-REGISTRY-0001 | Proyección registral del Knowledge Graph | KG-DATA | Oficina Técnica | No aplica; proyección sin inferencia | Activa; no normativa | 0.1.0 | Gobernanza técnica v0.1 | `09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/implementacion/knowledge_graph.registry.json` |
 | GOEI-TOOL-KG-0001 | Generador de la proyección registral | TOOL | Oficina Técnica | No aplica; transformación determinista | Activo | 1.0.0 | Gobernanza técnica v0.1 | `09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/implementacion/build_registry_knowledge_graph.py` |
+| GOEI-TOOL-KG-0002 | Consulta e impacto del Knowledge Graph | TOOL | Oficina Técnica | No aplica; navegación sin inferencia | Activo | 1.0.0 | Gobernanza técnica v0.1 | `09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/implementacion/query_registry_knowledge_graph.py` |
 
 ## Regla
 

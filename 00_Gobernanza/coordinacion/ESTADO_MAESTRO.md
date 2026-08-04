@@ -38,6 +38,7 @@
 - repositorio Git local, política de contribución, CHANGELOG y CI preparados; protecciones remotas pendientes bajo GOEI-ISS-042.
 - esquema y catálogo bibliográfico procesable disponibles; cero fuentes migradas o científicamente evaluadas.
 - Knowledge Graph registral implementado como proyección JSON regenerable; persistencia oficial sigue bajo GOEI-ISS-037.
+- consultas de nodo, vecindad, caminos e impacto directo disponibles sobre la proyección registral sin inferencia.
 
 ## Próxima dependencia científica crítica
 

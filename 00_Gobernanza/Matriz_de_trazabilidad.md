@@ -43,6 +43,7 @@
 | GOEI-TOOL-BIB-0001 Validador bibliográfico | GOEI-BIB-SCHEMA-0001 | Controla integridad; no interpreta literatura | catálogo y registro de decisiones | Gobernanza técnica v0.1 | script y pruebas | CI, tesis y publicación | Activo |
 | GOEI-KG-REGISTRY-0001 Proyección registral del Knowledge Graph | EPIC-001; GOEI-MM-0001; GOEI-KG-0001 | Exporta solo relaciones registradas; no resuelve GOEI-ISS-037 | registros de componentes, decisiones, Issues y trazabilidad | Gobernanza técnica v0.1 | JSON regenerable | navegación, auditoría y software futuro | Activa; no normativa |
 | GOEI-TOOL-KG-0001 Generador registral | GOEI-KG-REGISTRY-0001 | Transformación determinista sin inferencia | registros maestros | Gobernanza técnica v0.1 | script y modo check | CI y proyección JSON | Activo |
+| GOEI-TOOL-KG-0002 Consulta e impacto registral | GOEI-KG-REGISTRY-0001; reglas de navegación EPIC-001 | Navega aristas explícitas y conserva literales sin inferir | proyección JSON y sourceDocument de cada arista | Gobernanza técnica v0.1 | CLI y pruebas | análisis de impacto, auditoría y software futuro | Activo |
 
 ## Regla de mantenimiento
 
