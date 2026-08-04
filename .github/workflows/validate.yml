@@ -1,0 +1,39 @@
+name: GOEI repository validation
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Repository integrity
+        run: python3 16_Herramientas/validadores/validate_repository.py
+      - name: Unit tests
+        working-directory: 16_Herramientas/validadores
+        run: python3 -m unittest discover -s tests -v
+      - name: Technical roadmap
+        run: python3 16_Herramientas/validadores/validate_technical_roadmap.py
+      - name: Program readiness is explicit
+        shell: bash
+        run: |
+          set +e
+          python3 16_Herramientas/validadores/assess_readiness.py
+          status=$?
+          test "$status" -eq 0 -o "$status" -eq 2
+      - name: Thesis coverage is explicit
+        shell: bash
+        run: |
+          set +e
+          python3 16_Herramientas/validadores/assess_thesis_coverage.py
+          status=$?
+          test "$status" -eq 0 -o "$status" -eq 2

@@ -1,0 +1,27 @@
+{
+  "approval": {
+    "approved": false,
+    "authority": "PENDIENTE",
+    "date": null,
+    "recordPath": null
+  },
+  "baselineComparison": {
+    "impactAnalysisPath": null,
+    "recordPath": null
+  },
+  "components": [],
+  "decisions": [],
+  "manifestPath": null,
+  "openIssues": [],
+  "releaseId": "GOEI-RC-v0.0.0-rc.1",
+  "schemaVersion": "1.0",
+  "scope": "PENDIENTE",
+  "status": "draft",
+  "technicalValidation": {
+    "command": null,
+    "passed": false,
+    "recordPath": null
+  },
+  "traceabilityArtifacts": [],
+  "version": "0.0.0"
+}

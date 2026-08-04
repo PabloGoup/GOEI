@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "1.0",
+  "requiredArtifacts": [
+    "00_Gobernanza/Registro_de_decisiones.md",
+    "00_Gobernanza/Registro_de_componentes.md",
+    "00_Gobernanza/Matriz_de_trazabilidad.md",
+    "00_Gobernanza/Preguntas_abiertas.md",
+    "00_Gobernanza/Oficina_Tecnica_GOEI.md",
+    "00_Gobernanza/coordinacion/ESTADO_MAESTRO.md",
+    "09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/README.md",
+    "04_Procesos_gastronomicos/EPIC-002_MetaModelo_Universal/README.md",
+    "15_Mantenimiento/lineas_base/GOEI_ONT_v0.1/MANIFEST.md",
+    "15_Mantenimiento/Politica_de_releases_y_lineas_base.md",
+    "15_Mantenimiento/releases/plantillas/RELEASE_TEMPLATE.md",
+    "15_Mantenimiento/releases/RELEASE_DOSSIER_SCHEMA.md",
+    "15_Mantenimiento/releases/plantillas/RELEASE_DOSSIER_TEMPLATE.json",
+    "16_Herramientas/validadores/build_manifest.py",
+    "16_Herramientas/validadores/compare_manifests.py",
+    "16_Herramientas/validadores/evaluate_release_gates.py",
+    "16_Herramientas/validadores/assess_thesis_coverage.py",
+    "00_Gobernanza/Roadmap_tecnico_GOEI.md",
+    "00_Gobernanza/coordinacion/technical_roadmap.json",
+    "16_Herramientas/validadores/validate_technical_roadmap.py",
+    "00_Gobernanza/Politica_Git_y_contribucion.md",
+    "CONTRIBUTING.md",
+    "CHANGELOG.md",
+    ".github/workflows/validate.yml",
+    ".github/pull_request_template.md",
+    ".github/CODEOWNERS"
+  ],
+  "thesisRequirements": {
+    "document": "12_Tesis/PLAN_MAESTRO_DIRECTORAL_GOEI.md",
+    "coverageMatrix": "12_Tesis/ensamblaje/Matriz_de_cumplimiento_plan_maestro.md",
+    "requiredPrefixes": {
+      "THS-I-": 4,
+      "THS-II-": 7,
+      "THS-III-": 5,
+      "THS-IV-": 1,
+      "THS-ANX-": 15,
+      "THS-VIS-": 18,
+      "THS-PUB-": 10,
+      "THS-PRD-": 4
+    }
+  },
+  "frozenArtifacts": {
+    "09_Manual_tecnico_general/Fase4_D006_Ontologia_del_GOEI.md": "4ed8fdb6295cb5a857909a678c7e8b39146289ea5d0c92018369a284cec7f163",
+    "09_Manual_tecnico_general/Fase4_D006_REV_Ontologia_revision_y_cierre.md": "6ea6988191ec532ca96946d6ad0735573c2949f2ea8aea426ff14a2e4b9b7e3f"
+  },
+  "issueRegistries": [
+    "00_Gobernanza/Preguntas_abiertas.md",
+    "09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/11_Registro_de_issues.md",
+    "04_Procesos_gastronomicos/EPIC-002_MetaModelo_Universal/08_Registro_de_issues.md"
+  ],
+  "componentRegistry": "00_Gobernanza/Registro_de_componentes.md",
+  "traceabilityMatrix": "00_Gobernanza/Matriz_de_trazabilidad.md",
+  "quarantinedArtifacts": {
+    "12_Tesis/GOEI_Tesis_Manuscrito.md": "12_Tesis/GOEI_Tesis_Manuscrito.STATUS.md",
+    "13_Publicaciones/GOEI_Articulo_metodologico.md": "13_Publicaciones/GOEI_Articulo_metodologico.STATUS.md"
+  },
+  "programState": "00_Gobernanza/coordinacion/program_state.json"
+}

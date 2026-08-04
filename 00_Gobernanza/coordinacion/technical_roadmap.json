@@ -1,0 +1,132 @@
+{
+  "schemaVersion": "1.0",
+  "updatedAt": "2026-08-04",
+  "roadmapId": "GOEI-RDM-0001",
+  "workPackages": [
+    {
+      "id": "WP-00",
+      "name": "Gobernanza y autoridad",
+      "status": "in_progress",
+      "dependencies": [],
+      "evidence": ["00_Gobernanza/Oficina_Tecnica_GOEI.md", "00_Gobernanza/Registro_de_directivas.md"],
+      "blockers": ["GOEI-ISS-001", "GOEI-ISS-002", "GOEI-ISS-003", "GOEI-ISS-004", "GOEI-ISS-005", "GOEI-ISS-027", "GOEI-ISS-028", "GOEI-ISS-029"]
+    },
+    {
+      "id": "WP-01",
+      "name": "Gestión de configuración",
+      "status": "complete",
+      "dependencies": [],
+      "evidence": ["15_Mantenimiento/Politica_de_releases_y_lineas_base.md", "16_Herramientas/validadores/validate_repository.py", "00_Gobernanza/Politica_Git_y_contribucion.md"],
+      "blockers": []
+    },
+    {
+      "id": "WP-02",
+      "name": "Arquitectura del conocimiento",
+      "status": "in_progress",
+      "dependencies": ["WP-01"],
+      "evidence": ["09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/README.md", "09_Manual_tecnico_general/GOEI_BOK/README.md"],
+      "blockers": ["GOEI-ISS-031", "GOEI-ISS-032", "GOEI-ISS-033", "GOEI-ISS-034", "GOEI-ISS-035", "GOEI-ISS-036", "GOEI-ISS-037", "GOEI-ISS-038"]
+    },
+    {
+      "id": "WP-03",
+      "name": "Arquitectura universal de procesos",
+      "status": "in_progress",
+      "dependencies": ["WP-01", "WP-02"],
+      "evidence": ["04_Procesos_gastronomicos/EPIC-002_MetaModelo_Universal/README.md"],
+      "blockers": ["GOEI-ISS-019", "GOEI-ISS-020", "GOEI-ISS-021", "GOEI-ISS-022", "GOEI-ISS-023", "GOEI-ISS-024", "GOEI-ISS-025", "GOEI-ISS-026"]
+    },
+    {
+      "id": "WP-04",
+      "name": "Integración de procesos científicos",
+      "status": "awaiting_approval",
+      "dependencies": ["WP-03"],
+      "evidence": ["00_Gobernanza/coordinacion/handoffs/GOEI_HANDOFF_0001_B1_Procesos_Universales.md"],
+      "blockers": ["GOEI-ISS-030", "D-008 proposed but not approved"]
+    },
+    {
+      "id": "WP-05",
+      "name": "Taxonomía",
+      "status": "blocked",
+      "dependencies": ["WP-04"],
+      "evidence": [],
+      "blockers": ["B1 not officially closed"]
+    },
+    {
+      "id": "WP-06",
+      "name": "KPI y admisibilidad",
+      "status": "blocked",
+      "dependencies": ["WP-05"],
+      "evidence": [],
+      "blockers": ["B2-B4 incomplete"]
+    },
+    {
+      "id": "WP-07",
+      "name": "Normalización y modelo matemático",
+      "status": "blocked",
+      "dependencies": ["WP-06"],
+      "evidence": [],
+      "blockers": ["B5-B8 not initiated"]
+    },
+    {
+      "id": "WP-08",
+      "name": "Ensamblaje del estándar",
+      "status": "blocked",
+      "dependencies": ["WP-07"],
+      "evidence": [],
+      "blockers": ["Phase B incomplete"]
+    },
+    {
+      "id": "WP-09",
+      "name": "Validación piloto",
+      "status": "blocked",
+      "dependencies": ["WP-08"],
+      "evidence": [],
+      "blockers": ["GOEI-ISS-041", "No approved validation protocol"]
+    },
+    {
+      "id": "WP-10",
+      "name": "Release validada",
+      "status": "blocked",
+      "dependencies": ["WP-08", "WP-09"],
+      "evidence": [],
+      "blockers": ["Standard and validation incomplete"]
+    },
+    {
+      "id": "WP-11",
+      "name": "Ensamblaje de tesis",
+      "status": "blocked",
+      "dependencies": ["WP-10"],
+      "evidence": ["12_Tesis/ensamblaje/Matriz_de_cumplimiento_plan_maestro.md"],
+      "blockers": ["GOEI-ISS-039", "64 thesis requirements pending"]
+    },
+    {
+      "id": "WP-12",
+      "name": "Preparación de publicación",
+      "status": "blocked",
+      "dependencies": ["WP-09", "WP-10"],
+      "evidence": ["13_Publicaciones/ensamblaje/Matriz_de_preparacion_publicacion.md"],
+      "blockers": ["GOEI-ISS-040"]
+    },
+    {
+      "id": "WP-13",
+      "name": "Repositorio Open Science",
+      "status": "in_progress",
+      "dependencies": ["WP-01"],
+      "evidence": ["00_Gobernanza/Arquitectura_del_repositorio_oficial_GOEI.md"],
+      "blockers": ["GOEI-ISS-042", "Access, licensing, ethics and data policies pending"]
+    },
+    {
+      "id": "WP-14",
+      "name": "Software futuro",
+      "status": "blocked",
+      "dependencies": ["WP-10"],
+      "evidence": [],
+      "blockers": ["Standard not stable"]
+    }
+  ],
+  "targets": {
+    "validatedStandard": "WP-10",
+    "completedThesis": "WP-11",
+    "publishableManuscript": "WP-12"
+  }
+}

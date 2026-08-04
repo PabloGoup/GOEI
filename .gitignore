@@ -1,0 +1,30 @@
+# macOS y editores
+.DS_Store
+._*
+~$*
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Artefactos temporales y secretos
+*.tmp
+*.temp
+*.bak
+.env
+.env.*
+!.env.example
+
+# Salidas locales reproducibles
+build/
+dist/
+coverage/
+*.log

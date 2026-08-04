@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "1.0",
+  "updatedAt": "2026-08-04",
+  "ontologyBaseline": "GOEI-BSL-ONT-0001",
+  "thesisRequirementBaseline": "GOEI-THS-REQ-0001",
+  "phases": [
+    {
+      "id": "A",
+      "name": "Fundamentos científicos",
+      "status": "awaiting_approval",
+      "evidence": ["D-001", "D-002", "D-003", "D-004", "D-005", "D-006", "D-006-REV"],
+      "blockers": ["D-003 provisional", "D-005 provisional", "GOEI-ISS-006", "GOEI-ISS-007", "GOEI-ISS-016", "GOEI-ISS-017"]
+    },
+    {
+      "id": "B1",
+      "name": "Procesos Universales",
+      "status": "awaiting_approval",
+      "evidence": ["D-007", "GOEI-HO-0001"],
+      "blockers": ["GOEI-ISS-030", "D-008 proposed but not approved"]
+    },
+    {
+      "id": "B2",
+      "name": "Taxonomía Universal",
+      "status": "blocked",
+      "evidence": [],
+      "blockers": ["B1 not officially closed"]
+    },
+    {
+      "id": "B3-B10",
+      "name": "KPI through Technical Manual knowledge",
+      "status": "blocked",
+      "evidence": [],
+      "blockers": ["B2 and sequential predecessor phases incomplete"]
+    },
+    {
+      "id": "C",
+      "name": "Construcción del estándar",
+      "status": "blocked",
+      "evidence": ["GOEI-ARCH-001", "GOEI-MM-0001", "GOEI-KG-0001", "GOEI-PMM-0001"],
+      "blockers": ["Phase B incomplete"]
+    },
+    {
+      "id": "D",
+      "name": "Validación piloto",
+      "status": "blocked",
+      "evidence": [],
+      "blockers": ["No approved standard candidate or validation protocol", "GOEI-ISS-041"]
+    },
+    {
+      "id": "E",
+      "name": "Publicaciones y tesis",
+      "status": "blocked",
+      "evidence": ["GOEI-THS-ARCH-0001", "GOEI-PUB-ARCH-0001"],
+      "blockers": ["GOEI-ISS-039", "GOEI-ISS-040", "Phases A-D incomplete"]
+    },
+    {
+      "id": "F",
+      "name": "Software",
+      "status": "blocked",
+      "evidence": ["technical recommendations only"],
+      "blockers": ["Standard not stable"]
+    }
+  ],
+  "targetDeliverables": {
+    "validatedStandard": "blocked",
+    "completedThesis": "blocked",
+    "publishableManuscript": "blocked"
+  }
+}

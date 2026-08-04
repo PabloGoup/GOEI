@@ -1,0 +1,15 @@
+* text=auto eol=lf
+*.md text diff=markdown whitespace=-trailing-space
+*.json text
+*.yml text
+*.yaml text
+*.py text
+*.csv text
+*.tsv text
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pdf binary
+*.docx binary
+*.xlsx binary
+*.pptx binary
