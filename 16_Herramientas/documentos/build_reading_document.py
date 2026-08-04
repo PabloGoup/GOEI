@@ -10,13 +10,28 @@ from pathlib import Path
 from docx import Document
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.oxml.ns import qn
-from docx.shared import Pt
+from docx.shared import Inches, Pt
 
 from build_integral_dossier import BLUE, DARK, MUTED, ROOT, configure_document
 
 
 SOURCE = ROOT / "12_Tesis" / "GOEI_Relato_Integral_Proyecto_2026-08-04.md"
 OUTPUT = ROOT / "12_Tesis" / "GOEI_Documento_de_Lectura_Proyecto_2026-08-04.docx"
+FIGURES = ROOT / "12_Tesis" / "figuras" / "documento_lectura"
+
+VISUALS = {
+    "Nota de lectura": [("01_mapa_mental_goei.png", "Mapa mental general del proyecto GOEI")],
+    "3. La organización del proyecto": [("02_mapa_autoridad.png", "Autoridad y separación de responsabilidades")],
+    "5. El Knowledge Graph y el MetaModel": [("03_flujo_trazabilidad.png", "Cadena de trazabilidad del conocimiento")],
+    "8. B1 y D-008: el núcleo universal de procesos": [("04_mapa_operacional_p1_p9.png", "Mapa operacional universal P1–P9")],
+    "11. La ampliación GTRM": [("06_mapa_gtrm.png", "Transformación conceptual GTRM")],
+    "12. B4: el punto exacto donde está detenido el trabajo científico": [
+        ("05_linea_tiempo.png", "Línea temporal hasta D-019"),
+        ("07_pipeline_b1_b10.png", "Pipeline operativo B1–B10"),
+    ],
+    "16. Qué está realmente terminado": [("08_mapa_estado.png", "Estado del proyecto: terminado, en curso y pendiente")],
+    "19. La ruta recomendada desde aquí": [("09_ruta_tesis_publicacion.png", "Ruta desde el estándar hasta la tesis y la publicación")],
+}
 
 
 def clean(text: str) -> str:
@@ -71,11 +86,31 @@ def new_numbering_id(doc: Document) -> int:
     return int(concrete.numId)
 
 
-def add_numbered_paragraph(doc: Document, text: str, num_id: int) -> None:
+def add_numbered_paragraph(doc: Document, text: str, num_id: int, compact: bool = False) -> None:
     paragraph = doc.add_paragraph(clean(text), style="List Number")
+    if compact:
+        paragraph.paragraph_format.space_after = Pt(0)
+        for run in paragraph.runs:
+            run.font.size = Pt(9.5)
     num_pr = paragraph._p.get_or_add_pPr().get_or_add_numPr()
     num_pr.get_or_add_ilvl().val = 0
     num_pr.get_or_add_numId().val = num_id
+
+
+def add_visuals(doc: Document, heading_text: str) -> None:
+    for filename, caption in VISUALS.get(heading_text, []):
+        paragraph = doc.add_paragraph()
+        paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        paragraph.paragraph_format.space_before = Pt(6)
+        paragraph.paragraph_format.space_after = Pt(3)
+        paragraph.add_run().add_picture(str(FIGURES / filename), width=Inches(6.75))
+        cap = doc.add_paragraph()
+        cap.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        cap.paragraph_format.space_after = Pt(10)
+        run = cap.add_run(caption)
+        run.italic = True
+        run.font.size = Pt(9)
+        run.font.color.rgb = MUTED
 
 
 def build() -> None:
@@ -87,6 +122,7 @@ def build() -> None:
     lines = SOURCE.read_text(encoding="utf-8").splitlines()
     skip_first_title = True
     current_num_id = None
+    compact_numbering = False
     for original in lines:
         line = original.strip()
         if not line:
@@ -99,13 +135,16 @@ def build() -> None:
                 skip_first_title = False
                 continue
             level = min(3, len(heading.group(1)))
-            doc.add_heading(clean(heading.group(2)), level=level)
+            heading_text = clean(heading.group(2))
+            compact_numbering = heading_text.startswith("Anexo ")
+            doc.add_heading(heading_text, level=level)
+            add_visuals(doc, heading_text)
             continue
         if re.match(r"^\d+[.)]\s+", line):
             content = re.sub(r"^\d+[.)]\s+", "", line)
             if current_num_id is None:
                 current_num_id = new_numbering_id(doc)
-            add_numbered_paragraph(doc, content, current_num_id)
+            add_numbered_paragraph(doc, content, current_num_id, compact=compact_numbering)
             continue
         current_num_id = None
         if re.match(r"^[-*+]\s+", line):

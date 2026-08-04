@@ -332,4 +332,3 @@ El próximo hito real es D-019. Después vendrán medición, puntuación, agrega
 17. 09_Manual_tecnico_general/GOEI_BOK/README.md
 18. 12_Tesis/PLAN_MAESTRO_TESIS_GOEI.md
 19. 12_Tesis/GOEI_Matriz_Requisitos_Tesis.csv
-20. CHANGELOG.md
