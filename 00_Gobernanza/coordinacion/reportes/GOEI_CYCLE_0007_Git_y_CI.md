@@ -30,4 +30,14 @@ La protección de `main`, checks obligatorios y protección de etiquetas no pued
 
 ## Verificación
 
-Pendiente de registrar después de los controles finales y del intento de publicación inicial.
+| Control | Resultado |
+|---|---|
+| Validador integral previo | PASS — 92 controles |
+| Pruebas unitarias | 13/13 conformes |
+| Roadmap técnico | PASS — 15 paquetes |
+| Inspección whitespace Git | Conforme bajo política Markdown |
+| Commit raíz | `b182835f87d56962a14fd4c77ac164697c94c30e` |
+| Publicación inicial | `main` publicada y siguiendo `origin/main` |
+| Correspondencia local/remota inicial | mismo commit raíz |
+
+La ejecución del workflow y las protecciones de rama continúan sujetas a verificación remota; GOEI-ISS-042 permanece abierto.
