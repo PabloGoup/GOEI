@@ -212,6 +212,13 @@
       "type": "CONTAINS"
     },
     {
+      "id": "E-CONTAINS::GOEI-SCI-QUEUE-0002",
+      "source": "DOC::00_Gobernanza/coordinacion/cola_cientifica/GOEI_SCI_QUEUE_0002_B2_Taxonomia_Universal.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-SCI-QUEUE-0002",
+      "type": "CONTAINS"
+    },
+    {
       "id": "E-CONTAINS::GOEI-STATUS-0001",
       "source": "DOC::00_Gobernanza/coordinacion/program_state.json",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
@@ -870,6 +877,13 @@
       "type": "TRACED_IN"
     },
     {
+      "id": "E-TRACE::GOEI-SCI-QUEUE-0002",
+      "source": "GOEI-SCI-QUEUE-0002",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
       "id": "E-TRACE::GOEI-STATUS-0001",
       "source": "GOEI-STATUS-0001",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
@@ -1346,6 +1360,13 @@
       "id": "DOC::00_Gobernanza/coordinacion/README.md",
       "properties": {
         "path": "00_Gobernanza/coordinacion/README.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::00_Gobernanza/coordinacion/cola_cientifica/GOEI_SCI_QUEUE_0002_B2_Taxonomia_Universal.md",
+      "properties": {
+        "path": "00_Gobernanza/coordinacion/cola_cientifica/GOEI_SCI_QUEUE_0002_B2_Taxonomia_Universal.md"
       },
       "type": "Document"
     },
@@ -2704,6 +2725,24 @@
         "name": "Revisión técnica de la ontología D-006",
         "status": "Emitido para decisión",
         "technicalOwner": "Arquitectura e Ingeniería de Conocimiento"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-SCI-QUEUE-0002",
+      "properties": {
+        "approver": "Dirección General para activación; Comité Científico para contenido",
+        "canonicalPath": "00_Gobernanza/coordinacion/cola_cientifica/GOEI_SCI_QUEUE_0002_B2_Taxonomia_Universal.md",
+        "componentClass": "SCI-QUEUE",
+        "decisionOrigin": "GOEI-PIPE-B2-B10-0001",
+        "decisionStatus": "Contrato vacío; no crea taxonomía",
+        "dependents": "expediente, handoff y decisión B2",
+        "documentVersion": "0.1.0-draft",
+        "evidence": "B1 aprobada e integrada como condición futura",
+        "goeiVersion": "No asignada",
+        "name": "Paquete científico B2 Taxonomía Universal",
+        "status": "Preparado; bloqueado por B1",
+        "technicalOwner": "Oficina Técnica"
       },
       "type": "Component"
     },

@@ -47,6 +47,8 @@
 | GOEI-THS-MAP-0001 | Matriz capítulo–evidencia aprobada | THS-MAP | Oficina Técnica | No aplica; control de ensamblaje | Activa | 1.0.0 | Arquitectura de tesis v1.0 | `12_Tesis/ensamblaje/Matriz_capitulo_evidencia_aprobada.md` |
 | GOEI-THS-ED-0001 | Especificación editorial UDLA–APA 7 | THS-ED | Oficina Técnica | Aprobación académica e institucional pendiente | Especificación de proyecto; cotejo UDLA pendiente | 0.1.0 | Arquitectura de tesis v1.0 | `12_Tesis/estructura/Especificacion_editorial_UDLA_APA7.md` |
 | GOEI-AUDIT-0002 | Auditoría técnica D-008 / cierre B1 | AUDIT | Oficina Técnica | No aplica; no aprueba ciencia | Emitida para resolución directiva | 1.0.0 | Gobernanza técnica v0.1 | `00_Gobernanza/coordinacion/reportes/GOEI_AUDIT_0002_D008_Cierre_B1.md` |
+| GOEI-DIR-RES-D008-DRAFT | Borrador de resolución D-008 / B1 | GOV-DRAFT | Oficina Técnica | Dirección General | Borrador sin efectos normativos | 0.1.0-draft | No asignada | `00_Gobernanza/coordinacion/resoluciones/GOEI_DIR_RES_D008_B1_BORRADOR.md` |
+| GOEI-SCI-QUEUE-0002 | Paquete científico B2 Taxonomía Universal | SCI-QUEUE | Oficina Técnica | Dirección General para activación; Comité Científico para contenido | Preparado; bloqueado por B1 | 0.1.0-draft | No asignada | `00_Gobernanza/coordinacion/cola_cientifica/GOEI_SCI_QUEUE_0002_B2_Taxonomia_Universal.md` |
 
 ## Regla
 

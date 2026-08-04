@@ -17,6 +17,7 @@ Todos los cambios relevantes del GOEI se documentarán en este archivo siguiendo
 - Validadores y pruebas automáticas del repositorio.
 - Mandato de dirección operativa ampliada y coordinación paralela asistida, sin transferencia de autoridad científica.
 - Pipeline científico–técnico B2–B10, matriz capítulo–evidencia y especificación editorial APA 7 orientada a UDLA.
+- Borrador controlado de resolución D-008/B1 y paquete vacío de activación científica B2, ambos sin efectos normativos.
 
 ### Changed
 
