@@ -40,4 +40,4 @@ La protección de `main`, checks obligatorios y protección de etiquetas no pued
 | Publicación inicial | `main` publicada y siguiendo `origin/main` |
 | Correspondencia local/remota inicial | mismo commit raíz |
 
-La ejecución del workflow y las protecciones de rama continúan sujetas a verificación remota; GOEI-ISS-042 permanece abierto.
+El workflow remoto terminó con éxito para los commits `b182835` y `cef3777` (runs `30902508351` y `30902529008`). Las protecciones administrativas de rama y etiquetas continúan sujetas a GOEI-ISS-042.
