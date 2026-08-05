@@ -114,14 +114,14 @@ El handoff de la Oficina Técnica registrará, sin dictaminar validez científic
 
 | Control | Definición operativa |
 |---|---|
-| Entrada obligatoria | B3 cerrada; catálogo candidato congelado; criterios y método de admisibilidad sometidos a decisión científica |
+| Entrada obligatoria | B3 cerrada; catálogo candidato congelado; método y criterios ratificados por `GOEI-DIR-RES-0004`; evaluación B4-B pendiente |
 | Pregunta científica del Comité | ¿Qué criterios deben gobernar la admisibilidad y qué candidatos los satisfacen para cada alcance aprobado? |
 | Expediente requerido | Método de evaluación, criterios justificados, matriz candidato–criterio, resultados, desacuerdos, exclusiones, limitaciones, vacíos y propuesta de decisión B4 |
 | Handoff requerido | Estados por candidato, evidencia de cada evaluación, razones de inclusión/exclusión, dependencias de datos y mapeo a procesos/categorías |
 | Auditoría técnica Codex | Integridad de la matriz; vocabulario de estados; trazabilidad criterio–evidencia–resultado; coherencia de IDs; ninguna conclusión sin decisión asociada |
 | Decisión de compuerta | Dirección aprueba el método y la selección, devuelve o rechaza; declara cierre B4 y alcance exacto de lo admisible |
 | Artefactos habilitados | Catálogo de KPI admisibles versionado; catálogo histórico de excluidos; requisitos de datos; apertura de B5 |
-| Blockers | Criterios no aprobados; evaluación incompleta; candidatos sin evidencia; conflictos de alcance; decisiones de inclusión ambiguas |
+| Blockers | Evaluación incompleta; candidatos sin evidencia; conflictos de alcance; decisiones de inclusión ambiguas; aplicabilidad categorial bajo GOEI-ISS-054/059 |
 | No avance | No definir referencias, transformaciones, pesos, agregación o interpretación para KPI no aprobados |
 
 ### B5 — Condiciones de referencia y especificación de medición

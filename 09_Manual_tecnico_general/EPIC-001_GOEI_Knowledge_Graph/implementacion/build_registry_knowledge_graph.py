@@ -16,7 +16,8 @@ DECISIONS = ROOT / "00_Gobernanza/Registro_de_decisiones.md"
 CONFIG = ROOT / "16_Herramientas/validadores/goei_control.json"
 OUTPUT = Path(__file__).with_name("knowledge_graph.registry.json")
 COMPONENT_ID = re.compile(r"^GOEI-[A-Z][A-Z0-9-]*-\d{3,4}$")
-DECISION_ID = re.compile(r"D-\d{3}(?:-REV)?")
+DECISION_TOKEN = r"D-(?:\d{3}(?:-REV)?|B4A-\d{3})"
+DECISION_ID = re.compile(DECISION_TOKEN)
 ISSUE_ID = re.compile(r"^GOEI-ISS-\d{3,4}$")
 
 
@@ -90,7 +91,7 @@ def build() -> dict:
             node(version_id, "Version", label=goei_version)
             edge(f"E-VERSION::{component_id}::{goei_version}", "INCORPORATED_IN", component_id, version_id, component_source)
 
-    for match in re.finditer(r"^\*\*Decisión:\*\*\s+(D-\d{3}(?:-REV)?)\s+—\s+(.+)$", DECISIONS.read_text(encoding="utf-8"), re.MULTILINE):
+    for match in re.finditer(rf"^\*\*Decisión:\*\*\s+({DECISION_TOKEN})\s+—\s+(.+)$", DECISIONS.read_text(encoding="utf-8"), re.MULTILINE):
         current = nodes.get(match.group(1), {"id": match.group(1), "type": "Decision", "properties": {}})
         current["properties"].update({"title": match.group(2), "registryPath": DECISIONS.relative_to(ROOT).as_posix()})
         nodes[match.group(1)] = current

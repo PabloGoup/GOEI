@@ -112,9 +112,9 @@ La columna **Texto reutilizable de forma segura** delimita el tipo de afirmació
 
 | Subcapítulo exigido | Evidencia canónica existente | Decisión de origen | Estado | Texto reutilizable de forma segura | Bloqueo |
 |---|---|---|---|---|---|
-| Observabilidad, medibilidad, auditabilidad, comparabilidad y repetibilidad | Principios institucionales y Plan Maestro | GOEI-DIR-0002 fija cobertura; D-001 aporta condiciones generales | Provisional | Enumerar como requisitos candidatos/directorales, no como prueba de método aprobado | B4 no iniciada |
+| Observabilidad, medibilidad, auditabilidad, comparabilidad y repetibilidad | Método B4-A y Plan Maestro | B4-A + GOEI-DIR-RES-0004; GOEI-DIR-0002 fija cobertura | Aprobado en el alcance exacto de los nueve criterios B4-A | Describir sólo criterios y reglas ratificados; no completar por analogía los 11 requisitos directorales | Evaluaciones B4-B y brecha de cobertura directoral pendientes |
 | Universalidad, disponibilidad, costo, validez y confiabilidad | Plan Maestro y principios del proyecto | GOEI-DIR-0002 | Provisional | Presentar como materias obligatorias de evaluación futura | Definición operacional, umbrales y procedimiento ausentes |
-| Regla y matriz de admisibilidad | No existe decisión B4 | Ninguna | Ausente | Ningún método de aceptación/rechazo reutilizable | Cierre B4 y dependencia del catálogo B3 |
+| Regla y matriz de admisibilidad | `GOEI-KPI-ADM-MTH-0001`; esquema B4 | B4-A + GOEI-DIR-RES-0004 | Método aprobado; matriz sin resultados | Reutilizar método y vocabularios; no presentar candidatos como evaluados | B4-B, matriz completa y decisión final B4 |
 
 ### Capítulo 10 — Sistema de normalización
 

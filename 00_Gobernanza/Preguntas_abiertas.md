@@ -45,6 +45,7 @@ Este registro consolida decisiones faltantes. No propone respuestas.
 | GOEI-ISS-056 | Identificar evidencia citable de un indicador operacional cerrado de exactitud de pronóstico de demanda específico de foodservice o ratificar formalmente el vacío. | D-018 / V-B3-01 | rama P1 y evaluación de C-003 | Comité Científico | Abierta; bloqueo selectivo de C-003 cuando se evalúe exactitud de pronóstico |
 | GOEI-ISS-057 | Resolver la adaptación al dominio gastronómico de indicadores genéricos procedentes de SCOR e ISO 30414. | D-018 / V-B3-03 | evaluación B4/B5 de C-005, C-014, C-015 y C-030 | Comité Científico | Abierta; bloqueo selectivo de promoción de candidatos afectados |
 | GOEI-ISS-058 | Resolver la comparabilidad de puntajes de inspección sanitaria entre jurisdicciones antes de puntuarlos o compararlos. | D-018 / V-B3-04 | C-021 y futura normalización jurisdiccional | Comité Científico | Abierta; bloqueo selectivo de comparabilidad/puntuación de C-021 |
+| GOEI-ISS-059 | Definir la aplicabilidad global por categoría instanciada del cribado de admisibilidad. | B4-A / GOEI_SCI_ADENDA_B4A_Resolutiva.md | sólo estado global `NO APLICA` por categoría | Comité Científico, después de valores taxonómicos aprobados | Abierta; depende de GOEI-ISS-054; no bloquea B4-B al nivel `Establecimiento` |
 
 ## Criterio de cierre
 

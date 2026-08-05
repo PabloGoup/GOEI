@@ -25,7 +25,7 @@ No se redactan afirmaciones de publicación mientras la evidencia correspondient
 | GOEI-PUB-04 | Ontología GOEI | Candidato estructural | baseline publicable y evaluación |
 | GOEI-PUB-05 | Procesos universales | No listo | cierre B1 y validación |
 | GOEI-PUB-06 | Taxonomía universal | No iniciado | cierre B2 |
-| GOEI-PUB-07 | Método de selección de KPI | No iniciado | cierres B3–B4 |
+| GOEI-PUB-07 | Método de selección de KPI | Parcial | B4-A aprobado; faltan evaluaciones, cierre B4 y validación |
 | GOEI-PUB-08 | Modelo matemático | No iniciado | cierres B5–B8 |
 | GOEI-PUB-09 | Validación científica | No iniciado | Fase D cerrada |
 | GOEI-PUB-10 | GOEI Framework | No listo | estándar validado y release publicada |

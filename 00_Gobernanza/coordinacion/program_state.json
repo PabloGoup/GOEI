@@ -36,8 +36,8 @@
       "id": "B4-B10",
       "name": "Admisibilidad through Technical Manual knowledge",
       "status": "in_progress",
-      "evidence": ["GOEI-BSL-KPI-C-0001 v0.1.0", "GOEI-HO-0003"],
-      "blockers": ["B4-B10 scientific decisions pending sequentially", "GOEI-ISS-055 through GOEI-ISS-058 block declared branches only"]
+      "evidence": ["GOEI-BSL-KPI-C-0001 v0.1.0", "GOEI-BSL-KPI-ADM-0001 v0.1.0", "GOEI-DIR-RES-0004", "GOEI-HO-0004"],
+      "blockers": ["B4-B candidate evaluations and B4-C/B4-D decisions pending", "GOEI-ISS-055 through GOEI-ISS-059 block declared branches only"]
     },
     {
       "id": "C",

@@ -36,7 +36,9 @@
     "09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/implementacion/README.md",
     "09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/implementacion/build_registry_knowledge_graph.py",
     "09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/implementacion/knowledge_graph.registry.json",
-    "09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/implementacion/query_registry_knowledge_graph.py"
+    "09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/implementacion/query_registry_knowledge_graph.py",
+    "15_Mantenimiento/lineas_base/GOEI_KPI_ADM_METHOD_v0.1.0/MANIFEST.md",
+    "15_Mantenimiento/lineas_base/GOEI_KPI_ADM_METHOD_v0.1.0/POLITICA_ISSUE_ONLY.md"
   ],
   "thesisRequirements": {
     "document": "12_Tesis/PLAN_MAESTRO_DIRECTORAL_GOEI.md",
@@ -54,7 +56,15 @@
   },
   "frozenArtifacts": {
     "09_Manual_tecnico_general/Fase4_D006_Ontologia_del_GOEI.md": "4ed8fdb6295cb5a857909a678c7e8b39146289ea5d0c92018369a284cec7f163",
-    "09_Manual_tecnico_general/Fase4_D006_REV_Ontologia_revision_y_cierre.md": "6ea6988191ec532ca96946d6ad0735573c2949f2ea8aea426ff14a2e4b9b7e3f"
+    "09_Manual_tecnico_general/Fase4_D006_REV_Ontologia_revision_y_cierre.md": "6ea6988191ec532ca96946d6ad0735573c2949f2ea8aea426ff14a2e4b9b7e3f",
+    "00_Gobernanza/coordinacion/entradas_comite/GOEI_SCI_DICTAMEN_B4A_Metodo_Admisibilidad.md": "4bba941715d596ac9dc2a92de691d4fb8245060f7bd3ad550de09f458cb493ee",
+    "00_Gobernanza/coordinacion/entradas_comite/GOEI_SCI_ADENDA_B4A_Resolutiva.md": "d7bffb5bf38f7e9ad198fa1e1fa1002104879d2870323843063599c0a2b2a2e2",
+    "00_Gobernanza/coordinacion/entradas_comite/GOEI_SCI_CORRIGENDA_B4A.md": "f5a694f3c3135e2c492cca31f5053d9d96180bfd3f8aa20276231e08ad21e91e",
+    "00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0008_B4A_Metodo_Admisibilidad.md": "b57c0e5d8172752756c80af89adf0f6b4b006fdabc52cf3c4a1f75dd7379f50a",
+    "00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0009_B4A_Adenda_Resolutiva.md": "8619dbd26bd1b9a46cc90a1518b053a5e1bf51616fbfa41143848be7e72971d8",
+    "00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0010_B4A_Conformidad_Final.md": "f86531b5e881484aa5c21ef63cf1aaa73f9ba17ed358504c5fd90bf5b4020cc0",
+    "00_Gobernanza/coordinacion/resoluciones/GOEI_DIR_RES_0004_B4A.md": "4402b6df1f16eca724e81d22e718953bc9ba33992a8571494356ba8d506bb6c1",
+    "05_Catalogo_KPI/GOEI_Metodo_Admisibilidad_KPI_B4A.md": "f0f408137f4aa4af6933c46bd3fbcc239dc15508480bb76280b1dade7f678a59"
   },
   "issueRegistries": [
     "00_Gobernanza/Preguntas_abiertas.md",

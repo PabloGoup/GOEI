@@ -62,8 +62,8 @@ Un documento derivado nunca modifica por sí mismo una decisión científica.
 ```bash
 python3 16_Herramientas/validadores/validate_repository.py
 cd 16_Herramientas/validadores
-python3 -m unittest discover -s tests -v
-python3 validate_technical_roadmap.py
+PYTHONPATH=16_Herramientas/validadores python3 -m unittest discover -s 16_Herramientas/validadores/tests -v
+python3 16_Herramientas/validadores/validate_technical_roadmap.py
 ```
 
 Los evaluadores de preparación devuelven código `2` mientras existan compuertas pendientes; esto no equivale a un fallo técnico.

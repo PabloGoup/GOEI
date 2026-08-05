@@ -4,6 +4,25 @@ Todos los cambios relevantes del GOEI se documentarán en este archivo siguiendo
 
 ## [Unreleased]
 
+### Added
+
+- Ratificación directiva del método científico B4-A mediante `GOEI-DIR-RES-0004`.
+- `GOEI-BSL-KPI-ADM-0001 v0.1.0`, baseline metodológica separada de la baseline candidata B3.
+- `GOEI-ISS-059`, bloqueo exclusivo de aplicabilidad global por categoría.
+- `GOEI-HO-0004`, que habilita B4-B por lotes al nivel `Establecimiento`.
+
+### Changed
+
+- Roadmap, estado maestro, BOK, trazabilidad y Knowledge Graph preparados para B4-B.
+- Comandos de validación documentados con rutas ejecutables desde la raíz del repositorio.
+
+### Scientific scope
+
+- Candidatos evaluados: **0**.
+- KPI aprobados: **0**.
+- D-019: **no emitida**.
+- D-006 y baselines previas: **sin modificación**.
+
 - Ratificada D-018 mediante `GOEI-DIR-RES-0003`; B3 queda cerrada en su pregunta nuclear y se congela `GOEI-BSL-KPI-C-0001 v0.1.0` con 31 indicadores candidatos, sin aprobar ningún KPI.
 - C-032 se preserva como marco contextual BSC y se excluye expresamente de la cola de admisibilidad B4; abiertos `GOEI-ISS-055`–`058` y habilitada B4.
 

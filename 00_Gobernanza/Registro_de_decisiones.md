@@ -193,6 +193,21 @@
 
 ---
 
+**Decisión:** D-B4A-001 — Método científico de admisibilidad de candidatos KPI
+**Fecha:** 2026-08-04
+**Problema analizado:** ¿Qué método, criterios, estados y regla de resumen deben gobernar la evaluación posterior de los 31 candidatos congelados sin anticipar medición, normalización o matemática?
+**Alternativas consideradas:** cribado no compensatorio referenciado a evidencia; puntaje ponderado; voto experto sin criterios; precedente bibliográfico obligatorio; criterio único de procedencia.
+**Evidencia utilizada:** dictamen `GOEI_SCI_DICTAMEN_B4A_Metodo_Admisibilidad.md`, adenda resolutiva y corrigenda; OECD/JRC (2008), Munda (2008), Codex CXC 1-1969, FDA Food Code 2022 y principios GOEI citados por el Comité.
+**Decisión adoptada:** Cribado no compensatorio con nueve criterios necesarios, vocabularios controlados candidato–criterio y candidato global, regla léxica determinista, suficiencia probatoria cualitativa, marcador AX-4 y bloqueos selectivos. La evaluación vigente se realiza al nivel `Establecimiento`; la aplicabilidad global por categoría se difiere a GOEI-ISS-059.
+**Autoridad científica:** Comité Científico GOEI, mediante dictamen + adenda + corrigenda B4-A.
+**Ratificación directiva:** `GOEI-DIR-RES-0004`, bajo `GOEI-DIR-0004`.
+**Justificación:** Consta exclusivamente en el expediente científico integrado; la resolución directiva no amplía su contenido.
+**Limitaciones:** No evalúa candidatos, no aprueba KPI, no declara exhaustividad, no decide aplicabilidad por categorías concretas ni introduce medición, referencias/GTRM, normalización, matemática o interpretación.
+**Versión incorporada:** `GOEI-BSL-KPI-ADM-0001 v0.1.0`, baseline metodológica; sin baseline de resultados ni KPI normativos.
+**Pendiente de validación:** B4-B debe evaluar C-001…C-031; GOEI-ISS-054/059 bloquean aplicabilidad por categoría; GOEI-ISS-055 impide declarar exhaustividad.
+
+---
+
 **Decisión:** D-017 — Taxonomía universal facetada y cierre limitado de B2
 **Fecha:** 2026-08-04
 **Problema analizado:** ¿Qué sistema de clasificación permite delimitar y comparar los establecimientos comprendidos por GOEI?

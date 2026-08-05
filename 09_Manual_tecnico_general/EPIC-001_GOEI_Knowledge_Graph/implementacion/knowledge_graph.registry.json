@@ -58,6 +58,34 @@
       "type": "CONTAINS"
     },
     {
+      "id": "E-CONTAINS::GOEI-AUDIT-0007",
+      "source": "DOC::00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0007_B4_Readiness.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-AUDIT-0007",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-AUDIT-0008",
+      "source": "DOC::00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0008_B4A_Metodo_Admisibilidad.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-AUDIT-0008",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-AUDIT-0009",
+      "source": "DOC::00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0009_B4A_Adenda_Resolutiva.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-AUDIT-0009",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-AUDIT-0010",
+      "source": "DOC::00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0010_B4A_Conformidad_Final.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-AUDIT-0010",
+      "type": "CONTAINS"
+    },
+    {
       "id": "E-CONTAINS::GOEI-BIB-0001",
       "source": "DOC::02_Bibliografia/catalogo_fuentes.json",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
@@ -76,6 +104,13 @@
       "source": "DOC::09_Manual_tecnico_general/GOEI_BOK/README.md",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "GOEI-BOK-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-BSL-KPI-ADM-0001",
+      "source": "DOC::15_Mantenimiento/lineas_base/GOEI_KPI_ADM_METHOD_v0.1.0/MANIFEST.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-BSL-KPI-ADM-0001",
       "type": "CONTAINS"
     },
     {
@@ -181,6 +216,13 @@
       "source": "DOC::00_Gobernanza/coordinacion/resoluciones/GOEI_DIR_RES_0003_D018_B3.md",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "GOEI-DIR-RES-0003",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-DIR-RES-0004",
+      "source": "DOC::00_Gobernanza/coordinacion/resoluciones/GOEI_DIR_RES_0004_B4A.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-DIR-RES-0004",
       "type": "CONTAINS"
     },
     {
@@ -303,6 +345,13 @@
       "type": "CONTAINS"
     },
     {
+      "id": "E-CONTAINS::GOEI-HO-0004",
+      "source": "DOC::00_Gobernanza/coordinacion/handoffs/GOEI_HANDOFF_0004_B4A_Metodo_Admisibilidad.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-HO-0004",
+      "type": "CONTAINS"
+    },
+    {
       "id": "E-CONTAINS::GOEI-KG-0001",
       "source": "DOC::09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/02_GOEI_Knowledge_Graph.md",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
@@ -314,6 +363,13 @@
       "source": "DOC::09_Manual_tecnico_general/EPIC-001_GOEI_Knowledge_Graph/implementacion/knowledge_graph.registry.json",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "GOEI-KG-REGISTRY-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-KPI-ADM-MTH-0001",
+      "source": "DOC::05_Catalogo_KPI/GOEI_Metodo_Admisibilidad_KPI_B4A.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-KPI-ADM-MTH-0001",
       "type": "CONTAINS"
     },
     {
@@ -391,6 +447,13 @@
       "source": "DOC::09_Manual_tecnico_general/Revision_tecnica_arquitectonica_D006.md",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "GOEI-REV-ONT-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-SCI-B4A-0001",
+      "source": "DOC::00_Gobernanza/coordinacion/entradas_comite/GOEI_SCI_ADENDA_B4A_Resolutiva.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-SCI-B4A-0001",
       "type": "CONTAINS"
     },
     {
@@ -926,6 +989,13 @@
       "type": "REGISTERED_IN"
     },
     {
+      "id": "E-ISSUE::GOEI-ISS-059",
+      "source": "GOEI-ISS-059",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
       "id": "E-ORIGIN::D-000::GOEI-EXP-GTRM-0001",
       "source": "D-000",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
@@ -1080,6 +1150,13 @@
       "type": "ORIGINATES"
     },
     {
+      "id": "E-ORIGIN::D-018::GOEI-AUDIT-0007",
+      "source": "D-018",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "GOEI-AUDIT-0007",
+      "type": "ORIGINATES"
+    },
+    {
       "id": "E-ORIGIN::D-018::GOEI-BSL-KPI-C-0001",
       "source": "D-018",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
@@ -1126,6 +1203,41 @@
       "source": "D-018",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
       "target": "GOEI-SCI-D018-0001",
+      "type": "ORIGINATES"
+    },
+    {
+      "id": "E-ORIGIN::D-B4A-001::GOEI-BSL-KPI-ADM-0001",
+      "source": "D-B4A-001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "GOEI-BSL-KPI-ADM-0001",
+      "type": "ORIGINATES"
+    },
+    {
+      "id": "E-ORIGIN::D-B4A-001::GOEI-DIR-RES-0004",
+      "source": "D-B4A-001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "GOEI-DIR-RES-0004",
+      "type": "ORIGINATES"
+    },
+    {
+      "id": "E-ORIGIN::D-B4A-001::GOEI-HO-0004",
+      "source": "D-B4A-001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "GOEI-HO-0004",
+      "type": "ORIGINATES"
+    },
+    {
+      "id": "E-ORIGIN::D-B4A-001::GOEI-KPI-ADM-MTH-0001",
+      "source": "D-B4A-001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "GOEI-KPI-ADM-MTH-0001",
+      "type": "ORIGINATES"
+    },
+    {
+      "id": "E-ORIGIN::D-B4A-001::GOEI-SCI-B4A-0001",
+      "source": "D-B4A-001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "GOEI-SCI-B4A-0001",
       "type": "ORIGINATES"
     },
     {
@@ -1185,6 +1297,34 @@
       "type": "TRACED_IN"
     },
     {
+      "id": "E-TRACE::GOEI-AUDIT-0007",
+      "source": "GOEI-AUDIT-0007",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-AUDIT-0008",
+      "source": "GOEI-AUDIT-0008",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-AUDIT-0009",
+      "source": "GOEI-AUDIT-0009",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-AUDIT-0010",
+      "source": "GOEI-AUDIT-0010",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
       "id": "E-TRACE::GOEI-BIB-0001",
       "source": "GOEI-BIB-0001",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
@@ -1201,6 +1341,13 @@
     {
       "id": "E-TRACE::GOEI-BOK-0001",
       "source": "GOEI-BOK-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-BSL-KPI-ADM-0001",
+      "source": "GOEI-BSL-KPI-ADM-0001",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
       "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
       "type": "TRACED_IN"
@@ -1306,6 +1453,13 @@
     {
       "id": "E-TRACE::GOEI-DIR-RES-0003",
       "source": "GOEI-DIR-RES-0003",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-DIR-RES-0004",
+      "source": "GOEI-DIR-RES-0004",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
       "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
       "type": "TRACED_IN"
@@ -1430,6 +1584,13 @@
       "type": "TRACED_IN"
     },
     {
+      "id": "E-TRACE::GOEI-HO-0004",
+      "source": "GOEI-HO-0004",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
       "id": "E-TRACE::GOEI-KG-0001",
       "source": "GOEI-KG-0001",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
@@ -1439,6 +1600,13 @@
     {
       "id": "E-TRACE::GOEI-KG-REGISTRY-0001",
       "source": "GOEI-KG-REGISTRY-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-KPI-ADM-MTH-0001",
+      "source": "GOEI-KPI-ADM-MTH-0001",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
       "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
       "type": "TRACED_IN"
@@ -1516,6 +1684,13 @@
     {
       "id": "E-TRACE::GOEI-REV-ONT-0001",
       "source": "GOEI-REV-ONT-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-SCI-B4A-0001",
+      "source": "GOEI-SCI-B4A-0001",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
       "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
       "type": "TRACED_IN"
@@ -1696,10 +1871,45 @@
       "type": "INCORPORATED_IN"
     },
     {
+      "id": "E-VERSION::GOEI-AUDIT-0007::Gobernanza técnica v0.1",
+      "source": "GOEI-AUDIT-0007",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-AUDIT-0008::Gobernanza técnica v0.1",
+      "source": "GOEI-AUDIT-0008",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-AUDIT-0009::Gobernanza técnica v0.1",
+      "source": "GOEI-AUDIT-0009",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-AUDIT-0010::Gobernanza técnica v0.1",
+      "source": "GOEI-AUDIT-0010",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
       "id": "E-VERSION::GOEI-BIB-SCHEMA-0001::Gobernanza técnica v0.1",
       "source": "GOEI-BIB-SCHEMA-0001",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-BSL-KPI-ADM-0001::KPI Admissibility Method Baseline v0.1.0",
+      "source": "GOEI-BSL-KPI-ADM-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::KPI Admissibility Method Baseline v0.1.0",
       "type": "INCORPORATED_IN"
     },
     {
@@ -1763,6 +1973,13 @@
       "source": "GOEI-DIR-RES-0003",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "VER::KPI Candidate Catalog Baseline v0.1.0",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-DIR-RES-0004::KPI Admissibility Method Baseline v0.1.0",
+      "source": "GOEI-DIR-RES-0004",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::KPI Admissibility Method Baseline v0.1.0",
       "type": "INCORPORATED_IN"
     },
     {
@@ -1864,10 +2081,24 @@
       "type": "INCORPORATED_IN"
     },
     {
+      "id": "E-VERSION::GOEI-HO-0004::KPI Admissibility Method Baseline v0.1.0",
+      "source": "GOEI-HO-0004",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::KPI Admissibility Method Baseline v0.1.0",
+      "type": "INCORPORATED_IN"
+    },
+    {
       "id": "E-VERSION::GOEI-KG-REGISTRY-0001::Gobernanza técnica v0.1",
       "source": "GOEI-KG-REGISTRY-0001",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-KPI-ADM-MTH-0001::KPI Admissibility Method Baseline v0.1.0",
+      "source": "GOEI-KPI-ADM-MTH-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::KPI Admissibility Method Baseline v0.1.0",
       "type": "INCORPORATED_IN"
     },
     {
@@ -1910,6 +2141,13 @@
       "source": "GOEI-REL-SCHEMA-0001",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-SCI-B4A-0001::KPI Admissibility Method Baseline v0.1.0",
+      "source": "GOEI-SCI-B4A-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::KPI Admissibility Method Baseline v0.1.0",
       "type": "INCORPORATED_IN"
     },
     {
@@ -2208,6 +2446,14 @@
       "type": "Decision"
     },
     {
+      "id": "D-B4A-001",
+      "properties": {
+        "registryPath": "00_Gobernanza/Registro_de_decisiones.md",
+        "title": "Método científico de admisibilidad de candidatos KPI"
+      },
+      "type": "Decision"
+    },
+    {
       "id": "DOC::.github/workflows/validate.yml",
       "properties": {
         "path": ".github/workflows/validate.yml"
@@ -2320,6 +2566,34 @@
       "type": "Document"
     },
     {
+      "id": "DOC::00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0007_B4_Readiness.md",
+      "properties": {
+        "path": "00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0007_B4_Readiness.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0008_B4A_Metodo_Admisibilidad.md",
+      "properties": {
+        "path": "00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0008_B4A_Metodo_Admisibilidad.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0009_B4A_Adenda_Resolutiva.md",
+      "properties": {
+        "path": "00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0009_B4A_Adenda_Resolutiva.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0010_B4A_Conformidad_Final.md",
+      "properties": {
+        "path": "00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0010_B4A_Conformidad_Final.md"
+      },
+      "type": "Document"
+    },
+    {
       "id": "DOC::00_Gobernanza/coordinacion/auditorias/GTRM/GOEI_AUDIT_0004_DS_GTRM_01_08.md",
       "properties": {
         "path": "00_Gobernanza/coordinacion/auditorias/GTRM/GOEI_AUDIT_0004_DS_GTRM_01_08.md"
@@ -2372,6 +2646,13 @@
       "id": "DOC::00_Gobernanza/coordinacion/decisiones_cientificas/GTRM/GOEI_CC_DICTAMEN_GTRM_INTEGRACION.md",
       "properties": {
         "path": "00_Gobernanza/coordinacion/decisiones_cientificas/GTRM/GOEI_CC_DICTAMEN_GTRM_INTEGRACION.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::00_Gobernanza/coordinacion/entradas_comite/GOEI_SCI_ADENDA_B4A_Resolutiva.md",
+      "properties": {
+        "path": "00_Gobernanza/coordinacion/entradas_comite/GOEI_SCI_ADENDA_B4A_Resolutiva.md"
       },
       "type": "Document"
     },
@@ -2432,6 +2713,13 @@
       "type": "Document"
     },
     {
+      "id": "DOC::00_Gobernanza/coordinacion/handoffs/GOEI_HANDOFF_0004_B4A_Metodo_Admisibilidad.md",
+      "properties": {
+        "path": "00_Gobernanza/coordinacion/handoffs/GOEI_HANDOFF_0004_B4A_Metodo_Admisibilidad.md"
+      },
+      "type": "Document"
+    },
+    {
       "id": "DOC::00_Gobernanza/coordinacion/program_state.json",
       "properties": {
         "path": "00_Gobernanza/coordinacion/program_state.json"
@@ -2481,6 +2769,13 @@
       "type": "Document"
     },
     {
+      "id": "DOC::00_Gobernanza/coordinacion/resoluciones/GOEI_DIR_RES_0004_B4A.md",
+      "properties": {
+        "path": "00_Gobernanza/coordinacion/resoluciones/GOEI_DIR_RES_0004_B4A.md"
+      },
+      "type": "Document"
+    },
+    {
       "id": "DOC::01_Estado_del_arte/FaseB_B3_Revision_universo_KPI.md",
       "properties": {
         "path": "01_Estado_del_arte/FaseB_B3_Revision_universo_KPI.md"
@@ -2526,6 +2821,13 @@
       "id": "DOC::05_Catalogo_KPI/GOEI_Matriz_Cobertura_KPI_Candidatos_B3.md",
       "properties": {
         "path": "05_Catalogo_KPI/GOEI_Matriz_Cobertura_KPI_Candidatos_B3.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::05_Catalogo_KPI/GOEI_Metodo_Admisibilidad_KPI_B4A.md",
+      "properties": {
+        "path": "05_Catalogo_KPI/GOEI_Metodo_Admisibilidad_KPI_B4A.md"
       },
       "type": "Document"
     },
@@ -2652,6 +2954,13 @@
       "id": "DOC::15_Mantenimiento/Politica_de_releases_y_lineas_base.md",
       "properties": {
         "path": "15_Mantenimiento/Politica_de_releases_y_lineas_base.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::15_Mantenimiento/lineas_base/GOEI_KPI_ADM_METHOD_v0.1.0/MANIFEST.md",
+      "properties": {
+        "path": "15_Mantenimiento/lineas_base/GOEI_KPI_ADM_METHOD_v0.1.0/MANIFEST.md"
       },
       "type": "Document"
     },
@@ -2891,6 +3200,78 @@
       "type": "Component"
     },
     {
+      "id": "GOEI-AUDIT-0007",
+      "properties": {
+        "approver": "No aplica; control técnico",
+        "canonicalPath": "00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0007_B4_Readiness.md",
+        "componentClass": "AUDIT",
+        "decisionOrigin": "GOEI-DIR-0004; D-018",
+        "decisionStatus": "Verifica entrada y esquema; no evalúa admisibilidad",
+        "dependents": "B4-A, matriz y controles B4-M01…M14",
+        "documentVersion": "1.0.0",
+        "evidence": "baseline candidata, handoff e Issues selectivos",
+        "goeiVersion": "Gobernanza técnica v0.1",
+        "name": "Auditoría de preparación mecánica B4",
+        "status": "Emitida; entrada B4 verificada",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-AUDIT-0008",
+      "properties": {
+        "approver": "No aplica; control técnico",
+        "canonicalPath": "00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0008_B4A_Metodo_Admisibilidad.md",
+        "componentClass": "AUDIT",
+        "decisionOrigin": "GOEI-DIR-0004; contrato B4-A",
+        "decisionStatus": "Detecta pendientes e inconsistencias sin decidir ciencia",
+        "dependents": "adenda resolutiva y B4-A",
+        "documentVersion": "1.0.0",
+        "evidence": "dictamen consultivo y GOEI-AUDIT-0007",
+        "goeiVersion": "Gobernanza técnica v0.1",
+        "name": "Auditoría inicial del dictamen B4-A",
+        "status": "Emitida; hallazgos resueltos por adenda",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-AUDIT-0009",
+      "properties": {
+        "approver": "No aplica; control técnico",
+        "canonicalPath": "00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0009_B4A_Adenda_Resolutiva.md",
+        "componentClass": "AUDIT",
+        "decisionOrigin": "GOEI-DIR-0004; B4-A",
+        "decisionStatus": "Verifica cierre y detecta omisión de dominio",
+        "dependents": "corrigenda científica",
+        "documentVersion": "1.0.0",
+        "evidence": "adenda y GOEI-AUDIT-0008",
+        "goeiVersion": "Gobernanza técnica v0.1",
+        "name": "Auditoría de la adenda resolutiva B4-A",
+        "status": "Emitida; corrigenda recibida",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-AUDIT-0010",
+      "properties": {
+        "approver": "No aplica; control técnico",
+        "canonicalPath": "00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0010_B4A_Conformidad_Final.md",
+        "componentClass": "AUDIT",
+        "decisionOrigin": "GOEI-DIR-0004; B4-A",
+        "decisionStatus": "Verifica implementabilidad; no evalúa ciencia",
+        "dependents": "resolución y handoff B4-B",
+        "documentVersion": "1.0.0",
+        "evidence": "dictamen, adenda, corrigenda y auditorías previas",
+        "goeiVersion": "Gobernanza técnica v0.1",
+        "name": "Auditoría de conformidad final B4-A",
+        "status": "Conforme para decisión formal",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
       "id": "GOEI-BIB-0001",
       "properties": {
         "approver": "Comité Científico para estados científicos",
@@ -2940,6 +3321,24 @@
         "goeiVersion": "No asignada",
         "name": "GOEI Body of Knowledge",
         "status": "Estructura navegable",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-BSL-KPI-ADM-0001",
+      "properties": {
+        "approver": "Comité Científico B4-A + GOEI-DIR-RES-0004",
+        "canonicalPath": "15_Mantenimiento/lineas_base/GOEI_KPI_ADM_METHOD_v0.1.0/MANIFEST.md",
+        "componentClass": "BSL",
+        "decisionOrigin": "D-B4A-001; GOEI-DIR-RES-0004",
+        "decisionStatus": "Congela método; no congela resultados ni modifica baseline B3",
+        "dependents": "B4-B, futura D-019, BOK, KG, tesis y publicación",
+        "documentVersion": "0.1.0",
+        "evidence": "ocho artefactos con SHA-256",
+        "goeiVersion": "KPI Admissibility Method Baseline v0.1.0",
+        "name": "KPI Admissibility Method Baseline",
+        "status": "Congelada; método sin candidatos evaluados",
         "technicalOwner": "Oficina Técnica"
       },
       "type": "Component"
@@ -3210,6 +3609,24 @@
         "goeiVersion": "KPI Candidate Catalog Baseline v0.1.0",
         "name": "Resolución D-018 / cierre B3",
         "status": "Aprobada y vigente",
+        "technicalOwner": "Dirección General delegada / Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-DIR-RES-0004",
+      "properties": {
+        "approver": "GOEI-DIR-0004",
+        "canonicalPath": "00_Gobernanza/coordinacion/resoluciones/GOEI_DIR_RES_0004_B4A.md",
+        "componentClass": "DIR-RES",
+        "decisionOrigin": "GOEI-DIR-0004; D-B4A-001",
+        "decisionStatus": "Ratifica sólo el método; no aprueba candidatos",
+        "dependents": "ISS-059, handoff, B4-B, BOK, KG y roadmap",
+        "documentVersion": "1.0.0",
+        "evidence": "expediente científico y GOEI-AUDIT-0010",
+        "goeiVersion": "KPI Admissibility Method Baseline v0.1.0",
+        "name": "Resolución del método B4-A",
+        "status": "Aprobada y vigente; B4-B habilitada",
         "technicalOwner": "Dirección General delegada / Oficina Técnica"
       },
       "type": "Component"
@@ -3516,6 +3933,24 @@
         "goeiVersion": "KPI Candidate Catalog Baseline v0.1.0",
         "name": "Handoff B3 Universo candidato KPI",
         "status": "Integrado; B4 habilitada",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-HO-0004",
+      "properties": {
+        "approver": "Expediente B4-A + GOEI-DIR-RES-0004",
+        "canonicalPath": "00_Gobernanza/coordinacion/handoffs/GOEI_HANDOFF_0004_B4A_Metodo_Admisibilidad.md",
+        "componentClass": "HO",
+        "decisionOrigin": "D-B4A-001; GOEI-DIR-RES-0004",
+        "decisionStatus": "Abre B4-B al nivel Establecimiento",
+        "dependents": "lotes B4-B, matriz detallada, roadmap y estado",
+        "documentVersion": "1.0.0",
+        "evidence": "método ratificado, baseline candidata e Issues 008/015/043/054/055–059",
+        "goeiVersion": "KPI Admissibility Method Baseline v0.1.0",
+        "name": "Handoff B4-A a B4-B",
+        "status": "Integrado; B4-B habilitada con bloqueos selectivos",
         "technicalOwner": "Oficina Técnica"
       },
       "type": "Component"
@@ -4311,6 +4746,20 @@
       "type": "Issue"
     },
     {
+      "id": "GOEI-ISS-059",
+      "properties": {
+        "fields": [
+          "Definir la aplicabilidad global por categoría instanciada del cribado de admisibilidad.",
+          "B4-A / GOEI_SCI_ADENDA_B4A_Resolutiva.md",
+          "sólo estado global `NO APLICA` por categoría",
+          "Comité Científico, después de valores taxonómicos aprobados",
+          "Abierta; depende de GOEI-ISS-054; no bloquea B4-B al nivel `Establecimiento"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
       "id": "GOEI-KG-0001",
       "properties": {
         "approver": "PENDIENTE",
@@ -4343,6 +4792,24 @@
         "name": "Proyección registral del Knowledge Graph",
         "status": "Activa; no normativa",
         "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-KPI-ADM-MTH-0001",
+      "properties": {
+        "approver": "Comité Científico B4-A + GOEI-DIR-RES-0004",
+        "canonicalPath": "05_Catalogo_KPI/GOEI_Metodo_Admisibilidad_KPI_B4A.md",
+        "componentClass": "METHOD",
+        "decisionOrigin": "D-B4A-001; GOEI-DIR-RES-0004",
+        "decisionStatus": "Vista técnica integrada; no sustituye fuentes científicas",
+        "dependents": "matriz B4-B, validadores, BOK, KG, tesis y publicación",
+        "documentVersion": "0.1.0",
+        "evidence": "dictamen, adenda, corrigenda y auditorías",
+        "goeiVersion": "KPI Admissibility Method Baseline v0.1.0",
+        "name": "Método canónico de admisibilidad KPI B4-A",
+        "status": "Vigente para B4-B; sin resultados",
+        "technicalOwner": "Oficina Técnica / custodia"
       },
       "type": "Component"
     },
@@ -4431,7 +4898,7 @@
         "evidence": "estado, RACI y ruta crítica",
         "goeiVersion": "Gobernanza técnica v0.1",
         "name": "Pipeline operativo B2–B10",
-        "status": "Activo; B4 habilitada",
+        "status": "Activo; B4-B habilitada",
         "technicalOwner": "Oficina Técnica"
       },
       "type": "Component"
@@ -4541,6 +5008,24 @@
         "name": "Revisión técnica de la ontología D-006",
         "status": "Emitido para decisión",
         "technicalOwner": "Arquitectura e Ingeniería de Conocimiento"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-SCI-B4A-0001",
+      "properties": {
+        "approver": "GOEI-DIR-RES-0004",
+        "canonicalPath": "00_Gobernanza/coordinacion/entradas_comite/GOEI_SCI_ADENDA_B4A_Resolutiva.md",
+        "componentClass": "SCI-DEC",
+        "decisionOrigin": "D-B4A-001; GOEI-DIR-RES-0004",
+        "decisionStatus": "Aprueba método, no resultados ni KPI",
+        "dependents": "auditorías, resolución, matriz B4-B, BOK y KG",
+        "documentVersion": "1.0.0",
+        "evidence": "dictamen, adenda, corrigenda, D-018 y baseline candidata",
+        "goeiVersion": "KPI Admissibility Method Baseline v0.1.0",
+        "name": "Expediente científico integrado B4-A",
+        "status": "Ratificado; método aprobado sin evaluar candidatos",
+        "technicalOwner": "Comité Científico"
       },
       "type": "Component"
     },
@@ -4897,6 +5382,13 @@
       "id": "VER::Gobernanza técnica v0.1",
       "properties": {
         "label": "Gobernanza técnica v0.1"
+      },
+      "type": "Version"
+    },
+    {
+      "id": "VER::KPI Admissibility Method Baseline v0.1.0",
+      "properties": {
+        "label": "KPI Admissibility Method Baseline v0.1.0"
       },
       "type": "Version"
     },

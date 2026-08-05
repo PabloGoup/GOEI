@@ -19,7 +19,7 @@
 | THS-II-06 | II.6 Procesos universales | 10 clases del modelo | D-008 y catálogo normativo | Bloqueado | GOEI-ISS-030/cierre B1 |
 | THS-II-07 | II.7 Taxonomía universal | 10 familias mínimas bajo análisis | decisión y taxonomía B2 | No iniciado | cierre B2 |
 | THS-II-08 | II.8 Catálogo universal KPI | ficha de 13 campos por KPI | decisiones B3 y catálogo aprobado | No iniciado | cierre B3 |
-| THS-II-09 | II.9 Admisibilidad KPI | 11 criterios mínimos | decisión B4 | No iniciado | cierre B4 |
+| THS-II-09 | II.9 Admisibilidad KPI | 11 criterios mínimos | B4-A + GOEI-DIR-RES-0004 | Parcial | método de 9 criterios aprobado; faltan evaluación B4-B y resolución de brecha frente a 11 requisitos directorales |
 | THS-II-10 | II.10 Normalización | 8 materias | decisiones B5/B6 | No iniciado | cierres B5–B6 |
 | THS-II-11 | II.11 Modelo matemático | 7 materias | decisiones B7/B8 | No iniciado | cierres B7–B8 |
 | THS-III-12 | III.12 Metodología | 8 materias | protocolo metodológico aprobado | No iniciado | B9/candidato C |
@@ -82,7 +82,7 @@
 | THS-PUB-04 | Artículo: ontología GOEI | Parcial estructural | baseline publicable y evaluación técnica/científica |
 | THS-PUB-05 | Artículo: procesos universales | Bloqueado | D-008/B1 y validación |
 | THS-PUB-06 | Artículo: taxonomía universal | No iniciado | cierre B2 y validación |
-| THS-PUB-07 | Artículo: selección de KPI | No iniciado | B3/B4 y validación |
+| THS-PUB-07 | Artículo: selección de KPI | Parcial | método B4-A disponible; faltan resultados B4-B, cierre B4 y validación |
 | THS-PUB-08 | Artículo: modelo matemático | No iniciado | B5–B8 y validación |
 | THS-PUB-09 | Artículo: validación científica | No iniciado | Fase D cerrada |
 | THS-PUB-10 | Artículo: GOEI Framework | Bloqueado | release validada |

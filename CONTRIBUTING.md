@@ -62,8 +62,8 @@ Cuando exista incompatibilidad, el cuerpo incluye `BREAKING CHANGE:` y referenci
 ```bash
 python3 16_Herramientas/validadores/validate_repository.py
 cd 16_Herramientas/validadores
-python3 -m unittest discover -s tests -v
-python3 validate_technical_roadmap.py
+PYTHONPATH=16_Herramientas/validadores python3 -m unittest discover -s 16_Herramientas/validadores/tests -v
+python3 16_Herramientas/validadores/validate_technical_roadmap.py
 python3 assess_readiness.py
 python3 assess_thesis_coverage.py
 ```
