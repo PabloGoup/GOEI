@@ -90,6 +90,9 @@
 | GOEI-SCI-B4B-L01 | Evaluación científica B4-B Lote 01 | SCI-EVAL | Comité Científico / custodia Oficina Técnica | D-B4A-001 + GOEI-DIR-RES-0004 | Conforme; 5/31 candidatos evaluados, ninguno aprobado | 1.0.0 | Resultados B4-B en curso | `00_Gobernanza/coordinacion/entradas_comite/GOEI_SCI_B4B_LOTE_01_C001_C005.md` |
 | GOEI-AUDIT-0011 | Auditoría inicial B4-B Lote 01 | AUDIT | Oficina Técnica | No aplica; control técnico | No conforme; corregida | 1.0.0 | Gobernanza técnica v0.1 | `00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0011_B4B_Lote_01.md` |
 | GOEI-AUDIT-0012 | Auditoría final B4-B Lote 01 | AUDIT | Oficina Técnica | No aplica; control técnico | Conforme para integración parcial | 1.0.0 | Gobernanza técnica v0.1 | `00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0012_B4B_Lote_01_Conformidad.md` |
+| GOEI-SCI-B4B-L02-0001 | Evaluación científica B4-B Lote 02 | SCI-EVAL | Comité Científico / custodia Oficina Técnica | D-B4A-001 + GOEI-DIR-RES-0004 | Conforme; 10/31 acumulados, ninguno aprobado | 1.0.0 | Resultados B4-B en curso | `00_Gobernanza/coordinacion/entradas_comite/GOEI_SCI_B4B_LOTE_02_C006_C010.md` |
+| GOEI-AUDIT-0013 | Auditoría inicial B4-B Lote 02 | AUDIT | Oficina Técnica | No aplica; control técnico | No conforme; corregida | 1.0.0 | Gobernanza técnica v0.1 | `00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0013_B4B_Lote_02.md` |
+| GOEI-AUDIT-0014 | Auditoría final B4-B Lote 02 | AUDIT | Oficina Técnica | No aplica; control técnico | Conforme para integración parcial | 1.0.0 | Gobernanza técnica v0.1 | `00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0014_B4B_Lote_02_Conformidad.md` |
 
 ## Regla
 

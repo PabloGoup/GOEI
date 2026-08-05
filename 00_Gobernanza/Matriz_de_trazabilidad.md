@@ -92,6 +92,9 @@
 | GOEI-SCI-B4B-L01 Evaluación C-001…005 | D-B4A-001; GOEI-DIR-RES-0004 | Evalúa admisibilidad; no aprueba KPI | fichas C-001…005, método congelado e Issues selectivos | Resultados B4-B en curso | matriz científico-operativa | matriz completa, B4-C, B4-D, BOK, tesis y publicación | Conforme; 5/31 evaluados |
 | GOEI-AUDIT-0011 Control inicial Lote 01 | contrato B4-B | Detecta defectos de aplicabilidad, entidad y procedencia | expediente inicial y método B4-A | Gobernanza técnica v0.1 | devolución técnica | versión corregida y AUDIT-0012 | Cerrada por corrección |
 | GOEI-AUDIT-0012 Conformidad Lote 01 | contrato B4-B | Acepta integración parcial sin promover KPI | expediente corregido y AUDIT-0011 | Gobernanza técnica v0.1 | auditoría final de lote | lotes siguientes y consolidación B4 | Conforme |
+| GOEI-SCI-B4B-L02-0001 Evaluación C-006…010 | D-B4A-001; GOEI-DIR-RES-0004 | Evalúa admisibilidad; no aprueba KPI | fichas C-006…010, método congelado e Issues selectivos | Resultados B4-B en curso | matriz científico-operativa | matriz completa, B4-C, B4-D, BOK, tesis y publicación | Conforme; 10/31 acumulados |
+| GOEI-AUDIT-0013 Control inicial Lote 02 | contrato B4-B | Detecta mezcla de niveles, invariante, C-NORED e Issues | expediente inicial y método B4-A | Gobernanza técnica v0.1 | devolución técnica | versión corregida y AUDIT-0014 | Cerrada por corrección |
+| GOEI-AUDIT-0014 Conformidad Lote 02 | contrato B4-B | Acepta integración parcial sin promover KPI | expediente corregido y AUDIT-0013 | Gobernanza técnica v0.1 | auditoría final de lote | lotes siguientes y consolidación B4 | Conforme |
 
 ## Regla de mantenimiento
 

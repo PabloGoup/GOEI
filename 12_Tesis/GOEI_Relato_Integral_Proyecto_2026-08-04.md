@@ -36,7 +36,7 @@ La separación no es decorativa. Codex no debe inventar KPI, fórmulas, ponderac
 
 Posteriormente, mediante GOEI-DIR-0004, la Dirección General delegó en Codex la conducción operativa dentro del marco aprobado. Esto permite organizar el trabajo, emitir actos directivos de cierre e integrar resultados sin solicitar validaciones intermedias al usuario. La delegación no convierte a Codex en autoridad científica: las decisiones metodológicas siguen necesitando un expediente atribuible al Comité Científico.
 
-En agosto de 2026 la dirección automática quedó pausada por instrucción del Director General. Cuando se reactive, deberá abrirse una conversación nueva con Claude y utilizar paquetes de contexto compactos. Esta medida responde al consumo excesivo de tokens observado en sesiones previas.
+En agosto de 2026 la dirección automática fue pausada temporalmente por instrucción del Director General y posteriormente reactivada. Desde entonces, cada conversación nueva con Claude recibe un paquete de contexto compacto, autosuficiente y limitado a la decisión científica en examen. Esta medida responde al consumo excesivo de tokens observado en sesiones previas y preserva la separación entre investigación científica e integración técnica.
 
 ## 4. La Constitución y la arquitectura documental
 
@@ -56,7 +56,7 @@ El metamodelo incluye entidades como evidencia, fuente bibliográfica, investiga
 
 La utilidad del grafo se entiende mediante relaciones sencillas: una evidencia sustenta una decisión; una decisión crea o modifica un componente; un componente pertenece a un documento; un documento integra una versión del estándar; una baseline congela determinados artefactos; un Issue bloquea una rama; una validación evalúa un componente o una versión.
 
-El proyecto dispone de diccionarios de entidades y relaciones, reglas de integridad, restricciones de consistencia, reglas de navegación, diagramas, matriz entidad-relación y una proyección procesable en JSON. La proyección actual se valida automáticamente y mantiene 236 nodos y 292 relaciones.
+El proyecto dispone de diccionarios de entidades y relaciones, reglas de integridad, restricciones de consistencia, reglas de navegación, diagramas, matriz entidad-relación y una proyección procesable en JSON. Después de integrar los dos primeros lotes B4-B, la proyección se regenera y valida automáticamente; su cifra exacta se conserva en el artefacto procesable, evitando fijar en este relato un conteo que cambiará con cada lote.
 
 El Knowledge Graph no determina si una afirmación científica es correcta. Su función es impedir que una conclusión pierda su procedencia o que una modificación se propague de forma invisible.
 
@@ -164,24 +164,44 @@ La tabla manual y el código serán dos representaciones de la misma especificac
 
 La Dirección adoptó la resolución GTRM y cerró ISS-044 únicamente respecto de su ubicación arquitectónica. Los Issues posteriores conservan abiertos los aspectos científicos o implementaciones concretas. D-006 no fue alterada; cualquier incorporación definitiva requiere ISS-053 y nueva versión ontológica.
 
-## 12. B4: el punto exacto donde está detenido el trabajo científico
+## 12. B4: método aprobado y evaluación en curso
 
-B4 debe responder qué criterios gobiernan la admisibilidad de KPI y cuáles de los 31 candidatos los satisfacen. Antes de evaluar candidatos, el Comité debe aprobar el método y el vocabulario de resultados.
+B4 debe responder qué criterios gobiernan la admisibilidad de KPI y cuáles de los 31 candidatos los satisfacen. Esta fase ya no está detenida en la definición del método: B4-A fue completada, auditada y ratificada. B4-B se encuentra en ejecución por lotes controlados.
 
-La Oficina Técnica completó GOEI-AUDIT-0007. La auditoría verificó los 31 IDs, la exclusión de C-032, los campos de las fichas, los hashes de la baseline y las dependencias. También fijó catorce controles mecánicos para la futura matriz.
+La Oficina Técnica completó GOEI-AUDIT-0007. La auditoría verificó los 31 IDs, la exclusión de C-032, los campos de las fichas, los hashes de la baseline y las dependencias. También fijó catorce controles mecánicos para la matriz.
 
-La matriz B4 deberá mostrar una evaluación por candidato y criterio, con evidencia, justificación, autoridad, decisión e Issue aplicable. Tendrá que distinguir resultado negativo, evidencia insuficiente, no aplicación, falta de evaluación y bloqueo. No podrá introducir referencias concretas, GTRM, normalización, ponderaciones, fórmula global o interpretación, porque esas decisiones pertenecen a fases posteriores.
+El Comité emitió el dictamen, la adenda resolutiva y la corrigenda B4-A. La Oficina Técnica devolvió las ambigüedades mediante GOEI-AUDIT-0008 y 0009, y confirmó la conformidad mediante GOEI-AUDIT-0010. La decisión científica D-B4A-001 fue ratificada por GOEI-DIR-RES-0004 y congelada como GOEI-BSL-KPI-ADM-0001 v0.1.0.
+
+El método aprobado utiliza nueve criterios necesarios: definición conceptual, operacionalización medible, trazabilidad, repetibilidad, auditabilidad, factibilidad, pertinencia, no redundancia y compatibilidad con no compensación crítica. No calcula una puntuación de admisibilidad. Aplica una regla léxica no compensatoria con estados controlados por criterio y por candidato.
+
+Los estados globales posibles son ADMISIBLE, ADMISIBLE CONDICIONADO, NO ADMISIBLE, EVIDENCIA INSUFICIENTE y BLOQUEADO. Un resultado condicionado sólo procede cuando la condición pendiente no contradice ni deja indeterminado ningún criterio necesario marcado como cumplido.
+
+La matriz B4 muestra una evaluación por candidato y criterio, con evidencia, justificación, autoridad, limitación e Issue aplicable. No introduce referencias concretas, GTRM, normalización, ponderaciones, fórmula global o interpretación, porque esas decisiones pertenecen a fases posteriores.
 
 El primer intento de ejecutar B4 utilizó una tarea demasiado amplia de Claude: método, 31 evaluaciones, seis documentos y dictamen. La sesión alcanzó su límite de créditos. A raíz de ello se acordó un protocolo más eficiente.
 
-Cuando se reanude el trabajo se abrirá una conversación nueva con Claude. Codex preparará un paquete mínimo y B4 se dividirá en cuatro partes:
+B4 se dividió operativamente en cuatro partes:
 
 1. B4-A: método, criterios y estados.
 2. B4-B: evaluación de candidatos en lotes controlados.
 3. B4-C: duplicidades, discrepancias, bloqueos y excepciones.
 4. B4-D: dictamen consolidado y propuesta D-019.
 
-Claude decidirá únicamente ciencia. Codex generará matrices, realizará controles, integrará resultados, actualizará registros, congelará baselines y publicará cambios. Esta separación reduce tokens y evita que el Comité use contexto para tareas mecánicas.
+Claude decide únicamente ciencia. Codex genera matrices, realiza controles, integra resultados, actualiza registros, congela baselines y publica cambios. Esta separación reduce tokens y evita que el Comité use contexto para tareas mecánicas.
+
+### 12.1 Lote 01: C-001 a C-005
+
+El primer lote evaluó cinco candidatos y produjo 45 juicios candidato-criterio. La auditoría GOEI-AUDIT-0011 detectó aplicabilidad concreta no autorizada, mezcla entre función e indicador y problemas de procedencia. Claude corrigió el expediente y GOEI-AUDIT-0012 lo declaró conforme.
+
+Los resultados parciales fueron: C-001, C-002 y C-004 ADMISIBLE; C-005 ADMISIBLE CONDICIONADO por la adaptación gastronómica registrada en ISS-057; y C-003 BLOQUEADO porque la fuente describe la función de pronóstico, pero no una métrica cerrada de exactitud.
+
+### 12.2 Lote 02: C-006 a C-010
+
+El segundo lote también produjo 45 evaluaciones. GOEI-AUDIT-0013 detectó transferencia indebida de propiedades desde un marco macro al nivel establecimiento, una condición que dejaba criterios indeterminados, errores en no redundancia y asociaciones incorrectas de Issues. Claude corrigió las inconsistencias y GOEI-AUDIT-0014 confirmó la integración parcial.
+
+Los resultados fueron: C-006 y C-009 ADMISIBLE; C-008 ADMISIBLE CONDICIONADO porque debe designarse el activo que actuará como equipo sin alterar la definición de la métrica; C-007 EVIDENCIA INSUFICIENTE porque la fuente disponible opera a escala macro y no acredita la medición al nivel establecimiento; y C-010 EVIDENCIA INSUFICIENTE porque la fuente no cierra el contenido operativo de producto utilizable.
+
+El acumulado es de diez candidatos evaluados sobre 31. Existen cinco ADMISIBLE, dos ADMISIBLE CONDICIONADO, dos EVIDENCIA INSUFICIENTE y uno BLOQUEADO. Estas categorías son resultados parciales de admisibilidad, no KPI aprobados. D-019 todavía no procede.
 
 ## 13. Las fases restantes del estándar
 
@@ -235,16 +255,17 @@ El proyecto cuenta con una infraestructura profesional que ya funciona:
 8. Baseline de taxonomía facetada aprobada.
 9. Baseline de 31 candidatos KPI congelada.
 10. Marco científico GTRM D-009–D-016 ratificado.
-11. Auditoría de preparación B4.
-12. Herramientas de manifiestos, compuertas, roadmap, bibliografía, tesis y Knowledge Graph.
+11. Método B4-A ratificado y congelado como GOEI-BSL-KPI-ADM-0001 v0.1.0.
+12. Diez de 31 candidatos evaluados mediante dos lotes B4-B conformes.
+13. Herramientas de manifiestos, compuertas, roadmap, bibliografía, tesis y Knowledge Graph.
 
-El repositorio supera 112 controles estructurales, 22 pruebas automatizadas, 15 controles de roadmap y las comprobaciones del Knowledge Graph. Estos resultados demuestran integridad técnica, no validez científica completa.
+El repositorio supera 132 controles estructurales, 22 pruebas automatizadas, 15 controles de roadmap y las comprobaciones del Knowledge Graph. Estos resultados demuestran integridad técnica, no validez científica completa.
 
 ## 17. Qué no está terminado
 
 Todavía no existen:
 
-1. Catálogo de KPI admisibles aprobado.
+1. Catálogo completo de KPI admisibles aprobado: faltan evaluar C-011 a C-031 y emitir el cierre B4.
 2. Fichas normativas completas de medición.
 3. Referencias y benchmarks concretos por KPI y alcance.
 4. Funciones GTRM concretas y tablas manuales.
@@ -273,9 +294,9 @@ ISS-041 afecta la validación piloto. ISS-039 e ISS-040 afectan tesis y publicac
 
 ## 19. La ruta recomendada desde aquí
 
-El siguiente movimiento no debe ser redactar más capítulos ni crear nuevos KPI. Debe reanudarse B4 con el protocolo compacto.
+El siguiente movimiento no debe ser crear nuevos KPI, fórmulas o capítulos concluyentes. Debe continuar B4-B con el protocolo compacto.
 
-Primero se prepara una ficha de contexto de pocas páginas con las decisiones indispensables, la baseline de 31 candidatos, los Issues y la pregunta B4-A. Claude decide método, criterios y estados. Codex convierte esa decisión en una matriz controlada.
+El método B4-A ya está resuelto. La siguiente entrada es el Lote 03, C-011 a C-015. Después deben evaluarse C-016 a C-020, C-021 a C-025 y C-026 a C-031.
 
 Después los candidatos se evalúan en lotes pequeños. Cada lote devuelve resultados estructurados, no narraciones extensas. Codex integra los lotes y detecta duplicidades o contradicciones. Claude recibe únicamente las excepciones y emite el dictamen consolidado D-019.
 
@@ -291,7 +312,7 @@ Las decisiones más importantes logradas hasta ahora son la separación entre es
 
 El principal riesgo actual es confundir volumen documental con avance científico. Generar más páginas no cerrará B4 ni producirá una fórmula válida. El progreso dependerá de decisiones científicas acotadas, evidencia trazable, integración técnica estricta y validación empírica.
 
-El próximo hito real es D-019. Después vendrán medición, puntuación, agregación, interpretación, aplicación manual, manual técnico, validación, tesis y publicación. El proyecto debe conservar el orden porque cada fase utiliza decisiones de la anterior.
+El próximo hito operativo es completar los 21 candidatos restantes y consolidar B4-C. El siguiente hito científico mayor será D-019. Después vendrán medición, puntuación, agregación, interpretación, aplicación manual, manual técnico, validación, tesis y publicación. El proyecto debe conservar el orden porque cada fase utiliza decisiones de la anterior.
 
 ## Anexo A. Línea temporal resumida
 
@@ -309,4 +330,7 @@ El próximo hito real es D-019. Después vendrán medición, puntuación, agrega
 12. GOEI-AUDIT-0007 declara B4 técnicamente preparada.
 13. Claude alcanza un límite de créditos durante el primer intento amplio de B4.
 14. Se adopta el protocolo de paquetes compactos y conversación nueva.
-15. La dirección automática queda pausada hasta nueva instrucción.
+15. B4-A se resuelve, audita, ratifica y congela como GOEI-BSL-KPI-ADM-0001 v0.1.0.
+16. El Lote 01 evalúa C-001 a C-005 y queda conforme tras GOEI-AUDIT-0012.
+17. El Lote 02 evalúa C-006 a C-010 y queda conforme tras GOEI-AUDIT-0014.
+18. B4-B alcanza 10 de 31 candidatos evaluados, sin aprobar todavía ningún KPI ni emitir D-019.

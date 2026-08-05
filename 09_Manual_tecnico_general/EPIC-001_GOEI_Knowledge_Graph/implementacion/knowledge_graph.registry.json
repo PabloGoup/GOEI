@@ -100,6 +100,20 @@
       "type": "CONTAINS"
     },
     {
+      "id": "E-CONTAINS::GOEI-AUDIT-0013",
+      "source": "DOC::00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0013_B4B_Lote_02.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-AUDIT-0013",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-AUDIT-0014",
+      "source": "DOC::00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0014_B4B_Lote_02_Conformidad.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-AUDIT-0014",
+      "type": "CONTAINS"
+    },
+    {
       "id": "E-CONTAINS::GOEI-BIB-0001",
       "source": "DOC::02_Bibliografia/catalogo_fuentes.json",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
@@ -468,6 +482,13 @@
       "source": "DOC::00_Gobernanza/coordinacion/entradas_comite/GOEI_SCI_ADENDA_B4A_Resolutiva.md",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "GOEI-SCI-B4A-0001",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-SCI-B4B-L02-0001",
+      "source": "DOC::00_Gobernanza/coordinacion/entradas_comite/GOEI_SCI_B4B_LOTE_02_C006_C010.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-SCI-B4B-L02-0001",
       "type": "CONTAINS"
     },
     {
@@ -1255,6 +1276,13 @@
       "type": "ORIGINATES"
     },
     {
+      "id": "E-ORIGIN::D-B4A-001::GOEI-SCI-B4B-L02-0001",
+      "source": "D-B4A-001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "GOEI-SCI-B4B-L02-0001",
+      "type": "ORIGINATES"
+    },
+    {
       "id": "E-TRACE::GOEI-ARCH-002",
       "source": "GOEI-ARCH-002",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
@@ -1348,6 +1376,20 @@
     {
       "id": "E-TRACE::GOEI-AUDIT-0012",
       "source": "GOEI-AUDIT-0012",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-AUDIT-0013",
+      "source": "GOEI-AUDIT-0013",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-AUDIT-0014",
+      "source": "GOEI-AUDIT-0014",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
       "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
       "type": "TRACED_IN"
@@ -1724,6 +1766,13 @@
       "type": "TRACED_IN"
     },
     {
+      "id": "E-TRACE::GOEI-SCI-B4B-L02-0001",
+      "source": "GOEI-SCI-B4B-L02-0001",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
       "id": "E-TRACE::GOEI-SCI-D017-0001",
       "source": "GOEI-SCI-D017-0001",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
@@ -1936,6 +1985,20 @@
     {
       "id": "E-VERSION::GOEI-AUDIT-0012::Gobernanza técnica v0.1",
       "source": "GOEI-AUDIT-0012",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-AUDIT-0013::Gobernanza técnica v0.1",
+      "source": "GOEI-AUDIT-0013",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-AUDIT-0014::Gobernanza técnica v0.1",
+      "source": "GOEI-AUDIT-0014",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "VER::Gobernanza técnica v0.1",
       "type": "INCORPORATED_IN"
@@ -2190,6 +2253,13 @@
       "source": "GOEI-SCI-B4A-0001",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "VER::KPI Admissibility Method Baseline v0.1.0",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-SCI-B4B-L02-0001::Resultados B4-B en curso",
+      "source": "GOEI-SCI-B4B-L02-0001",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Resultados B4-B en curso",
       "type": "INCORPORATED_IN"
     },
     {
@@ -2650,6 +2720,20 @@
       "type": "Document"
     },
     {
+      "id": "DOC::00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0013_B4B_Lote_02.md",
+      "properties": {
+        "path": "00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0013_B4B_Lote_02.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0014_B4B_Lote_02_Conformidad.md",
+      "properties": {
+        "path": "00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0014_B4B_Lote_02_Conformidad.md"
+      },
+      "type": "Document"
+    },
+    {
       "id": "DOC::00_Gobernanza/coordinacion/auditorias/GTRM/GOEI_AUDIT_0004_DS_GTRM_01_08.md",
       "properties": {
         "path": "00_Gobernanza/coordinacion/auditorias/GTRM/GOEI_AUDIT_0004_DS_GTRM_01_08.md"
@@ -2709,6 +2793,13 @@
       "id": "DOC::00_Gobernanza/coordinacion/entradas_comite/GOEI_SCI_ADENDA_B4A_Resolutiva.md",
       "properties": {
         "path": "00_Gobernanza/coordinacion/entradas_comite/GOEI_SCI_ADENDA_B4A_Resolutiva.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::00_Gobernanza/coordinacion/entradas_comite/GOEI_SCI_B4B_LOTE_02_C006_C010.md",
+      "properties": {
+        "path": "00_Gobernanza/coordinacion/entradas_comite/GOEI_SCI_B4B_LOTE_02_C006_C010.md"
       },
       "type": "Document"
     },
@@ -3358,6 +3449,42 @@
         "evidence": "expediente corregido y AUDIT-0011",
         "goeiVersion": "Gobernanza técnica v0.1",
         "name": "Auditoría final B4-B Lote 01",
+        "status": "Conforme para integración parcial",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-AUDIT-0013",
+      "properties": {
+        "approver": "No aplica; control técnico",
+        "canonicalPath": "00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0013_B4B_Lote_02.md",
+        "componentClass": "AUDIT",
+        "decisionOrigin": "contrato B4-B",
+        "decisionStatus": "Detecta mezcla de niveles, invariante, C-NORED e Issues",
+        "dependents": "versión corregida y AUDIT-0014",
+        "documentVersion": "1.0.0",
+        "evidence": "expediente inicial y método B4-A",
+        "goeiVersion": "Gobernanza técnica v0.1",
+        "name": "Auditoría inicial B4-B Lote 02",
+        "status": "No conforme; corregida",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-AUDIT-0014",
+      "properties": {
+        "approver": "No aplica; control técnico",
+        "canonicalPath": "00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0014_B4B_Lote_02_Conformidad.md",
+        "componentClass": "AUDIT",
+        "decisionOrigin": "contrato B4-B",
+        "decisionStatus": "Acepta integración parcial sin promover KPI",
+        "dependents": "lotes siguientes y consolidación B4",
+        "documentVersion": "1.0.0",
+        "evidence": "expediente corregido y AUDIT-0013",
+        "goeiVersion": "Gobernanza técnica v0.1",
+        "name": "Auditoría final B4-B Lote 02",
         "status": "Conforme para integración parcial",
         "technicalOwner": "Oficina Técnica"
       },
@@ -5122,6 +5249,24 @@
       "type": "Component"
     },
     {
+      "id": "GOEI-SCI-B4B-L02-0001",
+      "properties": {
+        "approver": "D-B4A-001 + GOEI-DIR-RES-0004",
+        "canonicalPath": "00_Gobernanza/coordinacion/entradas_comite/GOEI_SCI_B4B_LOTE_02_C006_C010.md",
+        "componentClass": "SCI-EVAL",
+        "decisionOrigin": "D-B4A-001; GOEI-DIR-RES-0004",
+        "decisionStatus": "Evalúa admisibilidad; no aprueba KPI",
+        "dependents": "matriz completa, B4-C, B4-D, BOK, tesis y publicación",
+        "documentVersion": "1.0.0",
+        "evidence": "fichas C-006…010, método congelado e Issues selectivos",
+        "goeiVersion": "Resultados B4-B en curso",
+        "name": "Evaluación científica B4-B Lote 02",
+        "status": "Conforme; 10/31 acumulados, ninguno aprobado",
+        "technicalOwner": "Comité Científico / custodia Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
       "id": "GOEI-SCI-D017-0001",
       "properties": {
         "approver": "Dirección General bajo GOEI-DIR-0004",
@@ -5509,6 +5654,13 @@
       "id": "VER::Process Baseline v0.1.0",
       "properties": {
         "label": "Process Baseline v0.1.0"
+      },
+      "type": "Version"
+    },
+    {
+      "id": "VER::Resultados B4-B en curso",
+      "properties": {
+        "label": "Resultados B4-B en curso"
       },
       "type": "Version"
     },
