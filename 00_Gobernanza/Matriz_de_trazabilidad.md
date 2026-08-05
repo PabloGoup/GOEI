@@ -89,6 +89,9 @@
 | GOEI-HO-0004 Handoff B4-A | D-B4A-001; GOEI-DIR-RES-0004 | Abre B4-B al nivel Establecimiento | método ratificado, baseline candidata e Issues 008/015/043/054/055–059 | KPI Admissibility Method Baseline v0.1.0 | comprobante de compuerta | lotes B4-B, matriz detallada, roadmap y estado | Integrado; B4-B habilitada |
 | GOEI-KPI-ADM-MTH-0001 Método canónico B4-A | D-B4A-001; GOEI-DIR-RES-0004 | Vista técnica integrada; no sustituye fuentes científicas | dictamen, adenda, corrigenda y auditorías | KPI Admissibility Method Baseline v0.1.0 | especificación metodológica | matriz B4-B, validadores, BOK, KG, tesis y publicación | Vigente; sin resultados |
 | GOEI-BSL-KPI-ADM-0001 Baseline del método B4-A | D-B4A-001; GOEI-DIR-RES-0004 | Congela método; no congela resultados ni modifica baseline B3 | ocho artefactos con SHA-256 | KPI Admissibility Method Baseline v0.1.0 | configuración metodológica | B4-B, futura D-019, BOK, KG, tesis y publicación | Congelada |
+| GOEI-SCI-B4B-L01 Evaluación C-001…005 | D-B4A-001; GOEI-DIR-RES-0004 | Evalúa admisibilidad; no aprueba KPI | fichas C-001…005, método congelado e Issues selectivos | Resultados B4-B en curso | matriz científico-operativa | matriz completa, B4-C, B4-D, BOK, tesis y publicación | Conforme; 5/31 evaluados |
+| GOEI-AUDIT-0011 Control inicial Lote 01 | contrato B4-B | Detecta defectos de aplicabilidad, entidad y procedencia | expediente inicial y método B4-A | Gobernanza técnica v0.1 | devolución técnica | versión corregida y AUDIT-0012 | Cerrada por corrección |
+| GOEI-AUDIT-0012 Conformidad Lote 01 | contrato B4-B | Acepta integración parcial sin promover KPI | expediente corregido y AUDIT-0011 | Gobernanza técnica v0.1 | auditoría final de lote | lotes siguientes y consolidación B4 | Conforme |
 
 ## Regla de mantenimiento
 

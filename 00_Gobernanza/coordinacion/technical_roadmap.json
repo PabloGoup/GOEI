@@ -56,8 +56,8 @@
       "name": "KPI y admisibilidad",
       "status": "in_progress",
       "dependencies": ["WP-05"],
-      "evidence": ["15_Mantenimiento/lineas_base/GOEI_KPI_CAND_v0.1.0/MANIFEST.md", "15_Mantenimiento/lineas_base/GOEI_KPI_ADM_METHOD_v0.1.0/MANIFEST.md", "00_Gobernanza/coordinacion/resoluciones/GOEI_DIR_RES_0004_B4A.md", "00_Gobernanza/coordinacion/handoffs/GOEI_HANDOFF_0004_B4A_Metodo_Admisibilidad.md"],
-      "blockers": ["B4-B candidate evaluations, complete matrix and final B4 decision pending", "GOEI-ISS-055 through GOEI-ISS-059 apply selectively"]
+      "evidence": ["15_Mantenimiento/lineas_base/GOEI_KPI_CAND_v0.1.0/MANIFEST.md", "15_Mantenimiento/lineas_base/GOEI_KPI_ADM_METHOD_v0.1.0/MANIFEST.md", "00_Gobernanza/coordinacion/resoluciones/GOEI_DIR_RES_0004_B4A.md", "00_Gobernanza/coordinacion/handoffs/GOEI_HANDOFF_0004_B4A_Metodo_Admisibilidad.md", "00_Gobernanza/coordinacion/entradas_comite/GOEI_SCI_B4B_LOTE_01_C001_C005.md", "00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0012_B4B_Lote_01_Conformidad.md"],
+      "blockers": ["B4-B evaluations C-006 through C-031, complete matrix and final B4 decision pending", "GOEI-ISS-055 through GOEI-ISS-059 apply selectively"]
     },
     {
       "id": "WP-07",

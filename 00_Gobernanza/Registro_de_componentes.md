@@ -87,6 +87,9 @@
 | GOEI-HO-0004 | Handoff B4-A a B4-B | HO | Oficina Técnica | Expediente B4-A + GOEI-DIR-RES-0004 | Integrado; B4-B habilitada con bloqueos selectivos | 1.0.0 | KPI Admissibility Method Baseline v0.1.0 | `00_Gobernanza/coordinacion/handoffs/GOEI_HANDOFF_0004_B4A_Metodo_Admisibilidad.md` |
 | GOEI-KPI-ADM-MTH-0001 | Método canónico de admisibilidad KPI B4-A | METHOD | Oficina Técnica / custodia | Comité Científico B4-A + GOEI-DIR-RES-0004 | Vigente para B4-B; sin resultados | 0.1.0 | KPI Admissibility Method Baseline v0.1.0 | `05_Catalogo_KPI/GOEI_Metodo_Admisibilidad_KPI_B4A.md` |
 | GOEI-BSL-KPI-ADM-0001 | KPI Admissibility Method Baseline | BSL | Oficina Técnica | Comité Científico B4-A + GOEI-DIR-RES-0004 | Congelada; método sin candidatos evaluados | 0.1.0 | KPI Admissibility Method Baseline v0.1.0 | `15_Mantenimiento/lineas_base/GOEI_KPI_ADM_METHOD_v0.1.0/MANIFEST.md` |
+| GOEI-SCI-B4B-L01 | Evaluación científica B4-B Lote 01 | SCI-EVAL | Comité Científico / custodia Oficina Técnica | D-B4A-001 + GOEI-DIR-RES-0004 | Conforme; 5/31 candidatos evaluados, ninguno aprobado | 1.0.0 | Resultados B4-B en curso | `00_Gobernanza/coordinacion/entradas_comite/GOEI_SCI_B4B_LOTE_01_C001_C005.md` |
+| GOEI-AUDIT-0011 | Auditoría inicial B4-B Lote 01 | AUDIT | Oficina Técnica | No aplica; control técnico | No conforme; corregida | 1.0.0 | Gobernanza técnica v0.1 | `00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0011_B4B_Lote_01.md` |
+| GOEI-AUDIT-0012 | Auditoría final B4-B Lote 01 | AUDIT | Oficina Técnica | No aplica; control técnico | Conforme para integración parcial | 1.0.0 | Gobernanza técnica v0.1 | `00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0012_B4B_Lote_01_Conformidad.md` |
 
 ## Regla
 

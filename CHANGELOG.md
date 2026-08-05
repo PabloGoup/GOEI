@@ -10,6 +10,7 @@ Todos los cambios relevantes del GOEI se documentarán en este archivo siguiendo
 - `GOEI-BSL-KPI-ADM-0001 v0.1.0`, baseline metodológica separada de la baseline candidata B3.
 - `GOEI-ISS-059`, bloqueo exclusivo de aplicabilidad global por categoría.
 - `GOEI-HO-0004`, que habilita B4-B por lotes al nivel `Establecimiento`.
+- Lote B4-B 01 (`C-001…C-005`) evaluado por el Comité, corregido tras `GOEI-AUDIT-0011` y aceptado técnicamente mediante `GOEI-AUDIT-0012`.
 
 ### Changed
 
@@ -18,7 +19,7 @@ Todos los cambios relevantes del GOEI se documentarán en este archivo siguiendo
 
 ### Scientific scope
 
-- Candidatos evaluados: **0**.
+- Candidatos evaluados: **5 de 31**; resultados parciales: 3 `ADMISIBLE`, 1 `ADMISIBLE CONDICIONADO`, 1 `BLOQUEADO`.
 - KPI aprobados: **0**.
 - D-019: **no emitida**.
 - D-006 y baselines previas: **sin modificación**.

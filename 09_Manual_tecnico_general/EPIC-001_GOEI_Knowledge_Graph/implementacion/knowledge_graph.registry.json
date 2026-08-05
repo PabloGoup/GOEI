@@ -86,6 +86,20 @@
       "type": "CONTAINS"
     },
     {
+      "id": "E-CONTAINS::GOEI-AUDIT-0011",
+      "source": "DOC::00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0011_B4B_Lote_01.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-AUDIT-0011",
+      "type": "CONTAINS"
+    },
+    {
+      "id": "E-CONTAINS::GOEI-AUDIT-0012",
+      "source": "DOC::00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0012_B4B_Lote_01_Conformidad.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-AUDIT-0012",
+      "type": "CONTAINS"
+    },
+    {
       "id": "E-CONTAINS::GOEI-BIB-0001",
       "source": "DOC::02_Bibliografia/catalogo_fuentes.json",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
@@ -1325,6 +1339,20 @@
       "type": "TRACED_IN"
     },
     {
+      "id": "E-TRACE::GOEI-AUDIT-0011",
+      "source": "GOEI-AUDIT-0011",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
+      "id": "E-TRACE::GOEI-AUDIT-0012",
+      "source": "GOEI-AUDIT-0012",
+      "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
+      "target": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
+      "type": "TRACED_IN"
+    },
+    {
       "id": "E-TRACE::GOEI-BIB-0001",
       "source": "GOEI-BIB-0001",
       "sourceDocument": "00_Gobernanza/Matriz_de_trazabilidad.md",
@@ -1894,6 +1922,20 @@
     {
       "id": "E-VERSION::GOEI-AUDIT-0010::Gobernanza técnica v0.1",
       "source": "GOEI-AUDIT-0010",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-AUDIT-0011::Gobernanza técnica v0.1",
+      "source": "GOEI-AUDIT-0011",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "VER::Gobernanza técnica v0.1",
+      "type": "INCORPORATED_IN"
+    },
+    {
+      "id": "E-VERSION::GOEI-AUDIT-0012::Gobernanza técnica v0.1",
+      "source": "GOEI-AUDIT-0012",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
       "target": "VER::Gobernanza técnica v0.1",
       "type": "INCORPORATED_IN"
@@ -2594,6 +2636,20 @@
       "type": "Document"
     },
     {
+      "id": "DOC::00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0011_B4B_Lote_01.md",
+      "properties": {
+        "path": "00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0011_B4B_Lote_01.md"
+      },
+      "type": "Document"
+    },
+    {
+      "id": "DOC::00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0012_B4B_Lote_01_Conformidad.md",
+      "properties": {
+        "path": "00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0012_B4B_Lote_01_Conformidad.md"
+      },
+      "type": "Document"
+    },
+    {
       "id": "DOC::00_Gobernanza/coordinacion/auditorias/GTRM/GOEI_AUDIT_0004_DS_GTRM_01_08.md",
       "properties": {
         "path": "00_Gobernanza/coordinacion/auditorias/GTRM/GOEI_AUDIT_0004_DS_GTRM_01_08.md"
@@ -3267,6 +3323,42 @@
         "goeiVersion": "Gobernanza técnica v0.1",
         "name": "Auditoría de conformidad final B4-A",
         "status": "Conforme para decisión formal",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-AUDIT-0011",
+      "properties": {
+        "approver": "No aplica; control técnico",
+        "canonicalPath": "00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0011_B4B_Lote_01.md",
+        "componentClass": "AUDIT",
+        "decisionOrigin": "contrato B4-B",
+        "decisionStatus": "Detecta defectos de aplicabilidad, entidad y procedencia",
+        "dependents": "versión corregida y AUDIT-0012",
+        "documentVersion": "1.0.0",
+        "evidence": "expediente inicial y método B4-A",
+        "goeiVersion": "Gobernanza técnica v0.1",
+        "name": "Auditoría inicial B4-B Lote 01",
+        "status": "No conforme; corregida",
+        "technicalOwner": "Oficina Técnica"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-AUDIT-0012",
+      "properties": {
+        "approver": "No aplica; control técnico",
+        "canonicalPath": "00_Gobernanza/coordinacion/auditorias/GOEI_AUDIT_0012_B4B_Lote_01_Conformidad.md",
+        "componentClass": "AUDIT",
+        "decisionOrigin": "contrato B4-B",
+        "decisionStatus": "Acepta integración parcial sin promover KPI",
+        "dependents": "lotes siguientes y consolidación B4",
+        "documentVersion": "1.0.0",
+        "evidence": "expediente corregido y AUDIT-0011",
+        "goeiVersion": "Gobernanza técnica v0.1",
+        "name": "Auditoría final B4-B Lote 01",
+        "status": "Conforme para integración parcial",
         "technicalOwner": "Oficina Técnica"
       },
       "type": "Component"

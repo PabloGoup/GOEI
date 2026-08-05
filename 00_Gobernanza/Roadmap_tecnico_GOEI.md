@@ -38,7 +38,7 @@ flowchart LR
 | WP-03 | Arquitectura universal de procesos | En curso | Ontology Baseline v0.1 | MetaModelo Universal EPIC-002 | Issues 019–026 para futura oficialización |
 | WP-04 | Integración de procesos científicos | Completado | D-008 + GOEI-DIR-RES-0001 | GOEI-BSL-PROC-0001 v0.1.0 y trazabilidad | GOEI-ISS-043 solo para residuos/merma |
 | WP-05 | Taxonomía | Completado en núcleo | D-017 + GOEI-DIR-RES-0002 | GOEI-BSL-TAX-0001 v0.1.0 | ISS-008/054 solo para ramas concretas |
-| WP-06 | KPI y admisibilidad | B3 y B4-A completadas; B4-B habilitada | GOEI-BSL-KPI-C-0001 v0.1.0; GOEI-BSL-KPI-ADM-0001 v0.1.0 | catálogo candidato congelado y evaluación trazable por lotes | evaluaciones C-001…031 pendientes; ISS-055–059 selectivos; no existen KPI aprobados |
+| WP-06 | KPI y admisibilidad | B3 y B4-A completadas; B4-B 5/31 | GOEI-BSL-KPI-C-0001 v0.1.0; GOEI-BSL-KPI-ADM-0001 v0.1.0; GOEI-SCI-B4B-L01; GOEI-AUDIT-0012 | catálogo candidato congelado y evaluación trazable por lotes | evaluaciones C-006…031 pendientes; ISS-055–059 selectivos; no existen KPI aprobados |
 | WP-07 | Normalización y modelo matemático | Bloqueado | B5–B8 aprobadas | especificación calculable y reproducible | ciencia no iniciada |
 | WP-08 | Ensamblaje del estándar | Bloqueado | Fase B cerrada | candidato GOEI Standard | Fase B incompleta |
 | WP-09 | Validación piloto | Bloqueado | candidato y protocolo aprobados | expedientes, datos y resultados validados | GOEI-ISS-041/Fase D |

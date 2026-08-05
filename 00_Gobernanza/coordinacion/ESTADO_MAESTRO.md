@@ -14,7 +14,7 @@
 | Fase | Responsable principal | Estado verificable | Compuerta pendiente |
 |---|---|---|---|
 | A Fundamentos científicos | Comité Científico | En cierre según Master Plan | cierre oficial y ausencia de bloqueos críticos |
-| B Construcción del conocimiento | Comité Científico | B1–B3 y B4-A cerradas; B4-B habilitada | evaluación C-001…031, matriz y decisión final B4; luego B5–B10 secuenciales |
+| B Construcción del conocimiento | Comité Científico | B1–B3 y B4-A cerradas; B4-B en ejecución, Lote 01 conforme | evaluación C-006…031, matriz y decisión final B4; luego B5–B10 secuenciales |
 | C Construcción del estándar | Oficina Técnica | Preparación arquitectónica anticipada; contenido bloqueado | cierre oficial de Fase B |
 | D Validación piloto | Director + Comité | No iniciada | Standard candidato y protocolo aprobado |
 | E Publicaciones | Autoridad/Comité/Oficina | Estructura editorial únicamente | resultados y aprobaciones previas |
@@ -47,11 +47,11 @@
 - `GOEI-ONT-CAND-0001` y `GOEI-ARQ-GTRM-0001` preparan el cambio ontológico y los contratos B5/B6 sin modificar D-006 ni habilitar instancias, fórmulas, parámetros o tolerancias.
 - D-017 y `GOEI-DIR-RES-0002` cierran B2 en su pregunta nuclear y congelan `GOEI-BSL-TAX-0001 v0.1.0`; valores, multiunidad, facetas opcionales y crosswalks permanecen excluidos.
 - D-018 y `GOEI-DIR-RES-0003` cierran B3 en su pregunta nuclear y congelan `GOEI-BSL-KPI-C-0001 v0.1.0`: 31 indicadores candidatos pasan a la cola B4 y C-032 queda preservado solo como marco contextual; ningún KPI ha sido aprobado.
-- B4-A y `GOEI-DIR-RES-0004` aprueban el método no compensatorio de admisibilidad y congelan `GOEI-BSL-KPI-ADM-0001 v0.1.0`; B4-B queda habilitada al nivel `Establecimiento`, con cero candidatos evaluados y cero KPI aprobados.
+- B4-A y `GOEI-DIR-RES-0004` aprueban el método no compensatorio de admisibilidad y congelan `GOEI-BSL-KPI-ADM-0001 v0.1.0`; B4-B está en ejecución al nivel `Establecimiento`, con 5 de 31 candidatos evaluados y cero KPI aprobados.
 
 ## Próxima dependencia científica crítica
 
-La dependencia crítica activa es B4-B — evaluación de C-001…C-031 mediante el método B4-A ratificado. `GOEI-ISS-055`–`059` y las reservas heredadas bloquean únicamente las ramas declaradas; GOEI-ISS-053 protege D-006.
+La dependencia crítica activa es B4-B — evaluación de C-006…C-031 mediante el método B4-A ratificado. El Lote 01 C-001…005 quedó conforme por `GOEI-AUDIT-0012`. `GOEI-ISS-055`–`059` y las reservas heredadas bloquean únicamente las ramas declaradas; GOEI-ISS-053 protege D-006.
 
 ## Política de avance
 
