@@ -1,0 +1,2 @@
+import { AppShell } from "@/components/app-shell";
+export default function AuditPage(){return <AppShell><header className="page-header"><div><p className="breadcrumb">Trazabilidad</p><h1>Auditoría</h1><p>Registro inmutable de accesos, cambios, exportaciones y decisiones operativas.</p></div></header><section className="empty-state card"><h2>Sin eventos reales</h2><p>El entorno está en modo demostrativo. Los eventos se habilitarán al conectar Supabase.</p></section></AppShell>}

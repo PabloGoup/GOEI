@@ -1,0 +1,53 @@
+.operational-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 720px;
+}
+
+.operational-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 680;
+}
+
+.operational-form input,
+.operational-form select {
+  height: 45px;
+  padding: 0 13px;
+  color: var(--ink);
+  background: #fbfcfc;
+  border: 1px solid #cfdce1;
+  border-radius: 8px;
+}
+
+.operational-form .button { align-self: flex-start; }
+
+.button.google {
+  color: #27343b;
+  background: #fff;
+  border-color: #cfdce1;
+}
+
+.auth-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+  height: 1px;
+  background: var(--line);
+  content: "";
+  flex: 1;
+}
+
+.notice.error {
+  color: #843a35;
+  background: var(--red-soft);
+}

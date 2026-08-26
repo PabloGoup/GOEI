@@ -1,0 +1,6 @@
+import { AppShell } from "@/components/app-shell";
+import { BookOpenText, Layers3, Search, ShieldAlert } from "lucide-react";
+
+export default function GuidePage() {
+  return <AppShell><header className="page-header"><div><p className="breadcrumb">Biblioteca metodológica</p><h1>Guía GOEI</h1><p>Comprende el instrumento mientras trabajas, sin perder el contexto de la evaluación.</p></div></header><section className="guide-hero card"><BookOpenText size={30} /><div><h2>Una guía para interpretar, no para improvisar</h2><p>El software explica las reglas vigentes, pero no crea decisiones metodológicas.</p></div><label className="guide-search"><Search size={17} /><input placeholder="Buscar concepto o criterio" /></label></section><section className="guide-grid"><article className="card"><Layers3 /><h2>Las siete dimensiones</h2><p>Qué observa cada área y cómo se relaciona con la operación del establecimiento.</p></article><article className="card"><ShieldAlert /><h2>Gate crítico</h2><p>Por qué un riesgo crítico no puede quedar oculto detrás de otros resultados favorables.</p></article><article className="card"><BookOpenText /><h2>Evidencia y confianza</h2><p>Diferencia entre lo que se observa, la calidad del respaldo y la cobertura lograda.</p></article></section></AppShell>;
+}
