@@ -7,7 +7,7 @@
 - Fecha: 2026-08-26
 - Responsable de la actualización: Codex
 - Fase activa: Fase 2 — núcleo operativo
-- Estado técnico: Fases 1 y 2 confirmadas en Supabase; aislamiento multiorganización de la ampliación autenticada confirmado remotamente
+- Estado técnico: Fases 1 y 2, autenticación, onboarding, pruebas SQL y aislamiento multiorganización confirmados remotamente
 - Captura real: **NO AUTORIZADA**
 - Repositorio de aplicación: `PabloGoup/GOEI_APP` privado, con rama propia `main` y contenido de la app en la raíz.
 - Repositorio científico: `PabloGoup/GOEI`; no debe recibir merges ni commits de la aplicación.
@@ -155,6 +155,7 @@ La aplicación implementa el estándar, pero no crea ciencia. No puede inventar 
 - La página principal enlaza visiblemente ambas páginas legales sin exigir inicio de sesión.
 - La política declara que Google sólo aporta identidad básica y que GOEI App no solicita Gmail, Drive, Calendar, contactos ni archivos.
 - Los activos corporativos de `public/brand` son autocontenidos para que Vercel no dependa de enlaces hacia carpetas científicas externas.
+- El usuario confirmó el 2026-08-26 el acceso Google en producción, la llegada del callback a `/dashboard`, la creación de una cuenta de prueba y la creación de su organización mediante `/onboarding`.
 
 ### Flujo operativo de revisión de evaluaciones sintéticas
 
@@ -247,13 +248,10 @@ git diff --check -- GOEI_APP
 
 ### Estado de ejecución en Supabase
 
-1. Migración `202608250003_authenticated_workspace.sql`: instalada; sus funciones fueron ejercitadas por la prueba funcional.
-2. Prueba estructural `authenticated_workspace.sql`: confirmación individual todavía no registrada.
-3. Migración `202608250004_assessment_review_workflow.sql`: instalada; su tabla fue ejercitada por la prueba funcional.
-4. Prueba estructural `assessment_review_workflow.sql`: confirmación individual todavía no registrada.
-5. Migración correctiva `202608260005_fix_criterion_id_constraints.sql`: ejecutada.
-6. Prueba estructural `criterion_id_constraints.sql`: confirmación individual todavía no registrada.
-7. Prueba funcional `cross_organization_isolation.sql`: `PASS` confirmado el 2026-08-26.
+1. Migración `202608250003_authenticated_workspace.sql`: instalada y prueba estructural confirmada.
+2. Migración `202608250004_assessment_review_workflow.sql`: instalada y prueba estructural confirmada.
+3. Migración correctiva `202608260005_fix_criterion_id_constraints.sql`: instalada y prueba estructural confirmada.
+4. Prueba funcional `cross_organization_isolation.sql`: `PASS` confirmado el 2026-08-26.
 
 No ejecutar la prueba antes de la migración correspondiente.
 
@@ -276,15 +274,15 @@ NEXT_PUBLIC_APP_MODE
 ### Para cerrar Fase 2
 
 - [x] Ejecutar migración y prueba Fase 2 en Supabase.
-- [ ] Ejecutar y confirmar la migración y prueba de flujo autenticado.
-- [ ] Habilitar Google en Supabase Auth y configurar sus URLs autorizadas.
+- [x] Ejecutar y confirmar la migración y prueba de flujo autenticado.
+- [x] Habilitar Google en Supabase Auth y configurar sus URLs autorizadas.
 - [ ] Evaluar un dominio propio y su verificación sólo cuando se prepare la publicación definitiva; no bloquea las pruebas en Vercel.
 - [x] Desplegar página principal, privacidad y condiciones en `https://goei-app.vercel.app`.
-- [ ] Registrar las tres URLs públicas en Google Auth Platform y completar el cliente OAuth.
-- [ ] Probar acceso Google local y en el dominio HTTPS de producción.
-- [ ] Confirmar que el nuevo callback termina en `/dashboard` y marcar la prueba OAuth como aprobada.
-- [ ] Crear usuario real de prueba mediante Supabase Auth.
-- [ ] Crear la organización inicial desde `/onboarding`.
+- [x] Registrar las tres URLs públicas en Google Auth Platform y completar el cliente OAuth.
+- [x] Probar acceso Google local y en el dominio HTTPS de producción.
+- [x] Confirmar que el nuevo callback termina en `/dashboard` y marcar la prueba OAuth como aprobada.
+- [x] Crear usuario real de prueba mediante Supabase Auth.
+- [x] Crear la organización inicial desde `/onboarding`.
 - [x] Ejecutar en Supabase la prueba funcional preparada para dos organizaciones y confirmar `PASS`.
 - [x] Conectar formularios sintéticos de establecimientos a acciones de servidor.
 - [x] Conectar creación sintética de evaluación y autoasignación del evaluador.
@@ -347,4 +345,4 @@ Al terminar:
 
 ## Próxima acción recomendada
 
-Completar el recorrido autenticado con cuentas de prueba desde login y onboarding, y validar la carga y lectura firmada de una evidencia sintética. El aislamiento RLS ya cuenta con resultado remoto `PASS`; la captura real permanece bloqueada.
+Completar con la cuenta y organización de prueba el recorrido sintético integral: establecimiento, evaluación, autoguardado, carga y lectura firmada de evidencia, envío, revisión, devolución o cierre y comprobación final en auditoría. La captura real permanece bloqueada.
