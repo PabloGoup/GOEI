@@ -1,6 +1,7 @@
 "use server";
 
 import { z } from "zod";
+import { revalidatePath } from "next/cache";
 import { createClient } from "@/lib/supabase/server";
 
 const responseSchema = z.object({
@@ -43,4 +44,37 @@ export async function saveAssessmentResponse(input: unknown) {
     requested_metadata: {criterionId: parsed.data.criterionId, status: parsed.data.status}
   });
   return {ok:true};
+}
+
+const transitionSchema = z.object({
+  assessmentId: z.string().uuid(),
+  action: z.enum(["SUBMIT","START_REVIEW","RETURN","CLOSE"]),
+  note: z.string().max(3000).nullable().default(null)
+});
+
+export async function transitionAssessment(input: unknown) {
+  const parsed = transitionSchema.safeParse(input);
+  if (!parsed.success) return {ok:false as const,error:"Transición inválida."};
+  const supabase = await createClient();
+  if (!supabase) return {ok:false as const,error:"La transición conectada requiere Supabase."};
+  const { data: claims } = await supabase.auth.getClaims();
+  if (!claims?.claims?.sub) return {ok:false as const,error:"Sesión no válida."};
+  const { data, error } = await supabase.rpc("transition_synthetic_assessment", {
+    target_assessment: parsed.data.assessmentId,
+    requested_action: parsed.data.action,
+    requested_note: parsed.data.note
+  });
+  if (error) {
+    const messages: Record<string,string> = {
+      ASSESSMENT_INCOMPLETE:"Deben revisarse los 28 criterios antes de enviar.",
+      REVIEW_NOTE_REQUIRED:"La devolución o el cierre requieren una nota de revisión.",
+      TRANSITION_NOT_ALLOWED:"Tu rol o el estado actual no permiten esta transición.",
+      SYNTHETIC_ONLY:"Este flujo sólo está habilitado para expedientes sintéticos."
+    };
+    const key = Object.keys(messages).find(item => error.message.includes(item));
+    return {ok:false as const,error:key ? messages[key] : "No fue posible cambiar el estado del expediente."};
+  }
+  revalidatePath(`/evaluaciones/${parsed.data.assessmentId}`);
+  revalidatePath("/evaluaciones");
+  return {ok:true as const,status:String(data)};
 }

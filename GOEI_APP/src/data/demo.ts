@@ -5,7 +5,7 @@ export const demoEstablishments = [
 ] as const;
 
 export const demoAssessments = [
-  { id:"synthetic-assessment-001",establishmentId:"synthetic-centro",establishment:"Restaurante demostrativo Centro",code:"SYN-001",kind:"Demostración sintética",status:"En evaluación",progress:61,updatedAt:"25 ago 2026" },
-  { id:"synthetic-assessment-002",establishmentId:"synthetic-costanera",establishment:"Caso sintético Costanera",code:"SYN-002",kind:"Demostración sintética",status:"En revisión",progress:100,updatedAt:"24 ago 2026" },
-  { id:"synthetic-assessment-003",establishmentId:"synthetic-norte",establishment:"Escenario formativo Norte",code:"SYN-003",kind:"Demostración sintética",status:"Perfil emitido",progress:100,updatedAt:"21 ago 2026" }
+  { id:"synthetic-assessment-001",establishmentId:"synthetic-centro",establishment:"Restaurante demostrativo Centro",code:"SYN-001",kind:"Demostración sintética",status:"IN_PROGRESS",progress:61,updatedAt:"25 ago 2026" },
+  { id:"synthetic-assessment-002",establishmentId:"synthetic-costanera",establishment:"Caso sintético Costanera",code:"SYN-002",kind:"Demostración sintética",status:"IN_REVIEW",progress:100,updatedAt:"24 ago 2026" },
+  { id:"synthetic-assessment-003",establishmentId:"synthetic-norte",establishment:"Escenario formativo Norte",code:"SYN-003",kind:"Demostración sintética",status:"CLOSED",progress:100,updatedAt:"21 ago 2026" }
 ] as const;

@@ -3,10 +3,11 @@ import { AssessmentWorkspace } from "@/components/assessment-workspace";
 import { getAssessment } from "@/server/repositories/workspace";
 import { env } from "@/lib/env";
 import { notFound } from "next/navigation";
+import { requireWorkspaceContext } from "@/server/auth/workspace-context";
 
 export default async function AssessmentPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
-  const record = await getAssessment(id);
+  const [record, context] = await Promise.all([getAssessment(id), requireWorkspaceContext()]);
   if (!record) notFound();
-  return <AppShell><AssessmentWorkspace assessment={record.assessment} initialResponses={record.responses} persistence={env.appMode === "demo" ? "local" : "supabase"}/></AppShell>;
+  return <AppShell><AssessmentWorkspace assessment={record.assessment} initialResponses={record.responses} persistence={env.appMode === "demo" ? "local" : "supabase"} role={context.role}/></AppShell>;
 }

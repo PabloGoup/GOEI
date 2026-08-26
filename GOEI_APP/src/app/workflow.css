@@ -1,0 +1,26 @@
+.workflow-bar {
+  padding: 13px 31px;
+  background: #f7fafb;
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) minmax(320px, 2fr);
+  gap: 14px;
+  align-items: center;
+}
+.workflow-bar > div:first-child { display: flex; align-items: center; gap: 9px; flex-wrap: wrap; }
+.workflow-bar span { font-size: 8px; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; }
+.workflow-bar strong { font-size: 10px; color: var(--navy); }
+.workflow-bar small { width: 100%; font-size: 8px; color: var(--muted); }
+.workflow-actions { display: flex; justify-content: flex-end; align-items: center; gap: 7px; }
+.workflow-actions textarea { width: min(330px, 100%); height: 38px; min-height: 38px; resize: vertical; border: 1px solid var(--line); border-radius: 7px; padding: 8px; font-size: 9px; }
+.workflow-actions .button { white-space: nowrap; }
+.workflow-bar > p { grid-column: 1 / -1; margin: 0; color: var(--blue); font-size: 9px; }
+
+@media (max-width: 760px) {
+  .workspace-header { height: auto; min-height: 118px; align-items: flex-start; flex-direction: column; gap: 10px; }
+  .workspace-header h1 { max-width: 100%; line-height: 1.2; }
+  .save-state { align-self: flex-start; }
+  .workflow-bar { grid-template-columns: 1fr; padding: 13px 18px; }
+  .workflow-actions { justify-content: flex-start; align-items: stretch; flex-direction: column; }
+  .workflow-actions textarea { width: 100%; }
+}

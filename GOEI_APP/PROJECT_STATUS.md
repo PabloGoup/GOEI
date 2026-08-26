@@ -155,13 +155,25 @@ La aplicación implementa el estándar, pero no crea ciencia. No puede inventar 
 - La política declara que Google sólo aporta identidad básica y que GOEI App no solicita Gmail, Drive, Calendar, contactos ni archivos.
 - Los activos corporativos de `public/brand` son autocontenidos para que Vercel no dependa de enlaces hacia carpetas científicas externas.
 
+### Flujo operativo de revisión de evaluaciones sintéticas
+
+- Estados visibles y controlados: borrador, aplicación, enviada, revisión, devuelta y cerrada.
+- Un evaluador sólo puede enviar cuando los 28 criterios dejaron de estar pendientes.
+- Supervisor metodológico o administrador de organización puede iniciar revisión.
+- Devolver o cerrar exige una nota de revisión trazable.
+- Las respuestas quedan bloqueadas mientras el expediente está enviado, en revisión o cerrado.
+- Migración aditiva `202608250004_assessment_review_workflow.sql` con función `security definer`, historial de transiciones, RLS y auditoría.
+- Prueba SQL `assessment_review_workflow.sql` para comprobar tabla, función segura y política RLS.
+- La interfaz demuestra el flujo localmente sin persistir ni confundirlo con una transición real.
+- El flujo rechaza expedientes verificados y conserva `field_capture_authorized = false`.
+
 ## Verificaciones realizadas
 
 Última verificación completa después de implementar el flujo autenticado:
 
 - TypeScript estricto: PASS.
 - ESLint: PASS.
-- Pruebas automatizadas: PASS — 5 de 5.
+- Pruebas automatizadas: PASS — 10 de 10.
 - Build de producción: PASS.
 - Next.js generó 16 rutas, incluidas callback OAuth, onboarding, altas sintéticas y aplicación guiada dinámica.
 - Dependencias: 0 vulnerabilidades en la última instalación/auditoría disponible.
@@ -189,6 +201,8 @@ git diff --check -- GOEI_APP
 1. Ejecutar `supabase/migrations/202608250003_authenticated_workspace.sql`.
 2. Ejecutar `supabase/tests/authenticated_workspace.sql`.
 3. Confirmar que la prueba devuelve `PASS`.
+4. Después ejecutar `supabase/migrations/202608250004_assessment_review_workflow.sql`.
+5. Ejecutar `supabase/tests/assessment_review_workflow.sql` y confirmar `PASS`.
 
 No ejecutar la prueba antes de la migración correspondiente.
 
@@ -226,7 +240,7 @@ NEXT_PUBLIC_APP_MODE
 - [x] Sustituir autoguardado local por persistencia Supabase en expedientes conectados.
 - [ ] Conectar carga de evidencias al bucket privado mediante rutas firmadas.
 - [x] Registrar creación y guardado de respuestas desde funciones seguras de auditoría.
-- [ ] Implementar estados de envío, revisión, devolución y cierre.
+- [x] Implementar estados de envío, revisión, devolución y cierre en código y migración; ejecución remota pendiente.
 - [ ] Realizar QA visual real en escritorio, tablet y móvil.
 
 ### Fase 3 — todavía no iniciada
