@@ -12,6 +12,8 @@
 - Repositorio de aplicación: `PabloGoup/GOEI_APP` privado, con rama propia `main` y contenido de la app en la raíz.
 - Repositorio científico: `PabloGoup/GOEI`; no debe recibir merges ni commits de la aplicación.
 - Despliegue de producción Vercel: `https://goei-app.vercel.app` — confirmado públicamente accesible.
+- Traspaso para Visual Studio: `docs/PROMPT_MAESTRO_CONTINUIDAD.md` y `../00_Gobernanza/coordinacion/GOEI_HANDOFF_0007_WEBAPP_VISUAL_STUDIO.md`.
+- Línea base técnica de continuidad: `GOEI-BSL-TECH-WEBAPP-0001`, anclada al commit `41643a411be0f817870ce50e8bbc9841b77082ef`.
 
 ## Propósito del producto
 

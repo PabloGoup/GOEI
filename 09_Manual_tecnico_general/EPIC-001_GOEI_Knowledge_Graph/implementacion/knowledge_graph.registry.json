@@ -219,6 +219,13 @@
       "type": "CONTAINS"
     },
     {
+      "id": "E-CONTAINS::GOEI-COMP-COST-0001",
+      "source": "DOC::00_Gobernanza/Integracion_transversal_control_costo_producto.md",
+      "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
+      "target": "GOEI-COMP-COST-0001",
+      "type": "CONTAINS"
+    },
+    {
       "id": "E-CONTAINS::GOEI-CON-0001",
       "source": "DOC::00_Gobernanza/Constitucion_GOEI.md",
       "sourceDocument": "00_Gobernanza/Registro_de_componentes.md",
@@ -1026,6 +1033,27 @@
     {
       "id": "E-ISSUE::GOEI-ISS-059",
       "source": "GOEI-ISS-059",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-060",
+      "source": "GOEI-ISS-060",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-061",
+      "source": "GOEI-ISS-061",
+      "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
+      "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
+      "type": "REGISTERED_IN"
+    },
+    {
+      "id": "E-ISSUE::GOEI-ISS-062",
+      "source": "GOEI-ISS-062",
       "sourceDocument": "00_Gobernanza/Preguntas_abiertas.md",
       "target": "DOC::00_Gobernanza/Preguntas_abiertas.md",
       "type": "REGISTERED_IN"
@@ -2601,6 +2629,13 @@
       "type": "Document"
     },
     {
+      "id": "DOC::00_Gobernanza/Integracion_transversal_control_costo_producto.md",
+      "properties": {
+        "path": "00_Gobernanza/Integracion_transversal_control_costo_producto.md"
+      },
+      "type": "Document"
+    },
+    {
       "id": "DOC::00_Gobernanza/Matriz_de_trazabilidad.md",
       "properties": {
         "path": "00_Gobernanza/Matriz_de_trazabilidad.md"
@@ -3757,6 +3792,24 @@
         "name": "Convenciones documentales",
         "status": "Borrador operativo",
         "technicalOwner": "Arquitectura e Ingeniería de Conocimiento"
+      },
+      "type": "Component"
+    },
+    {
+      "id": "GOEI-COMP-COST-0001",
+      "properties": {
+        "approver": "Comité Científico pendiente; GOEI-ISS-062",
+        "canonicalPath": "00_Gobernanza/Integracion_transversal_control_costo_producto.md",
+        "componentClass": "CONCEPT-CAND",
+        "decisionOrigin": "",
+        "decisionStatus": "",
+        "dependents": "",
+        "documentVersion": "0.1.0-draft",
+        "evidence": "",
+        "goeiVersion": "No asignada",
+        "name": "Control transversal del costo del producto",
+        "status": "Propuesta transversal; captura y presentación permitidas; promoción bloqueada",
+        "technicalOwner": "Dirección del proyecto / custodia Oficina Técnica"
       },
       "type": "Component"
     },
@@ -4973,6 +5026,48 @@
           "sólo estado global `NO APLICA` por categoría",
           "Comité Científico, después de valores taxonómicos aprobados",
           "Abierta; depende de GOEI-ISS-054; no bloquea B4-B al nivel `Establecimiento"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-060",
+      "properties": {
+        "fields": [
+          "¿Se aprueban, corrigen o rechazan las preguntas y opciones de respuesta contextualizadas del piloto D3, y qué versión puede probarse con empresas?",
+          "revisión del prototipo y análisis adversarial de la escala 0–4",
+          "uso de las guías D3 con participantes y sustitución de la encuesta genérica",
+          "Comité Científico + expertos operacionales + revisión ética cuando corresponda",
+          "Abierta; existe paquete borrador para revisión interna, sin uso en campo ni efecto sobre el motor"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-061",
+      "properties": {
+        "fields": [
+          "¿Cuál es la razón de ser del GOEI: quién es su usuario principal, qué problema resuelve, qué decisiones debe mejorar, qué observa realmente y cuál debe ser su salida principal?",
+          "revisión fundacional 2026-08-11; Constitución pendiente; tensión entre constructo, puntaje e instrumento",
+          "ampliación oficial de preguntas, justificación de dimensiones, interpretación y promoción del prototipo",
+          "Dirección del proyecto + Comité Científico",
+          "Abierta; la recuperación fundacional puede avanzar como propuesta, pero no crea una definición oficial"
+        ],
+        "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
+      },
+      "type": "Issue"
+    },
+    {
+      "id": "GOEI-ISS-062",
+      "properties": {
+        "fields": [
+          "¿Cómo debe definirse y validarse el control del costo del producto, incluyendo F.C., M.O. y C.I.F., y cómo se relaciona sin redundancia con C-001, C-009, C-028, C-029 y D2?",
+          "observación directiva 2026-08-12; `GOEI-COMP-COST-0001",
+          "promoción normativa, comparabilidad y parámetros económicos",
+          "Comité Científico + expertos en costos gastronómicos y contabilidad de gestión",
+          "**Cerrada parcialmente por GOEI-DIR-RES-0006 para integración provisional en D2.4 y fórmula criterial vigente; permanecen pendientes validación científica, bases de asignación, comparabilidad y cualquier umbral económico**"
         ],
         "registryPath": "00_Gobernanza/Preguntas_abiertas.md"
       },
