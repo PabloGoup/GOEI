@@ -9,7 +9,7 @@ export default async function EstablishmentsPage() {
   return <AppShell>
     <header className="page-header"><div><p className="breadcrumb">Núcleo operativo</p><h1>Establecimientos</h1><p>Unidades de análisis separadas por organización y expediente.</p></div><Link className="button primary" href="/establecimientos/nuevo"><Plus size={17}/> Nuevo caso sintético</Link></header>
     <div className="field-lock"><ShieldAlert size={20}/><div><strong>Vista exclusivamente sintética</strong><span>La creación de establecimientos reales continúa bloqueada por los gates del prepiloto.</span></div></div>
-    <section className="card resource-toolbar"><label><Search size={16}/><input placeholder="Buscar por nombre o código"/></label><span>3 casos demostrativos</span></section>
+    <section className="card resource-toolbar"><label><Search size={16}/><input placeholder="Buscar por nombre o código"/></label><span>{establishments.length} {establishments.length === 1 ? "caso sintético" : "casos sintéticos"}</span></section>
     <section className="resource-grid">
       {establishments.map(item => <article className="card establishment-card" key={item.id}>
         <div className="establishment-icon"><Building2/></div><div className="resource-main"><div><small>{item.code}</small><h2>{item.name}</h2></div><StatusPill tone="neutral">Sintético</StatusPill></div>

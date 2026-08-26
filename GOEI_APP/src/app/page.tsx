@@ -2,12 +2,15 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2, LockKeyhole, ScanSearch } from "lucide-react";
 import { BrandMark } from "@/components/brand-mark";
 import { methodologyStatus } from "@/domain/methodology";
+import { env } from "@/lib/env";
 import { createClient } from "@/lib/supabase/server";
 
 export default async function HomePage() {
   const supabase = await createClient();
   const { data: claimsData } = supabase ? await supabase.auth.getClaims() : { data: null };
   const signedIn = Boolean(claimsData?.claims?.sub);
+  const primaryHref = signedIn ? "/dashboard" : env.appMode === "demo" ? "/dashboard" : "/login";
+  const primaryLabel = signedIn ? "Abrir portal" : env.appMode === "demo" ? "Explorar entorno demostrativo" : "Ingresar al portal";
   return (
     <main className="landing">
       <header className="landing-nav"><BrandMark /><Link className="button ghost" href={signedIn ? "/dashboard" : "/login"}>{signedIn ? "Abrir portal" : "Ingresar"}</Link></header>
@@ -17,7 +20,7 @@ export default async function HomePage() {
           <h1>Comprende cómo funciona realmente tu negocio.</h1>
           <p>GOEI guía una evaluación operacional completa, conecta cada hallazgo con evidencia y ayuda a decidir dónde actuar primero.</p>
           <div className="hero-actions">
-            <Link className="button primary" href="/dashboard">Explorar entorno demostrativo <ArrowRight size={17} /></Link>
+            <Link className="button primary" href={primaryHref}>{primaryLabel} <ArrowRight size={17} /></Link>
             <Link className="button secondary" href="/guia">Conocer la metodología</Link>
           </div>
           <p className="scope-note"><LockKeyhole size={15} /> {methodologyStatus.label}. La captura real aún no está autorizada.</p>

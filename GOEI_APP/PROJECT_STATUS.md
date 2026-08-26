@@ -221,20 +221,25 @@ La aplicación implementa el estándar, pero no crea ciencia. No puede inventar 
 - Guía operativa única creada en `docs/GUIA_QA_RECORRIDO_INTEGRAL.md` para validar identidad, altas sintéticas, autoguardado, evidencia privada, ciclo de revisión, auditoría y presentación responsiva.
 - La variable `NEXT_PUBLIC_APP_MODE` de producción fue cambiada de `demo` a `connected` el 2026-08-26 para ejercitar Supabase con la cuenta y organización de prueba existentes.
 - Este cambio habilita únicamente los flujos sintéticos ya protegidos por las funciones RPC y RLS; `field_capture_authorized` continúa en `false` y la captura real sigue sin autorización.
+- La portada adapta su acción principal al modo real del entorno: en producción conectada dirige al acceso, no promete una demostración local inexistente.
+- El panorama conectado dejó de mostrar establecimientos, evaluaciones y porcentajes codificados: obtiene bajo RLS los casos de la organización, cuenta expedientes y calcula el avance desde respuestas no pendientes.
+- El listado de establecimientos muestra el total real autorizado y el número de evaluaciones asociadas; el listado de evaluaciones recupera su porcentaje de completitud real.
 
 ## Verificaciones realizadas
 
-Última verificación completa después de implementar el flujo autenticado:
+Última verificación completa después de preparar producción conectada y sustituir los resúmenes codificados:
 
 - TypeScript estricto: PASS.
 - ESLint: PASS.
 - Pruebas automatizadas: PASS — 21 de 21.
 - Build de producción: PASS.
-- Next.js generó 16 rutas, incluidas callback OAuth, onboarding, altas sintéticas y aplicación guiada dinámica.
+- Next.js generó 18 rutas, incluidas callback OAuth, onboarding, altas sintéticas y aplicación guiada dinámica.
 - Dependencias: 0 vulnerabilidades en la última instalación/auditoría disponible.
 - La pantalla guiada respondió desde el servidor local.
 - `git diff --check`: sin problemas conocidos.
 - Prueba de humo de producción del 2026-08-26: portada HTTP 200, ruta `/configuracion` HTTP 200 y estado Vercel `success`.
+- Despliegue conectado `6795d01` confirmado `Ready` y asociado a `https://goei-app.vercel.app`; el acceso sin sesión redirige correctamente a `/login`.
+- El salto OAuth de Google no puede ser completado por el navegador automatizado debido a su política de navegación externa; el recorrido autenticado requiere que el usuario abra la sesión de prueba antes de continuar la automatización.
 
 Después de cada modificación se debe volver a ejecutar:
 
