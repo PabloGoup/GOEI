@@ -15,6 +15,22 @@
 .workflow-actions textarea { width: min(330px, 100%); height: 38px; min-height: 38px; resize: vertical; border: 1px solid var(--line); border-radius: 7px; padding: 8px; font-size: 9px; }
 .workflow-actions .button { white-space: nowrap; }
 .workflow-bar > p { grid-column: 1 / -1; margin: 0; color: var(--blue); font-size: 9px; }
+.criterion-evidence { border-top: 1px solid var(--line); padding-top: 20px; margin-top: 16px; }
+.criterion-evidence h3 { margin: 0 0 12px; color: var(--navy); font-size: 11px; }
+.evidence-manager { border: 1px solid #d8e5ea; border-radius: 9px; background: #f8fbfc; padding: 13px; }
+.evidence-form { display: grid; grid-template-columns: 1.4fr .8fr .8fr 1.2fr auto; gap: 8px; align-items: end; }
+.evidence-form label { display: flex; flex-direction: column; gap: 5px; color: var(--muted); font-size: 8px; font-weight: 700; }
+.evidence-form input,.evidence-form select { width: 100%; height: 35px; border: 1px solid var(--line); border-radius: 7px; background: white; padding: 0 8px; color: var(--navy); font-size: 9px; }
+.evidence-form input[type="file"] { padding: 7px; }
+.evidence-manager > p { margin: 9px 0 0; color: var(--blue); font-size: 9px; }
+.evidence-list { display: grid; gap: 6px; margin-top: 10px; }
+.evidence-list button { width: 100%; border: 1px solid var(--line); border-radius: 7px; background: white; padding: 9px; display: grid; grid-template-columns: 18px 1fr 15px; align-items: center; gap: 8px; color: var(--blue); text-align: left; }
+.evidence-list span { display: flex; flex-direction: column; gap: 3px; }
+.evidence-list strong { color: var(--navy); font-size: 9px; }
+.evidence-list small { color: var(--muted); font-size: 8px; }
+.evidence-upload.locked { opacity: .75; }
+.spin { animation: goei-spin .8s linear infinite; }
+@keyframes goei-spin { to { transform: rotate(360deg); } }
 
 @media (max-width: 760px) {
   .workspace-header { height: auto; min-height: 118px; align-items: flex-start; flex-direction: column; gap: 10px; }
@@ -23,4 +39,5 @@
   .workflow-bar { grid-template-columns: 1fr; padding: 13px 18px; }
   .workflow-actions { justify-content: flex-start; align-items: stretch; flex-direction: column; }
   .workflow-actions textarea { width: 100%; }
+  .evidence-form { grid-template-columns: 1fr; }
 }

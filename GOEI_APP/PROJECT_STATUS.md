@@ -167,13 +167,25 @@ La aplicación implementa el estándar, pero no crea ciencia. No puede inventar 
 - La interfaz demuestra el flujo localmente sin persistir ni confundirlo con una transición real.
 - El flujo rechaza expedientes verificados y conserva `field_capture_authorized = false`.
 
+### Evidencias privadas sintéticas
+
+- Solicitud de carga firmada desde una acción de servidor autenticada.
+- Carga directa al bucket privado `goei-evidence`, sin pasar el archivo por Server Actions.
+- Formatos permitidos: PDF, JPEG, PNG y CSV; límite de 15 MB.
+- Ruta aislada por organización y evaluación, generada en servidor.
+- Registro de título, criterio, procedencia E1/E2/E3, sensibilidad, tipo y tamaño.
+- Verificación de existencia en Storage antes de registrar metadatos.
+- Lectura mediante URL firmada de 60 segundos, nunca mediante URL pública.
+- Registro del evento `evidence.uploaded` sin almacenar contenido sensible en auditoría.
+- El modo demostrativo mantiene la carga deshabilitada y no acepta archivos locales.
+
 ## Verificaciones realizadas
 
 Última verificación completa después de implementar el flujo autenticado:
 
 - TypeScript estricto: PASS.
 - ESLint: PASS.
-- Pruebas automatizadas: PASS — 10 de 10.
+- Pruebas automatizadas: PASS — 13 de 13.
 - Build de producción: PASS.
 - Next.js generó 16 rutas, incluidas callback OAuth, onboarding, altas sintéticas y aplicación guiada dinámica.
 - Dependencias: 0 vulnerabilidades en la última instalación/auditoría disponible.
@@ -238,7 +250,7 @@ NEXT_PUBLIC_APP_MODE
 - [x] Conectar formularios sintéticos de establecimientos a acciones de servidor.
 - [x] Conectar creación sintética de evaluación y autoasignación del evaluador.
 - [x] Sustituir autoguardado local por persistencia Supabase en expedientes conectados.
-- [ ] Conectar carga de evidencias al bucket privado mediante rutas firmadas.
+- [x] Conectar carga de evidencias al bucket privado mediante rutas firmadas; prueba integrada contra Supabase pendiente.
 - [x] Registrar creación y guardado de respuestas desde funciones seguras de auditoría.
 - [x] Implementar estados de envío, revisión, devolución y cierre en código y migración; ejecución remota pendiente.
 - [ ] Realizar QA visual real en escritorio, tablet y móvil.

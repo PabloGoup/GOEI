@@ -31,12 +31,13 @@ export async function getAssessment(id: string) {
   const supabase = await createClient();
   if (!supabase) return null;
   const { data, error } = await supabase.from("assessments")
-    .select("id,status,assessment_kind,establishments(pseudonymous_code,display_name),assessment_responses(criterion_id,status,level,evidence_grade,justification,no_apply_basis)")
+    .select("id,status,assessment_kind,establishments(pseudonymous_code,display_name),assessment_responses(criterion_id,status,level,evidence_grade,justification,no_apply_basis),evidence_items(evidence_code,title,storage_path,mime_type,size_bytes,provenance,sensitivity,criterion_id)")
     .eq("id", id).maybeSingle();
   if (error || !data) return null;
   const establishment = Array.isArray(data.establishments) ? data.establishments[0] : data.establishments;
   return {
     assessment: {id:data.id,establishment:establishment?.display_name ?? "Establecimiento",code:establishment?.pseudonymous_code ?? "—",kind:data.assessment_kind,status:data.status,progress:0},
-    responses: data.assessment_responses ?? []
+    responses: data.assessment_responses ?? [],
+    evidenceItems: data.evidence_items ?? []
   };
 }

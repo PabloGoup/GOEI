@@ -1,23 +1,25 @@
 "use client";
 
 import { useEffect, useMemo, useState, useTransition } from "react";
-import { ArrowLeft, Check, ChevronLeft, ChevronRight, FileUp, Info, LockKeyhole, RotateCcw, Save, Send, ShieldAlert, ShieldCheck } from "lucide-react";
+import { ArrowLeft, Check, ChevronLeft, ChevronRight, Info, LockKeyhole, RotateCcw, Save, Send, ShieldAlert, ShieldCheck } from "lucide-react";
 import Link from "next/link";
 import type { AppRole } from "@/domain/access";
 import { assessmentStatusLabels, availableTransitions, isAssessmentEditable, transitionTarget, type AssessmentStatus, type AssessmentTransition } from "@/domain/assessment-lifecycle";
 import { evidenceGrades, instrument, instrumentCriteria, instrumentDimensions, levelRubric, type CriterionStatus } from "@/domain/instrument";
 import { saveAssessmentResponse, transitionAssessment } from "@/server/actions/assessment-actions";
+import { EvidenceUploader } from "@/components/evidence-uploader";
 
 type ResponseDraft = { status: CriterionStatus; level: number | null; evidenceGrade: number; justification: string };
 type DraftMap = Record<string, ResponseDraft>;
 type Assessment = { id:string; establishment:string; code:string; kind:string; status:AssessmentStatus; progress:number };
 type StoredResponse = { criterion_id:string; status:CriterionStatus; level:number|null; evidence_grade:number; justification:string; no_apply_basis:string|null };
+type EvidenceItem = {evidence_code:string;title:string;storage_path:string;mime_type:string;size_bytes:number;provenance:string;sensitivity:string;criterion_id:string|null};
 
 const emptyDraft = (): DraftMap => Object.fromEntries(instrumentCriteria.map(c => [c.id,{status:"PENDING",level:null,evidenceGrade:0,justification:""}]));
 
 const actionLabels: Record<AssessmentTransition,string> = {SUBMIT:"Enviar a revisión",START_REVIEW:"Iniciar revisión",RETURN:"Devolver con observaciones",CLOSE:"Cerrar revisión"};
 
-export function AssessmentWorkspace({ assessment, initialResponses = [], persistence = "local", role }: { assessment: Assessment; initialResponses?: StoredResponse[]; persistence?: "local"|"supabase"; role:AppRole }) {
+export function AssessmentWorkspace({ assessment, initialResponses = [], initialEvidence = [], persistence = "local", role }: { assessment: Assessment; initialResponses?: StoredResponse[]; initialEvidence?:EvidenceItem[]; persistence?: "local"|"supabase"; role:AppRole }) {
   const [selectedId,setSelectedId] = useState(instrumentCriteria[0].id);
   const [responses,setResponses] = useState<DraftMap>(() => ({...emptyDraft(),...Object.fromEntries(initialResponses.map(item=>[item.criterion_id,{status:item.status,level:item.level,evidenceGrade:item.evidence_grade,justification:item.justification || item.no_apply_basis || ""}]))}));
   const [saved,setSaved] = useState(true);
@@ -91,7 +93,8 @@ export function AssessmentWorkspace({ assessment, initialResponses = [], persist
         <fieldset disabled={!editable}><legend>1. Estado de evaluación</legend><div className="segmented-options"><button className={response.status==="EVALUABLE"?"selected":""} onClick={()=>setStatus("EVALUABLE")}>Evaluable</button><button className={response.status==="NO_APLICA"?"selected":""} onClick={()=>setStatus("NO_APLICA")}>No aplica</button><button className={response.status==="NO_VERIFICABLE"?"selected":""} onClick={()=>setStatus("NO_VERIFICABLE")}>No verificable</button></div></fieldset>
         <fieldset disabled={!editable || response.status!=="EVALUABLE"}><legend>2. Nivel observado</legend><div className="level-options">{levelRubric.map(item=><button className={response.level===item.level?"selected":""} onClick={()=>update({level:item.level})} key={item.level}><b>{item.level}</b><span><strong>{item.label}</strong><small>{item.description}</small></span></button>)}</div></fieldset>
         <fieldset disabled={!editable || response.status!=="EVALUABLE"}><legend>3. Calidad de evidencia</legend><div className="evidence-options">{evidenceGrades.filter(item=>item.grade>0).map(item=><button className={response.evidenceGrade===item.grade?"selected":""} onClick={()=>update({evidenceGrade:item.grade})} key={item.grade}><b>{item.grade}</b><span>{item.label}</span></button>)}</div></fieldset>
-        <fieldset disabled={!editable}><legend>4. Hallazgo y justificación</legend><textarea value={response.justification} onChange={event=>update({justification:event.target.value})} placeholder={response.status==="NO_APLICA"?"Fundamento previo de no aplicabilidad…":"Describe únicamente hechos respaldados por el expediente…"}/><div className="evidence-upload"><FileUp size={17}/><span><strong>Adjuntar evidencia</strong><small>Disponible al conectar el bucket privado de Supabase.</small></span><button disabled>Seleccionar archivo</button></div></fieldset>
+        <fieldset disabled={!editable}><legend>4. Hallazgo y justificación</legend><textarea value={response.justification} onChange={event=>update({justification:event.target.value})} placeholder={response.status==="NO_APLICA"?"Fundamento previo de no aplicabilidad…":"Describe únicamente hechos respaldados por el expediente…"}/></fieldset>
+        <section className="criterion-evidence"><h3>5. Evidencia privada</h3><EvidenceUploader assessmentId={assessment.id} criterionId={criterion.id} enabled={persistence==="supabase" && editable} items={initialEvidence.filter(item=>item.criterion_id===criterion.id)}/></section>
         <div className="criterion-lock"><LockKeyhole size={15}/> El nivel no produce todavía un puntaje en esta pantalla. El motor se integrará y verificará en Fase 3.</div>
         <footer className="criterion-footer"><button className="button secondary" disabled={index===0} onClick={()=>move(-1)}><ChevronLeft size={16}/> Anterior</button><span>Cambios {saved?"guardados":"pendientes"}</span><button className="button primary" disabled={index===instrumentCriteria.length-1} onClick={()=>move(1)}>Siguiente <ChevronRight size={16}/></button></footer>
       </article>
