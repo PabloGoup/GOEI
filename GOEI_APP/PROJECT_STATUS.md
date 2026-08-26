@@ -7,7 +7,7 @@
 - Fecha: 2026-08-26
 - Responsable de la actualización: Codex
 - Fase activa: Fase 2 — núcleo operativo
-- Estado técnico: Fases 1 y 2 confirmadas en Supabase; ampliación autenticada implementada localmente y pendiente de migrar
+- Estado técnico: Fases 1 y 2 confirmadas en Supabase; aislamiento multiorganización de la ampliación autenticada confirmado remotamente
 - Captura real: **NO AUTORIZADA**
 - Repositorio de aplicación: `PabloGoup/GOEI_APP` privado, con rama propia `main` y contenido de la app en la raíz.
 - Repositorio científico: `PabloGoup/GOEI`; no debe recibir merges ni commits de la aplicación.
@@ -202,6 +202,8 @@ La aplicación implementa el estándar, pero no crea ciencia. No puede inventar 
 - La primera ejecución remota reveló una expresión regular incorrectamente escapada en las restricciones de `criterion_id` heredadas de Fase 2.
 - La migración correctiva `202608260005_fix_criterion_id_constraints.sql` reemplaza ambas restricciones y conserva exclusivamente el rango `D1.1` a `D7.4`.
 - La prueba `criterion_id_constraints.sql` comprueba límites válidos e identificadores inválidos antes de repetir el aislamiento.
+- El usuario ejecutó la corrección y presentó resultado remoto `PASS` de `cross_organization_isolation.sql` el 2026-08-26.
+- Quedó confirmado el aislamiento bidireccional en las 10 superficies cubiertas y el bloqueo de escritura cruzada; los datos sintéticos fueron descartados mediante `ROLLBACK`.
 
 ## Verificaciones realizadas
 
@@ -232,16 +234,15 @@ git diff --check -- GOEI_APP
 - Migración Fase 2 ejecutada.
 - Prueba estructural Fase 2: correcta.
 
-### Pendiente de ejecutar en Supabase
+### Estado de ejecución en Supabase
 
-1. Ejecutar `supabase/migrations/202608250003_authenticated_workspace.sql`.
-2. Ejecutar `supabase/tests/authenticated_workspace.sql`.
-3. Confirmar que la prueba devuelve `PASS`.
-4. Después ejecutar `supabase/migrations/202608250004_assessment_review_workflow.sql`.
-5. Ejecutar `supabase/tests/assessment_review_workflow.sql` y confirmar `PASS`.
-6. Ejecutar `supabase/migrations/202608260005_fix_criterion_id_constraints.sql`.
-7. Ejecutar `supabase/tests/criterion_id_constraints.sql` y confirmar `PASS`.
-8. Ejecutar `supabase/tests/cross_organization_isolation.sql` y confirmar `PASS`.
+1. Migración `202608250003_authenticated_workspace.sql`: instalada; sus funciones fueron ejercitadas por la prueba funcional.
+2. Prueba estructural `authenticated_workspace.sql`: confirmación individual todavía no registrada.
+3. Migración `202608250004_assessment_review_workflow.sql`: instalada; su tabla fue ejercitada por la prueba funcional.
+4. Prueba estructural `assessment_review_workflow.sql`: confirmación individual todavía no registrada.
+5. Migración correctiva `202608260005_fix_criterion_id_constraints.sql`: ejecutada.
+6. Prueba estructural `criterion_id_constraints.sql`: confirmación individual todavía no registrada.
+7. Prueba funcional `cross_organization_isolation.sql`: `PASS` confirmado el 2026-08-26.
 
 No ejecutar la prueba antes de la migración correspondiente.
 
@@ -273,13 +274,13 @@ NEXT_PUBLIC_APP_MODE
 - [ ] Confirmar que el nuevo callback termina en `/dashboard` y marcar la prueba OAuth como aprobada.
 - [ ] Crear usuario real de prueba mediante Supabase Auth.
 - [ ] Crear la organización inicial desde `/onboarding`.
-- [ ] Ejecutar en Supabase la prueba funcional preparada para dos organizaciones y confirmar `PASS`.
+- [x] Ejecutar en Supabase la prueba funcional preparada para dos organizaciones y confirmar `PASS`.
 - [x] Conectar formularios sintéticos de establecimientos a acciones de servidor.
 - [x] Conectar creación sintética de evaluación y autoasignación del evaluador.
 - [x] Sustituir autoguardado local por persistencia Supabase en expedientes conectados.
 - [x] Conectar carga de evidencias al bucket privado mediante rutas firmadas; prueba integrada contra Supabase pendiente.
 - [x] Registrar creación y guardado de respuestas desde funciones seguras de auditoría.
-- [x] Implementar estados de envío, revisión, devolución y cierre en código y migración; ejecución remota pendiente.
+- [x] Implementar e instalar estados de envío, revisión, devolución y cierre; recorrido autenticado integral pendiente.
 - [ ] Realizar QA visual real en escritorio, tablet y móvil.
 
 ### Fase 3 — todavía no iniciada
@@ -335,4 +336,4 @@ Al terminar:
 
 ## Próxima acción recomendada
 
-Ejecutar las migraciones 003 y 004 con sus pruebas estructurales. Después ejecutar `cross_organization_isolation.sql` y conservar el resultado `PASS` antes de utilizar evidencias privadas con cuentas reales.
+Completar el recorrido autenticado con cuentas de prueba desde login y onboarding, y validar la carga y lectura firmada de una evidencia sintética. El aislamiento RLS ya cuenta con resultado remoto `PASS`; la captura real permanece bloqueada.
