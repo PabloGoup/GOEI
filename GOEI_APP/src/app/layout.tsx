@@ -6,6 +6,7 @@ import "./operational.css";
 import "./legal.css";
 import "./workflow.css";
 import "./audit.css";
+import "./readiness.css";
 
 export const metadata: Metadata = {
   title: "GOEI · Salud operacional gastronómica",

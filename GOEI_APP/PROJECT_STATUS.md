@@ -205,13 +205,21 @@ La aplicación implementa el estándar, pero no crea ciencia. No puede inventar 
 - El usuario ejecutó la corrección y presentó resultado remoto `PASS` de `cross_organization_isolation.sql` el 2026-08-26.
 - Quedó confirmado el aislamiento bidireccional en las 10 superficies cubiertas y el bloqueo de escritura cruzada; los datos sintéticos fueron descartados mediante `ROLLBACK`.
 
+### Panel de preparación técnica
+
+- La ruta `/configuracion` dejó de mostrar estados codificados y ahora obtiene una lectura operativa desde el servidor.
+- En modo conectado verifica sesión, organización bajo RLS, disponibilidad del instrumento candidato y lectura autorizada de expedientes.
+- Separa controles verificados, pruebas pendientes, bloqueos esperados y alertas técnicas.
+- Mantiene evidencias privadas como prueba integral pendiente y el motor GOEI como integración de Fase 3.
+- Advierte explícitamente que un control técnico correcto no autoriza captura real ni sustituye decisiones científicas, éticas o de privacidad.
+
 ## Verificaciones realizadas
 
 Última verificación completa después de implementar el flujo autenticado:
 
 - TypeScript estricto: PASS.
 - ESLint: PASS.
-- Pruebas automatizadas: PASS — 19 de 19.
+- Pruebas automatizadas: PASS — 21 de 21.
 - Build de producción: PASS.
 - Next.js generó 16 rutas, incluidas callback OAuth, onboarding, altas sintéticas y aplicación guiada dinámica.
 - Dependencias: 0 vulnerabilidades en la última instalación/auditoría disponible.
