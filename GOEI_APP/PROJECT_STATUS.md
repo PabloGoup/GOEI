@@ -4,7 +4,7 @@
 
 ## Última actualización
 
-- Fecha: 2026-08-25
+- Fecha: 2026-08-26
 - Responsable de la actualización: Codex
 - Fase activa: Fase 2 — núcleo operativo
 - Estado técnico: Fases 1 y 2 confirmadas en Supabase; ampliación autenticada implementada localmente y pendiente de migrar
@@ -191,13 +191,22 @@ La aplicación implementa el estándar, pero no crea ciencia. No puede inventar 
 - Límite de 200 eventos recientes para conservar una vista operativa manejable.
 - La interfaz advierte que el registro técnico no constituye evidencia científica por sí solo.
 
+### Verificación funcional de aislamiento RLS preparada
+
+- Prueba SQL transaccional con dos usuarios y dos organizaciones completamente sintéticas.
+- Comprobación bidireccional sobre organizaciones, membresías, establecimientos, evaluaciones, respuestas, evidencias, vínculos, revisión, auditoría y Storage privado.
+- Prueba negativa de escritura cruzada mediante la función segura de auditoría.
+- Limpieza automática mediante `ROLLBACK`; el ensayo no conserva sus datos sintéticos.
+- Guía humana `docs/GUIA_VALIDACION_SUPABASE.md` con el orden de migraciones, pruebas e interpretación del resultado.
+- La prueba está preparada localmente; todavía debe ejecutarse y confirmar `PASS` en el proyecto remoto de Supabase.
+
 ## Verificaciones realizadas
 
 Última verificación completa después de implementar el flujo autenticado:
 
 - TypeScript estricto: PASS.
 - ESLint: PASS.
-- Pruebas automatizadas: PASS — 16 de 16.
+- Pruebas automatizadas: PASS — 18 de 18.
 - Build de producción: PASS.
 - Next.js generó 16 rutas, incluidas callback OAuth, onboarding, altas sintéticas y aplicación guiada dinámica.
 - Dependencias: 0 vulnerabilidades en la última instalación/auditoría disponible.
@@ -227,6 +236,7 @@ git diff --check -- GOEI_APP
 3. Confirmar que la prueba devuelve `PASS`.
 4. Después ejecutar `supabase/migrations/202608250004_assessment_review_workflow.sql`.
 5. Ejecutar `supabase/tests/assessment_review_workflow.sql` y confirmar `PASS`.
+6. Ejecutar `supabase/tests/cross_organization_isolation.sql` y confirmar `PASS`.
 
 No ejecutar la prueba antes de la migración correspondiente.
 
@@ -258,7 +268,7 @@ NEXT_PUBLIC_APP_MODE
 - [ ] Confirmar que el nuevo callback termina en `/dashboard` y marcar la prueba OAuth como aprobada.
 - [ ] Crear usuario real de prueba mediante Supabase Auth.
 - [ ] Crear la organización inicial desde `/onboarding`.
-- [ ] Probar aislamiento RLS entre dos organizaciones con usuarios distintos.
+- [ ] Ejecutar en Supabase la prueba funcional preparada para dos organizaciones y confirmar `PASS`.
 - [x] Conectar formularios sintéticos de establecimientos a acciones de servidor.
 - [x] Conectar creación sintética de evaluación y autoasignación del evaluador.
 - [x] Sustituir autoguardado local por persistencia Supabase en expedientes conectados.
@@ -320,4 +330,4 @@ Al terminar:
 
 ## Próxima acción recomendada
 
-Ejecutar la migración autenticada y su prueba. Después, crear dos usuarios y dos organizaciones de prueba para comprobar aislamiento RLS real antes de conectar evidencias privadas.
+Ejecutar las migraciones 003 y 004 con sus pruebas estructurales. Después ejecutar `cross_organization_isolation.sql` y conservar el resultado `PASS` antes de utilizar evidencias privadas con cuentas reales.
