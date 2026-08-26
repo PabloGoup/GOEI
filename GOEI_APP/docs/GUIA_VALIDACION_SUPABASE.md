@@ -14,7 +14,9 @@ Confirma que las migraciones de Fase 1 y Fase 2 ya fueron ejecutadas. Si alguna 
 2. Ejecuta `authenticated_workspace.sql` y confirma que devuelve `PASS`.
 3. Ejecuta `202608250004_assessment_review_workflow.sql`.
 4. Ejecuta `assessment_review_workflow.sql` y confirma que devuelve `PASS`.
-5. Ejecuta `cross_organization_isolation.sql` y confirma que devuelve `PASS`.
+5. Ejecuta `202608260005_fix_criterion_id_constraints.sql`.
+6. Ejecuta `criterion_id_constraints.sql` y confirma que devuelve `PASS`.
+7. Ejecuta `cross_organization_isolation.sql` y confirma que devuelve `PASS`.
 
 Los archivos están dentro de las carpetas `supabase/migrations` y `supabase/tests` de la aplicación.
 

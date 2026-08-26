@@ -32,3 +32,14 @@ test("la prueba cubre las superficies privadas del núcleo operativo", () => {
     assert.ok(sql.includes(surface), `Falta cobertura declarada para ${surface}`);
   }
 });
+
+test("las migraciones conservan identificadores de criterio con punto literal", () => {
+  const fixSql = readFileSync(
+    new URL("../supabase/migrations/202608260005_fix_criterion_id_constraints.sql", import.meta.url),
+    "utf8",
+  );
+
+  assert.ok(fixSql.includes("^D[1-7]\\.[1-4]$"));
+  assert.ok(fixSql.includes("assessment_responses_criterion_id_check"));
+  assert.ok(fixSql.includes("evidence_items_criterion_id_check"));
+});

@@ -38,6 +38,11 @@ begin
   if to_regprocedure('public.can_access_assessment(uuid)') is null then raise exception 'GOEI F2 TEST: falta can_access_assessment'; end if;
   if to_regprocedure('public.can_edit_assessment(uuid)') is null then raise exception 'GOEI F2 TEST: falta can_edit_assessment'; end if;
 
+  if not ('D1.1' ~ '^D[1-7]\.[1-4]$' and 'D7.4' ~ '^D[1-7]\.[1-4]$')
+    or 'D1x1' ~ '^D[1-7]\.[1-4]$' then
+    raise exception 'GOEI F2 TEST: expresión de criterion_id inválida';
+  end if;
+
   select public into bucket_public from storage.buckets where id='goei-evidence';
   if bucket_public is null then raise exception 'GOEI F2 TEST: falta bucket goei-evidence'; end if;
   if bucket_public then raise exception 'GOEI F2 TEST: el bucket de evidencia no es privado'; end if;

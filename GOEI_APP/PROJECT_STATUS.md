@@ -199,6 +199,9 @@ La aplicación implementa el estándar, pero no crea ciencia. No puede inventar 
 - Limpieza automática mediante `ROLLBACK`; el ensayo no conserva sus datos sintéticos.
 - Guía humana `docs/GUIA_VALIDACION_SUPABASE.md` con el orden de migraciones, pruebas e interpretación del resultado.
 - La prueba está preparada localmente; todavía debe ejecutarse y confirmar `PASS` en el proyecto remoto de Supabase.
+- La primera ejecución remota reveló una expresión regular incorrectamente escapada en las restricciones de `criterion_id` heredadas de Fase 2.
+- La migración correctiva `202608260005_fix_criterion_id_constraints.sql` reemplaza ambas restricciones y conserva exclusivamente el rango `D1.1` a `D7.4`.
+- La prueba `criterion_id_constraints.sql` comprueba límites válidos e identificadores inválidos antes de repetir el aislamiento.
 
 ## Verificaciones realizadas
 
@@ -206,7 +209,7 @@ La aplicación implementa el estándar, pero no crea ciencia. No puede inventar 
 
 - TypeScript estricto: PASS.
 - ESLint: PASS.
-- Pruebas automatizadas: PASS — 18 de 18.
+- Pruebas automatizadas: PASS — 19 de 19.
 - Build de producción: PASS.
 - Next.js generó 16 rutas, incluidas callback OAuth, onboarding, altas sintéticas y aplicación guiada dinámica.
 - Dependencias: 0 vulnerabilidades en la última instalación/auditoría disponible.
@@ -236,7 +239,9 @@ git diff --check -- GOEI_APP
 3. Confirmar que la prueba devuelve `PASS`.
 4. Después ejecutar `supabase/migrations/202608250004_assessment_review_workflow.sql`.
 5. Ejecutar `supabase/tests/assessment_review_workflow.sql` y confirmar `PASS`.
-6. Ejecutar `supabase/tests/cross_organization_isolation.sql` y confirmar `PASS`.
+6. Ejecutar `supabase/migrations/202608260005_fix_criterion_id_constraints.sql`.
+7. Ejecutar `supabase/tests/criterion_id_constraints.sql` y confirmar `PASS`.
+8. Ejecutar `supabase/tests/cross_organization_isolation.sql` y confirmar `PASS`.
 
 No ejecutar la prueba antes de la migración correspondiente.
 
