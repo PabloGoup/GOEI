@@ -11,6 +11,7 @@
 - Captura real: **NO AUTORIZADA**
 - Repositorio de aplicación: `PabloGoup/GOEI_APP` privado, con rama propia `main` y contenido de la app en la raíz.
 - Repositorio científico: `PabloGoup/GOEI`; no debe recibir merges ni commits de la aplicación.
+- Despliegue de producción Vercel: `https://goei-app.vercel.app` — confirmado públicamente accesible.
 
 ## Propósito del producto
 
@@ -205,7 +206,9 @@ NEXT_PUBLIC_APP_MODE
 - [x] Ejecutar migración y prueba Fase 2 en Supabase.
 - [ ] Ejecutar y confirmar la migración y prueba de flujo autenticado.
 - [ ] Habilitar Google en Supabase Auth y configurar sus URLs autorizadas.
-- [ ] Desplegar las páginas públicas en un dominio HTTPS controlado y verificar ese dominio en Google Search Console.
+- [ ] Evaluar un dominio propio y su verificación sólo cuando se prepare la publicación definitiva; no bloquea las pruebas en Vercel.
+- [x] Desplegar página principal, privacidad y condiciones en `https://goei-app.vercel.app`.
+- [ ] Registrar las tres URLs públicas en Google Auth Platform y completar el cliente OAuth.
 - [ ] Probar acceso Google local y en el dominio HTTPS de producción.
 - [ ] Crear usuario real de prueba mediante Supabase Auth.
 - [ ] Crear la organización inicial desde `/onboarding`.
