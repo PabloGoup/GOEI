@@ -12,6 +12,7 @@
 - Repositorio de aplicación: `PabloGoup/GOEI_APP` privado, con rama propia `main` y contenido de la app en la raíz.
 - Repositorio científico: `PabloGoup/GOEI`; no debe recibir merges ni commits de la aplicación.
 - Despliegue de producción Vercel: `https://goei-app.vercel.app` — confirmado públicamente accesible.
+- Última publicación confirmada: repositorio privado `PabloGoup/GOEI_APP`, rama `main`, commit de despliegue verificado `e670dc7`, Vercel `Ready` el 2026-08-26.
 - Traspaso para Visual Studio: `docs/PROMPT_MAESTRO_CONTINUIDAD.md` y `../00_Gobernanza/coordinacion/GOEI_HANDOFF_0007_WEBAPP_VISUAL_STUDIO.md`.
 - Línea base técnica de continuidad: `GOEI-BSL-TECH-WEBAPP-0001`, anclada al commit `41643a411be0f817870ce50e8bbc9841b77082ef`.
 
@@ -212,6 +213,7 @@ La aplicación implementa el estándar, pero no crea ciencia. No puede inventar 
 - Separa controles verificados, pruebas pendientes, bloqueos esperados y alertas técnicas.
 - Mantiene evidencias privadas como prueba integral pendiente y el motor GOEI como integración de Fase 3.
 - Advierte explícitamente que un control técnico correcto no autoriza captura real ni sustituye decisiones científicas, éticas o de privacidad.
+- Panel publicado en producción y disponible para pruebas en el entorno demostrativo.
 
 ## Verificaciones realizadas
 
@@ -225,6 +227,7 @@ La aplicación implementa el estándar, pero no crea ciencia. No puede inventar 
 - Dependencias: 0 vulnerabilidades en la última instalación/auditoría disponible.
 - La pantalla guiada respondió desde el servidor local.
 - `git diff --check`: sin problemas conocidos.
+- Prueba de humo de producción del 2026-08-26: portada HTTP 200, ruta `/configuracion` HTTP 200 y estado Vercel `success`.
 
 Después de cada modificación se debe volver a ejecutar:
 
