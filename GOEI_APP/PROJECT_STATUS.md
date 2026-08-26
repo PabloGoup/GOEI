@@ -143,6 +143,11 @@ La aplicación implementa el estándar, pero no crea ciencia. No puede inventar 
 - Los usuarios de Google utilizan el mismo trigger de perfil, onboarding, membresías, roles y RLS.
 - No se solicitan tokens para acceder a Drive, Gmail u otros servicios de Google.
 - Configuración de Google Cloud y Supabase documentada en `README.md`; Client Secret fuera del repositorio.
+- Google OAuth fue habilitado y el proveedor acepta credenciales; el primer recorrido reveló dos ajustes operativos.
+- Se corrigió la URI OAuth de Google al callback real de Supabase `oohjotwfgqsnhepdxdei.supabase.co`.
+- Se eliminó el parámetro de consulta del `redirectTo` para que coincida exactamente con `/auth/callback` autorizado en Supabase.
+- La portada consulta la sesión y cambia “Ingresar” por “Abrir portal” cuando existe identidad autenticada.
+- Se corrigió la identidad Git de despliegue mediante la cuenta noreply verificada de GitHub; Vercel volvió a desplegar correctamente.
 - Rutas públicas `/privacidad` y `/terminos` creadas para completar la información de marca exigida por Google.
 - La página principal enlaza visiblemente ambas páginas legales sin exigir inicio de sesión.
 - La política declara que Google sólo aporta identidad básica y que GOEI App no solicita Gmail, Drive, Calendar, contactos ni archivos.
@@ -210,6 +215,7 @@ NEXT_PUBLIC_APP_MODE
 - [x] Desplegar página principal, privacidad y condiciones en `https://goei-app.vercel.app`.
 - [ ] Registrar las tres URLs públicas en Google Auth Platform y completar el cliente OAuth.
 - [ ] Probar acceso Google local y en el dominio HTTPS de producción.
+- [ ] Confirmar que el nuevo callback termina en `/dashboard` y marcar la prueba OAuth como aprobada.
 - [ ] Crear usuario real de prueba mediante Supabase Auth.
 - [ ] Crear la organización inicial desde `/onboarding`.
 - [ ] Probar aislamiento RLS entre dos organizaciones con usuarios distintos.

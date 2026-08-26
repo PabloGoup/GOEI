@@ -30,7 +30,7 @@ export async function signInWithGoogle() {
   if (!origin) redirect("/login?error=origen");
   const { data, error } = await supabase.auth.signInWithOAuth({
     provider: "google",
-    options: { redirectTo: `${origin}/auth/callback?next=/dashboard` }
+    options: { redirectTo: `${origin}/auth/callback` }
   });
   if (error || !data.url) redirect("/login?error=google");
   redirect(data.url as Route);

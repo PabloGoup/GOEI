@@ -2,11 +2,15 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2, LockKeyhole, ScanSearch } from "lucide-react";
 import { BrandMark } from "@/components/brand-mark";
 import { methodologyStatus } from "@/domain/methodology";
+import { createClient } from "@/lib/supabase/server";
 
-export default function HomePage() {
+export default async function HomePage() {
+  const supabase = await createClient();
+  const { data: claimsData } = supabase ? await supabase.auth.getClaims() : { data: null };
+  const signedIn = Boolean(claimsData?.claims?.sub);
   return (
     <main className="landing">
-      <header className="landing-nav"><BrandMark /><Link className="button ghost" href="/login">Ingresar</Link></header>
+      <header className="landing-nav"><BrandMark /><Link className="button ghost" href={signedIn ? "/dashboard" : "/login"}>{signedIn ? "Abrir portal" : "Ingresar"}</Link></header>
       <section className="hero">
         <div className="hero-copy">
           <span className="eyebrow"><i /> Metodología trazable para restaurantes</span>
