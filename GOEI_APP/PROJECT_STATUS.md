@@ -179,13 +179,25 @@ La aplicación implementa el estándar, pero no crea ciencia. No puede inventar 
 - Registro del evento `evidence.uploaded` sin almacenar contenido sensible en auditoría.
 - El modo demostrativo mantiene la carga deshabilitada y no acepta archivos locales.
 
+### Auditoría operativa visible
+
+- Pantalla de auditoría conectada a `audit_events` bajo RLS organizacional.
+- Acceso de lectura limitado a administración de organización y supervisión metodológica.
+- Historial sintético explícito en modo demostrativo.
+- Filtros por evaluaciones, evidencias, establecimientos y reportes.
+- Búsqueda por evento, criterio o referencia operativa.
+- Traducción de códigos técnicos a lenguaje humano.
+- Sanitización de metadatos mediante lista positiva; no se muestran tokens, correos ni estructuras arbitrarias.
+- Límite de 200 eventos recientes para conservar una vista operativa manejable.
+- La interfaz advierte que el registro técnico no constituye evidencia científica por sí solo.
+
 ## Verificaciones realizadas
 
 Última verificación completa después de implementar el flujo autenticado:
 
 - TypeScript estricto: PASS.
 - ESLint: PASS.
-- Pruebas automatizadas: PASS — 13 de 13.
+- Pruebas automatizadas: PASS — 16 de 16.
 - Build de producción: PASS.
 - Next.js generó 16 rutas, incluidas callback OAuth, onboarding, altas sintéticas y aplicación guiada dinámica.
 - Dependencias: 0 vulnerabilidades en la última instalación/auditoría disponible.
