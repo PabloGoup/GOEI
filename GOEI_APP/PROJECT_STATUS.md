@@ -7,7 +7,7 @@
 - Fecha: 2026-08-26
 - Responsable de la actualización: Codex
 - Fase activa: Fase 2 — núcleo operativo
-- Estado técnico: Fases 1 y 2, autenticación, onboarding, pruebas SQL y aislamiento multiorganización confirmados remotamente
+- Estado técnico: Fases 1 y 2, autenticación, onboarding, pruebas SQL y aislamiento multiorganización confirmados; producción preparada para validación sintética en modo conectado
 - Captura real: **NO AUTORIZADA**
 - Repositorio de aplicación: `PabloGoup/GOEI_APP` privado, con rama propia `main` y contenido de la app en la raíz.
 - Repositorio científico: `PabloGoup/GOEI`; no debe recibir merges ni commits de la aplicación.
@@ -216,6 +216,12 @@ La aplicación implementa el estándar, pero no crea ciencia. No puede inventar 
 - Advierte explícitamente que un control técnico correcto no autoriza captura real ni sustituye decisiones científicas, éticas o de privacidad.
 - Panel publicado en producción y disponible para pruebas en el entorno demostrativo.
 
+### Preparación del recorrido sintético integral
+
+- Guía operativa única creada en `docs/GUIA_QA_RECORRIDO_INTEGRAL.md` para validar identidad, altas sintéticas, autoguardado, evidencia privada, ciclo de revisión, auditoría y presentación responsiva.
+- La variable `NEXT_PUBLIC_APP_MODE` de producción fue cambiada de `demo` a `connected` el 2026-08-26 para ejercitar Supabase con la cuenta y organización de prueba existentes.
+- Este cambio habilita únicamente los flujos sintéticos ya protegidos por las funciones RPC y RLS; `field_capture_authorized` continúa en `false` y la captura real sigue sin autorización.
+
 ## Verificaciones realizadas
 
 Última verificación completa después de implementar el flujo autenticado:
@@ -266,6 +272,7 @@ NEXT_PUBLIC_APP_MODE
 ```
 
 - `NEXT_PUBLIC_APP_MODE=demo`: conserva los casos sintéticos aunque Supabase esté conectado.
+- `NEXT_PUBLIC_APP_MODE=connected`: exige sesión y organización, y persiste exclusivamente los expedientes sintéticos habilitados en Supabase.
 - No usar `service_role` en variables públicas.
 - No leer, copiar ni registrar secretos dentro de este documento.
 
@@ -290,6 +297,7 @@ NEXT_PUBLIC_APP_MODE
 - [x] Conectar carga de evidencias al bucket privado mediante rutas firmadas; prueba integrada contra Supabase pendiente.
 - [x] Registrar creación y guardado de respuestas desde funciones seguras de auditoría.
 - [x] Implementar e instalar estados de envío, revisión, devolución y cierre; recorrido autenticado integral pendiente.
+- [x] Preparar una guía humana única para el recorrido autenticado integral y QA responsivo.
 - [ ] Realizar QA visual real en escritorio, tablet y móvil.
 
 ### Fase 3 — todavía no iniciada
