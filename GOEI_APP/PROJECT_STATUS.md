@@ -9,7 +9,8 @@
 - Fase activa: Fase 2 — núcleo operativo
 - Estado técnico: Fases 1 y 2 confirmadas en Supabase; ampliación autenticada implementada localmente y pendiente de migrar
 - Captura real: **NO AUTORIZADA**
-- Rama Git exclusiva de despliegue: `goei-app-deploy` (separada de `main`, que conserva el trabajo científico)
+- Repositorio de aplicación: `PabloGoup/GOEI_APP` privado, con rama propia `main` y contenido de la app en la raíz.
+- Repositorio científico: `PabloGoup/GOEI`; no debe recibir merges ni commits de la aplicación.
 
 ## Propósito del producto
 

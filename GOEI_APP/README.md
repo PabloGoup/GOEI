@@ -4,6 +4,8 @@ Aplicación web para aplicar, explicar y auditar la metodología GOEI.
 
 Esta carpeta es la raíz exclusiva del proyecto de software. El repositorio GOEI que la contiene actúa como fuente metodológica y de gobernanza; no debe modificarse desde el desarrollo de la aplicación.
 
+El despliegue y desarrollo de software se publican en el repositorio privado independiente `PabloGoup/GOEI_APP`. El repositorio científico `PabloGoup/GOEI` permanece separado y actúa como fuente metodológica de solo lectura para la aplicación.
+
 Para comenzar una sesión de trabajo en Visual Studio, abre directamente:
 
 `/Users/ptoledos/GOEI/GOEI_APP`
