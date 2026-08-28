@@ -267,6 +267,7 @@ La aplicación implementa el estándar, pero no crea ciencia. No puede inventar 
 - Prueba de humo de producción del 2026-08-26: portada HTTP 200, ruta `/configuracion` HTTP 200 y estado Vercel `success`.
 - Despliegue conectado `6795d01` confirmado `Ready` y asociado a `https://goei-app.vercel.app`; el acceso sin sesión redirige correctamente a `/login`.
 - Integración del motor candidato publicada en `main` mediante `496b4c5`; despliegue de producción `dpl_4cLcbGpt1hrp29VGSgD8LA9Sbb57` confirmado `Ready` y asociado a `https://goei-app.vercel.app` el 2026-08-28.
+- MVP sintético publicado en `main` mediante `ce7110e`; despliegue `dpl_rvPccVnfF1nAUKsrUqpoe9qNs4ck` confirmado `Ready` y asociado a `https://goei-app.vercel.app` el 2026-08-28.
 - El salto OAuth de Google no puede ser completado por el navegador automatizado debido a su política de navegación externa; el recorrido autenticado requiere que el usuario abra la sesión de prueba antes de continuar la automatización.
 
 Después de cada modificación se debe volver a ejecutar:
