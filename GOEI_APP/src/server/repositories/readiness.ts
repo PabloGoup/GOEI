@@ -54,7 +54,7 @@ export async function getReadinessReport(context: WorkspaceContext): Promise<Rea
       { id: "instrument", label: "Instrumento candidato", detail: instrumentReady ? "Versión 0.1.0-candidate disponible; su estado no implica ratificación científica." : "No se encontró el snapshot candidato requerido.", state: instrumentReady ? "ready" : "attention" },
       { id: "workflow", label: "Expedientes sintéticos", detail: assessmentQueryReady ? "La lectura autorizada de evaluaciones respondió bajo RLS." : "La consulta de evaluaciones fue rechazada o no está disponible.", state: assessmentQueryReady ? "ready" : "attention" },
       { id: "evidence", label: "Evidencias privadas", detail: "Bucket privado y URLs firmadas implementados; falta completar una carga y lectura sintética de extremo a extremo.", state: "pending" },
-      { id: "engine", label: "Motor GOEI", detail: "Integración versionada reservada para Fase 3; no se emiten resultados oficiales.", state: "pending" },
+      { id: "engine", label: "Motor GOEI", detail: "Paquete candidato y adaptador integrados con 151 pruebas de paridad; la ejecución queda bloqueada mientras falten período y gate crítico explícitos.", state: "pending" },
       { id: "capture", label: "Captura real", detail: realCapturePresent ? "Se detectó al menos un expediente con autorización de campo; debe revisarse antes de continuar." : "No se detectaron expedientes visibles con captura de campo autorizada.", state: realCapturePresent ? "attention" : "blocked" },
     ],
   };

@@ -4,10 +4,10 @@
 
 ## Última actualización
 
-- Fecha: 2026-08-26
+- Fecha: 2026-08-28
 - Responsable de la actualización: Codex
-- Fase activa: Fase 2 — núcleo operativo
-- Estado técnico: Fases 1 y 2, autenticación, onboarding, pruebas SQL y aislamiento multiorganización confirmados; producción preparada para validación sintética en modo conectado
+- Fase activa: Fase 3 — integración técnica del motor candidato
+- Estado técnico: Fases 1 y 2 confirmadas; motor candidato integrado como paquete independiente y adaptador contractual verificado, sin habilitar todavía emisión persistida
 - Captura real: **NO AUTORIZADA**
 - Repositorio de aplicación: `PabloGoup/GOEI_APP` privado, con rama propia `main` y contenido de la app en la raíz.
 - Repositorio científico: `PabloGoup/GOEI`; no debe recibir merges ni commits de la aplicación.
@@ -225,13 +225,28 @@ La aplicación implementa el estándar, pero no crea ciencia. No puede inventar 
 - El panorama conectado dejó de mostrar establecimientos, evaluaciones y porcentajes codificados: obtiene bajo RLS los casos de la organización, cuenta expedientes y calcula el avance desde respuestas no pendientes.
 - El listado de establecimientos muestra el total real autorizado y el número de evaluaciones asociadas; el listado de evaluaciones recupera su porcentaje de completitud real.
 
+### Fase 3 — base técnica del motor candidato
+
+- `@goei/engine-ts` se incorporó dentro de `packages/engine-ts` como paquete privado e independiente de React y Supabase, conservando su fuente TypeScript canónica.
+- La aplicación consume el paquete mediante una dependencia local versionada; Vercel no depende de carpetas externas del repositorio científico.
+- Se creó `src/domain/engine-adapter.ts` para transformar respuestas, evidencias y metadatos explícitos al contrato `AssessmentInput` del motor.
+- El adaptador rechaza cálculo cuando faltan criterios, unidad de análisis, período o gate crítico; no inventa valores para completar el contrato.
+- Sólo admite expedientes declarados o sintéticos en esta etapa y conserva la naturaleza de datos correspondiente.
+- La aplicación guiada muestra una tarjeta de preparación del motor con los bloqueos humanos pendientes y mantiene desempeño, cobertura y confianza como conceptos separados.
+- El build raíz recompila el paquete privado antes de construir Next.js, por lo que Vercel no depende de artefactos `dist` conservados en Git.
+- El QA visual local confirmó que el caso demostrativo presenta únicamente los bloqueos reales: 28 criterios, período y gate crítico; la etiqueta humana del caso sintético se normaliza al contrato técnico sin alterar su significado.
+- Cuando el contrato está completo, la salida conserva digest SHA-256, versiones, advertencias y etiqueta `PROVISIONAL — NO VALIDADO`.
+- Se añadieron tres pruebas de integración del adaptador: bloqueo por período/gate ausentes, salida parcial con gate no verificable y bloqueo por criterio pendiente.
+- La fuente canónica del motor fue verificada nuevamente: TypeScript, build y 151/151 pruebas de paridad aprobadas el 2026-08-28.
+
 ## Verificaciones realizadas
 
 Última verificación completa después de preparar producción conectada y sustituir los resúmenes codificados:
 
 - TypeScript estricto: PASS.
 - ESLint: PASS.
-- Pruebas automatizadas: PASS — 21 de 21.
+- Pruebas automatizadas de la aplicación: PASS — 24 de 24.
+- Motor candidato independiente: PASS — 151 de 151 pruebas, incluida paridad Python/Excel.
 - Build de producción: PASS.
 - Next.js generó 18 rutas, incluidas callback OAuth, onboarding, altas sintéticas y aplicación guiada dinámica.
 - Dependencias: 0 vulnerabilidades en la última instalación/auditoría disponible.
@@ -305,14 +320,14 @@ NEXT_PUBLIC_APP_MODE
 - [x] Preparar una guía humana única para el recorrido autenticado integral y QA responsivo.
 - [ ] Realizar QA visual real en escritorio, tablet y móvil.
 
-### Fase 3 — todavía no iniciada
+### Fase 3 — en curso
 
-- [ ] Integrar `17_Prototipo_Web/engine-ts` como paquete independiente.
-- [ ] Verificar nuevamente las 151 pruebas y paridad Python/Excel.
-- [ ] Construir el adaptador desde respuestas persistidas al contrato del motor.
+- [x] Integrar `17_Prototipo_Web/engine-ts` como paquete independiente.
+- [x] Verificar nuevamente las 151 pruebas y paridad Python/Excel.
+- [x] Construir la base del adaptador desde respuestas persistidas al contrato del motor; falta incorporar período y gate explícitos desde la interfaz.
 - [ ] Guardar entrada, salida, digest y versiones por ejecución.
-- [ ] Implementar gate crítico sin compensación.
-- [ ] Mostrar cobertura y confianza por separado.
+- [ ] Implementar captura autorizada del período y del gate crítico sin compensación; no inferirlos desde respuestas.
+- [x] Preparar visualización separada de desempeño, cobertura y confianza cuando el contrato esté completo.
 - [ ] Generar reportes PDF y Excel desde servidor.
 - [ ] Mantener la etiqueta provisional en pantalla y exportaciones.
 
@@ -358,4 +373,4 @@ Al terminar:
 
 ## Próxima acción recomendada
 
-Completar con la cuenta y organización de prueba el recorrido sintético integral: establecimiento, evaluación, autoguardado, carga y lectura firmada de evidencia, envío, revisión, devolución o cierre y comprobación final en auditoría. La captura real permanece bloqueada.
+Implementar el contrato persistente de ejecución: período y gate crítico explícitos, tabla inmutable de ejecuciones, digest/versiones y acción de servidor que recalcula antes de guardar. La captura real permanece bloqueada.

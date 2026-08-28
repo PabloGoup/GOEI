@@ -38,12 +38,12 @@ export async function getAssessment(id: string) {
   const supabase = await createClient();
   if (!supabase) return null;
   const { data, error } = await supabase.from("assessments")
-    .select("id,status,assessment_kind,establishments(pseudonymous_code,display_name),assessment_responses(criterion_id,status,level,evidence_grade,justification,no_apply_basis),evidence_items(evidence_code,title,storage_path,mime_type,size_bytes,provenance,sensitivity,criterion_id)")
+    .select("id,status,assessment_kind,period_start,period_end,establishments(id,pseudonymous_code,display_name),assessment_responses(criterion_id,status,level,evidence_grade,justification,no_apply_basis,source_evaluator_id),evidence_items(evidence_code,title,storage_path,mime_type,size_bytes,provenance,sensitivity,criterion_id)")
     .eq("id", id).maybeSingle();
   if (error || !data) return null;
   const establishment = Array.isArray(data.establishments) ? data.establishments[0] : data.establishments;
   return {
-    assessment: {id:data.id,establishment:establishment?.display_name ?? "Establecimiento",code:establishment?.pseudonymous_code ?? "—",kind:data.assessment_kind,status:data.status,progress:0},
+    assessment: {id:data.id,establishmentId:establishment?.id ?? null,establishment:establishment?.display_name ?? "Establecimiento",code:establishment?.pseudonymous_code ?? "—",kind:data.assessment_kind,status:data.status,progress:0,periodStart:data.period_start,periodEnd:data.period_end},
     responses: data.assessment_responses ?? [],
     evidenceItems: data.evidence_items ?? []
   };
