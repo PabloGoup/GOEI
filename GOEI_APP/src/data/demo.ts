@@ -6,6 +6,16 @@ export const demoEstablishments = [
 
 export const demoAssessments = [
   { id:"synthetic-assessment-001",establishmentId:"synthetic-centro",establishment:"Restaurante demostrativo Centro",code:"SYN-001",kind:"Demostración sintética",status:"IN_PROGRESS",progress:61,updatedAt:"25 ago 2026" },
-  { id:"synthetic-assessment-002",establishmentId:"synthetic-costanera",establishment:"Caso sintético Costanera",code:"SYN-002",kind:"Demostración sintética",status:"IN_REVIEW",progress:100,updatedAt:"24 ago 2026" },
+  { id:"synthetic-assessment-002",establishmentId:"synthetic-costanera",establishment:"Caso sintético Costanera",code:"SYN-002",kind:"Demostración sintética",status:"IN_REVIEW",progress:100,updatedAt:"24 ago 2026",periodStart:"2026-08-01",periodEnd:"2026-08-28",gateStatus:"NO_VERIFICABLE",gateBasis:"Gate deliberadamente no verificable en escenario sintético demostrativo.",gateProtocolVersion:null },
   { id:"synthetic-assessment-003",establishmentId:"synthetic-norte",establishment:"Escenario formativo Norte",code:"SYN-003",kind:"Demostración sintética",status:"CLOSED",progress:100,updatedAt:"21 ago 2026" }
 ] as const;
+
+export const demoCompleteResponses = Array.from({length:28},(_,index) => ({
+  criterion_id:`D${Math.floor(index / 4) + 1}.${index % 4 + 1}`,
+  status:"EVALUABLE" as const,
+  level:2,
+  evidence_grade:2,
+  justification:"Dato exclusivamente sintético para demostrar el recorrido técnico del MVP.",
+  no_apply_basis:null,
+  source_evaluator_id:null
+}));

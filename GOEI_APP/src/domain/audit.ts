@@ -3,6 +3,7 @@ export const auditEventLabels: Record<string,string> = {
   "establishment.created":"Establecimiento creado",
   "assessment.created":"Evaluación creada",
   "assessment.response_saved":"Respuesta actualizada",
+  "assessment.calculated":"Lectura provisional ejecutada",
   "assessment.submitted":"Evaluación enviada",
   "assessment.review_started":"Revisión iniciada",
   "assessment.returned":"Evaluación devuelta",
@@ -12,7 +13,7 @@ export const auditEventLabels: Record<string,string> = {
   "report.exported":"Reporte exportado"
 };
 
-const safeMetadataKeys = new Set(["synthetic","instrumentVersion","criterionId","status","fromStatus","toStatus","mimeType","sizeBytes","source"]);
+const safeMetadataKeys = new Set(["synthetic","instrumentVersion","criterionId","status","fromStatus","toStatus","mimeType","sizeBytes","source","assessmentId","inputDigest","emissionStatus"]);
 
 export function auditEventLabel(eventType:string) {
   return auditEventLabels[eventType] ?? "Evento operativo";

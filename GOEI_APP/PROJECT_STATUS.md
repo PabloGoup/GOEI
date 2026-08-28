@@ -7,7 +7,7 @@
 - Fecha: 2026-08-28
 - Responsable de la actualización: Codex
 - Fase activa: Fase 3 — integración técnica del motor candidato
-- Estado técnico: Fases 1 y 2 confirmadas; motor candidato integrado como paquete independiente y adaptador contractual verificado, sin habilitar todavía emisión persistida
+- Estado técnico: MVP sintético funcional en modo demostrativo; persistencia conectada de ejecuciones preparada y pendiente de instalar la migración `202608280006_candidate_engine_runs.sql`
 - Captura real: **NO AUTORIZADA**
 - Repositorio de aplicación: `PabloGoup/GOEI_APP` privado, con rama propia `main` y contenido de la app en la raíz.
 - Repositorio científico: `PabloGoup/GOEI`; no debe recibir merges ni commits de la aplicación.
@@ -239,16 +239,28 @@ La aplicación implementa el estándar, pero no crea ciencia. No puede inventar 
 - Se añadieron tres pruebas de integración del adaptador: bloqueo por período/gate ausentes, salida parcial con gate no verificable y bloqueo por criterio pendiente.
 - La fuente canónica del motor fue verificada nuevamente: TypeScript, build y 151/151 pruebas de paridad aprobadas el 2026-08-28.
 
+### MVP sintético — recorrido completo preparado
+
+- La evaluación incorpora captura explícita de inicio y fin del período, estado del gate crítico, fundamento y versión opcional del protocolo.
+- La interfaz no infiere el gate desde respuestas ni desde un puntaje y conserva el carácter no compensatorio de un gate rojo.
+- Una acción de servidor vuelve a leer evaluación, respuestas y evidencias bajo la sesión autorizada antes de invocar el motor; no confía en un resultado enviado por el navegador.
+- La migración `202608280006_candidate_engine_runs.sql` agrega metadatos del gate y el historial inmutable `assessment_calculation_runs` con entrada, salida, digest, versiones, autor y fecha.
+- El historial tiene políticas RLS independientes para lectura e inserción y continúa limitado a expedientes declarados o sintéticos sin captura real autorizada.
+- La ruta `/resultados` muestra desempeño, cobertura, confianza, gate, banda, fecha y digest sin convertir la salida en certificación.
+- El modo demostrativo incluye un expediente completo y reproducible que emite correctamente un perfil parcial sin puntaje ante gate no verificable.
+- QA visual local en escritorio confirmó captura del contrato, bloqueo responsable, ejecución completa, siete perfiles dimensionales y la etiqueta `PROVISIONAL — NO VALIDADO`.
+- La aplicación mantiene una consulta de compatibilidad mientras la nueva migración no esté instalada; guardar o ejecutar en modo conectado permanece bloqueado de forma explícita hasta aplicarla.
+
 ## Verificaciones realizadas
 
 Última verificación completa después de preparar producción conectada y sustituir los resúmenes codificados:
 
 - TypeScript estricto: PASS.
 - ESLint: PASS.
-- Pruebas automatizadas de la aplicación: PASS — 24 de 24.
+- Pruebas automatizadas de la aplicación: PASS — 27 de 27.
 - Motor candidato independiente: PASS — 151 de 151 pruebas, incluida paridad Python/Excel.
 - Build de producción: PASS.
-- Next.js generó 18 rutas, incluidas callback OAuth, onboarding, altas sintéticas y aplicación guiada dinámica.
+- Next.js generó 19 rutas, incluidas callback OAuth, onboarding, aplicación guiada y resultados trazables.
 - Dependencias: 0 vulnerabilidades en la última instalación/auditoría disponible.
 - La pantalla guiada respondió desde el servidor local.
 - `git diff --check`: sin problemas conocidos.
@@ -325,12 +337,13 @@ NEXT_PUBLIC_APP_MODE
 
 - [x] Integrar `17_Prototipo_Web/engine-ts` como paquete independiente.
 - [x] Verificar nuevamente las 151 pruebas y paridad Python/Excel.
-- [x] Construir la base del adaptador desde respuestas persistidas al contrato del motor; falta incorporar período y gate explícitos desde la interfaz.
-- [ ] Guardar entrada, salida, digest y versiones por ejecución.
-- [ ] Implementar captura autorizada del período y del gate crítico sin compensación; no inferirlos desde respuestas.
+- [x] Construir el adaptador desde respuestas persistidas al contrato del motor.
+- [x] Preparar persistencia de entrada, salida, digest y versiones por ejecución; migración remota pendiente.
+- [x] Implementar captura explícita del período y del gate crítico sin compensación; migración remota pendiente.
 - [x] Preparar visualización separada de desempeño, cobertura y confianza cuando el contrato esté completo.
 - [ ] Generar reportes PDF y Excel desde servidor.
-- [ ] Mantener la etiqueta provisional en pantalla y exportaciones.
+- [x] Mantener la etiqueta provisional en pantalla y resultados.
+- [ ] Instalar y confirmar `PASS` de la migración/prueba de ejecuciones en Supabase.
 
 ### Fases posteriores
 

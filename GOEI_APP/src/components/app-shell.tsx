@@ -12,7 +12,7 @@ const nav = [
   { label: "Panorama", icon: LayoutDashboard, href: "/dashboard", active: true },
   { label: "Establecimientos", icon: Building2, href: "/establecimientos" },
   { label: "Evaluaciones", icon: ClipboardCheck, href: "/evaluaciones" },
-  { label: "Resultados", icon: BarChart3, href: "/dashboard#resultados" },
+  { label: "Resultados", icon: BarChart3, href: "/resultados" },
   { label: "Guía GOEI", icon: BookOpenText, href: "/guia" },
   { label: "Laboratorio", icon: FlaskConical, href: "/laboratorio" }
 ];

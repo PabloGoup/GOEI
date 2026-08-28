@@ -17,6 +17,8 @@ Confirma que las migraciones de Fase 1 y Fase 2 ya fueron ejecutadas. Si alguna 
 5. Ejecuta `202608260005_fix_criterion_id_constraints.sql`.
 6. Ejecuta `criterion_id_constraints.sql` y confirma que devuelve `PASS`.
 7. Ejecuta `cross_organization_isolation.sql` y confirma que devuelve `PASS`.
+8. Ejecuta `202608280006_candidate_engine_runs.sql`.
+9. Ejecuta `candidate_engine_runs.sql` y confirma que devuelve `PASS`.
 
 Los archivos están dentro de las carpetas `supabase/migrations` y `supabase/tests` de la aplicación.
 
@@ -43,3 +45,5 @@ Todo se ejecuta dentro de una transacción que termina con `ROLLBACK`. Si la pru
 - Error por objeto existente: confirma que una ejecución anterior no quedó abierta y vuelve a iniciar la prueba en una nueva consulta.
 
 Un resultado correcto valida el aislamiento técnico del escenario cubierto. No autoriza captura real, no valida científicamente GOEI y no sustituye una auditoría de seguridad independiente.
+
+La migración de ejecuciones agrega el período y gate explícitos al contrato operativo y un historial inmutable de entradas y salidas del motor. La aplicación conserva compatibilidad de lectura antes de instalarla, pero no podrá guardar ni ejecutar cálculos conectados hasta completar los pasos 8 y 9.

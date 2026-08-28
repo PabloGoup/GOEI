@@ -30,7 +30,7 @@ export default async function DashboardPage() {
       <section className="metric-grid" aria-label="Indicadores del espacio de trabajo">
         <article className="metric-card"><span className="metric-icon blue"><Building2 /></span><div><small>Establecimientos</small><strong>{establishments.length}</strong><p>Todos son casos sintéticos</p></div></article>
         <article className="metric-card"><span className="metric-icon amber"><ClipboardCheck /></span><div><small>Evaluaciones activas</small><strong>{active.length}</strong><p>{awaitingReview.length} requieren revisión</p></div></article>
-        <article className="metric-card"><span className="metric-icon green"><CheckCircle2 /></span><div><small>Expedientes cerrados</small><strong>{closed.length}</strong><p>Sin emisión de puntaje en Fase 2</p></div></article>
+        <article className="metric-card"><span className="metric-icon green"><CheckCircle2 /></span><div><small>Expedientes cerrados</small><strong>{closed.length}</strong><p>Lecturas provisionales en Resultados</p></div></article>
         <article className="metric-card"><span className="metric-icon red"><AlertTriangle /></span><div><small>Gates bloqueados</small><strong>{methodologyStatus.blockedCriteria.length}</strong><p>{methodologyStatus.blockedCriteria.join(" y ")}</p></div></article>
       </section>
 
