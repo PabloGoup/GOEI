@@ -19,6 +19,8 @@ Confirma que las migraciones de Fase 1 y Fase 2 ya fueron ejecutadas. Si alguna 
 7. Ejecuta `cross_organization_isolation.sql` y confirma que devuelve `PASS`.
 8. Ejecuta `202608280006_candidate_engine_runs.sql`.
 9. Ejecuta `candidate_engine_runs.sql` y confirma que devuelve `PASS`.
+10. Ejecuta `202608280007_synthetic_business_profiles.sql`.
+11. Ejecuta `synthetic_business_profiles.sql` y confirma que devuelve `PASS`.
 
 Los archivos están dentro de las carpetas `supabase/migrations` y `supabase/tests` de la aplicación.
 
@@ -46,4 +48,4 @@ Todo se ejecuta dentro de una transacción que termina con `ROLLBACK`. Si la pru
 
 Un resultado correcto valida el aislamiento técnico del escenario cubierto. No autoriza captura real, no valida científicamente GOEI y no sustituye una auditoría de seguridad independiente.
 
-La migración de ejecuciones agrega el período y gate explícitos al contrato operativo y un historial inmutable de entradas y salidas del motor. La aplicación conserva compatibilidad de lectura antes de instalarla, pero no podrá guardar ni ejecutar cálculos conectados hasta completar los pasos 8 y 9.
+La migración de ejecuciones agrega el período y gate explícitos al contrato operativo y un historial inmutable de entradas y salidas del motor. La aplicación conserva compatibilidad de lectura antes de instalarla, pero no podrá guardar ni ejecutar cálculos conectados hasta completar los pasos 8 y 9. Los pasos 10 y 11 activan las fichas integrales de casos sintéticos; los casos anteriores seguirán disponibles sin completar datos automáticamente.

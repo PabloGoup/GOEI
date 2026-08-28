@@ -1,0 +1,19 @@
+import Link from "next/link";
+import type { Route } from "next";
+import { notFound } from "next/navigation";
+import { ArrowLeft, Building2, CalendarClock, ClipboardList, Database, MapPin, Route as RouteIcon, ShieldAlert, ShoppingBasket, UsersRound, UtensilsCrossed } from "lucide-react";
+import { AppShell } from "@/components/app-shell";
+import { getEstablishment, listAssessments } from "@/server/repositories/workspace";
+
+export default async function EstablishmentDetailPage({params}:{params:Promise<{id:string}>}) {
+  const {id}=await params;
+  const [business,assessments]=await Promise.all([getEstablishment(id),listAssessments()]);
+  if(!business) notFound();
+  const related=assessments.filter(item=>item.establishmentId===id);
+  const profile=business.profile;
+  return <AppShell>
+    <header className="page-header"><div><Link className="breadcrumb" href="/establecimientos"><ArrowLeft size={13}/> Establecimientos</Link><h1>{business.name}</h1><p>{business.code} · Caso de negocio exclusivamente sintético</p></div>{related[0]&&<Link className="button primary" href={`/evaluaciones/${related[0].id}` as Route}>Abrir evaluación</Link>}</header>
+    <div className="field-lock"><ShieldAlert size={20}/><div><strong>Ficha ficticia para pruebas</strong><span>No representa un establecimiento existente ni sustituye la evidencia de una aplicación real autorizada.</span></div></div>
+    {profile ? <><section className="business-hero card"><div className="business-symbol"><Building2/></div><div><span className="section-kicker">Concepto operacional</span><h2>{profile.concept}</h2><p>{profile.cuisine} · {profile.serviceModel}</p></div><span>{business.status}</span></section><section className="business-facts"><article className="card"><UsersRound/><small>Capacidad y equipo</small><strong>{profile.seats} asientos</strong><p>{profile.teamSize} personas en el equipo sintético</p></article><article className="card"><CalendarClock/><small>Operación</small><strong>{profile.operatingDays}</strong><p>{profile.serviceHours}</p></article><article className="card"><MapPin/><small>Contexto</small><strong>{profile.locationContext}</strong><p>Unidad individual de análisis</p></article><article className="card"><RouteIcon/><small>Canales</small><strong>{profile.channels.length}</strong><p>{profile.channels.join(" · ")}</p></article></section><section className="business-detail-grid"><article className="card"><div className="detail-title"><ClipboardList/><div><span className="section-kicker">Demanda</span><h2>Patrón operacional</h2></div></div><p>{profile.demandPattern}</p></article><article className="card"><div className="detail-title"><ShoppingBasket/><div><span className="section-kicker">Suministro</span><h2>Abastecimiento</h2></div></div><p>{profile.sourcing}</p></article><article className="card"><div className="detail-title"><Database/><div><span className="section-kicker">Trazabilidad</span><h2>Datos disponibles</h2></div></div><p>{profile.dataAvailability}</p></article><article className="card"><div className="detail-title"><UtensilsCrossed/><div><span className="section-kicker">Contexto de prueba</span><h2>Desafíos declarados</h2></div></div><ul>{profile.challenges.map(item=><li key={item}>{item}</li>)}</ul></article></section></> : <section className="card empty-state"><Building2 size={30}/><h2>Este caso todavía no tiene ficha ampliada</h2><p>Fue creado antes de incorporar los perfiles integrales. Su evaluación permanece disponible y no se completarán datos automáticamente.</p>{related[0]&&<Link className="button primary" href={`/evaluaciones/${related[0].id}` as Route}>Abrir evaluación existente</Link>}</section>}
+  </AppShell>;
+}

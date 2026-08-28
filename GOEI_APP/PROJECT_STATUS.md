@@ -251,13 +251,22 @@ La aplicación implementa el estándar, pero no crea ciencia. No puede inventar 
 - QA visual local en escritorio confirmó captura del contrato, bloqueo responsable, ejecución completa, siete perfiles dimensionales y la etiqueta `PROVISIONAL — NO VALIDADO`.
 - La aplicación mantiene una consulta de compatibilidad mientras la nueva migración no esté instalada; guardar o ejecutar en modo conectado permanece bloqueado de forma explícita hasta aplicarla.
 
+### Casos de negocio y guía humana
+
+- Los tres casos demostrativos incluyen fichas coherentes con concepto, cocina, modelo de servicio, contexto, asientos, equipo, días, horarios, canales, demanda, abastecimiento, datos disponibles y desafíos operativos.
+- La ruta dinámica `/establecimientos/[id]` presenta todos los datos del negocio en paneles legibles y enlaza directamente su evaluación.
+- El formulario de alta sintética captura el mismo perfil integral y mantiene prohibidos nombres comerciales, direcciones, RUT y personas reales.
+- La migración `202608280007_synthetic_business_profiles.sql` agrega el perfil JSON estructurado sólo a establecimientos sintéticos y una función segura de creación; conserva compatibilidad con casos anteriores sin inventar campos faltantes.
+- La guía explica en lenguaje humano qué es GOEI, el alcance piloto, desempeño, confianza, cobertura, gate crítico, el recorrido completo del MVP y cómo interpretar una lectura.
+- Se añadieron pruebas del contrato del perfil y de la restricción que impide asociarlo a establecimientos no sintéticos.
+
 ## Verificaciones realizadas
 
 Última verificación completa después de preparar producción conectada y sustituir los resúmenes codificados:
 
 - TypeScript estricto: PASS.
 - ESLint: PASS.
-- Pruebas automatizadas de la aplicación: PASS — 27 de 27.
+- Pruebas automatizadas de la aplicación: PASS — 30 de 30.
 - Motor candidato independiente: PASS — 151 de 151 pruebas, incluida paridad Python/Excel.
 - Build de producción: PASS.
 - Next.js generó 19 rutas, incluidas callback OAuth, onboarding, aplicación guiada y resultados trazables.
@@ -345,6 +354,7 @@ NEXT_PUBLIC_APP_MODE
 - [ ] Generar reportes PDF y Excel desde servidor.
 - [x] Mantener la etiqueta provisional en pantalla y resultados.
 - [ ] Instalar y confirmar `PASS` de la migración/prueba de ejecuciones en Supabase.
+- [ ] Instalar y confirmar `PASS` de la migración/prueba de perfiles sintéticos en Supabase.
 
 ### Fases posteriores
 

@@ -2,20 +2,33 @@ import { demoAssessments, demoCompleteResponses, demoEstablishments } from "@/da
 import { createClient } from "@/lib/supabase/server";
 import { env } from "@/lib/env";
 import { evaluateWithCandidateEngine } from "@/domain/engine-adapter";
+import { parseBusinessProfile } from "@/domain/business-profile";
 
 export async function listEstablishments() {
   if (env.appMode === "demo") return [...demoEstablishments];
   const supabase = await createClient();
   if (!supabase) return [...demoEstablishments];
-  const [{ data, error }, { data: assessments, error: assessmentError }] = await Promise.all([
-    supabase.from("establishments").select("id,pseudonymous_code,display_name,scope_status,updated_at:created_at").order("created_at",{ascending:false}),
+  const [establishmentResult, { data: assessments, error: assessmentError }] = await Promise.all([
+    supabase.from("establishments").select("id,pseudonymous_code,display_name,scope_status,synthetic_profile,updated_at:created_at").order("created_at",{ascending:false}),
     supabase.from("assessments").select("establishment_id")
   ]);
-  if (error) throw new Error("No fue posible cargar los establecimientos autorizados.");
+  let {data,error}=establishmentResult;
+  if (error) {
+    const fallback=await supabase.from("establishments").select("id,pseudonymous_code,display_name,scope_status,updated_at:created_at").order("created_at",{ascending:false});
+    data=fallback.data?.map(item=>({...item,synthetic_profile:null})) ?? null;
+    error=fallback.error;
+  }
+  if (error || !data) throw new Error("No fue posible cargar los establecimientos autorizados.");
   if (assessmentError) throw new Error("No fue posible contar las evaluaciones autorizadas.");
   const counts = new Map<string,number>();
   assessments.forEach(item => counts.set(item.establishment_id,(counts.get(item.establishment_id) ?? 0) + 1));
-  return data.map(item => ({id:item.id,code:item.pseudonymous_code,name:item.display_name,status:item.scope_status,evaluations:counts.get(item.id) ?? 0,updatedAt:new Intl.DateTimeFormat("es-CL",{dateStyle:"medium"}).format(new Date(item.updated_at))}));
+  return data.map(item => ({id:item.id,code:item.pseudonymous_code,name:item.display_name,status:item.scope_status,evaluations:counts.get(item.id) ?? 0,updatedAt:new Intl.DateTimeFormat("es-CL",{dateStyle:"medium"}).format(new Date(item.updated_at)),profile:parseBusinessProfile(item.synthetic_profile)}));
+}
+
+export async function getEstablishment(id:string) {
+  if (env.appMode === "demo") return demoEstablishments.find(item=>item.id===id) ?? null;
+  const establishments=await listEstablishments();
+  return establishments.find(item=>item.id===id) ?? null;
 }
 
 export async function listAssessments() {
