@@ -15,7 +15,8 @@ export async function createSyntheticEstablishment(formData: FormData) {
     seats:formData.get("seats"),teamSize:formData.get("teamSize"),operatingDays:formData.get("operatingDays"),serviceHours:formData.get("serviceHours"),
     channels:formData.getAll("channels").map(String).map(item=>item.trim()).filter(Boolean),
     demandPattern:formData.get("demandPattern"),sourcing:formData.get("sourcing"),dataAvailability:formData.get("dataAvailability"),
-    challenges:formData.getAll("challenges").map(String).map(item=>item.trim()).filter(Boolean)
+    challenges:formData.getAll("challenges").map(String).map(item=>item.trim()).filter(Boolean),
+    facets:{delivery:formData.get("facetDelivery"),production:formData.get("facetProduction"),economicNature:formData.get("facetEconomicNature")}
   }});
   if(!parsed.success) redirect("/establecimientos/nuevo?error=formato");
   const context=await requireWorkspaceContext();

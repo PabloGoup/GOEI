@@ -81,7 +81,8 @@ export function getDemoCalculationRun(runId:string) {
   if (!Number.isInteger(index) || !assessment || runId !== `synthetic-run-${index+1}`) return null;
   const responses=demoAssessmentResponses(assessment.id);
   const result=evaluateWithCandidateEngine({assessmentId:`00000000-0000-4000-8000-${String(index+1).padStart(12,"0")}`,assessmentKind:"SYNTHETIC_DEMONSTRATION",establishmentId:`10000000-0000-4000-8000-${String(index+1).padStart(12,"0")}`,establishmentName:assessment.establishment,periodStart:assessment.periodStart,periodEnd:assessment.periodEnd,gate:demoGate(assessment.id),responses:responses.map(item=>({criterionId:item.criterion_id,status:item.status,level:item.level,evidenceGrade:item.evidence_grade,justification:item.justification,noApplyBasis:item.no_apply_basis,sourceEvaluatorId:item.source_evaluator_id})),evidence:[]},`2026-08-28T${String(12+index).padStart(2,"0")}:00:00.000Z`);
-  return result.ready ? {...result.output,id:runId,assessmentId:assessment.id,establishment:assessment.establishment,code:assessment.code,calculatedAt:result.output.trace.calculatedAt,inputDigest:result.output.trace.inputDigest} : null;
+  const business=demoEstablishments.find(item=>item.id===assessment.establishmentId);
+  return result.ready ? {...result.output,id:runId,assessmentId:assessment.id,establishment:assessment.establishment,code:assessment.code,calculatedAt:result.output.trace.calculatedAt,inputDigest:result.output.trace.inputDigest,facets:business?.profile.facets ?? null} : null;
 }
 
 export async function listCalculationRuns() {
@@ -94,7 +95,7 @@ export async function listCalculationRuns() {
   const supabase = await createClient();
   if (!supabase) return [];
   const { data, error } = await supabase.from("assessment_calculation_runs")
-    .select("id,assessment_id,output_payload,input_digest,contract_version,model_version,calculated_at,assessments(status,assessment_kind,establishments(pseudonymous_code,display_name))")
+    .select("id,assessment_id,output_payload,input_digest,contract_version,model_version,calculated_at,assessments(status,assessment_kind,establishments(pseudonymous_code,display_name,synthetic_profile))")
     .order("calculated_at",{ascending:false}).limit(100);
   if (error) return [];
   return data.map(item => {
@@ -102,7 +103,8 @@ export async function listCalculationRuns() {
     const establishmentRelation = assessment?.establishments;
     const establishment = Array.isArray(establishmentRelation) ? establishmentRelation[0] : establishmentRelation;
     const output = item.output_payload as {displayFinalScore:number|null;displayCoverage:number;displayConfidence:number|null;emissionStatus:string;band:string;gate:string;dimensions:{dimensionId:string;displayScore:number|null}[]};
-    return {id:item.id,assessmentId:item.assessment_id,establishment:establishment?.display_name ?? "Establecimiento",code:establishment?.pseudonymous_code ?? "—",calculatedAt:item.calculated_at,inputDigest:item.input_digest,contractVersion:item.contract_version,modelVersion:item.model_version,...output};
+    const profile=parseBusinessProfile(establishment?.synthetic_profile);
+    return {id:item.id,assessmentId:item.assessment_id,establishment:establishment?.display_name ?? "Establecimiento",code:establishment?.pseudonymous_code ?? "—",calculatedAt:item.calculated_at,inputDigest:item.input_digest,contractVersion:item.contract_version,modelVersion:item.model_version,facets:profile?.facets ?? null,...output};
   });
 }
 
