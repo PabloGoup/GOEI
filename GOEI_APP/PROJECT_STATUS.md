@@ -296,6 +296,11 @@ La aplicación implementa el estándar, pero no crea ciencia. No puede inventar 
 - La Guía GOEI incluye ahora una biblioteca de los 28 criterios candidatos, con búsqueda y filtro por dimensión.
 - Cada entrada expone sólo su nombre autorizado y la orientación de evidencia ya incluida en el instrumento; no incorpora umbrales, KPI ni reglas nuevas.
 
+### Accesibilidad operativa inicial
+
+- El portal conectado y la demostración pública incluyen un enlace de salto al contenido principal para uso por teclado y lector de pantalla.
+- Navegación, menú secundario, perfil, formularios y controles conservan un foco visible consistente.
+
 ### Resiliencia de acceso y carga conectada
 
 - La verificación de sesión y permisos ahora tiene límites de espera: una demora de Supabase no deja la interfaz en un estado indeterminado.

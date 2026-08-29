@@ -8,6 +8,7 @@ import { AppNavigation } from "./app-navigation";
 export async function AppShell({ children }: { children: React.ReactNode }) {
   const context = await requireWorkspaceContext();
   return <div className="app-frame">
+    <a className="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
     <aside className="sidebar">
       <div className="sidebar-head"><Link href="/dashboard" aria-label="Ir al panorama"><BrandMark/></Link></div>
       <AppNavigation/>
@@ -16,6 +17,6 @@ export async function AppShell({ children }: { children: React.ReactNode }) {
         {context.mode === "connected" && <form action={signOut}><button className="logout" type="submit"><LogOut size={16}/> Cerrar sesión</button></form>}
       </div>
     </aside>
-    <main className="main-content">{children}</main>
+    <main id="contenido-principal" className="main-content" tabIndex={-1}>{children}</main>
   </div>;
 }
