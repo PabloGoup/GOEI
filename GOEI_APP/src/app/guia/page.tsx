@@ -3,6 +3,7 @@ import type { Route } from "next";
 import { ArrowRight, BarChart3, BookOpenText, Building2, CheckCircle2, ClipboardCheck, FileCheck2, Layers3, ShieldAlert } from "lucide-react";
 import { AppShell } from "@/components/app-shell";
 import { methodologyStatus } from "@/domain/methodology";
+import { CriteriaLibrary } from "@/components/criteria-library";
 
 const steps=[
   {icon:Building2,title:"1. Comprende el negocio",text:"Abre su ficha sintética y revisa modelo de servicio, capacidad, equipo, horarios, canales, demanda, abastecimiento y datos disponibles.",href:"/establecimientos",action:"Ver casos"},
@@ -17,6 +18,7 @@ export default function GuidePage() {
     <section className="guide-principles"><article className="card"><Layers3/><h2>Desempeño</h2><p>Representa el nivel observado en los criterios que pueden calcularse. No aumenta por adjuntar más evidencia.</p></article><article className="card"><FileCheck2/><h2>Confianza</h2><p>Resume la calidad del respaldo disponible para los criterios evaluables. No reemplaza el desempeño.</p></article><article className="card"><CheckCircle2/><h2>Cobertura</h2><p>Indica cuánto del instrumento pudo evaluarse. Un expediente completo no significa automáticamente buen resultado.</p></article><article className="card"><ShieldAlert/><h2>Gate crítico</h2><p>Aplica una regla no compensatoria. Puede limitar o impedir la emisión de puntaje aunque otras áreas sean favorables.</p></article></section>
     <section className="guide-steps"><div><span className="section-kicker">Recorrido del MVP</span><h2>Cómo aplicar GOEI en el programa</h2></div>{steps.map(({icon:Icon,title,text,href,action})=><article className="card" key={title}><span><Icon/></span><div><h3>{title}</h3><p>{text}</p></div><Link href={href as Route}>{action}<ArrowRight size={14}/></Link></article>)}</section>
     <section className="guide-reading card"><div><span className="section-kicker">Cómo interpretar</span><h2>Antes de tomar una decisión</h2></div><div><p><strong>1.</strong> Confirma si existe puntaje o sólo un perfil parcial.</p><p><strong>2.</strong> Lee el gate antes del valor global.</p><p><strong>3.</strong> Compara las siete dimensiones para localizar brechas.</p><p><strong>4.</strong> Revisa cobertura y confianza para entender la solidez de la lectura.</p><p><strong>5.</strong> Conserva el digest y las versiones para reproducir la ejecución.</p><p><strong>6.</strong> Trata toda salida actual como <b>{methodologyStatus.label}</b>.</p></div></section>
+    <CriteriaLibrary />
     <aside className="readiness-note"><ShieldAlert size={18}/><div><strong>Qué GOEI no hace todavía</strong><p>No certifica establecimientos, no autoriza captura real, no reemplaza una inspección sanitaria y no convierte datos desconocidos en cero. El software implementa las reglas candidatas vigentes; no crea decisiones científicas.</p></div></aside>
   </AppShell>;
 }

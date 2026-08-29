@@ -291,6 +291,11 @@ La aplicación implementa el estándar, pero no crea ciencia. No puede inventar 
 - La comparación muestra los siete perfiles dimensionales y conserva los gates de ambos expedientes; nunca los compensa ni crea proyecciones.
 - Los controles enlazan directamente las dos evaluaciones de origen para que la lectura sea verificable.
 
+### Biblioteca navegable de criterios
+
+- La Guía GOEI incluye ahora una biblioteca de los 28 criterios candidatos, con búsqueda y filtro por dimensión.
+- Cada entrada expone sólo su nombre autorizado y la orientación de evidencia ya incluida en el instrumento; no incorpora umbrales, KPI ni reglas nuevas.
+
 ### Resiliencia de acceso y carga conectada
 
 - La verificación de sesión y permisos ahora tiene límites de espera: una demora de Supabase no deja la interfaz en un estado indeterminado.
