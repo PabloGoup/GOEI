@@ -12,6 +12,7 @@ import { EvidenceUploader } from "@/components/evidence-uploader";
 import { evaluateWithCandidateEngine } from "@/domain/engine-adapter";
 import type { AssessmentOutput, Gate } from "@goei/engine-ts";
 import type { DemoInsights } from "@/data/demo";
+import { criterionGuidance } from "@/domain/criterion-guidance";
 
 type ResponseDraft = { status: CriterionStatus; level: number | null; evidenceGrade: number; justification: string };
 type DraftMap = Record<string, ResponseDraft>;
@@ -90,6 +91,7 @@ export function AssessmentWorkspace({ assessment, initialResponses = [], initial
   const displayedOutput = latestOutput ?? (persistence === "local" && engineResult.ready && demoInsights ? engineResult.output : null);
   const reportRunId = exportRunId ?? initialCalculationRuns[0]?.id ?? null;
   const gateExplanation = displayedOutput?.gate === "ROJO" ? "El gate rojo limita la emisión: las demás dimensiones no lo compensan." : displayedOutput?.gate === "NO_VERIFICABLE" ? "No se emite puntaje mientras el gate crítico no sea verificable." : "La lectura se emite de manera provisional: interprétala junto con la cobertura y la confianza.";
+  const criterionPlan = useMemo(() => instrumentCriteria.map(item => ({criterion:item,response:responses[item.id],guidance:criterionGuidance[item.id]})),[responses]);
   const percentage = Math.round(completed / instrumentCriteria.length * 100);
   const editable = isAssessmentEditable(workflowStatus);
   const transitions = availableTransitions(workflowStatus,role,completed);
@@ -172,12 +174,13 @@ export function AssessmentWorkspace({ assessment, initialResponses = [], initial
       <section className="case-downloads" aria-label="Documentos descargables del expediente"><div><span className="section-kicker">Documentos del expediente</span><h3>Descarga la lectura en el formato que necesitas</h3><p>Los archivos contienen sólo el caso sintético y conservan su condición provisional.</p></div>{reportRunId ? <div className="case-download-actions"><a href={`/api/exportaciones/${reportRunId}/pdf`}><FileText size={18}/><span><strong>Informe PDF</strong><small>Lectura y trazabilidad</small></span><Download size={15}/></a><a href={`/api/exportaciones/${reportRunId}/xlsx`}><FileSpreadsheet size={18}/><span><strong>Libro Excel</strong><small>Resumen y dimensiones</small></span><Download size={15}/></a><a href={`/api/exportaciones/${reportRunId}/constancia`}><FileBadge2 size={18}/><span><strong>Constancia sintética</strong><small>No es certificación</small></span><Download size={15}/></a></div> : <p className="case-download-pending">Ejecuta y guarda la lectura para habilitar sus documentos.</p>}</section>
       <footer><span>Contrato {displayedOutput.contractVersion}</span><span>{displayedOutput.trace.inputDigest.slice(0,28)}…</span><strong>PROVISIONAL — NO VALIDADO</strong></footer>
     </section>}
+    {displayedOutput && <section className="methodology-plan" aria-label="Orientación metodológica por criterio"><header><div><span className="section-kicker">Plan trazable por criterio</span><h2>Qué revisar, por qué y cómo demostrarlo</h2><p>Las orientaciones se activan desde la respuesta registrada en cada criterio. Son candidatas técnicas: no sustituyen una decisión científica ratificada ni una evaluación profesional.</p></div><span className="candidate-badge">28 CRITERIOS</span></header><div className="methodology-plan-grid">{criterionPlan.map(({criterion:item,response:criterionResponse,guidance})=>{const needsAction=criterionResponse.status !== "EVALUABLE" || (criterionResponse.level ?? 0) < 3;return <details key={item.id} className={needsAction?"needs-action":"sustained-practice"}><summary><span>{item.id}</span><div><strong>{item.name}</strong><small>{needsAction?"Prioridad de revisión":"Práctica a sostener y verificar"}</small></div><b>{criterionResponse.status === "EVALUABLE" ? `Nivel ${criterionResponse.level ?? "—"}` : criterionResponse.status}</b></summary><div className="methodology-detail"><p><strong>Qué busca:</strong> {guidance.purpose}</p><p><strong>{needsAction?"Orientación de acción:":"Qué mantener:"}</strong> {needsAction?guidance.actionWhenGap:"Conservar la práctica, revisar su evidencia y comprobar que se mantiene en los distintos turnos."}</p><p><strong>Evidencia para comprobarlo:</strong> {guidance.evidenceToVerify}</p><footer><span>{guidance.sourceLabel}</span><em>Estado: candidato técnico · revisión metodológica pendiente</em></footer></div></details>})}</div></section>}
     {demoInsights && <section className="demo-insights" aria-label="Lectura explicada del caso sintético">
       <header><div><span className="section-kicker">Lectura explicada del caso</span><h2>Qué observar y qué podrías hacer</h2><p>{demoInsights.summary}</p></div><span className="illustrative-label">Orientación ilustrativa · no prescriptiva</span></header>
       <div className="insight-grid">
         <article><CircleCheckBig/><h3>Fortalezas observadas</h3><ul>{demoInsights.strengths.map(item=><li key={item}>{item}</li>)}</ul></article>
         <article><SearchCheck/><h3>Hallazgos a revisar</h3><ul>{demoInsights.findings.map(item=><li key={item}>{item}</li>)}</ul></article>
-        <article><Lightbulb/><h3>Acciones sugeridas</h3><ul>{demoInsights.suggestedActions.map(item=><li key={item}>{item}</li>)}</ul></article>
+        <article><Lightbulb/><h3>Cómo usar este expediente</h3><p>Abre el plan trazable de cada criterio: allí se muestra la orientación aplicable, la evidencia que debe comprobarse y su estado metodológico.</p></article>
       </div>
       <footer><p>Estas acciones ayudan a interpretar el escenario ficticio; no forman parte ratificada del estándar ni sustituyen juicio profesional.</p><div><Link className="button secondary" href="/demo#casos">Comparar otros casos</Link><Link className="button primary" href="/demo#resultados">Ver comparación <ArrowRight size={15}/></Link></div></footer>
     </section>}
