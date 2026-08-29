@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState, useTransition } from "react";
 import { ArrowLeft, Calculator, CalendarRange, Check, ChevronLeft, ChevronRight, Info, LockKeyhole, RotateCcw, Save, Send, ShieldAlert, ShieldCheck } from "lucide-react";
 import Link from "next/link";
+import type { Route } from "next";
 import type { AppRole } from "@/domain/access";
 import { assessmentStatusLabels, availableTransitions, isAssessmentEditable, transitionTarget, type AssessmentStatus, type AssessmentTransition } from "@/domain/assessment-lifecycle";
 import { evidenceGrades, instrument, instrumentCriteria, instrumentDimensions, levelRubric, type CriterionStatus } from "@/domain/instrument";
@@ -22,7 +23,7 @@ const emptyDraft = (): DraftMap => Object.fromEntries(instrumentCriteria.map(c =
 
 const actionLabels: Record<AssessmentTransition,string> = {SUBMIT:"Enviar a revisión",START_REVIEW:"Iniciar revisión",RETURN:"Devolver con observaciones",CLOSE:"Cerrar revisión"};
 
-export function AssessmentWorkspace({ assessment, initialResponses = [], initialEvidence = [], initialCalculationRuns = [], persistence = "local", role }: { assessment: Assessment; initialResponses?: StoredResponse[]; initialEvidence?:EvidenceItem[]; initialCalculationRuns?:CalculationRun[]; persistence?: "local"|"supabase"; role:AppRole }) {
+export function AssessmentWorkspace({ assessment, initialResponses = [], initialEvidence = [], initialCalculationRuns = [], persistence = "local", role, backHref="/evaluaciones" }: { assessment: Assessment; initialResponses?: StoredResponse[]; initialEvidence?:EvidenceItem[]; initialCalculationRuns?:CalculationRun[]; persistence?: "local"|"supabase"; role:AppRole; backHref?:string }) {
   const [selectedId,setSelectedId] = useState(instrumentCriteria[0].id);
   const [responses,setResponses] = useState<DraftMap>(() => ({...emptyDraft(),...Object.fromEntries(initialResponses.map(item=>[item.criterion_id,{status:item.status,level:item.level,evidenceGrade:item.evidence_grade,justification:item.justification || item.no_apply_basis || ""}]))}));
   const [saved,setSaved] = useState(true);
@@ -123,7 +124,7 @@ export function AssessmentWorkspace({ assessment, initialResponses = [], initial
   };
 
   return <div className="assessment-workspace">
-    <header className="workspace-header"><div><Link href="/evaluaciones"><ArrowLeft size={15}/> Evaluaciones</Link><p>{assessment.code} · {assessment.kind}</p><h1>{assessment.establishment}</h1></div><div className="save-state"><Save size={15}/><span>{saved ? (persistence === "local" ? "Guardado en demostración" : "Guardado con trazabilidad") : "Guardando…"}</span></div></header>
+    <header className="workspace-header"><div><Link href={backHref as Route}><ArrowLeft size={15}/> {backHref==="/demo"?"Volver a la demostración":"Evaluaciones"}</Link><p>{assessment.code} · {assessment.kind}</p><h1>{assessment.establishment}</h1></div><div className="save-state"><Save size={15}/><span>{saved ? (persistence === "local" ? "Guardado en demostración" : "Guardado con trazabilidad") : "Guardando…"}</span></div></header>
     <div className="workspace-warning"><ShieldAlert size={18}/><span><strong>Caso sintético.</strong> No ingreses datos de personas o negocios reales.</span><em>{instrument.status} · {instrument.version}</em></div>
     <div className="workspace-progress"><span><strong>{completed} de 28</strong> criterios revisados</span><div><i style={{width:`${percentage}%`}}/></div><b>{percentage}%</b></div>
     <section className="calculation-settings" aria-label="Período y gate crítico">

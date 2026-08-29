@@ -4,8 +4,8 @@ import { readFileSync } from "node:fs";
 import { businessProfileSchema } from "../src/domain/business-profile";
 import { demoEstablishments } from "../src/data/demo";
 
-test("los tres casos demostrativos incluyen una ficha de negocio válida",()=>{
-  assert.equal(demoEstablishments.length,3);
+test("los cinco casos demostrativos incluyen una ficha de negocio válida",()=>{
+  assert.equal(demoEstablishments.length,5);
   for(const business of demoEstablishments) assert.equal(businessProfileSchema.safeParse(business.profile).success,true);
 });
 

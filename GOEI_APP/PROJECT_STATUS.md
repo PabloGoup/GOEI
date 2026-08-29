@@ -6,8 +6,8 @@
 
 - Fecha: 2026-08-28
 - Responsable de la actualización: Codex
-- Fase activa: Fase 3 — integración técnica del motor candidato
-- Estado técnico: MVP sintético funcional en modo demostrativo; persistencia conectada de ejecuciones preparada y pendiente de instalar la migración `202608280006_candidate_engine_runs.sql`
+- Fase activa: Fase 3 — resultados, reportes y experiencia operativa
+- Estado técnico: MVP sintético funcional con cinco casos comparables, formularios normalizados, perfil operativo y exportaciones PDF/Excel; persistencia conectada de ejecuciones preparada y pendiente de instalar la migración `202608280006_candidate_engine_runs.sql`
 - Captura real: **NO AUTORIZADA**
 - Repositorio de aplicación: `PabloGoup/GOEI_APP` privado, con rama propia `main` y contenido de la app en la raíz.
 - Repositorio científico: `PabloGoup/GOEI`; no debe recibir merges ni commits de la aplicación.
@@ -260,6 +260,18 @@ La aplicación implementa el estándar, pero no crea ciencia. No puede inventar 
 - La guía explica en lenguaje humano qué es GOEI, el alcance piloto, desempeño, confianza, cobertura, gate crítico, el recorrido completo del MVP y cómo interpretar una lectura.
 - Se añadieron pruebas del contrato del perfil y de la restricción que impide asociarlo a establecimientos no sintéticos.
 
+### Experiencia guiada, comparación y exportaciones
+
+- Los campos repetibles del alta sintética se normalizaron mediante selectores y grupos de opciones para concepto, cocina, servicio, contexto, días, horario, canales, demanda, abastecimiento, registros y desafíos.
+- El formulario se reorganizó en tres pasos humanos, con ayudas breves y explicación explícita del resultado de la acción.
+- El banco demostrativo aumentó de tres a cinco establecimientos y cinco evaluaciones completas con salidas diferentes: 100, 75, 25, cero por gate rojo y perfil sin puntaje por gate no verificable.
+- La pantalla de resultados incorpora tarjetas comparables de desempeño, gate, cobertura y confianza, sin confundir esas variables.
+- Cada resultado puede descargar un reporte PDF, un libro Excel y una constancia de evaluación sintética; toda salida conserva la advertencia `PROVISIONAL — NO VALIDADO` y niega expresamente carácter de certificación.
+- Los exportadores recuperan la ejecución autorizada en servidor y no aceptan una salida arbitraria enviada por el navegador.
+- Los buscadores de establecimientos y evaluaciones, así como los filtros de estado, dejaron de ser elementos decorativos y funcionan en cliente.
+- La navegación resalta la ruta activa correctamente y la tarjeta de usuario abre un perfil editable; organización y rol permanecen visibles y separados del nombre.
+- Se añadió `uuid >=11.1.1` como override de seguridad para la cadena de ExcelJS; `npm audit` volvió a cero vulnerabilidades.
+
 ## Verificaciones realizadas
 
 Última verificación completa después de preparar producción conectada y sustituir los resúmenes codificados:
@@ -352,7 +364,7 @@ NEXT_PUBLIC_APP_MODE
 - [x] Preparar persistencia de entrada, salida, digest y versiones por ejecución; migración remota pendiente.
 - [x] Implementar captura explícita del período y del gate crítico sin compensación; migración remota pendiente.
 - [x] Preparar visualización separada de desempeño, cobertura y confianza cuando el contrato esté completo.
-- [ ] Generar reportes PDF y Excel desde servidor.
+- [x] Generar reportes PDF y Excel desde servidor.
 - [x] Mantener la etiqueta provisional en pantalla y resultados.
 - [ ] Instalar y confirmar `PASS` de la migración/prueba de ejecuciones en Supabase.
 - [ ] Instalar y confirmar `PASS` de la migración/prueba de perfiles sintéticos en Supabase.
@@ -399,4 +411,4 @@ Al terminar:
 
 ## Próxima acción recomendada
 
-Implementar el contrato persistente de ejecución: período y gate crítico explícitos, tabla inmutable de ejecuciones, digest/versiones y acción de servidor que recalcula antes de guardar. La captura real permanece bloqueada.
+Instalar y verificar en Supabase las migraciones pendientes de ejecuciones y perfiles sintéticos; después conectar el banco de cinco casos a una carga demostrativa reproducible para organizaciones autenticadas. La captura real permanece bloqueada.

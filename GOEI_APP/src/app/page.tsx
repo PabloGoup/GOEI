@@ -21,7 +21,7 @@ export default async function HomePage() {
           <p>GOEI guía una evaluación operacional completa, conecta cada hallazgo con evidencia y ayuda a decidir dónde actuar primero.</p>
           <div className="hero-actions">
             <Link className="button primary" href={primaryHref}>{primaryLabel} <ArrowRight size={17} /></Link>
-            <Link className="button secondary" href="/guia">Conocer la metodología</Link>
+            <Link className="button secondary" href="/demo">Explorar demostración</Link>
           </div>
           <p className="scope-note"><LockKeyhole size={15} /> {methodologyStatus.label}. La captura real aún no está autorizada.</p>
         </div>

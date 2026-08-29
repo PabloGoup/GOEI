@@ -1,4 +1,4 @@
-import { demoAssessments, demoCompleteResponses, demoEstablishments } from "@/data/demo";
+import { demoAssessmentResponses, demoAssessments, demoEstablishments, demoGate } from "@/data/demo";
 import { createClient } from "@/lib/supabase/server";
 import { env } from "@/lib/env";
 import { evaluateWithCandidateEngine } from "@/domain/engine-adapter";
@@ -47,7 +47,7 @@ export async function listAssessments() {
 export async function getAssessment(id: string) {
   if (env.appMode === "demo") {
     const assessment = demoAssessments.find(item => item.id === id);
-    return assessment ? {assessment, responses: assessment.id === "synthetic-assessment-002" ? demoCompleteResponses : []} : null;
+    return assessment ? {assessment, responses: demoAssessmentResponses(assessment.id), evidenceItems:[], calculationRuns:[]} : null;
   }
   const supabase = await createClient();
   if (!supabase) return null;
@@ -77,17 +77,11 @@ export async function getAssessment(id: string) {
 
 export async function listCalculationRuns() {
   if (env.appMode === "demo") {
-    const result = evaluateWithCandidateEngine({
-      assessmentId:"00000000-0000-4000-8000-000000000102",
-      assessmentKind:"SYNTHETIC_DEMONSTRATION",
-      establishmentId:"00000000-0000-4000-8000-000000000202",
-      establishmentName:"Caso sintético Costanera",
-      periodStart:"2026-08-01",periodEnd:"2026-08-28",
-      gate:{status:"NO_VERIFICABLE",basis:"Gate deliberadamente no verificable en escenario sintético demostrativo.",protocolVersion:null},
-      responses:demoCompleteResponses.map(item=>({criterionId:item.criterion_id,status:item.status,level:item.level,evidenceGrade:item.evidence_grade,justification:item.justification,noApplyBasis:item.no_apply_basis,sourceEvaluatorId:item.source_evaluator_id})),
-      evidence:[]
-    },"2026-08-28T12:00:00.000Z");
-    return result.ready ? [{...result.output,id:"synthetic-run-001",assessmentId:"synthetic-assessment-002",establishment:"Caso sintético Costanera",code:"SYN-002",calculatedAt:result.output.trace.calculatedAt,inputDigest:result.output.trace.inputDigest}] : [];
+    return demoAssessments.flatMap((assessment,index) => {
+      const responses=demoAssessmentResponses(assessment.id);
+      const result=evaluateWithCandidateEngine({assessmentId:`00000000-0000-4000-8000-${String(index+1).padStart(12,"0")}`,assessmentKind:"SYNTHETIC_DEMONSTRATION",establishmentId:`10000000-0000-4000-8000-${String(index+1).padStart(12,"0")}`,establishmentName:assessment.establishment,periodStart:assessment.periodStart,periodEnd:assessment.periodEnd,gate:demoGate(assessment.id),responses:responses.map(item=>({criterionId:item.criterion_id,status:item.status,level:item.level,evidenceGrade:item.evidence_grade,justification:item.justification,noApplyBasis:item.no_apply_basis,sourceEvaluatorId:item.source_evaluator_id})),evidence:[]},`2026-08-28T${String(12+index).padStart(2,"0")}:00:00.000Z`);
+      return result.ready ? [{...result.output,id:`synthetic-run-${index+1}`,assessmentId:assessment.id,establishment:assessment.establishment,code:assessment.code,calculatedAt:result.output.trace.calculatedAt,inputDigest:result.output.trace.inputDigest}] : [];
+    });
   }
   const supabase = await createClient();
   if (!supabase) return [];

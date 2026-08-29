@@ -11,9 +11,9 @@ export async function createSyntheticEstablishment(formData: FormData) {
   const parsed=establishmentSchema.safeParse({name:formData.get("name"),code:formData.get("code"),profile:{
     concept:formData.get("concept"),serviceModel:formData.get("serviceModel"),cuisine:formData.get("cuisine"),locationContext:formData.get("locationContext"),
     seats:formData.get("seats"),teamSize:formData.get("teamSize"),operatingDays:formData.get("operatingDays"),serviceHours:formData.get("serviceHours"),
-    channels:String(formData.get("channels") ?? "").split(",").map(item=>item.trim()).filter(Boolean),
+    channels:formData.getAll("channels").map(String).map(item=>item.trim()).filter(Boolean),
     demandPattern:formData.get("demandPattern"),sourcing:formData.get("sourcing"),dataAvailability:formData.get("dataAvailability"),
-    challenges:String(formData.get("challenges") ?? "").split("\n").map(item=>item.trim()).filter(Boolean)
+    challenges:formData.getAll("challenges").map(String).map(item=>item.trim()).filter(Boolean)
   }});
   if(!parsed.success) redirect("/establecimientos/nuevo?error=formato");
   const context=await requireWorkspaceContext();
