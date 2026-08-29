@@ -291,6 +291,7 @@ La aplicación implementa el estándar, pero no crea ciencia. No puede inventar 
 - El retorno OAuth construye la URL pública desde los encabezados reenviados por Vercel, reduciendo la dependencia de un encabezado `origin` ausente o inconsistente.
 - El menú `Más` se cierra al elegir una ruta, al pulsar fuera o con `Escape`, por lo que no queda cubriendo la pantalla.
 - Una organización conectada y vacía puede cargar cinco casos demostrativos sintéticos desde el panorama; la acción es idempotente, conserva perfiles y 28 respuestas por expediente, y no habilita captura real.
+- La misma carga ahora genera y persiste la lectura provisional reproducible de cada expediente, junto con su digest, versiones y evento de auditoría; una segunda ejecución completa únicamente los resultados que falten.
 
 ## Verificaciones realizadas
 
