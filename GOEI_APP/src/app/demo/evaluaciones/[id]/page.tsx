@@ -8,5 +8,6 @@ export default async function PublicDemoAssessmentPage({params}:{params:Promise<
   const assessment=demoAssessments.find(item=>item.id===id);
   if(!assessment) notFound();
   const responses=demoAssessmentResponses(id);
-  return <DemoShell><AssessmentWorkspace assessment={assessment} initialResponses={responses} persistence="local" role="organization_admin" backHref="/demo" demoInsights={demoInsights[id]}/></DemoShell>;
+  const runIndex=demoAssessments.findIndex(item=>item.id===id);
+  return <DemoShell><AssessmentWorkspace assessment={assessment} initialResponses={responses} persistence="local" role="organization_admin" backHref="/demo" demoInsights={demoInsights[id]} exportRunId={`synthetic-run-${runIndex+1}`}/></DemoShell>;
 }

@@ -3,10 +3,15 @@
 .demo-result .result-heading h3{margin:4px 0;color:var(--navy);font-size:17px}
 .demo-result .engine-metrics{grid-template-columns:repeat(2,minmax(80px,1fr))}
 .demo-result .button{align-self:flex-start;margin-top:auto}
+.demo-export-actions{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;padding-top:2px}
+.demo-export-actions a{min-height:35px;padding:0 8px;border:1px solid #d5e2e5;border-radius:8px;background:#f7fbfb;color:#35606f;display:flex;align-items:center;justify-content:center;gap:4px;font-size:9px;font-weight:750;transition:transform 140ms var(--ease-out),border-color 140ms ease,background-color 140ms ease}
+.demo-export-actions a svg:last-child{color:#6e919d}
+@media(hover:hover) and (pointer:fine){.demo-export-actions a:hover{transform:translateY(-1px);border-color:#9ec9d0;background:#edf8f7}}
 .criterion-footer>span{max-width:54%;text-align:center;line-height:1.35}
 
 @media(max-width:780px){
   .demo-results-grid{grid-template-columns:1fr}
   .demo-result .button{width:100%;justify-content:center}
+  .demo-export-actions{gap:6px}
   .criterion-footer>span{max-width:48%}
 }

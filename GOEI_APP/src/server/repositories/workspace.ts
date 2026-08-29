@@ -75,12 +75,20 @@ export async function getAssessment(id: string) {
   };
 }
 
+export function getDemoCalculationRun(runId:string) {
+  const index=Number(runId.replace("synthetic-run-",""))-1;
+  const assessment=demoAssessments[index];
+  if (!Number.isInteger(index) || !assessment || runId !== `synthetic-run-${index+1}`) return null;
+  const responses=demoAssessmentResponses(assessment.id);
+  const result=evaluateWithCandidateEngine({assessmentId:`00000000-0000-4000-8000-${String(index+1).padStart(12,"0")}`,assessmentKind:"SYNTHETIC_DEMONSTRATION",establishmentId:`10000000-0000-4000-8000-${String(index+1).padStart(12,"0")}`,establishmentName:assessment.establishment,periodStart:assessment.periodStart,periodEnd:assessment.periodEnd,gate:demoGate(assessment.id),responses:responses.map(item=>({criterionId:item.criterion_id,status:item.status,level:item.level,evidenceGrade:item.evidence_grade,justification:item.justification,noApplyBasis:item.no_apply_basis,sourceEvaluatorId:item.source_evaluator_id})),evidence:[]},`2026-08-28T${String(12+index).padStart(2,"0")}:00:00.000Z`);
+  return result.ready ? {...result.output,id:runId,assessmentId:assessment.id,establishment:assessment.establishment,code:assessment.code,calculatedAt:result.output.trace.calculatedAt,inputDigest:result.output.trace.inputDigest} : null;
+}
+
 export async function listCalculationRuns() {
   if (env.appMode === "demo") {
-    return demoAssessments.flatMap((assessment,index) => {
-      const responses=demoAssessmentResponses(assessment.id);
-      const result=evaluateWithCandidateEngine({assessmentId:`00000000-0000-4000-8000-${String(index+1).padStart(12,"0")}`,assessmentKind:"SYNTHETIC_DEMONSTRATION",establishmentId:`10000000-0000-4000-8000-${String(index+1).padStart(12,"0")}`,establishmentName:assessment.establishment,periodStart:assessment.periodStart,periodEnd:assessment.periodEnd,gate:demoGate(assessment.id),responses:responses.map(item=>({criterionId:item.criterion_id,status:item.status,level:item.level,evidenceGrade:item.evidence_grade,justification:item.justification,noApplyBasis:item.no_apply_basis,sourceEvaluatorId:item.source_evaluator_id})),evidence:[]},`2026-08-28T${String(12+index).padStart(2,"0")}:00:00.000Z`);
-      return result.ready ? [{...result.output,id:`synthetic-run-${index+1}`,assessmentId:assessment.id,establishment:assessment.establishment,code:assessment.code,calculatedAt:result.output.trace.calculatedAt,inputDigest:result.output.trace.inputDigest}] : [];
+    return demoAssessments.flatMap((_,index) => {
+      const run=getDemoCalculationRun(`synthetic-run-${index+1}`);
+      return run ? [run] : [];
     });
   }
   const supabase = await createClient();

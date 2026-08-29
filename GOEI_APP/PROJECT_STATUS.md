@@ -267,6 +267,8 @@ La aplicación implementa el estándar, pero no crea ciencia. No puede inventar 
 - El banco demostrativo aumentó de tres a cinco establecimientos y cinco evaluaciones completas con salidas diferentes: 100, 75, 25, cero por gate rojo y perfil sin puntaje por gate no verificable.
 - La pantalla de resultados incorpora tarjetas comparables de desempeño, gate, cobertura y confianza, sin confundir esas variables.
 - Cada resultado puede descargar un reporte PDF, un libro Excel y una constancia de evaluación sintética; toda salida conserva la advertencia `PROVISIONAL — NO VALIDADO` y niega expresamente carácter de certificación.
+- La lectura dentro del expediente ahora presenta un resumen ejecutivo, explicación del gate, siete dimensiones con nombre, métricas separadas de cobertura y confianza, trazabilidad y un panel de descargas visible; la comparación pública también ofrece PDF, Excel y constancia para cada uno de los cinco casos.
+- Las exportaciones de los cinco expedientes públicos se resuelven de manera explícita en servidor, incluso cuando el portal conectado está activo, sin exponer ni depender de datos privados.
 - Los exportadores recuperan la ejecución autorizada en servidor y no aceptan una salida arbitraria enviada por el navegador.
 - Los buscadores de establecimientos y evaluaciones, así como los filtros de estado, dejaron de ser elementos decorativos y funcionan en cliente.
 - La navegación resalta la ruta activa correctamente y la tarjeta de usuario abre un perfil editable; organización y rol permanecen visibles y separados del nombre.
