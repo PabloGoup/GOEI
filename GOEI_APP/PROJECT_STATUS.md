@@ -290,6 +290,7 @@ La aplicación implementa el estándar, pero no crea ciencia. No puede inventar 
 - Integración del motor candidato publicada en `main` mediante `496b4c5`; despliegue de producción `dpl_4cLcbGpt1hrp29VGSgD8LA9Sbb57` confirmado `Ready` y asociado a `https://goei-app.vercel.app` el 2026-08-28.
 - MVP sintético publicado en `main` mediante `ce7110e`; despliegue `dpl_rvPccVnfF1nAUKsrUqpoe9qNs4ck` confirmado `Ready` y asociado a `https://goei-app.vercel.app` el 2026-08-28.
 - Fichas integrales y guía humana publicadas en `main` mediante `7817b9a`; despliegue `dpl_7xRq7ePYD5dbERrway8RA3c54k6n` confirmado `Ready` y asociado a `https://goei-app.vercel.app` el 2026-08-28.
+- Experiencia guiada, cinco casos, comparación, reportes y perfil publicados en `main` mediante `03294f3`; despliegue `dpl_GvygZgCN5YjybHbipaEM7vcV9vob` confirmado `Ready` y asociado a `https://goei-app.vercel.app` el 2026-08-28. Smoke test público: portada, `/demo` y `/login` HTTP 200; `/demo` confirmó cinco casos.
 - El salto OAuth de Google no puede ser completado por el navegador automatizado debido a su política de navegación externa; el recorrido autenticado requiere que el usuario abra la sesión de prueba antes de continuar la automatización.
 
 Después de cada modificación se debe volver a ejecutar:
@@ -314,6 +315,8 @@ git diff --check -- GOEI_APP
 2. Migración `202608250004_assessment_review_workflow.sql`: instalada y prueba estructural confirmada.
 3. Migración correctiva `202608260005_fix_criterion_id_constraints.sql`: instalada y prueba estructural confirmada.
 4. Prueba funcional `cross_organization_isolation.sql`: `PASS` confirmado el 2026-08-26.
+
+Las migraciones `202608280006_candidate_engine_runs.sql` y `202608280007_synthetic_business_profiles.sql` continúan pendientes de ejecución remota. El proyecto quedó enlazado por CLI el 2026-08-28, pero la conexión PostgreSQL requiere la contraseña de base no almacenada en el repositorio; no se expuso ni solicitó por chat.
 
 No ejecutar la prueba antes de la migración correspondiente.
 
