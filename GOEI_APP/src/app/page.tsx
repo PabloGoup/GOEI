@@ -49,8 +49,8 @@ export default async function HomePage() {
     </section>
 
     <section className="trace-story" id="trazabilidad">
-      <div className="trace-visual"><span>Hallazgo</span><i/><span>Evidencia</span><i/><span>Lectura</span><i/><span>Decisión</span></div>
-      <div><span className="eyebrow"><i/> Trazabilidad visible</span><h2>De la observación<br/>a la acción, sin perder el hilo.</h2><p>Cada paso conserva su contexto. Así, una persona ajena al programa puede seguir la evaluación, entender sus límites y revisar cómo se llegó a cada lectura.</p><Link href="/demo">Recorrer una evaluación completa <ArrowRight size={16}/></Link></div>
+      <div className="trace-visual" aria-label="Recorrido trazable: hallazgo, evidencia, lectura y decisión"><div className="trace-visual-header"><span>Recorrido de una lectura</span><b>01 — 04</b></div><ol><li><i>01</i><div><strong>Hallazgo</strong><small>Observación registrada</small></div></li><li><i>02</i><div><strong>Evidencia</strong><small>Respaldo identificable</small></div></li><li><i>03</i><div><strong>Lectura</strong><small>Resultado provisional</small></div></li><li><i>04</i><div><strong>Decisión</strong><small>Contexto conservado</small></div></li></ol><p>La cadena no borra los límites del expediente.</p></div>
+      <div className="trace-copy"><span className="eyebrow"><i/> Trazabilidad visible</span><h2>Una evaluación que se puede seguir.</h2><p>Cada paso conserva su contexto. Así, una persona ajena al programa puede revisar cómo se llegó a cada lectura, qué la respalda y qué límites mantiene.</p><Link href="/demo">Recorrer una evaluación completa <ArrowRight size={16}/></Link></div>
     </section>
 
     <section className="landing-cta"><span className="section-kicker">Entorno demostrativo</span><h2>Explora cinco historias operacionales distintas.</h2><p>Casos sintéticos preparados para comparar avances, resultados y condiciones de emisión sin usar datos reales.</p><Link className="button primary" href="/demo">Abrir demostración <ArrowRight size={17}/></Link></section>

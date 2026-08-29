@@ -301,6 +301,11 @@ La aplicación implementa el estándar, pero no crea ciencia. No puede inventar 
 - El portal conectado y la demostración pública incluyen un enlace de salto al contenido principal para uso por teclado y lector de pantalla.
 - Navegación, menú secundario, perfil, formularios y controles conservan un foco visible consistente.
 
+### Portada editorial: trazabilidad
+
+- La sección de trazabilidad se rediseñó como un recorrido compacto de cuatro etapas: hallazgo, evidencia, lectura y decisión.
+- Se redujo el espacio ornamental y el tamaño excesivo del titular, priorizando legibilidad, contexto y acceso directo a la demostración.
+
 ### Resiliencia de acceso y carga conectada
 
 - La verificación de sesión y permisos ahora tiene límites de espera: una demora de Supabase no deja la interfaz en un estado indeterminado.
