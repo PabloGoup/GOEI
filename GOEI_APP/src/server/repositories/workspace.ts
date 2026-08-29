@@ -140,3 +140,11 @@ export async function listEvidenceInventory() {
     };
   });
 }
+
+export async function listImprovementActions() {
+  if (env.appMode === "demo") return [];
+  const supabase=await createClient(); if(!supabase) return [];
+  const {data,error}=await supabase.from("improvement_actions").select("id,assessment_id,dimension_id,title,rationale,owner_name,due_date,verification_note,status,created_at,assessments(establishments(pseudonymous_code,display_name))").order("created_at",{ascending:false}).limit(100);
+  if(error||!data) return [];
+  return data.map(item=>{const assessment=Array.isArray(item.assessments)?item.assessments[0]:item.assessments;const establishmentRelation=assessment?.establishments;const establishment=Array.isArray(establishmentRelation)?establishmentRelation[0]:establishmentRelation;return {...item,establishment:establishment?.display_name??"Establecimiento",code:establishment?.pseudonymous_code??"—"};});
+}

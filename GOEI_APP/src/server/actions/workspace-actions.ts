@@ -9,6 +9,27 @@ import { demoAssessmentResponses, demoAssessments, demoEstablishments } from "@/
 import { evaluateWithCandidateEngine } from "@/domain/engine-adapter";
 
 const establishmentSchema = z.object({name:z.string().trim().min(2).max(180),code:z.string().trim().toUpperCase().regex(/^SYN-[A-Z0-9-]{2,30}$/),profile:businessProfileSchema});
+const improvementActionSchema=z.object({assessmentId:z.string().uuid(),dimensionId:z.string().regex(/^D[1-7]$/).optional(),title:z.string().trim().min(4).max(240),rationale:z.string().trim().max(1200),ownerName:z.string().trim().min(2).max(120).optional(),dueDate:z.string().date().optional(),verificationNote:z.string().trim().max(1200)});
+
+export async function createImprovementAction(formData:FormData) {
+  const parsed=improvementActionSchema.safeParse({assessmentId:formData.get("assessmentId"),dimensionId:formData.get("dimensionId") || undefined,title:formData.get("title"),rationale:formData.get("rationale"),ownerName:formData.get("ownerName") || undefined,dueDate:formData.get("dueDate") || undefined,verificationNote:formData.get("verificationNote")});
+  if(!parsed.success) redirect("/mejora?error=formato");
+  const context=await requireWorkspaceContext(); if(context.mode!=="connected" || !context.organizationId || !context.userId) redirect("/mejora?error=modo");
+  const supabase=await createClient(); if(!supabase) redirect("/login?error=configuracion");
+  const {error}=await supabase.from("improvement_actions").insert({organization_id:context.organizationId,assessment_id:parsed.data.assessmentId,dimension_id:parsed.data.dimensionId ?? null,title:parsed.data.title,rationale:parsed.data.rationale,owner_name:parsed.data.ownerName ?? null,due_date:parsed.data.dueDate ?? null,verification_note:parsed.data.verificationNote,created_by:context.userId});
+  if(error) redirect("/mejora?error=guardado");
+  revalidatePath("/mejora"); redirect("/mejora?created=1");
+}
+
+export async function updateImprovementActionStatus(formData:FormData) {
+  const parsed=z.object({id:z.string().uuid(),status:z.enum(["OPEN","IN_PROGRESS","VERIFIED","CANCELLED"])}).safeParse({id:formData.get("id"),status:formData.get("status")});
+  if(!parsed.success) redirect("/mejora?error=estado");
+  const context=await requireWorkspaceContext(); if(context.mode!=="connected") redirect("/mejora?error=modo");
+  const supabase=await createClient(); if(!supabase) redirect("/login?error=configuracion");
+  const {error}=await supabase.from("improvement_actions").update({status:parsed.data.status,updated_at:new Date().toISOString()}).eq("id",parsed.data.id);
+  if(error) redirect("/mejora?error=estado");
+  revalidatePath("/mejora");
+}
 export async function createSyntheticEstablishment(formData: FormData) {
   const parsed=establishmentSchema.safeParse({name:formData.get("name"),code:formData.get("code"),profile:{
     concept:formData.get("concept"),serviceModel:formData.get("serviceModel"),cuisine:formData.get("cuisine"),locationContext:formData.get("locationContext"),
