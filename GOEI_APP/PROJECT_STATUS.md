@@ -300,6 +300,7 @@ La aplicación implementa el estándar, pero no crea ciencia. No puede inventar 
 
 - El portal conectado y la demostración pública incluyen un enlace de salto al contenido principal para uso por teclado y lector de pantalla.
 - Navegación, menú secundario, perfil, formularios y controles conservan un foco visible consistente.
+- El desplegable `Más` quedó en una capa de navegación superior a tarjetas y contenido; la hoja móvil conserva la misma prioridad visual.
 
 ### Portada editorial: trazabilidad
 

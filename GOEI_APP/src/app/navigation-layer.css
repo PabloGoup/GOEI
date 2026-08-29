@@ -1,0 +1,2 @@
+/* El panel secundario es una capa de navegación, no contenido de la grilla. */
+.sidebar{z-index:70;overflow:visible}.sidebar .top-navigation,.sidebar .nav-more{overflow:visible}.sidebar .nav-more[open]{z-index:80}.sidebar .nav-popover{z-index:90;isolation:isolate}.sidebar .nav-popover .nav-item{position:relative;z-index:1}@media(max-width:780px){.sidebar{z-index:70}.mobile-dock{z-index:90}.dock-more[open]{z-index:100}.dock-sheet{z-index:110}}
