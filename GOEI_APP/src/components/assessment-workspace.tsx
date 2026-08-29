@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState, useTransition } from "react";
-import { ArrowLeft, Calculator, CalendarRange, Check, ChevronLeft, ChevronRight, Info, LockKeyhole, RotateCcw, Save, Send, ShieldAlert, ShieldCheck } from "lucide-react";
+import { ArrowLeft, ArrowRight, Calculator, CalendarRange, Check, ChevronLeft, ChevronRight, CircleCheckBig, Info, Lightbulb, LockKeyhole, RotateCcw, Save, SearchCheck, Send, ShieldAlert, ShieldCheck } from "lucide-react";
 import Link from "next/link";
 import type { Route } from "next";
 import type { AppRole } from "@/domain/access";
@@ -11,6 +11,7 @@ import { executeCandidateCalculation, saveAssessmentResponse, saveCalculationSet
 import { EvidenceUploader } from "@/components/evidence-uploader";
 import { evaluateWithCandidateEngine } from "@/domain/engine-adapter";
 import type { AssessmentOutput, Gate } from "@goei/engine-ts";
+import type { DemoInsights } from "@/data/demo";
 
 type ResponseDraft = { status: CriterionStatus; level: number | null; evidenceGrade: number; justification: string };
 type DraftMap = Record<string, ResponseDraft>;
@@ -23,7 +24,7 @@ const emptyDraft = (): DraftMap => Object.fromEntries(instrumentCriteria.map(c =
 
 const actionLabels: Record<AssessmentTransition,string> = {SUBMIT:"Enviar a revisión",START_REVIEW:"Iniciar revisión",RETURN:"Devolver con observaciones",CLOSE:"Cerrar revisión"};
 
-export function AssessmentWorkspace({ assessment, initialResponses = [], initialEvidence = [], initialCalculationRuns = [], persistence = "local", role, backHref="/evaluaciones" }: { assessment: Assessment; initialResponses?: StoredResponse[]; initialEvidence?:EvidenceItem[]; initialCalculationRuns?:CalculationRun[]; persistence?: "local"|"supabase"; role:AppRole; backHref?:string }) {
+export function AssessmentWorkspace({ assessment, initialResponses = [], initialEvidence = [], initialCalculationRuns = [], persistence = "local", role, backHref="/evaluaciones", demoInsights }: { assessment: Assessment; initialResponses?: StoredResponse[]; initialEvidence?:EvidenceItem[]; initialCalculationRuns?:CalculationRun[]; persistence?: "local"|"supabase"; role:AppRole; backHref?:string; demoInsights?:DemoInsights }) {
   const [selectedId,setSelectedId] = useState(instrumentCriteria[0].id);
   const [responses,setResponses] = useState<DraftMap>(() => ({...emptyDraft(),...Object.fromEntries(initialResponses.map(item=>[item.criterion_id,{status:item.status,level:item.level,evidenceGrade:item.evidence_grade,justification:item.justification || item.no_apply_basis || ""}]))}));
   const [saved,setSaved] = useState(true);
@@ -48,13 +49,14 @@ export function AssessmentWorkspace({ assessment, initialResponses = [], initial
 
   useEffect(() => {
     if (persistence !== "local") return;
+    if (initialResponses.length === instrumentCriteria.length) return;
     const stored = window.localStorage.getItem(storageKey);
     if (!stored) return;
     const timer = window.setTimeout(() => {
       try { setResponses({...emptyDraft(),...JSON.parse(stored) as DraftMap}); } catch { /* discard malformed demo state */ }
     },0);
     return () => window.clearTimeout(timer);
-  },[storageKey,persistence]);
+  },[storageKey,persistence,initialResponses]);
 
   useEffect(() => {
     if (saved) return;
@@ -82,6 +84,7 @@ export function AssessmentWorkspace({ assessment, initialResponses = [], initial
     responses:instrumentCriteria.map(item => ({criterionId:item.id,...responses[item.id],noApplyBasis:responses[item.id].status === "NO_APLICA" ? responses[item.id].justification : null})),
     evidence:initialEvidence.map(item => ({criterionId:item.criterion_id,evidenceCode:item.evidence_code})),
   },calculatedAt),[assessment,calculatedAt,gateBasis,gateProtocolVersion,gateStatus,initialEvidence,periodEnd,periodStart,responses]);
+  const displayedOutput = latestOutput ?? (persistence === "local" && engineResult.ready && demoInsights ? engineResult.output : null);
   const percentage = Math.round(completed / instrumentCriteria.length * 100);
   const editable = isAssessmentEditable(workflowStatus);
   const transitions = availableTransitions(workflowStatus,role,completed);
@@ -144,7 +147,16 @@ export function AssessmentWorkspace({ assessment, initialResponses = [], initial
       <div className="engine-actions"><button className="button primary" disabled={!engineResult.ready || !settingsSaved || isTransitioning} onClick={executeEngine}><Calculator size={16}/> Ejecutar lectura provisional</button>{engineMessage && <p role="status">{engineMessage}</p>}</div>
       <small>PROVISIONAL — NO VALIDADO. La preparación técnica no sustituye ratificación científica.</small>
     </section>
-    {latestOutput && <section className="calculation-result" aria-label="Última lectura provisional"><div className="result-heading"><div><span className="section-kicker">Última ejecución trazable</span><h2>{latestOutput.displayFinalScore === null ? "Perfil parcial sin puntaje" : `${latestOutput.displayFinalScore} / 100`}</h2><p>{latestOutput.emissionStatus} · Gate {latestOutput.gate}</p></div><div className="engine-metrics"><span><small>Cobertura</small><strong>{latestOutput.displayCoverage}%</strong></span><span><small>Confianza</small><strong>{latestOutput.displayConfidence ?? "—"}%</strong></span></div></div><div className="dimension-results">{latestOutput.dimensions.map(item=><div key={item.dimensionId}><span>{item.dimensionId}</span><div><i style={{width:`${item.displayScore ?? 0}%`}}/></div><strong>{item.displayScore ?? "—"}</strong></div>)}</div><footer><span>Modelo {latestOutput.modelVersion}</span><span>{latestOutput.trace.inputDigest.slice(0,22)}…</span><strong>PROVISIONAL — NO VALIDADO</strong></footer></section>}
+    {displayedOutput && <section className="calculation-result" aria-label="Última lectura provisional"><div className="result-heading"><div><span className="section-kicker">Lectura provisional del caso</span><h2>{displayedOutput.displayFinalScore === null ? "Perfil parcial sin puntaje" : `${displayedOutput.displayFinalScore} / 100`}</h2><p>{displayedOutput.emissionStatus} · Gate {displayedOutput.gate}</p></div><div className="engine-metrics"><span><small>Cobertura</small><strong>{displayedOutput.displayCoverage}%</strong></span><span><small>Confianza</small><strong>{displayedOutput.displayConfidence ?? "—"}%</strong></span></div></div><div className="dimension-results">{displayedOutput.dimensions.map(item=><div key={item.dimensionId}><span>{item.dimensionId}</span><div><i style={{width:`${item.displayScore ?? 0}%`}}/></div><strong>{item.displayScore ?? "—"}</strong></div>)}</div><footer><span>Modelo {displayedOutput.modelVersion}</span><span>{displayedOutput.trace.inputDigest.slice(0,22)}…</span><strong>PROVISIONAL — NO VALIDADO</strong></footer></section>}
+    {demoInsights && <section className="demo-insights" aria-label="Lectura explicada del caso sintético">
+      <header><div><span className="section-kicker">Lectura explicada del caso</span><h2>Qué observar y qué podrías hacer</h2><p>{demoInsights.summary}</p></div><span className="illustrative-label">Orientación ilustrativa · no prescriptiva</span></header>
+      <div className="insight-grid">
+        <article><CircleCheckBig/><h3>Fortalezas observadas</h3><ul>{demoInsights.strengths.map(item=><li key={item}>{item}</li>)}</ul></article>
+        <article><SearchCheck/><h3>Hallazgos a revisar</h3><ul>{demoInsights.findings.map(item=><li key={item}>{item}</li>)}</ul></article>
+        <article><Lightbulb/><h3>Acciones sugeridas</h3><ul>{demoInsights.suggestedActions.map(item=><li key={item}>{item}</li>)}</ul></article>
+      </div>
+      <footer><p>Estas acciones ayudan a interpretar el escenario ficticio; no forman parte ratificada del estándar ni sustituyen juicio profesional.</p><div><Link className="button secondary" href="/demo#casos">Comparar otros casos</Link><Link className="button primary" href="/demo#resultados">Ver comparación <ArrowRight size={15}/></Link></div></footer>
+    </section>}
     <section className="workflow-bar" aria-label="Flujo de revisión"><div><span>Estado operativo</span><strong>{assessmentStatusLabels[workflowStatus]}</strong><small>{editable ? "El expediente admite edición según los permisos actuales." : "Las respuestas están bloqueadas en este estado."}</small></div><div className="workflow-actions">{workflowStatus === "IN_REVIEW" && transitions.some(item=>item === "RETURN" || item === "CLOSE") && <textarea aria-label="Nota de revisión" value={reviewNote} onChange={event=>setReviewNote(event.target.value)} placeholder="Observaciones o fundamento del cierre…"/>}{transitions.map(action=><button key={action} className={action === "RETURN" ? "button secondary" : "button primary"} disabled={isTransitioning || !saved} onClick={()=>runTransition(action)}>{action === "RETURN" ? <RotateCcw size={14}/> : action === "CLOSE" ? <ShieldCheck size={14}/> : <Send size={14}/>} {actionLabels[action]}</button>)}</div>{workflowMessage && <p role="status">{workflowMessage}</p>}</section>
     <div className="workspace-layout">
       <aside className="criteria-nav" aria-label="Criterios del instrumento">

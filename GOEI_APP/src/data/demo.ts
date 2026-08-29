@@ -30,6 +30,16 @@ export function demoResponses(level:number,evidenceGrade:number) {
 
 export const demoCompleteResponses = demoResponses(2,2);
 
+export type DemoInsights = { summary:string; strengths:string[]; findings:string[]; suggestedActions:string[] };
+
+export const demoInsights: Record<string,DemoInsights> = {
+  "synthetic-assessment-001": {summary:"Operación urbana con prácticas mayormente consistentes y brechas de conciliación documental.",strengths:["Servicio y propuesta operacional definidos","Registros sintéticos disponibles en varias áreas"],findings:["Merma sin conciliación completa","Información distribuida entre registros"],suggestedActions:["Unificar el registro de mermas y responsables","Revisar tiempos de servicio en las franjas de mayor demanda"]},
+  "synthetic-assessment-002": {summary:"Caso de desempeño intermedio cuya lectura queda limitada por un gate no verificable.",strengths:["Disponibilidad sintética amplia de ventas, compras y recetas","Modelo de servicio claramente delimitado"],findings:["Gate crítico sin evidencia suficiente para verificación","Demanda estacional con presión sobre dotación"],suggestedActions:["Completar la evidencia requerida para resolver el gate","Contrastar dotación planificada con períodos de demanda alta"]},
+  "synthetic-assessment-003": {summary:"Operación compacta con hallazgo crítico ficticio que activa la regla de no compensación.",strengths:["Canales y momentos de demanda identificados","POS y compras disponibles en el escenario"],findings:["Gate rojo: el resultado favorable no puede compensarlo","Inventario y producción incompletos"],suggestedActions:["Abordar y documentar primero el hallazgo crítico ficticio","Establecer continuidad para inventario y producción"]},
+  "synthetic-assessment-004": {summary:"Caso demostrativo de alta consistencia, evidencia robusta y gate verde.",strengths:["Recetas, inventario, turnos y verificaciones disponibles","Carta breve y compras planificadas"],findings:["Dependencia de reservas y concentración de demanda","Coordinación cocina-salón como punto de vigilancia"],suggestedActions:["Mantener revisión periódica de capacidad por reserva","Documentar aprendizajes de coordinación entre áreas"]},
+  "synthetic-assessment-005": {summary:"Operación de alto volumen con nivel inicial y trazabilidad documental incompleta.",strengths:["Propuesta de valor y franja crítica bien delimitadas","Ventas y compras sintéticas disponibles"],findings:["Estandarización de porciones insuficiente","Registros de producción y mermas discontinuos"],suggestedActions:["Priorizar fichas de porción y controles simples de producción","Consolidar un registro diario de mermas y quiebres"]}
+};
+
 export function demoAssessmentResponses(assessmentId:string) {
   const assessment=demoAssessments.find(item=>item.id===assessmentId);
   return assessment ? demoResponses(assessment.level,assessment.evidenceGrade) : [];
