@@ -7,12 +7,12 @@
 - Fecha: 2026-08-29
 - Responsable de la actualización: Codex
 - Fase activa: Fase 3 — resultados, reportes y experiencia operativa
-- Estado técnico: MVP sintético funcional con cinco casos comparables, formularios normalizados, perfil operativo y exportaciones PDF/Excel; la demostración pública muestra la comparación de los cinco desenlaces y desplaza explícitamente hacia el criterio o la lectura solicitada. Las siete migraciones y sus pruebas estructurales están confirmadas en Supabase.
+- Estado técnico: MVP sintético funcional con cinco casos comparables, formularios normalizados, perfil operativo, cálculo transparente, exportaciones PDF/Excel, centro de evidencia y planes de mejora trazables. La demostración pública sigue aislada y no simula persistencia. Ocho migraciones se encuentran registradas; la última de planes de mejora fue aplicada por el usuario en Supabase el 2026-08-29.
 - Captura real: **NO AUTORIZADA**
 - Repositorio de aplicación: `PabloGoup/GOEI_APP` privado, con rama propia `main` y contenido de la app en la raíz.
 - Repositorio científico: `PabloGoup/GOEI`; no debe recibir merges ni commits de la aplicación.
 - Despliegue de producción Vercel: `https://goei-app.vercel.app` — confirmado públicamente accesible.
-- Última publicación confirmada: repositorio privado `PabloGoup/GOEI_APP`, rama `main`, commit de despliegue verificado `e670dc7`, Vercel `Ready` el 2026-08-26.
+- Último push de aplicación: repositorio privado `PabloGoup/GOEI_APP`, rama `main`, commit `56ddbf7` el 2026-08-29. La respuesta de la demo pública se verificó tras el push; las rutas conectadas requieren sesión para su QA visual.
 - Traspaso para Visual Studio: `docs/PROMPT_MAESTRO_CONTINUIDAD.md` y `../00_Gobernanza/coordinacion/GOEI_HANDOFF_0007_WEBAPP_VISUAL_STUDIO.md`.
 - Línea base técnica de continuidad: `GOEI-BSL-TECH-WEBAPP-0001`, anclada al commit `41643a411be0f817870ce50e8bbc9841b77082ef`.
 
@@ -239,6 +239,18 @@ La aplicación implementa el estándar, pero no crea ciencia. No puede inventar 
 - Se añadieron tres pruebas de integración del adaptador: bloqueo por período/gate ausentes, salida parcial con gate no verificable y bloqueo por criterio pendiente.
 - La fuente canónica del motor fue verificada nuevamente: TypeScript, build y 151/151 pruebas de paridad aprobadas el 2026-08-28.
 
+### Entregas de producto y trazabilidad — 2026-08-29
+
+- Navegación reorganizada por el recorrido de producto: Inicio, Establecimientos, Evaluaciones, Diagnóstico, Evolución; Informes, Evidencia, Mejora, Comparar y Metodología en herramientas complementarias.
+- `src/app/diagnostico/page.tsx` muestra desempeño, cobertura, confianza, gate y focos dimensionales sin presentarlos como regla normativa adicional.
+- El expediente expone el cálculo por dimensión y criterio: estado, nivel, evidencia, valor normalizado y cobertura; el gate continúa separado del puntaje.
+- `src/app/evidencia/page.tsx` reúne la evidencia autorizada por expediente. La demo pública no inventa adjuntos ni permite carga local.
+- `src/domain/business-profile.ts` incorpora facetas del Capítulo 15 del libro metodológico: FX-1 entrega, FX-2 producción y FX-3 naturaleza económica. El tamaño del negocio se conserva separado.
+- `src/components/simulation-lab.tsx` advierte cuando las facetas no coinciden: una diferencia de puntaje no se interpreta como superioridad de un modelo operacional distinto.
+- Migración `202608290008_improvement_actions.sql` crea acciones de mejora con fundamento, responsable, fecha, verificación, estado y RLS por expediente.
+- Ruta `/mejora`: crear, consultar y actualizar acciones como `OPEN`, `IN_PROGRESS`, `VERIFIED` o `CANCELLED`. Una acción es operativa y editable; no equivale a recomendación científica automática ni prueba de impacto.
+- Cambios publicados: rama de trabajo `goei-app-deploy` commit `7fc42a0`; repositorio de despliegue `main` commit `56ddbf7`.
+
 ### MVP sintético — recorrido completo preparado
 
 - La evaluación incorpora captura explícita de inicio y fin del período, estado del gate crítico, fundamento y versión opcional del protocolo.
@@ -368,7 +380,7 @@ git diff --check -- GOEI_APP
 3. Migración correctiva `202608260005_fix_criterion_id_constraints.sql`: instalada y prueba estructural confirmada.
 4. Prueba funcional `cross_organization_isolation.sql`: `PASS` confirmado el 2026-08-26.
 
-Las migraciones `202608280006_candidate_engine_runs.sql` y `202608280007_synthetic_business_profiles.sql` quedaron registradas y verificadas en el proyecto remoto el 2026-08-28. Las pruebas SQL `candidate_engine_runs.sql` y `synthetic_business_profiles.sql` devolvieron `PASS`; el historial local y remoto coincide para las siete migraciones. La credencial temporal usada para la conexión fue eliminada del llavero al terminar.
+Las migraciones `202608280006_candidate_engine_runs.sql` y `202608280007_synthetic_business_profiles.sql` quedaron registradas y verificadas en el proyecto remoto el 2026-08-28. Las pruebas SQL `candidate_engine_runs.sql` y `synthetic_business_profiles.sql` devolvieron `PASS`. La migración `202608290008_improvement_actions.sql` fue aplicada por el usuario el 2026-08-29; resta registrar una prueba SQL de recorrido/RLS específica para acciones de mejora. La credencial temporal usada para la conexión fue eliminada del llavero al terminar.
 
 No ejecutar la prueba antes de la migración correspondiente.
 
@@ -428,7 +440,9 @@ NEXT_PUBLIC_APP_MODE
 
 - Biblioteca explicativa ampliada para los 28 criterios.
 - Revisión paralela y resolución de discrepancias.
-- Planes de mejora y seguimiento temporal.
+- [x] Planes de mejora trazables para expedientes sintéticos conectados.
+- [ ] Prueba SQL/RLS de acciones de mejora y QA visual autenticado de la ruta `/mejora`.
+- Seguimiento temporal con dos o más mediciones comparables del mismo establecimiento.
 - Laboratorio visual conectado al banco sintético existente.
 - Auditoría integral de accesibilidad y seguridad.
 - Preparación controlada para el prepiloto real cuando los gates externos estén aprobados.
@@ -461,7 +475,7 @@ Al terminar:
 2. Mover tareas terminadas a “Trabajo completado”.
 3. Añadir nuevos pendientes o bloqueos descubiertos.
 4. Registrar migraciones, rutas y decisiones técnicas relevantes.
-5. Ejecutar verificaciones y anotar el resultado real.
+5. Ejecutar verificaciones y anotar el resultado real, incluido commit/push cuando aplique.
 6. No declarar cerrada una fase sin evidencia verificable.
 
 ## Próxima acción recomendada
