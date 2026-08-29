@@ -4,7 +4,7 @@ import Link from "next/link";
 import type { Route } from "next";
 import { useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
-import { BarChart3, BookOpenText, Building2, ClipboardCheck, FileOutput, FlaskConical, LayoutDashboard, LineChart, Menu, Settings, ShieldCheck, Users } from "lucide-react";
+import { BarChart3, BookOpenText, Building2, ClipboardCheck, FileOutput, FileUp, FlaskConical, LayoutDashboard, LineChart, Menu, Settings, ShieldCheck, Users } from "lucide-react";
 
 const primary = [
   { label: "Inicio", shortLabel: "Inicio", icon: LayoutDashboard, href: "/dashboard" },
@@ -16,6 +16,7 @@ const primary = [
 
 const secondary = [
   { label: "Informes", icon: FileOutput, href: "/resultados" },
+  { label: "Evidencia", icon: FileUp, href: "/evidencia" },
   { label: "Comparar", icon: FlaskConical, href: "/laboratorio" },
   { label: "Metodología", icon: BookOpenText, href: "/guia" },
   { label: "Equipo y roles", icon: Users, href: "/administracion" },

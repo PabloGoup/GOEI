@@ -105,3 +105,36 @@ export async function listCalculationRuns() {
     return {id:item.id,assessmentId:item.assessment_id,establishment:establishment?.display_name ?? "Establecimiento",code:establishment?.pseudonymous_code ?? "—",calculatedAt:item.calculated_at,inputDigest:item.input_digest,contractVersion:item.contract_version,modelVersion:item.model_version,...output};
   });
 }
+
+/** Inventory for the evidence centre.  Files are never exposed here: opening one
+ * still requires the short-lived, audited URL created by the evidence action. */
+export async function listEvidenceInventory() {
+  if (env.appMode === "demo") return [];
+  const supabase = await createClient();
+  if (!supabase) return [];
+  const { data, error } = await supabase.from("evidence_items")
+    .select("id,assessment_id,criterion_id,evidence_code,title,mime_type,size_bytes,provenance,sensitivity,created_at,assessments(establishments(pseudonymous_code,display_name))")
+    .is("deleted_at", null)
+    .order("created_at", { ascending: false })
+    .limit(100);
+  if (error || !data) return [];
+  return data.map(item => {
+    const assessment = Array.isArray(item.assessments) ? item.assessments[0] : item.assessments;
+    const establishmentRelation = assessment?.establishments;
+    const establishment = Array.isArray(establishmentRelation) ? establishmentRelation[0] : establishmentRelation;
+    return {
+      id: item.id,
+      assessmentId: item.assessment_id,
+      criterionId: item.criterion_id,
+      code: item.evidence_code,
+      title: item.title,
+      mimeType: item.mime_type,
+      sizeBytes: item.size_bytes,
+      provenance: item.provenance,
+      sensitivity: item.sensitivity,
+      createdAt: item.created_at,
+      establishment: establishment?.display_name ?? "Establecimiento",
+      establishmentCode: establishment?.pseudonymous_code ?? "—"
+    };
+  });
+}
