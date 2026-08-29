@@ -93,7 +93,7 @@ export async function listCalculationRuns() {
     const assessment = Array.isArray(item.assessments) ? item.assessments[0] : item.assessments;
     const establishmentRelation = assessment?.establishments;
     const establishment = Array.isArray(establishmentRelation) ? establishmentRelation[0] : establishmentRelation;
-    const output = item.output_payload as {displayFinalScore:number|null;displayCoverage:number;displayConfidence:number|null;emissionStatus:string;band:string;gate:string};
+    const output = item.output_payload as {displayFinalScore:number|null;displayCoverage:number;displayConfidence:number|null;emissionStatus:string;band:string;gate:string;dimensions:{dimensionId:string;displayScore:number|null}[]};
     return {id:item.id,assessmentId:item.assessment_id,establishment:establishment?.display_name ?? "Establecimiento",code:establishment?.pseudonymous_code ?? "—",calculatedAt:item.calculated_at,inputDigest:item.input_digest,contractVersion:item.contract_version,modelVersion:item.model_version,...output};
   });
 }

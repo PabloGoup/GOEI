@@ -284,6 +284,13 @@ La aplicación implementa el estándar, pero no crea ciencia. No puede inventar 
 - El estado antiguo de `localStorage` ya no reemplaza los expedientes canónicos evaluados.
 - Cada caso incluye fortalezas, hallazgos y acciones ilustrativas propias, separadas expresamente de cualquier recomendación ratificada del estándar.
 
+### Laboratorio conectado al banco sintético
+
+- La ruta `/laboratorio` ya no es un estado vacío: permite contrastar dos lecturas provisionales existentes del banco sintético.
+- Se puede alternar la variable visible entre desempeño, cobertura y confianza, manteniéndolas separadas en todo momento.
+- La comparación muestra los siete perfiles dimensionales y conserva los gates de ambos expedientes; nunca los compensa ni crea proyecciones.
+- Los controles enlazan directamente las dos evaluaciones de origen para que la lectura sea verificable.
+
 ### Resiliencia de acceso y carga conectada
 
 - La verificación de sesión y permisos ahora tiene límites de espera: una demora de Supabase no deja la interfaz en un estado indeterminado.
