@@ -7,7 +7,7 @@
 - Fecha: 2026-08-28
 - Responsable de la actualización: Codex
 - Fase activa: Fase 3 — resultados, reportes y experiencia operativa
-- Estado técnico: MVP sintético funcional con cinco casos comparables, formularios normalizados, perfil operativo y exportaciones PDF/Excel; persistencia conectada de ejecuciones preparada y pendiente de instalar la migración `202608280006_candidate_engine_runs.sql`
+- Estado técnico: MVP sintético funcional con cinco casos comparables, formularios normalizados, perfil operativo y exportaciones PDF/Excel; las siete migraciones y sus pruebas estructurales están confirmadas en Supabase.
 - Captura real: **NO AUTORIZADA**
 - Repositorio de aplicación: `PabloGoup/GOEI_APP` privado, con rama propia `main` y contenido de la app en la raíz.
 - Repositorio científico: `PabloGoup/GOEI`; no debe recibir merges ni commits de la aplicación.
@@ -272,6 +272,15 @@ La aplicación implementa el estándar, pero no crea ciencia. No puede inventar 
 - La navegación resalta la ruta activa correctamente y la tarjeta de usuario abre un perfil editable; organización y rol permanecen visibles y separados del nombre.
 - Se añadió `uuid >=11.1.1` como override de seguridad para la cadena de ExcelJS; `npm audit` volvió a cero vulnerabilidades.
 
+### Sistema visual editorial y navegación adaptable
+
+- La barra lateral fue reemplazada por una cabecera superior persistente en el portal conectado y en la demostración pública.
+- Las rutas de uso frecuente permanecen visibles; guía, laboratorio y administración se agrupan en un menú `Más` sin perder ninguna opción operacional.
+- En pantallas móviles la navegación pasa a un dock inferior de cinco accesos, con una hoja de opciones secundarias y respeto por el área segura del dispositivo.
+- La portada dejó el patrón de dashboard promocional y adoptó una narrativa editorial: sistema de siete dimensiones, recorrido trazable y casos demostrativos.
+- Tarjetas, estados y superficies ganaron jerarquía, profundidad y microinteracciones breves; todas las animaciones respetan `prefers-reduced-motion`.
+- El cambio es exclusivamente visual y de navegación: no altera criterios, gates, cálculo, resultados ni autoridad metodológica.
+
 ## Verificaciones realizadas
 
 Última verificación completa después de preparar producción conectada y sustituir los resúmenes codificados:
@@ -316,7 +325,7 @@ git diff --check -- GOEI_APP
 3. Migración correctiva `202608260005_fix_criterion_id_constraints.sql`: instalada y prueba estructural confirmada.
 4. Prueba funcional `cross_organization_isolation.sql`: `PASS` confirmado el 2026-08-26.
 
-Las migraciones `202608280006_candidate_engine_runs.sql` y `202608280007_synthetic_business_profiles.sql` continúan pendientes de ejecución remota. El proyecto quedó enlazado por CLI el 2026-08-28, pero la conexión PostgreSQL requiere la contraseña de base no almacenada en el repositorio; no se expuso ni solicitó por chat.
+Las migraciones `202608280006_candidate_engine_runs.sql` y `202608280007_synthetic_business_profiles.sql` quedaron registradas y verificadas en el proyecto remoto el 2026-08-28. Las pruebas SQL `candidate_engine_runs.sql` y `synthetic_business_profiles.sql` devolvieron `PASS`; el historial local y remoto coincide para las siete migraciones. La credencial temporal usada para la conexión fue eliminada del llavero al terminar.
 
 No ejecutar la prueba antes de la migración correspondiente.
 
@@ -369,8 +378,8 @@ NEXT_PUBLIC_APP_MODE
 - [x] Preparar visualización separada de desempeño, cobertura y confianza cuando el contrato esté completo.
 - [x] Generar reportes PDF y Excel desde servidor.
 - [x] Mantener la etiqueta provisional en pantalla y resultados.
-- [ ] Instalar y confirmar `PASS` de la migración/prueba de ejecuciones en Supabase.
-- [ ] Instalar y confirmar `PASS` de la migración/prueba de perfiles sintéticos en Supabase.
+- [x] Instalar y confirmar `PASS` de la migración/prueba de ejecuciones en Supabase.
+- [x] Instalar y confirmar `PASS` de la migración/prueba de perfiles sintéticos en Supabase.
 
 ### Fases posteriores
 
@@ -414,4 +423,4 @@ Al terminar:
 
 ## Próxima acción recomendada
 
-Instalar y verificar en Supabase las migraciones pendientes de ejecuciones y perfiles sintéticos; después conectar el banco de cinco casos a una carga demostrativa reproducible para organizaciones autenticadas. La captura real permanece bloqueada.
+Conectar el banco de cinco casos a una carga demostrativa reproducible para organizaciones autenticadas y validar visualmente el nuevo sistema de navegación en producción. La captura real permanece bloqueada.
