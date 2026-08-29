@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState, useTransition } from "react";
+import { useEffect, useMemo, useRef, useState, useTransition } from "react";
 import { ArrowLeft, ArrowRight, Calculator, CalendarRange, Check, ChevronLeft, ChevronRight, CircleCheckBig, Info, Lightbulb, LockKeyhole, RotateCcw, Save, SearchCheck, Send, ShieldAlert, ShieldCheck } from "lucide-react";
 import Link from "next/link";
 import type { Route } from "next";
@@ -40,8 +40,11 @@ export function AssessmentWorkspace({ assessment, initialResponses = [], initial
   const [gateProtocolVersion,setGateProtocolVersion] = useState(assessment.gateProtocolVersion ?? "");
   const [settingsSaved,setSettingsSaved] = useState(Boolean(assessment.periodStart && assessment.periodEnd && assessment.gateStatus && assessment.gateBasis));
   const [engineMessage,setEngineMessage] = useState("");
+  const [navigationMessage,setNavigationMessage] = useState("");
   const [latestOutput,setLatestOutput] = useState<AssessmentOutput | null>(initialCalculationRuns[0]?.output_payload ?? null);
   const [isTransitioning,startTransition] = useTransition();
+  const criterionHeadingRef = useRef<HTMLDivElement>(null);
+  const resultRef = useRef<HTMLElement>(null);
   const criterion = instrumentCriteria.find(item => item.id === selectedId) ?? instrumentCriteria[0];
   const response = responses[criterion.id];
   const index = instrumentCriteria.findIndex(item => item.id === criterion.id);
@@ -94,7 +97,14 @@ export function AssessmentWorkspace({ assessment, initialResponses = [], initial
     setSaved(false);
   };
   const setStatus = (status: CriterionStatus) => update({status,level:status === "EVALUABLE" ? response.level : null,evidenceGrade:status === "EVALUABLE" ? Math.max(1,response.evidenceGrade) : 0});
-  const move = (direction:number) => setSelectedId(instrumentCriteria[Math.max(0,Math.min(instrumentCriteria.length-1,index+direction))].id);
+  const move = (direction:number) => {
+    const nextIndex = Math.max(0,Math.min(instrumentCriteria.length-1,index+direction));
+    const nextCriterion = instrumentCriteria[nextIndex];
+    if (nextCriterion.id === criterion.id) return;
+    setSelectedId(nextCriterion.id);
+    setNavigationMessage(`Ahora estás en ${nextCriterion.id}: ${nextCriterion.name}.`);
+    window.setTimeout(() => criterionHeadingRef.current?.scrollIntoView({behavior:"smooth",block:"start"}), 0);
+  };
   const runTransition = (action: AssessmentTransition) => {
     setWorkflowMessage("");
     if ((action === "RETURN" || action === "CLOSE") && reviewNote.trim().length < 4) { setWorkflowMessage("Escribe una nota de revisión de al menos cuatro caracteres."); return; }
@@ -119,7 +129,12 @@ export function AssessmentWorkspace({ assessment, initialResponses = [], initial
     setEngineMessage("");
     if (!engineResult.ready) { setEngineMessage(engineResult.blockers.join(" ")); return; }
     if (!settingsSaved) { setEngineMessage("Guarda primero el período y el gate crítico."); return; }
-    if (persistence === "local") { setLatestOutput(engineResult.output); setEngineMessage("Lectura provisional calculada localmente; no se conserva fuera de este navegador."); return; }
+    if (persistence === "local") {
+      setLatestOutput(engineResult.output);
+      setEngineMessage("Lectura provisional lista. Te llevamos al resultado del caso.");
+      window.setTimeout(() => resultRef.current?.scrollIntoView({behavior:"smooth",block:"start"}), 0);
+      return;
+    }
     startTransition(()=>{ void executeCandidateCalculation({assessmentId:assessment.id}).then(result=>{
       if (!result.ok) { setEngineMessage([result.error,...("blockers" in result ? result.blockers ?? [] : [])].join(" ")); return; }
       setLatestOutput(result.output); setEngineMessage("Ejecución guardada con entrada, salida, versiones y digest reproducible.");
@@ -144,10 +159,10 @@ export function AssessmentWorkspace({ assessment, initialResponses = [], initial
     <section className="engine-readiness" aria-label="Preparación del motor GOEI candidato">
       <div><span className="section-kicker">Motor GOEI · paquete independiente</span><h2>{engineResult.ready ? "Lectura provisional disponible" : "Cálculo bloqueado de forma responsable"}</h2><p>El motor candidato ya está conectado, pero sólo calcula cuando el contrato está completo y explícito.</p></div>
       {engineResult.ready ? <div className="engine-metrics"><span><small>Desempeño</small><strong>{engineResult.output.displayFinalScore ?? "—"}</strong></span><span><small>Cobertura</small><strong>{engineResult.output.displayCoverage}%</strong></span><span><small>Confianza</small><strong>{engineResult.output.displayConfidence ?? "—"}%</strong></span></div> : <div className="engine-blockers"><strong>{engineResult.reviewedCriteria}/28 criterios revisados</strong><ul>{engineResult.blockers.map(item=><li key={item}>{item}</li>)}</ul></div>}
-      <div className="engine-actions"><button className="button primary" disabled={!engineResult.ready || !settingsSaved || isTransitioning} onClick={executeEngine}><Calculator size={16}/> Ejecutar lectura provisional</button>{engineMessage && <p role="status">{engineMessage}</p>}</div>
+      <div className="engine-actions"><button className="button primary" disabled={!engineResult.ready || !settingsSaved || isTransitioning} onClick={executeEngine}><Calculator size={16}/> {displayedOutput ? "Ver lectura provisional" : "Ejecutar lectura provisional"}</button>{engineMessage && <p role="status">{engineMessage}</p>}</div>
       <small>PROVISIONAL — NO VALIDADO. La preparación técnica no sustituye ratificación científica.</small>
     </section>
-    {displayedOutput && <section className="calculation-result" aria-label="Última lectura provisional"><div className="result-heading"><div><span className="section-kicker">Lectura provisional del caso</span><h2>{displayedOutput.displayFinalScore === null ? "Perfil parcial sin puntaje" : `${displayedOutput.displayFinalScore} / 100`}</h2><p>{displayedOutput.emissionStatus} · Gate {displayedOutput.gate}</p></div><div className="engine-metrics"><span><small>Cobertura</small><strong>{displayedOutput.displayCoverage}%</strong></span><span><small>Confianza</small><strong>{displayedOutput.displayConfidence ?? "—"}%</strong></span></div></div><div className="dimension-results">{displayedOutput.dimensions.map(item=><div key={item.dimensionId}><span>{item.dimensionId}</span><div><i style={{width:`${item.displayScore ?? 0}%`}}/></div><strong>{item.displayScore ?? "—"}</strong></div>)}</div><footer><span>Modelo {displayedOutput.modelVersion}</span><span>{displayedOutput.trace.inputDigest.slice(0,22)}…</span><strong>PROVISIONAL — NO VALIDADO</strong></footer></section>}
+    {displayedOutput && <section ref={resultRef} className="calculation-result" aria-label="Última lectura provisional" tabIndex={-1}><div className="result-heading"><div><span className="section-kicker">Lectura provisional del caso</span><h2>{displayedOutput.displayFinalScore === null ? "Perfil parcial sin puntaje" : `${displayedOutput.displayFinalScore} / 100`}</h2><p>{displayedOutput.emissionStatus} · Gate {displayedOutput.gate}</p></div><div className="engine-metrics"><span><small>Cobertura</small><strong>{displayedOutput.displayCoverage}%</strong></span><span><small>Confianza</small><strong>{displayedOutput.displayConfidence ?? "—"}%</strong></span></div></div><div className="dimension-results">{displayedOutput.dimensions.map(item=><div key={item.dimensionId}><span>{item.dimensionId}</span><div><i style={{width:`${item.displayScore ?? 0}%`}}/></div><strong>{item.displayScore ?? "—"}</strong></div>)}</div><footer><span>Modelo {displayedOutput.modelVersion}</span><span>{displayedOutput.trace.inputDigest.slice(0,22)}…</span><strong>PROVISIONAL — NO VALIDADO</strong></footer></section>}
     {demoInsights && <section className="demo-insights" aria-label="Lectura explicada del caso sintético">
       <header><div><span className="section-kicker">Lectura explicada del caso</span><h2>Qué observar y qué podrías hacer</h2><p>{demoInsights.summary}</p></div><span className="illustrative-label">Orientación ilustrativa · no prescriptiva</span></header>
       <div className="insight-grid">
@@ -163,7 +178,7 @@ export function AssessmentWorkspace({ assessment, initialResponses = [], initial
         {instrumentDimensions.map(dimension => <section key={dimension.id}><h2>{dimension.id}<span>{dimension.name}</span></h2>{instrumentCriteria.filter(c=>c.dimensionId===dimension.id).map(item => <button className={item.id===criterion.id?"active":""} key={item.id} onClick={()=>setSelectedId(item.id)}><i className={responses[item.id].status!=="PENDING"?"done":""}>{responses[item.id].status!=="PENDING"?<Check size={11}/>:item.id.split(".")[1]}</i><span>{item.name}</span></button>)}</section>)}
       </aside>
       <article className="criterion-panel">
-        <div className="criterion-heading"><div><span className="section-kicker">{criterion.dimensionId} · Criterio {index+1} de 28</span><h2>{criterion.id} — {criterion.name}</h2></div><span className="candidate-badge">CANDIDATO</span></div>
+        <div className="criterion-heading" ref={criterionHeadingRef}><div><span className="section-kicker">{criterion.dimensionId} · Criterio {index+1} de 28</span><h2>{criterion.id} — {criterion.name}</h2></div><span className="candidate-badge">CANDIDATO</span></div>
         <div className="orientation-box"><Info size={18}/><div><strong>Qué evidencia orienta este criterio</strong><p>{criterion.evidenceHint}</p><small>Síntesis orientativa no normativa. La referencia autorizada es el modelo metodológico.</small></div></div>
         <fieldset disabled={!editable}><legend>1. Estado de evaluación</legend><div className="segmented-options"><button className={response.status==="EVALUABLE"?"selected":""} onClick={()=>setStatus("EVALUABLE")}>Evaluable</button><button className={response.status==="NO_APLICA"?"selected":""} onClick={()=>setStatus("NO_APLICA")}>No aplica</button><button className={response.status==="NO_VERIFICABLE"?"selected":""} onClick={()=>setStatus("NO_VERIFICABLE")}>No verificable</button></div></fieldset>
         <fieldset disabled={!editable || response.status!=="EVALUABLE"}><legend>2. Nivel observado</legend><div className="level-options">{levelRubric.map(item=><button className={response.level===item.level?"selected":""} onClick={()=>update({level:item.level})} key={item.level}><b>{item.level}</b><span><strong>{item.label}</strong><small>{item.description}</small></span></button>)}</div></fieldset>
@@ -171,7 +186,7 @@ export function AssessmentWorkspace({ assessment, initialResponses = [], initial
         <fieldset disabled={!editable}><legend>4. Hallazgo y justificación</legend><textarea value={response.justification} onChange={event=>update({justification:event.target.value})} placeholder={response.status==="NO_APLICA"?"Fundamento previo de no aplicabilidad…":"Describe únicamente hechos respaldados por el expediente…"}/></fieldset>
         <section className="criterion-evidence"><h3>5. Evidencia privada</h3><EvidenceUploader assessmentId={assessment.id} criterionId={criterion.id} enabled={persistence==="supabase" && editable} items={initialEvidence.filter(item=>item.criterion_id===criterion.id)}/></section>
         <div className="criterion-lock"><LockKeyhole size={15}/> El motor candidato no emite un resultado hasta completar el período, el gate crítico y los 28 criterios.</div>
-        <footer className="criterion-footer"><button className="button secondary" disabled={index===0} onClick={()=>move(-1)}><ChevronLeft size={16}/> Anterior</button><span>Cambios {saved?"guardados":"pendientes"}</span><button className="button primary" disabled={index===instrumentCriteria.length-1} onClick={()=>move(1)}>Siguiente <ChevronRight size={16}/></button></footer>
+        <footer className="criterion-footer"><button className="button secondary" disabled={index===0} onClick={()=>move(-1)}><ChevronLeft size={16}/> Anterior</button><span>{navigationMessage || `Criterio ${index+1} de ${instrumentCriteria.length} · Cambios ${saved?"guardados":"pendientes"}`}</span><button className="button primary" disabled={index===instrumentCriteria.length-1} onClick={()=>move(1)}>Siguiente <ChevronRight size={16}/></button></footer>
       </article>
     </div>
   </div>;

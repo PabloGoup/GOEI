@@ -4,10 +4,10 @@
 
 ## Última actualización
 
-- Fecha: 2026-08-28
+- Fecha: 2026-08-29
 - Responsable de la actualización: Codex
 - Fase activa: Fase 3 — resultados, reportes y experiencia operativa
-- Estado técnico: MVP sintético funcional con cinco casos comparables, formularios normalizados, perfil operativo y exportaciones PDF/Excel; las siete migraciones y sus pruebas estructurales están confirmadas en Supabase.
+- Estado técnico: MVP sintético funcional con cinco casos comparables, formularios normalizados, perfil operativo y exportaciones PDF/Excel; la demostración pública muestra la comparación de los cinco desenlaces y desplaza explícitamente hacia el criterio o la lectura solicitada. Las siete migraciones y sus pruebas estructurales están confirmadas en Supabase.
 - Captura real: **NO AUTORIZADA**
 - Repositorio de aplicación: `PabloGoup/GOEI_APP` privado, con rama propia `main` y contenido de la app en la raíz.
 - Repositorio científico: `PabloGoup/GOEI`; no debe recibir merges ni commits de la aplicación.

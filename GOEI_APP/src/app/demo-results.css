@@ -1,0 +1,12 @@
+.demo-results-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.demo-result{margin:0;display:flex;flex-direction:column;gap:14px;padding:20px}
+.demo-result .result-heading h3{margin:4px 0;color:var(--navy);font-size:17px}
+.demo-result .engine-metrics{grid-template-columns:repeat(2,minmax(80px,1fr))}
+.demo-result .button{align-self:flex-start;margin-top:auto}
+.criterion-footer>span{max-width:54%;text-align:center;line-height:1.35}
+
+@media(max-width:780px){
+  .demo-results-grid{grid-template-columns:1fr}
+  .demo-result .button{width:100%;justify-content:center}
+  .criterion-footer>span{max-width:48%}
+}
