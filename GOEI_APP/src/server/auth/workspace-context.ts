@@ -2,6 +2,7 @@ import { redirect } from "next/navigation";
 import { roleLabels, type AppRole } from "@/domain/access";
 import { env } from "@/lib/env";
 import { createClient } from "@/lib/supabase/server";
+import { RemoteServiceTimeout, waitForRemote } from "@/lib/remote";
 
 export type WorkspaceContext = {
   mode: "demo" | "connected";
@@ -29,16 +30,30 @@ export async function requireWorkspaceContext(): Promise<WorkspaceContext> {
 
   const supabase = await createClient();
   if (!supabase) redirect("/login?error=configuracion");
-  const { data: claimsData, error: claimsError } = await supabase.auth.getClaims();
+  let claimsResult;
+  try {
+    claimsResult = await waitForRemote("validar la sesión", supabase.auth.getClaims());
+  } catch (error) {
+    if (error instanceof RemoteServiceTimeout) redirect("/login?error=conexion");
+    redirect("/login?error=sesion");
+  }
+  const { data: claimsData, error: claimsError } = claimsResult;
   const userId = claimsData?.claims?.sub;
   if (claimsError || !userId) redirect("/login?error=sesion");
 
-  const [{ data: profile }, { data: memberships, error: membershipError }] = await Promise.all([
-    supabase.from("profiles").select("display_name").eq("id", userId).maybeSingle(),
-    supabase.from("organization_memberships")
-      .select("organization_id,role,organizations(name)")
-      .eq("user_id", userId).eq("status", "active").limit(1)
-  ]);
+  let contextQueries;
+  try {
+    contextQueries = await waitForRemote("cargar permisos", Promise.all([
+      supabase.from("profiles").select("display_name").eq("id", userId).maybeSingle(),
+      supabase.from("organization_memberships")
+        .select("organization_id,role,organizations(name)")
+        .eq("user_id", userId).eq("status", "active").limit(1)
+    ]));
+  } catch (error) {
+    if (error instanceof RemoteServiceTimeout) redirect("/login?error=conexion");
+    redirect("/login?error=permisos");
+  }
+  const [{ data: profile }, { data: memberships, error: membershipError }] = contextQueries;
   if (membershipError) redirect("/login?error=permisos");
   const membership = memberships?.[0];
   if (!membership) redirect("/onboarding");
@@ -53,4 +68,3 @@ export async function requireWorkspaceContext(): Promise<WorkspaceContext> {
     role, roleLabel: roleLabels[role]
   };
 }
-

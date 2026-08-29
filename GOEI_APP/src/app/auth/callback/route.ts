@@ -19,6 +19,7 @@ export async function GET(request: Request) {
         }
         return NextResponse.redirect(`${url.origin}${next}`);
       }
+      console.error("GOEI OAuth callback exchange failed", { message: error.message });
     }
   }
 

@@ -284,6 +284,14 @@ La aplicación implementa el estándar, pero no crea ciencia. No puede inventar 
 - El estado antiguo de `localStorage` ya no reemplaza los expedientes canónicos evaluados.
 - Cada caso incluye fortalezas, hallazgos y acciones ilustrativas propias, separadas expresamente de cualquier recomendación ratificada del estándar.
 
+### Resiliencia de acceso y carga conectada
+
+- La verificación de sesión y permisos ahora tiene límites de espera: una demora de Supabase no deja la interfaz en un estado indeterminado.
+- Se incorporaron pantalla de carga, recuperación con `Reintentar` y mensajes de login diferenciados para conexión, callback OAuth, origen y proveedor Google.
+- El retorno OAuth construye la URL pública desde los encabezados reenviados por Vercel, reduciendo la dependencia de un encabezado `origin` ausente o inconsistente.
+- El menú `Más` se cierra al elegir una ruta, al pulsar fuera o con `Escape`, por lo que no queda cubriendo la pantalla.
+- Una organización conectada y vacía puede cargar cinco casos demostrativos sintéticos desde el panorama; la acción es idempotente, conserva perfiles y 28 respuestas por expediente, y no habilita captura real.
+
 ## Verificaciones realizadas
 
 Última verificación completa después de preparar producción conectada y sustituir los resúmenes codificados:

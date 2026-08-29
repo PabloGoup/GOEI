@@ -26,11 +26,14 @@ export async function signInWithGoogle() {
   const supabase = await createClient();
   if (!supabase) redirect("/login?error=configuracion");
   const requestHeaders = await headers();
-  const origin = requestHeaders.get("origin");
+  const forwardedHost = requestHeaders.get("x-forwarded-host");
+  const host = forwardedHost ?? requestHeaders.get("host");
+  const forwardedProtocol = requestHeaders.get("x-forwarded-proto") ?? "https";
+  const origin = host ? `${forwardedProtocol}://${host}` : requestHeaders.get("origin");
   if (!origin) redirect("/login?error=origen");
   const { data, error } = await supabase.auth.signInWithOAuth({
     provider: "google",
-    options: { redirectTo: `${origin}/auth/callback` }
+    options: { redirectTo: `${origin}/auth/callback?next=/dashboard` }
   });
   if (error || !data.url) redirect("/login?error=google");
   redirect(data.url as Route);

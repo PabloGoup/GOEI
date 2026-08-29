@@ -1,6 +1,7 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 import { env } from "@/lib/env";
+import { waitForRemote } from "@/lib/remote";
 
 export async function updateSession(request: NextRequest) {
   if (!env.supabaseUrl || !env.supabaseKey) return NextResponse.next({ request });
@@ -15,6 +16,11 @@ export async function updateSession(request: NextRequest) {
       }
     }
   });
-  await supabase.auth.getClaims();
+  try {
+    await waitForRemote("validar la sesión", supabase.auth.getClaims(), 5000);
+  } catch {
+    // La página mostrará una recuperación controlada si su consulta autenticada tampoco responde.
+    // No bloqueamos toda la navegación por una renovación de sesión lenta.
+  }
   return response;
 }

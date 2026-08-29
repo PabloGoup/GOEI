@@ -6,13 +6,15 @@ import { StatusPill } from "@/components/status-pill";
 import { assessmentStatusLabels, type AssessmentStatus } from "@/domain/assessment-lifecycle";
 import { methodologyStatus } from "@/domain/methodology";
 import { listAssessments, listEstablishments } from "@/server/repositories/workspace";
+import { loadConnectedDemoCases } from "@/server/actions/workspace-actions";
 import { AlertTriangle, ArrowRight, Building2, CalendarDays, CheckCircle2, ChevronRight, ClipboardCheck, FileSearch, Plus, ShieldAlert } from "lucide-react";
 
 const tone = (status: string) => status === "CLOSED" ? "success" as const : status === "SUBMITTED" || status === "IN_REVIEW" ? "neutral" as const : "warning" as const;
 const statusLabel = (status: string) => assessmentStatusLabels[status as AssessmentStatus] ?? status;
 
-export default async function DashboardPage() {
+export default async function DashboardPage({searchParams}:{searchParams:Promise<{seed?:string}>}) {
   const [establishments, assessments] = await Promise.all([listEstablishments(), listAssessments()]);
+  const { seed } = await searchParams;
   const active = assessments.filter(item => !["CLOSED", "CANCELLED"].includes(item.status));
   const awaitingReview = assessments.filter(item => ["SUBMITTED", "IN_REVIEW"].includes(item.status));
   const closed = assessments.filter(item => item.status === "CLOSED");
@@ -34,6 +36,9 @@ export default async function DashboardPage() {
         <article className="metric-card"><span className="metric-icon red"><AlertTriangle /></span><div><small>Gates bloqueados</small><strong>{methodologyStatus.blockedCriteria.length}</strong><p>{methodologyStatus.blockedCriteria.join(" y ")}</p></div></article>
       </section>
 
+      {seed === "ok" && <div className="notice success"><CheckCircle2 size={18}/><span><strong>Casos demostrativos cargados</strong><small>Se añadieron cinco expedientes exclusivamente sintéticos a esta organización.</small></span></div>}
+      {seed === "existing" && <div className="notice success"><CheckCircle2 size={18}/><span><strong>Los casos ya estaban disponibles</strong><small>No se duplicó ningún establecimiento sintético.</small></span></div>}
+      {seed && !["ok","existing"].includes(seed) && <div className="notice warning"><span><strong>No pudimos cargar los casos</strong><small>La organización no cambió. Reintenta o revisa tu sesión.</small></span></div>}
       {current ? <section className="dashboard-grid">
         <article className="card current-assessment">
           <div className="card-head"><div><span className="section-kicker">Expediente prioritario</span><h2>{current.establishment}</h2><p>{current.code} · Caso exclusivamente sintético</p></div><StatusPill tone={tone(current.status)}>{statusLabel(current.status)}</StatusPill></div>
@@ -49,7 +54,7 @@ export default async function DashboardPage() {
           <div className="evidence-score"><strong>{current.progress}%</strong><span>Criterios revisados</span></div>
           <div className="help-box"><strong>¿Qué significa?</strong><p>El avance sólo indica completitud del expediente. No representa desempeño, cobertura de evidencia ni un resultado GOEI.</p><Link href="/guia">Comprender la metodología <ArrowRight size={14} /></Link></div>
         </aside>
-      </section> : <section className="card empty-state"><ClipboardCheck size={28}/><h2>Aún no hay evaluaciones sintéticas</h2><p>Crea primero un establecimiento y luego abre su expediente de aplicación.</p><Link className="button primary" href="/establecimientos/nuevo">Crear caso sintético</Link></section>}
+      </section> : <section className="card empty-state"><ClipboardCheck size={28}/><h2>Aún no hay evaluaciones sintéticas</h2><p>Puedes crear un caso propio o cargar los cinco expedientes demostrativos ya evaluados para recorrer la app completa.</p><div className="empty-actions"><Link className="button secondary" href="/establecimientos/nuevo">Crear caso sintético</Link><form action={loadConnectedDemoCases}><button className="button primary" type="submit">Cargar 5 casos demostrativos</button></form></div><small>La carga crea sólo datos ficticios y no habilita captura real.</small></section>}
 
       <section className="card table-card" id="evaluaciones">
         <div className="card-head"><div><span className="section-kicker">Actividad reciente</span><h2>Evaluaciones</h2></div><Link className="text-button" href="/evaluaciones">Ver todas <ArrowRight size={15} /></Link></div>
