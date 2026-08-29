@@ -4,18 +4,20 @@ import Link from "next/link";
 import type { Route } from "next";
 import { useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
-import { BarChart3, BookOpenText, Building2, ClipboardCheck, FlaskConical, LayoutDashboard, Menu, Settings, ShieldCheck, Users } from "lucide-react";
+import { BarChart3, BookOpenText, Building2, ClipboardCheck, FileOutput, FlaskConical, LayoutDashboard, LineChart, Menu, Settings, ShieldCheck, Users } from "lucide-react";
 
 const primary = [
-  { label: "Panorama", shortLabel: "Inicio", icon: LayoutDashboard, href: "/dashboard" },
+  { label: "Inicio", shortLabel: "Inicio", icon: LayoutDashboard, href: "/dashboard" },
   { label: "Establecimientos", shortLabel: "Locales", icon: Building2, href: "/establecimientos" },
   { label: "Evaluaciones", shortLabel: "Evaluar", icon: ClipboardCheck, href: "/evaluaciones" },
-  { label: "Resultados", shortLabel: "Resultados", icon: BarChart3, href: "/resultados" }
+  { label: "Diagnóstico", shortLabel: "Diagnóstico", icon: BarChart3, href: "/diagnostico" },
+  { label: "Evolución", shortLabel: "Evolución", icon: LineChart, href: "/evolucion" }
 ];
 
 const secondary = [
-  { label: "Guía GOEI", icon: BookOpenText, href: "/guia" },
-  { label: "Laboratorio", icon: FlaskConical, href: "/laboratorio" },
+  { label: "Informes", icon: FileOutput, href: "/resultados" },
+  { label: "Comparar", icon: FlaskConical, href: "/laboratorio" },
+  { label: "Metodología", icon: BookOpenText, href: "/guia" },
   { label: "Equipo y roles", icon: Users, href: "/administracion" },
   { label: "Auditoría", icon: ShieldCheck, href: "/auditoria" },
   { label: "Configuración", icon: Settings, href: "/configuracion" }

@@ -277,6 +277,11 @@ La aplicación implementa el estándar, pero no crea ciencia. No puede inventar 
 
 ### Sistema visual editorial, navegación lateral y casos explicados
 
+- La navegación se reorganizó según el recorrido del producto: Inicio, Establecimientos, Evaluaciones, Diagnóstico y Evolución; Informes, Comparar y Metodología permanecen disponibles sin exponer toda la complejidad de administración.
+- Inicio muestra conjuntamente puntaje, gate, confianza y cobertura cuando existe una ejecución; Diagnóstico explica el perfil y los focos dimensionales sin convertir esa lectura en una regla normativa de priorización.
+- Evolución exige al menos dos ejecuciones trazables del mismo expediente y advierte cuando sólo existen casos distintos, para no fabricar una trayectoria inexistente.
+- El expediente añade un desglose transparente por dimensión y criterio, con nivel, subpuntaje normalizado, evidencia y condición de calculabilidad.
+
 - La navegación lateral persistente se restauró en escritorio para el portal conectado y la demostración pública, conservando la estética editorial de superficies y tarjetas.
 - Las rutas de uso frecuente permanecen visibles y guía, laboratorio y administración continúan accesibles mediante `Más`.
 - En pantallas móviles la navegación pasa a un dock inferior de cinco accesos, con una hoja de opciones secundarias y respeto por el área segura del dispositivo.

@@ -5,35 +5,34 @@ import { ProgressRing } from "@/components/progress-ring";
 import { StatusPill } from "@/components/status-pill";
 import { assessmentStatusLabels, type AssessmentStatus } from "@/domain/assessment-lifecycle";
 import { methodologyStatus } from "@/domain/methodology";
-import { listAssessments, listEstablishments } from "@/server/repositories/workspace";
+import { listAssessments, listCalculationRuns } from "@/server/repositories/workspace";
 import { loadConnectedDemoCases } from "@/server/actions/workspace-actions";
-import { AlertTriangle, ArrowRight, Building2, CalendarDays, CheckCircle2, ChevronRight, ClipboardCheck, FileSearch, Plus, ShieldAlert } from "lucide-react";
+import { ArrowRight, BarChart3, CalendarDays, CheckCircle2, ChevronRight, ClipboardCheck, FileSearch, Plus, ShieldAlert } from "lucide-react";
 
 const tone = (status: string) => status === "CLOSED" ? "success" as const : status === "SUBMITTED" || status === "IN_REVIEW" ? "neutral" as const : "warning" as const;
 const statusLabel = (status: string) => assessmentStatusLabels[status as AssessmentStatus] ?? status;
 
 export default async function DashboardPage({searchParams}:{searchParams:Promise<{seed?:string}>}) {
-  const [establishments, assessments] = await Promise.all([listEstablishments(), listAssessments()]);
+  const [assessments, runs] = await Promise.all([listAssessments(), listCalculationRuns()]);
   const { seed } = await searchParams;
   const active = assessments.filter(item => !["CLOSED", "CANCELLED"].includes(item.status));
-  const awaitingReview = assessments.filter(item => ["SUBMITTED", "IN_REVIEW"].includes(item.status));
-  const closed = assessments.filter(item => item.status === "CLOSED");
   const current = active[0] ?? assessments[0];
+  const latestRun=runs[0];
 
   return (
     <AppShell>
       <header className="page-header">
-        <div><p className="breadcrumb">GOEI Chile <ChevronRight size={14} /> Panorama</p><h1>Panorama operacional</h1><p>Supervisa expedientes sintéticos, avance y próximas decisiones bajo tu organización.</p></div>
+        <div><p className="breadcrumb">GOEI Chile <ChevronRight size={14} /> Inicio</p><h1>Centro de operación</h1><p>En pocos segundos: condición, gate, confianza, cobertura y dónde conviene revisar primero.</p></div>
         <Link className="button primary" href="/evaluaciones/nueva"><Plus size={17} /> Nueva evaluación sintética</Link>
       </header>
 
       <div className="field-lock"><ShieldAlert size={20} /><div><strong>Captura real bloqueada</strong><span>Este espacio conectado persiste únicamente casos sintéticos. No ingreses datos de personas o negocios reales.</span></div><Link href="/configuracion">Ver condiciones <ArrowRight size={15} /></Link></div>
 
-      <section className="metric-grid" aria-label="Indicadores del espacio de trabajo">
-        <article className="metric-card"><span className="metric-icon blue"><Building2 /></span><div><small>Establecimientos</small><strong>{establishments.length}</strong><p>Todos son casos sintéticos</p></div></article>
-        <article className="metric-card"><span className="metric-icon amber"><ClipboardCheck /></span><div><small>Evaluaciones activas</small><strong>{active.length}</strong><p>{awaitingReview.length} requieren revisión</p></div></article>
-        <article className="metric-card"><span className="metric-icon green"><CheckCircle2 /></span><div><small>Expedientes cerrados</small><strong>{closed.length}</strong><p>Lecturas provisionales en Resultados</p></div></article>
-        <article className="metric-card"><span className="metric-icon red"><AlertTriangle /></span><div><small>Gates bloqueados</small><strong>{methodologyStatus.blockedCriteria.length}</strong><p>{methodologyStatus.blockedCriteria.join(" y ")}</p></div></article>
+      <section className="metric-grid" aria-label="Lectura operacional actual">
+        <article className="metric-card"><span className="metric-icon blue"><BarChart3 /></span><div><small>GOEI</small><strong>{latestRun?.displayFinalScore??"—"}</strong><p>{latestRun?.band??"Aún sin lectura emitida"}</p></div></article>
+        <article className="metric-card"><span className="metric-icon amber"><ShieldAlert /></span><div><small>Gate</small><strong>{latestRun?.gate?.replace("_"," ")??"—"}</strong><p>Se interpreta antes del puntaje</p></div></article>
+        <article className="metric-card"><span className="metric-icon green"><CheckCircle2 /></span><div><small>Confianza</small><strong>{latestRun?.displayConfidence??"—"}{latestRun?.displayConfidence===null||!latestRun?"":"%"}</strong><p>Calidad de evidencia, no desempeño</p></div></article>
+        <article className="metric-card"><span className="metric-icon red"><ClipboardCheck /></span><div><small>Cobertura</small><strong>{latestRun?.displayCoverage??0}%</strong><p>{latestRun?"Completitud de la lectura":"Sin expediente calculado"}</p></div></article>
       </section>
 
       {seed === "ok" && <div className="notice success"><CheckCircle2 size={18}/><span><strong>Casos demostrativos cargados</strong><small>Se añadieron cinco expedientes exclusivamente sintéticos a esta organización.</small></span></div>}
