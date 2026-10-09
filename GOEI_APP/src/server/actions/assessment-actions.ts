@@ -96,15 +96,15 @@ export async function saveCalculationSettings(input: unknown) {
   if (!supabase) return {ok:false as const,error:"La configuración conectada requiere Supabase."};
   const { data: claims } = await supabase.auth.getClaims();
   if (!claims?.claims?.sub) return {ok:false as const,error:"Sesión no válida."};
-  const { error } = await supabase.from("assessments").update({
+  const { data: savedAssessment, error } = await supabase.from("assessments").update({
     period_start:parsed.data.periodStart,
     period_end:parsed.data.periodEnd,
     gate_status:parsed.data.gateStatus,
     gate_basis:parsed.data.gateBasis,
     gate_protocol_version:parsed.data.gateProtocolVersion || null,
     updated_at:new Date().toISOString()
-  }).eq("id",parsed.data.assessmentId);
-  if (error) return {ok:false as const,error:"No fue posible guardar período y gate. Confirma que la migración de Fase 3 esté instalada y que el expediente sea editable."};
+  }).eq("id",parsed.data.assessmentId).select("id").single();
+  if (error || !savedAssessment) return {ok:false as const,error:"No fue posible guardar período y gate. Confirma que la migración de Fase 3 esté instalada y que el expediente sea editable."};
   revalidatePath(`/evaluaciones/${parsed.data.assessmentId}`);
   return {ok:true as const};
 }

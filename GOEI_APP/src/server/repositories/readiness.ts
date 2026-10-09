@@ -19,7 +19,7 @@ export async function getReadinessReport(context: WorkspaceContext): Promise<Rea
         { id: "supabase", label: "Conexión Supabase", detail: env.isSupabaseConfigured ? "Las credenciales públicas están configuradas, pero el modo conectado está desactivado." : "Las credenciales públicas todavía no están configuradas en este entorno.", state: "pending" },
         { id: "instrument", label: "Instrumento candidato", detail: "Snapshot explicativo de 7 dimensiones y 28 criterios disponible para demostración.", state: "ready" },
         { id: "evidence", label: "Evidencias privadas", detail: "La carga permanece deshabilitada en demostración para impedir el ingreso accidental de archivos reales.", state: "blocked" },
-        { id: "engine", label: "Motor GOEI", detail: "Integración versionada reservada para Fase 3; no se calculan resultados en esta pantalla.", state: "pending" },
+        { id: "engine", label: "Motor GOEI", detail: "Motor candidato integrado; las evaluaciones demostrativas permiten comprobar el cálculo y descargar informes provisionales.", state: "ready" },
         { id: "capture", label: "Captura real", detail: "Bloqueada por gobernanza, privacidad, ética y autorización operativa pendientes.", state: "blocked" },
       ],
     };

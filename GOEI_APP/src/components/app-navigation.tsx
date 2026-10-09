@@ -19,7 +19,7 @@ const secondary = [
   { label: "Evidencia", icon: FileUp, href: "/evidencia" },
   { label: "Mejora", icon: ListChecks, href: "/mejora" },
   { label: "Comparar", icon: FlaskConical, href: "/laboratorio" },
-  { label: "Metodología", icon: BookOpenText, href: "/guia" },
+  { label: "Guía de uso", icon: BookOpenText, href: "/guia" },
   { label: "Equipo y roles", icon: Users, href: "/administracion" },
   { label: "Auditoría", icon: ShieldCheck, href: "/auditoria" },
   { label: "Configuración", icon: Settings, href: "/configuracion" }
@@ -52,14 +52,15 @@ export function AppNavigation() {
   return <>
     <nav className="top-navigation" aria-label="Navegación principal">
       {primary.map(item)}
+      {item(secondary[4])}
       <details ref={desktopMore} className="nav-more">
         <summary className={secondary.some(link => active(link.href)) ? "active" : ""}><Menu size={17}/><span>Más</span></summary>
-        <div className="nav-popover"><p>Herramientas y administración</p>{secondary.map(item)}</div>
+        <div className="nav-popover"><p>Herramientas y administración</p>{secondary.filter(link=>link.href!=="/guia").map(item)}</div>
       </details>
     </nav>
     <nav className="mobile-dock" aria-label="Navegación móvil">
-      {primary.map(({label,shortLabel,icon:Icon,href}) => <Link aria-current={active(href) ? "page" : undefined} className={active(href) ? "active" : ""} href={href as Route} key={label}><Icon size={20}/><span>{shortLabel}</span></Link>)}
-      <details ref={mobileMore} className="dock-more"><summary className={secondary.some(link => active(link.href)) ? "active" : ""}><Menu size={20}/><span>Más</span></summary><div className="dock-sheet"><strong>Más opciones</strong>{secondary.map(item)}</div></details>
+      {primary.slice(0,4).map(({label,shortLabel,icon:Icon,href}) => <Link aria-current={active(href) ? "page" : undefined} className={active(href) ? "active" : ""} href={href as Route} key={label}><Icon size={20}/><span>{shortLabel}</span></Link>)}
+      <details ref={mobileMore} className="dock-more"><summary className={secondary.some(link => active(link.href)) ? "active" : ""}><Menu size={20}/><span>Más</span></summary><div className="dock-sheet"><strong>Más opciones</strong>{[primary[4],...secondary].map(item)}</div></details>
     </nav>
   </>;
 }

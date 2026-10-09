@@ -30,7 +30,7 @@ export default async function DashboardPage({searchParams}:{searchParams:Promise
 
       <section className="metric-grid" aria-label="Lectura operacional actual">
         <article className="metric-card"><span className="metric-icon blue"><BarChart3 /></span><div><small>GOEI</small><strong>{latestRun?.displayFinalScore??"—"}</strong><p>{latestRun?.band??"Aún sin lectura emitida"}</p></div></article>
-        <article className="metric-card"><span className="metric-icon amber"><ShieldAlert /></span><div><small>Gate</small><strong>{latestRun?.gate?.replace("_"," ")??"—"}</strong><p>Se interpreta antes del puntaje</p></div></article>
+        <article className="metric-card"><span className="metric-icon amber"><ShieldAlert /></span><div><small>Gate</small><strong className="metric-state">{latestRun?.gate?.replace("_"," ")??"—"}</strong><p>Se interpreta antes del puntaje</p></div></article>
         <article className="metric-card"><span className="metric-icon green"><CheckCircle2 /></span><div><small>Confianza</small><strong>{latestRun?.displayConfidence??"—"}{latestRun?.displayConfidence===null||!latestRun?"":"%"}</strong><p>Calidad de evidencia, no desempeño</p></div></article>
         <article className="metric-card"><span className="metric-icon red"><ClipboardCheck /></span><div><small>Cobertura</small><strong>{latestRun?.displayCoverage??0}%</strong><p>{latestRun?"Completitud de la lectura":"Sin expediente calculado"}</p></div></article>
       </section>

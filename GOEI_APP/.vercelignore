@@ -1,0 +1,8 @@
+.env*
+!.env.example
+tmp/
+output/
+outputs/
+coverage/
+*.log
+*.tsbuildinfo

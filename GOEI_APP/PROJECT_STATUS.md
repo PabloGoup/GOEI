@@ -4,7 +4,7 @@
 
 ## Última actualización
 
-- Fecha: 2026-08-29
+- Fecha: 2026-10-08
 - Responsable de la actualización: Codex
 - Fase activa: Fase 3 — resultados, reportes y experiencia operativa
 - Estado técnico: MVP sintético funcional con cinco casos comparables, formularios normalizados, perfil operativo, cálculo transparente, exportaciones PDF/Excel, centro de evidencia y planes de mejora trazables. La demostración pública sigue aislada y no simula persistencia. Ocho migraciones se encuentran registradas; la última de planes de mejora fue aplicada por el usuario en Supabase el 2026-08-29.
@@ -56,6 +56,20 @@ La aplicación implementa el estándar, pero no crea ciencia. No puede inventar 
 - PDF y Excel se generarán en servidor y recalcularán antes de exportar.
 
 ## Trabajo completado
+
+### Verificación del piloto de simulación — 2026-10-08
+
+- El usuario confirmó que aún se trabaja sólo con simulaciones y que no existen autorizaciones de campo.
+- Se corrigieron falsos éxitos al guardar período/gate y actualizar acciones de mejora: ahora debe devolverse la fila modificada.
+- El alta de establecimientos ya no descarta el perfil operacional silenciosamente si falla su creación.
+- Migración aditiva `202610080009_improvement_integrity.sql`: corrige la expresión del criterio y exige coherencia organización-expediente al actualizar mejoras. Probada en PostgreSQL aislado; aplicación y prueba remotas pendientes.
+- Motor identificado como integrado en el panel demostrativo. Corregidos texto del gate y márgenes del expediente en móvil/tablet.
+- Verificación local: `npm run verify` PASS (33 pruebas, tipos, lint y build). Cinco casos y quince descargas HTTP PASS.
+- Inspección visual focalizada en escritorio, tablet y móvil; no equivale a QA de todas las rutas autenticadas.
+- Scripts reproducibles: `scripts/smoke-demo.mjs` y `scripts/verify-improvement-migration.mjs`.
+- Checklist y límites: `docs/ESTADO_PILOTO_2026-10-08.md`.
+- Demo pública existente: cinco casos y quince descargas PASS en producción. El despliegue de las correcciones fue bloqueado por Vercel (`TEAM_ACCESS_REQUIRED`: autor del commit sin permiso), ID `dpl_8NQRro5QeCg6grteJgA2ANWzGQpo`. No se afirma publicación de estos cambios.
+
 
 ### Preparación y coordinación
 
@@ -482,4 +496,4 @@ Al terminar:
 
 ## Próxima acción recomendada
 
-Conectar el banco de cinco casos a una carga demostrativa reproducible para organizaciones autenticadas y validar visualmente el nuevo sistema de navegación en producción. La captura real permanece bloqueada.
+Aplicar y comprobar la migración 009 en Supabase y completar el recorrido sintético autenticado (evidencias, revisión y mejoras). La carga de cinco casos ya está implementada; su recorrido conectado debe verificarse. Consultar `docs/ESTADO_PILOTO_2026-10-08.md`. La captura real permanece bloqueada.

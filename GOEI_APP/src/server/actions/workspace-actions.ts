@@ -26,8 +26,8 @@ export async function updateImprovementActionStatus(formData:FormData) {
   if(!parsed.success) redirect("/mejora?error=estado");
   const context=await requireWorkspaceContext(); if(context.mode!=="connected") redirect("/mejora?error=modo");
   const supabase=await createClient(); if(!supabase) redirect("/login?error=configuracion");
-  const {error}=await supabase.from("improvement_actions").update({status:parsed.data.status,updated_at:new Date().toISOString()}).eq("id",parsed.data.id);
-  if(error) redirect("/mejora?error=estado");
+  const {data:updatedAction,error}=await supabase.from("improvement_actions").update({status:parsed.data.status,updated_at:new Date().toISOString()}).eq("id",parsed.data.id).select("id").single();
+  if(error || !updatedAction) redirect("/mejora?error=estado");
   revalidatePath("/mejora");
 }
 export async function createSyntheticEstablishment(formData: FormData) {
@@ -44,10 +44,7 @@ export async function createSyntheticEstablishment(formData: FormData) {
   if(context.mode!=="connected"||!context.organizationId) redirect("/establecimientos?error=modo");
   const supabase=await createClient(); if(!supabase) redirect("/login?error=configuracion");
   const {error}=await supabase.rpc("create_profiled_synthetic_establishment",{target_org:context.organizationId,requested_name:parsed.data.name,requested_code:parsed.data.code,requested_profile:parsed.data.profile});
-  if(error) {
-    const fallback=await supabase.rpc("create_synthetic_establishment",{target_org:context.organizationId,requested_name:parsed.data.name,requested_code:parsed.data.code});
-    if(fallback.error) redirect("/establecimientos/nuevo?error=guardado");
-  }
+  if(error) redirect("/establecimientos/nuevo?error=guardado");
   revalidatePath("/establecimientos"); redirect("/establecimientos");
 }
 export async function createSyntheticAssessment(formData: FormData) {
